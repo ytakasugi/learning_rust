@@ -1,0 +1,1 @@
+/home/ytakasugi/000_learning/workspace/Rust_workspace/Atcoder/beginner/171th/b171_mix_juice/target/debug/b171_mix_juice: /home/ytakasugi/000_learning/workspace/Rust_workspace/Atcoder/beginner/171th/b171_mix_juice/src/main.rs

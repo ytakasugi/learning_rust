@@ -1,0 +1,1 @@
+C:\Users\sigur\Documents\900_github\000_lerning\Rust_workspace\rust_basics\practice\chapter04\samplecli\target\debug\err_anyhow.exe: C:\Users\sigur\Documents\900_github\000_lerning\Rust_workspace\rust_basics\practice\chapter04\samplecli\src\bin\err_anyhow.rs

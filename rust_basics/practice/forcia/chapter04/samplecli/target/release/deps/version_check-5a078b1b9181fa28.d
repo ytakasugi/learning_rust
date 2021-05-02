@@ -1,0 +1,10 @@
+C:\Users\sigur\Documents\900_github\000_lerning\Rust_workspace\rust_basics\practice\chapter04\samplecli\target\release\deps\version_check-5a078b1b9181fa28.rmeta: C:\Users\sigur\.cargo\registry\src\github.com-1ecc6299db9ec823\version_check-0.9.2\src\lib.rs C:\Users\sigur\.cargo\registry\src\github.com-1ecc6299db9ec823\version_check-0.9.2\src\version.rs C:\Users\sigur\.cargo\registry\src\github.com-1ecc6299db9ec823\version_check-0.9.2\src\channel.rs C:\Users\sigur\.cargo\registry\src\github.com-1ecc6299db9ec823\version_check-0.9.2\src\date.rs
+
+C:\Users\sigur\Documents\900_github\000_lerning\Rust_workspace\rust_basics\practice\chapter04\samplecli\target\release\deps\libversion_check-5a078b1b9181fa28.rlib: C:\Users\sigur\.cargo\registry\src\github.com-1ecc6299db9ec823\version_check-0.9.2\src\lib.rs C:\Users\sigur\.cargo\registry\src\github.com-1ecc6299db9ec823\version_check-0.9.2\src\version.rs C:\Users\sigur\.cargo\registry\src\github.com-1ecc6299db9ec823\version_check-0.9.2\src\channel.rs C:\Users\sigur\.cargo\registry\src\github.com-1ecc6299db9ec823\version_check-0.9.2\src\date.rs
+
+C:\Users\sigur\Documents\900_github\000_lerning\Rust_workspace\rust_basics\practice\chapter04\samplecli\target\release\deps\version_check-5a078b1b9181fa28.d: C:\Users\sigur\.cargo\registry\src\github.com-1ecc6299db9ec823\version_check-0.9.2\src\lib.rs C:\Users\sigur\.cargo\registry\src\github.com-1ecc6299db9ec823\version_check-0.9.2\src\version.rs C:\Users\sigur\.cargo\registry\src\github.com-1ecc6299db9ec823\version_check-0.9.2\src\channel.rs C:\Users\sigur\.cargo\registry\src\github.com-1ecc6299db9ec823\version_check-0.9.2\src\date.rs
+
+C:\Users\sigur\.cargo\registry\src\github.com-1ecc6299db9ec823\version_check-0.9.2\src\lib.rs:
+C:\Users\sigur\.cargo\registry\src\github.com-1ecc6299db9ec823\version_check-0.9.2\src\version.rs:
+C:\Users\sigur\.cargo\registry\src\github.com-1ecc6299db9ec823\version_check-0.9.2\src\channel.rs:
+C:\Users\sigur\.cargo\registry\src\github.com-1ecc6299db9ec823\version_check-0.9.2\src\date.rs:

@@ -1,0 +1,1 @@
+/home/ytakasugi/000_learning/workspace/Rust_workspace/Atcoder/biginner/atcoder177a_dont_be_late/target/debug/atcoder177a_dont_be_late: /home/ytakasugi/000_learning/workspace/Rust_workspace/Atcoder/biginner/atcoder177a_dont_be_late/src/main.rs

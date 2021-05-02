@@ -1,0 +1,1 @@
+/home/ytakasugi/000_learning/workspace/Rust_workspace/Atcoder/biginner/atcoder163a_circle_pond/target/debug/atcoder163a_circle_pond: /home/ytakasugi/000_learning/workspace/Rust_workspace/Atcoder/biginner/atcoder163a_circle_pond/src/main.rs

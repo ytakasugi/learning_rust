@@ -1,0 +1,1 @@
+/home/ytakasugi/000_learning/workspace/Rust_workspace/Atcoder/beginner/175th/b175_making_triangle/target/debug/b175_making_triangle: /home/ytakasugi/000_learning/workspace/Rust_workspace/Atcoder/beginner/175th/b175_making_triangle/src/main.rs

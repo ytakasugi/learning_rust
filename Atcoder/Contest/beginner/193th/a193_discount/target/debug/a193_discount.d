@@ -1,0 +1,1 @@
+/home/ytakasugi/000_learning/workspace/Rust_workspace/Atcoder/Contest/beginner/193th/a193_discount/target/debug/a193_discount: /home/ytakasugi/000_learning/workspace/Rust_workspace/Atcoder/Contest/beginner/193th/a193_discount/src/main.rs

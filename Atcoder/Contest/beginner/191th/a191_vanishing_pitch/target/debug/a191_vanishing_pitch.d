@@ -1,0 +1,1 @@
+/home/ytakasugi/000_learning/workspace/Rust_workspace/Atcoder/Contest/beginner/191th/a191_vanishing_pitch/target/debug/a191_vanishing_pitch: /home/ytakasugi/000_learning/workspace/Rust_workspace/Atcoder/Contest/beginner/191th/a191_vanishing_pitch/src/main.rs

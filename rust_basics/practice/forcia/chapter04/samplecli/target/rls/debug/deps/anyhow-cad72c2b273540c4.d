@@ -1,0 +1,13 @@
+c:\Users\sigur\Documents\900_github\000_lerning\Rust_workspace\rust_basics\practice\chapter04\samplecli\target\rls\debug\deps\anyhow-cad72c2b273540c4.rmeta: C:\Users\sigur\.cargo\registry\src\github.com-1ecc6299db9ec823\anyhow-1.0.36\src\lib.rs C:\Users\sigur\.cargo\registry\src\github.com-1ecc6299db9ec823\anyhow-1.0.36\src\backtrace.rs C:\Users\sigur\.cargo\registry\src\github.com-1ecc6299db9ec823\anyhow-1.0.36\src\chain.rs C:\Users\sigur\.cargo\registry\src\github.com-1ecc6299db9ec823\anyhow-1.0.36\src\context.rs C:\Users\sigur\.cargo\registry\src\github.com-1ecc6299db9ec823\anyhow-1.0.36\src\error.rs C:\Users\sigur\.cargo\registry\src\github.com-1ecc6299db9ec823\anyhow-1.0.36\src\fmt.rs C:\Users\sigur\.cargo\registry\src\github.com-1ecc6299db9ec823\anyhow-1.0.36\src\kind.rs C:\Users\sigur\.cargo\registry\src\github.com-1ecc6299db9ec823\anyhow-1.0.36\src\macros.rs C:\Users\sigur\.cargo\registry\src\github.com-1ecc6299db9ec823\anyhow-1.0.36\src\wrapper.rs
+
+c:\Users\sigur\Documents\900_github\000_lerning\Rust_workspace\rust_basics\practice\chapter04\samplecli\target\rls\debug\deps\anyhow-cad72c2b273540c4.d: C:\Users\sigur\.cargo\registry\src\github.com-1ecc6299db9ec823\anyhow-1.0.36\src\lib.rs C:\Users\sigur\.cargo\registry\src\github.com-1ecc6299db9ec823\anyhow-1.0.36\src\backtrace.rs C:\Users\sigur\.cargo\registry\src\github.com-1ecc6299db9ec823\anyhow-1.0.36\src\chain.rs C:\Users\sigur\.cargo\registry\src\github.com-1ecc6299db9ec823\anyhow-1.0.36\src\context.rs C:\Users\sigur\.cargo\registry\src\github.com-1ecc6299db9ec823\anyhow-1.0.36\src\error.rs C:\Users\sigur\.cargo\registry\src\github.com-1ecc6299db9ec823\anyhow-1.0.36\src\fmt.rs C:\Users\sigur\.cargo\registry\src\github.com-1ecc6299db9ec823\anyhow-1.0.36\src\kind.rs C:\Users\sigur\.cargo\registry\src\github.com-1ecc6299db9ec823\anyhow-1.0.36\src\macros.rs C:\Users\sigur\.cargo\registry\src\github.com-1ecc6299db9ec823\anyhow-1.0.36\src\wrapper.rs
+
+C:\Users\sigur\.cargo\registry\src\github.com-1ecc6299db9ec823\anyhow-1.0.36\src\lib.rs:
+C:\Users\sigur\.cargo\registry\src\github.com-1ecc6299db9ec823\anyhow-1.0.36\src\backtrace.rs:
+C:\Users\sigur\.cargo\registry\src\github.com-1ecc6299db9ec823\anyhow-1.0.36\src\chain.rs:
+C:\Users\sigur\.cargo\registry\src\github.com-1ecc6299db9ec823\anyhow-1.0.36\src\context.rs:
+C:\Users\sigur\.cargo\registry\src\github.com-1ecc6299db9ec823\anyhow-1.0.36\src\error.rs:
+C:\Users\sigur\.cargo\registry\src\github.com-1ecc6299db9ec823\anyhow-1.0.36\src\fmt.rs:
+C:\Users\sigur\.cargo\registry\src\github.com-1ecc6299db9ec823\anyhow-1.0.36\src\kind.rs:
+C:\Users\sigur\.cargo\registry\src\github.com-1ecc6299db9ec823\anyhow-1.0.36\src\macros.rs:
+C:\Users\sigur\.cargo\registry\src\github.com-1ecc6299db9ec823\anyhow-1.0.36\src\wrapper.rs:

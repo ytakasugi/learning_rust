@@ -1,0 +1,13 @@
+/home/ytakasugi/000_learning/workspace/Rust_workspace/rust_basics/practice/forcia/chapter05/todo/target/rls/debug/deps/toml-b3c3b3884c35d2bb.rmeta: /home/ytakasugi/.cargo/registry/src/github.com-1ecc6299db9ec823/toml-0.5.8/src/lib.rs /home/ytakasugi/.cargo/registry/src/github.com-1ecc6299db9ec823/toml-0.5.8/src/map.rs /home/ytakasugi/.cargo/registry/src/github.com-1ecc6299db9ec823/toml-0.5.8/src/value.rs /home/ytakasugi/.cargo/registry/src/github.com-1ecc6299db9ec823/toml-0.5.8/src/datetime.rs /home/ytakasugi/.cargo/registry/src/github.com-1ecc6299db9ec823/toml-0.5.8/src/ser.rs /home/ytakasugi/.cargo/registry/src/github.com-1ecc6299db9ec823/toml-0.5.8/src/de.rs /home/ytakasugi/.cargo/registry/src/github.com-1ecc6299db9ec823/toml-0.5.8/src/tokens.rs /home/ytakasugi/.cargo/registry/src/github.com-1ecc6299db9ec823/toml-0.5.8/src/macros.rs /home/ytakasugi/.cargo/registry/src/github.com-1ecc6299db9ec823/toml-0.5.8/src/spanned.rs
+
+/home/ytakasugi/000_learning/workspace/Rust_workspace/rust_basics/practice/forcia/chapter05/todo/target/rls/debug/deps/toml-b3c3b3884c35d2bb.d: /home/ytakasugi/.cargo/registry/src/github.com-1ecc6299db9ec823/toml-0.5.8/src/lib.rs /home/ytakasugi/.cargo/registry/src/github.com-1ecc6299db9ec823/toml-0.5.8/src/map.rs /home/ytakasugi/.cargo/registry/src/github.com-1ecc6299db9ec823/toml-0.5.8/src/value.rs /home/ytakasugi/.cargo/registry/src/github.com-1ecc6299db9ec823/toml-0.5.8/src/datetime.rs /home/ytakasugi/.cargo/registry/src/github.com-1ecc6299db9ec823/toml-0.5.8/src/ser.rs /home/ytakasugi/.cargo/registry/src/github.com-1ecc6299db9ec823/toml-0.5.8/src/de.rs /home/ytakasugi/.cargo/registry/src/github.com-1ecc6299db9ec823/toml-0.5.8/src/tokens.rs /home/ytakasugi/.cargo/registry/src/github.com-1ecc6299db9ec823/toml-0.5.8/src/macros.rs /home/ytakasugi/.cargo/registry/src/github.com-1ecc6299db9ec823/toml-0.5.8/src/spanned.rs
+
+/home/ytakasugi/.cargo/registry/src/github.com-1ecc6299db9ec823/toml-0.5.8/src/lib.rs:
+/home/ytakasugi/.cargo/registry/src/github.com-1ecc6299db9ec823/toml-0.5.8/src/map.rs:
+/home/ytakasugi/.cargo/registry/src/github.com-1ecc6299db9ec823/toml-0.5.8/src/value.rs:
+/home/ytakasugi/.cargo/registry/src/github.com-1ecc6299db9ec823/toml-0.5.8/src/datetime.rs:
+/home/ytakasugi/.cargo/registry/src/github.com-1ecc6299db9ec823/toml-0.5.8/src/ser.rs:
+/home/ytakasugi/.cargo/registry/src/github.com-1ecc6299db9ec823/toml-0.5.8/src/de.rs:
+/home/ytakasugi/.cargo/registry/src/github.com-1ecc6299db9ec823/toml-0.5.8/src/tokens.rs:
+/home/ytakasugi/.cargo/registry/src/github.com-1ecc6299db9ec823/toml-0.5.8/src/macros.rs:
+/home/ytakasugi/.cargo/registry/src/github.com-1ecc6299db9ec823/toml-0.5.8/src/spanned.rs:

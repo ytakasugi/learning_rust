@@ -1,0 +1,1 @@
+/home/ytakasugi/000_learning/workspace/Rust_workspace/Atcoder/beginner/185th/a185_preparation/target/debug/a185_preparation: /home/ytakasugi/000_learning/workspace/Rust_workspace/Atcoder/beginner/185th/a185_preparation/src/main.rs

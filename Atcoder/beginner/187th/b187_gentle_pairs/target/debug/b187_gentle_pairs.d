@@ -1,0 +1,1 @@
+/home/ytakasugi/000_learning/workspace/Rust_workspace/Atcoder/beginner/187th/b187_gentle_pairs/target/debug/b187_gentle_pairs: /home/ytakasugi/000_learning/workspace/Rust_workspace/Atcoder/beginner/187th/b187_gentle_pairs/src/main.rs

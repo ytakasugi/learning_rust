@@ -1,0 +1,1 @@
+/home/ytakasugi/000_learning/workspace/Rust_workspace/Atcoder/biginner/atcoder165a_we_love_golf/target/debug/atcoder165a_we_love_golf: /home/ytakasugi/000_learning/workspace/Rust_workspace/Atcoder/biginner/atcoder165a_we_love_golf/src/main.rs

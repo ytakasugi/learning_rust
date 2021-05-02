@@ -1,0 +1,1 @@
+/home/ytakasugi/000_learning/workspace/Rust_workspace/Atcoder/biginner/atcoder172a_calc/target/debug/atcoder172a_calc: /home/ytakasugi/000_learning/workspace/Rust_workspace/Atcoder/biginner/atcoder172a_calc/src/main.rs

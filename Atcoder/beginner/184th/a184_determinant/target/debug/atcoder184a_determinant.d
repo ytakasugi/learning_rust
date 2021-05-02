@@ -1,0 +1,1 @@
+/home/ytakasugi/000_learning/workspace/Rust_workspace/Atcoder/biginner/atcoder184a_determinant/target/debug/atcoder184a_determinant: /home/ytakasugi/000_learning/workspace/Rust_workspace/Atcoder/biginner/atcoder184a_determinant/src/main.rs

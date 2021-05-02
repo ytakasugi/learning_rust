@@ -1,0 +1,1 @@
+/home/ytakasugi/000_learning/workspace/Rust_workspace/Atcoder/Contest/beginner/196th/b196_round_down/target/debug/b196_round_down: /home/ytakasugi/000_learning/workspace/Rust_workspace/Atcoder/Contest/beginner/196th/b196_round_down/src/main.rs

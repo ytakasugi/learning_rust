@@ -1,0 +1,1 @@
+/home/ytakasugi/000_learning/workspace/Rust_workspace/Atcoder/beginner/085th/c085_otoshidama/target/debug/c085_otoshidama: /home/ytakasugi/000_learning/workspace/Rust_workspace/Atcoder/beginner/085th/c085_otoshidama/src/main.rs

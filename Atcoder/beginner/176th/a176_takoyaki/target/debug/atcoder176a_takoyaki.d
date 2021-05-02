@@ -1,0 +1,1 @@
+/home/ytakasugi/000_learning/workspace/Rust_workspace/Atcoder/biginner/atcoder176a_takoyaki/target/debug/atcoder176a_takoyaki: /home/ytakasugi/000_learning/workspace/Rust_workspace/Atcoder/biginner/atcoder176a_takoyaki/src/main.rs

@@ -1,0 +1,1 @@
+/home/ytakasugi/000_learning/workspace/Rust_workspace/RPL/section16/multithreading/target/debug/multithreading: /home/ytakasugi/000_learning/workspace/Rust_workspace/RPL/section16/multithreading/src/main.rs

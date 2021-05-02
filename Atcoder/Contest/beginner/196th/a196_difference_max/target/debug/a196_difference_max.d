@@ -1,0 +1,1 @@
+/home/ytakasugi/000_learning/workspace/Rust_workspace/Atcoder/Contest/beginner/196th/a196_difference_max/target/debug/a196_difference_max: /home/ytakasugi/000_learning/workspace/Rust_workspace/Atcoder/Contest/beginner/196th/a196_difference_max/src/main.rs

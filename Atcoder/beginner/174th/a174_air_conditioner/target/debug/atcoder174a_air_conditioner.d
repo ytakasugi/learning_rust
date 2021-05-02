@@ -1,0 +1,1 @@
+/home/ytakasugi/000_learning/workspace/Rust_workspace/Atcoder/biginner/atcoder174a_air_conditioner/target/debug/atcoder174a_air_conditioner: /home/ytakasugi/000_learning/workspace/Rust_workspace/Atcoder/biginner/atcoder174a_air_conditioner/src/main.rs

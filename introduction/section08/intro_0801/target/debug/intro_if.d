@@ -1,0 +1,1 @@
+C:\Users\sigur\Documents\900_github\000_lerning\Rust_workspace\introduction\intro_if\target\debug\intro_if.exe: C:\Users\sigur\Documents\900_github\000_lerning\Rust_workspace\introduction\intro_if\src\main.rs

@@ -1,0 +1,1 @@
+/home/ytakasugi/000_learning/workspace/Rust_workspace/RPL/section10/section1001/section1001_04/target/debug/section1001_04: /home/ytakasugi/000_learning/workspace/Rust_workspace/RPL/section10/section1001/section1001_04/src/main.rs
