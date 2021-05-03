@@ -819,6 +819,33 @@ CopyトレイトとCloneトレイトの違いを以下に示す
   assert_eq!(y, None);
   ~~~
 
+
+
+
+---
+
+### std::option::Option::unwrap_or_default
+
+- Description
+
+  含まれる`Some`値またはデフォルト値を返します。
+
+  `self`引数を消費し、`Some`の場合は含まれる値を、`None`の場合はその型のデフォルト値を返します。
+
+- Example
+
+  文字列を整数に変換し、整数に変換できない文字列は0（整数のデフォルト値）に変換します。 `parse`は、文字列を`FromStr`を実装した他の型に変換し、エラー時には`None`を返します。
+
+  ```rust
+  let good_year_from_input = "1909";
+  let bad_year_from_input = "190blarg";
+  let good_year = good_year_from_input.parse().ok().unwrap_or_default();
+  let bad_year = bad_year_from_input.parse().ok().unwrap_or_default();
+  
+  assert_eq!(1909, good_year);
+  assert_eq!(0, bad_year);
+  ```
+
   
 
 ---
@@ -827,7 +854,7 @@ CopyトレイトとCloneトレイトの違いを以下に示す
 
 - Description
 
-  入力値を消費する値から値への変換のこと。\From\の反対です。
+  入力値を消費する値から値への変換のこと。`From`の反対です。
 
   `Into`の実装を避け、代わりに`From`を実装すべきである。`From`を実装すると、標準ライブラリのブランケット実装のおかげで、自動的に`Into`の実装が提供されます。
 
@@ -882,7 +909,22 @@ CopyトレイトとCloneトレイトの違いを以下に示す
   is_hello(s);
   ```
 
-  
+
+
+
+---
+
+### std::convert::TryInto
+
+- Description
+
+  selfを消費する変換の試みで、高価であるかどうかはわかりません。
+
+  ライブラリの作者は、通常、このトレイトを直接実装すべきではなく、[`TryFrom`](https://doc.rust-lang.org/stable/std/convert/trait.TryFrom.html)トレイトの実装を好むべきです。`TryFrom`トレイトは、より柔軟性があり、標準ライブラリの包括的な実装のおかげで、同等の`TryInto`の実装を無料で提供しています。これについての詳細は、[`Into`](https://doc.rust-lang.org/stable/std/convert/trait.Into.html)のドキュメントを参照してください。
+
+- Implementing `TryInto`
+
+  これは`Into`の実装と同じ制約と理由があります。詳細はこちらをご覧ください。
 
 
 ---
@@ -951,6 +993,67 @@ CopyトレイトとCloneトレイトの違いを以下に示す
       Ok(num)
   }
   ~~~
+
+
+
+
+---
+
+### std::convert::TryFrom
+
+- Description
+
+  シンプルで安全な型変換ですが、ある状況下では制御された方法で失敗することがあります。これは`TryInto`の逆数です。
+
+  これは、些細なことで成功するかもしれないが、特別な処理を必要とするかもしれない型変換を行っているときに便利です。例えば、、`From`トレイトを使って`i64`を`i32`に変換する方法はありません。なぜなら、`i64`には`i32`が表現できない値が含まれている可能性があり、変換によってデータが失われるからです。これには、`i64`を`i32`に切り詰める（基本的には`i64`の値を`i32::MAX`にモジュロして与える）か、単にi32::MAXを返すか、その他の方法で対処することになります。`From`トレイトは完全な変換を目的としているので、`TryFrom`トレイトは型変換がうまくいかない場合にプログラマに知らせ、それをどう処理するかを決めさせます。
+
+- Generic Implementations
+
+  - `U`の`TryFrom<T>`は`T`の`TryInto<U>`を意味する。
+  - `try_from`は反射的で、`T`に対する`TryFrom<T>`が実装されていて、失敗しないことを意味しています -- `T`型の値に対して`T::try_from()`を呼び出した場合の関連するエラー型は`Infallible`です。この`!`型が安定したとき、`Infallible`と`!`は同等となるでしょう
+
+  `TryFrom<T>`は以下のように実装できます。
+
+  ```rust
+  use std::convert::TryFrom;
+  
+  struct GreaterThanZero(i32);
+  
+  impl TryFrom<i32> for GreaterThanZero {
+      type Error = &'static str;
+  
+      fn try_from(value: i32) -> Result<Self, Self::Error> {
+          if value <= 0 {
+              Err("GreaterThanZero only accepts value superior than zero!")
+          } else {
+              Ok(GreaterThanZero(value))
+          }
+      }
+  }
+  ```
+
+- Example
+
+  As described, [`i32`](https://doc.rust-lang.org/stable/std/primitive.i32.html) implements `TryFrom<`[`i64`](https://doc.rust-lang.org/stable/std/primitive.i64.html)`>`:
+
+  ```rust
+  use std::convert::TryFrom;
+  
+  let big_number = 1_000_000_000_000i64;
+  // Silently truncates `big_number`, requires detecting
+  // and handling the truncation after the fact.
+  let smaller_number = big_number as i32;
+  assert_eq!(smaller_number, -727379968);
+  
+  // Returns an error because `big_number` is too big to
+  // fit in an `i32`.
+  let try_smaller_number = i32::try_from(big_number);
+  assert!(try_smaller_number.is_err());
+  
+  // Returns `Ok(3)`.
+  let try_successful_smaller_number = i32::try_from(3);
+  assert!(try_successful_smaller_number.is_ok());
+  ```
 
   
 
@@ -1155,6 +1258,134 @@ CopyトレイトとCloneトレイトの違いを以下に示す
   この関数は、データの待ち受けをブロックするかどうかについては何の保証もしませんが、オブジェクトが読み込みのためにブロックする必要があり、ブロックできない場合は、通常は`Err`返り値を介してその旨を通知します。
 
   このメソッドの戻り値が Ok(n) である場合、`0 <= n <= buf.len()`であることが保証されなければなりません。ゼロでない`n`の値は、バッファ`buf `がこのソースからの`n`バイトのデータで埋め尽くされたことを示します。`n`が 0 の場合は、2 つのシナリオのうちの 1 つを示します。
+
+---
+
+### std::io::Read::read::read_exact
+
+- Description
+
+  `buf`を埋めるのに必要な正確なバイト数を読み込む。
+
+  この関数は、指定されたバッフ`buf`を完全に満たすのに必要な数のバイトを読み込む。
+
+  この関数が呼ばれたとき、`buf`の内容については何も保証されていないので、実装は`buf`の内容のどのプロパティも真であることに頼ることはできない。実装では、`buf`の内容を読むのではなく、`buf`にデータを書き込むだけにしておくことを推奨する。この問題については、[`read`](https://doc.rust-lang.org/stable/std/io/trait.Read.html#tymethod.read)のドキュメントに詳細な説明があります。
+
+- Errors
+
+  この関数が[`ErrorKind::Interrupted`](https://doc.rust-lang.org/stable/std/io/enum.ErrorKind.html#variant.Interrupted)の種類のエラーに遭遇した場合、そのエラーは無視され、操作は続行されます。
+
+  この関数がバッファを完全に満たす前に "end of file"に遭遇した場合は、[`ErrorKind::UnexpectedEof`](https://doc.rust-lang.org/stable/std/io/enum.ErrorKind.html#variant.UnexpectedEof)の種類のエラーを返す。この場合、`buf`の内容は特定されない。
+
+  その他の読み込みエラーが発生した場合、本関数は直ちに戻る。この場合、`buf` の内容は特定されない。
+
+  本関数がエラーを返した場合、何バイト読み込んだかは不明であるが、バッファを完全に満たすのに必要な量以上を読み込むことはない。
+
+- Exmaple
+
+  [`File`](https://doc.rust-lang.org/stable/std/fs/struct.File.html)s implement `Read`:
+
+  ```rust
+  use std::io;
+  use std::io::prelude::*;
+  use std::fs::File;
+  
+  fn main() -> io::Result<()> {
+      let mut f = File::open("foo.txt")?;
+      let mut buffer = [0; 10];
+  
+      // read exactly 10 bytes
+      f.read_exact(&mut buffer)?;
+      Ok(())
+  }
+  ```
+
+  
+
+---
+
+### std::io::Seek
+
+- Description
+
+  Seekトレイトは、バイトのストリーム内で移動できるカーソルを提供します。
+
+  ストリームは通常、固定サイズであり、終端または現在のオフセットのいずれかに対するシークが可能です。
+
+- Example
+
+  Files implement Seek:
+
+  ```rust
+  use std::io;
+  use std::io::prelude::*;
+  use std::fs::File;
+  use std::io::SeekFrom;
+  
+  fn main() -> io::Result<()> {
+      let mut f = File::open("foo.txt")?;
+  
+      // move the cursor 42 bytes from the start of the file
+      f.seek(SeekFrom::Start(42))?;
+      Ok(())
+  }
+  ```
+
+
+
+---
+
+### std::io::Seek::seek
+
+- Description
+
+  ストリーム内のオフセット（バイト単位）にシークします。
+
+  ストリームの終端を超えてシークすることは可能ですが、その動作は実装によって定義されます。
+
+  シーク操作が正常に完了した場合、このメソッドは、ストリームの開始点からの新しい位置を返します。この位置は後で [`SeekFrom::Start`](https://doc.rust-lang.org/stable/std/io/enum.SeekFrom.html#variant.Start)で使用できます。
+
+- Errors
+
+  負のオフセットにシークするとエラーになります。
+
+---
+
+### std::io::SeekFrom
+
+- Description
+
+  ```rust
+  pub enum SeekFrom {
+      Start(u64),
+      End(i64),
+      Current(i64),
+  }
+  ```
+
+  I/Oオブジェクト内でシークするために可能なメソッドの列挙。
+
+  これは、[`Seek`](https://doc.rust-lang.org/stable/std/io/trait.Seek.html)トレイトによって使用されます。
+
+- Variants
+
+  - `Start(u64)`
+
+    指定したバイト数のオフセットを設定する
+
+  - `End(i64)`
+
+    オフセットを、このオブジェクトのサイズに指定のバイト数を加えたサイズに設定します。
+
+    オブジェクトの終わりを越えてシークすることは可能ですが、バイト0より前にシークすることはエラーになります。
+
+  - `Current(i64)`
+
+    現在の位置に、指定したバイト数を加えたオフセットを設定します。
+
+    オブジェクトの終わりを越えてシークすることは可能ですが、バイト0より前にシークすることはエラーになります。
+
+
 
 ---
 
