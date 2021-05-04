@@ -3,4 +3,5 @@
 - https://github.com/ytakasugi/drawing_with_rust.git
 - https://github.com/ytakasugi/toy_rdbms.git
 - https://github.com/ytakasugi/learning_rust.git
+- https://github.com/ytakasugi/introduction_to_rust_in_practice.git
 
