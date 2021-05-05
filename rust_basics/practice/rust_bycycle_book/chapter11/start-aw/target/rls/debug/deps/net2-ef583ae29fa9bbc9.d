@@ -1,0 +1,13 @@
+/home/ytakasugi/004_learning_rust/rust_basics/practice/rust_bycycle_book/chapter11/start-aw/target/rls/debug/deps/net2-ef583ae29fa9bbc9.rmeta: /home/ytakasugi/.cargo/registry/src/github.com-1ecc6299db9ec823/net2-0.2.37/src/lib.rs /home/ytakasugi/.cargo/registry/src/github.com-1ecc6299db9ec823/net2-0.2.37/src/tcp.rs /home/ytakasugi/.cargo/registry/src/github.com-1ecc6299db9ec823/net2-0.2.37/src/udp.rs /home/ytakasugi/.cargo/registry/src/github.com-1ecc6299db9ec823/net2-0.2.37/src/socket.rs /home/ytakasugi/.cargo/registry/src/github.com-1ecc6299db9ec823/net2-0.2.37/src/ext.rs /home/ytakasugi/.cargo/registry/src/github.com-1ecc6299db9ec823/net2-0.2.37/src/utils.rs /home/ytakasugi/.cargo/registry/src/github.com-1ecc6299db9ec823/net2-0.2.37/src/sys/unix/mod.rs /home/ytakasugi/.cargo/registry/src/github.com-1ecc6299db9ec823/net2-0.2.37/src/sys/unix/impls.rs /home/ytakasugi/.cargo/registry/src/github.com-1ecc6299db9ec823/net2-0.2.37/src/unix.rs
+
+/home/ytakasugi/004_learning_rust/rust_basics/practice/rust_bycycle_book/chapter11/start-aw/target/rls/debug/deps/net2-ef583ae29fa9bbc9.d: /home/ytakasugi/.cargo/registry/src/github.com-1ecc6299db9ec823/net2-0.2.37/src/lib.rs /home/ytakasugi/.cargo/registry/src/github.com-1ecc6299db9ec823/net2-0.2.37/src/tcp.rs /home/ytakasugi/.cargo/registry/src/github.com-1ecc6299db9ec823/net2-0.2.37/src/udp.rs /home/ytakasugi/.cargo/registry/src/github.com-1ecc6299db9ec823/net2-0.2.37/src/socket.rs /home/ytakasugi/.cargo/registry/src/github.com-1ecc6299db9ec823/net2-0.2.37/src/ext.rs /home/ytakasugi/.cargo/registry/src/github.com-1ecc6299db9ec823/net2-0.2.37/src/utils.rs /home/ytakasugi/.cargo/registry/src/github.com-1ecc6299db9ec823/net2-0.2.37/src/sys/unix/mod.rs /home/ytakasugi/.cargo/registry/src/github.com-1ecc6299db9ec823/net2-0.2.37/src/sys/unix/impls.rs /home/ytakasugi/.cargo/registry/src/github.com-1ecc6299db9ec823/net2-0.2.37/src/unix.rs
+
+/home/ytakasugi/.cargo/registry/src/github.com-1ecc6299db9ec823/net2-0.2.37/src/lib.rs:
+/home/ytakasugi/.cargo/registry/src/github.com-1ecc6299db9ec823/net2-0.2.37/src/tcp.rs:
+/home/ytakasugi/.cargo/registry/src/github.com-1ecc6299db9ec823/net2-0.2.37/src/udp.rs:
+/home/ytakasugi/.cargo/registry/src/github.com-1ecc6299db9ec823/net2-0.2.37/src/socket.rs:
+/home/ytakasugi/.cargo/registry/src/github.com-1ecc6299db9ec823/net2-0.2.37/src/ext.rs:
+/home/ytakasugi/.cargo/registry/src/github.com-1ecc6299db9ec823/net2-0.2.37/src/utils.rs:
+/home/ytakasugi/.cargo/registry/src/github.com-1ecc6299db9ec823/net2-0.2.37/src/sys/unix/mod.rs:
+/home/ytakasugi/.cargo/registry/src/github.com-1ecc6299db9ec823/net2-0.2.37/src/sys/unix/impls.rs:
+/home/ytakasugi/.cargo/registry/src/github.com-1ecc6299db9ec823/net2-0.2.37/src/unix.rs:
