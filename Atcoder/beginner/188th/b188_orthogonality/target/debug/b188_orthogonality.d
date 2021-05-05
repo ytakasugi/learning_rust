@@ -1,1 +1,0 @@
-/home/ytakasugi/000_learning/workspace/Rust_workspace/Atcoder/beginner/188th/b188_orthogonality/target/debug/b188_orthogonality: /home/ytakasugi/000_learning/workspace/Rust_workspace/Atcoder/beginner/188th/b188_orthogonality/src/main.rs

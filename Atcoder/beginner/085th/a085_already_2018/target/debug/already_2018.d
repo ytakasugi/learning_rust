@@ -1,1 +1,0 @@
-/home/ytakasugi/000_learning/workspace/Rust_workspace/Atcoder/beginner/085th/already_2018/target/debug/already_2018: /home/ytakasugi/000_learning/workspace/Rust_workspace/Atcoder/beginner/085th/already_2018/src/main.rs

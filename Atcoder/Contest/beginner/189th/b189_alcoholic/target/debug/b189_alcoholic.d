@@ -1,1 +1,0 @@
-/home/ytakasugi/000_learning/workspace/Rust_workspace/Atcoder/Contest/beginner/b189_alcoholic/target/debug/b189_alcoholic: /home/ytakasugi/000_learning/workspace/Rust_workspace/Atcoder/Contest/beginner/b189_alcoholic/src/main.rs

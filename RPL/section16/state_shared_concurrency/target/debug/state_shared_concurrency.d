@@ -1,1 +1,0 @@
-/home/ytakasugi/000_learning/workspace/Rust_workspace/RPL/section16/state_shared_concurrency/target/debug/state_shared_concurrency: /home/ytakasugi/000_learning/workspace/Rust_workspace/RPL/section16/state_shared_concurrency/src/main.rs

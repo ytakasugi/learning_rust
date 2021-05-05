@@ -1,1 +1,0 @@
-/home/ytakasugi/000_learning/workspace/Rust_workspace/rust_basics/basic/chapter03/forcia/basic_box/target/debug/basic_box: /home/ytakasugi/000_learning/workspace/Rust_workspace/rust_basics/basic/chapter03/forcia/basic_box/src/main.rs

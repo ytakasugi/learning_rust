@@ -1,1 +1,0 @@
-/home/ytakasugi/000_learning/workspace/Rust_workspace/Atcoder/beginner/188th/c188_tournament/target/debug/c188_tournament: /home/ytakasugi/000_learning/workspace/Rust_workspace/Atcoder/beginner/188th/c188_tournament/src/main.rs

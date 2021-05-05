@@ -1,1 +1,0 @@
-/home/ytakasugi/000_learning/workspace/Rust_workspace/RPL/section20/multi_thread_server/target/debug/libmulti_thread_server.rlib: /home/ytakasugi/000_learning/workspace/Rust_workspace/RPL/section20/multi_thread_server/src/lib.rs

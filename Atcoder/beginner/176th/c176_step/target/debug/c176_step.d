@@ -1,1 +1,0 @@
-/home/ytakasugi/000_learning/workspace/Rust_workspace/Atcoder/beginner/176th/c176_step/target/debug/c176_step: /home/ytakasugi/000_learning/workspace/Rust_workspace/Atcoder/beginner/176th/c176_step/src/main.rs

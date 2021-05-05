@@ -1,1 +1,0 @@
-/home/ytakasugi/000_learning/workspace/Rust_workspace/RPL/section16/sharing_mutex/target/debug/sharing_mutex: /home/ytakasugi/000_learning/workspace/Rust_workspace/RPL/section16/sharing_mutex/src/main.rs

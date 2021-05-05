@@ -1,1 +1,0 @@
-/home/ytakasugi/000_learning/workspace/Rust_workspace/Atcoder/beginner/088th/a088_infinite_coins/target/debug/a088_infinite_coins: /home/ytakasugi/000_learning/workspace/Rust_workspace/Atcoder/beginner/088th/a088_infinite_coins/src/main.rs

@@ -1,1 +1,0 @@
-/home/ytakasugi/000_learning/workspace/Rust_workspace/Atcoder/beginner/081th/b081_shift_only/target/debug/atcoder081b_shift_only: /home/ytakasugi/000_learning/workspace/Rust_workspace/Atcoder/beginner/081th/b081_shift_only/src/main.rs

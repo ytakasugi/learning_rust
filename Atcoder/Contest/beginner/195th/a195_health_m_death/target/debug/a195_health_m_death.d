@@ -1,1 +1,0 @@
-/home/ytakasugi/000_learning/workspace/Rust_workspace/Atcoder/Contest/beginner/195th/a195_health_m_death/target/debug/a195_health_m_death: /home/ytakasugi/000_learning/workspace/Rust_workspace/Atcoder/Contest/beginner/195th/a195_health_m_death/src/main.rs

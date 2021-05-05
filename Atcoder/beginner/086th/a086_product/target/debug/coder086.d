@@ -1,1 +1,0 @@
-/home/ytakasugi/000_learning/workspace/Rust_workspace/Atcoder/biginner/coder086_product/target/debug/coder086: /home/ytakasugi/000_learning/workspace/Rust_workspace/Atcoder/biginner/coder086_product/src/main.rs

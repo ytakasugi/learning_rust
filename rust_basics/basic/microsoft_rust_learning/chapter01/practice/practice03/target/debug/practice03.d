@@ -1,1 +1,0 @@
-/home/ytakasugi/000_learning/workspace/Rust_workspace/rust_basics/basic/microsoft_rust_learning/chapter01/practice/practice03/target/debug/practice03: /home/ytakasugi/000_learning/workspace/Rust_workspace/rust_basics/basic/microsoft_rust_learning/chapter01/practice/practice03/src/main.rs

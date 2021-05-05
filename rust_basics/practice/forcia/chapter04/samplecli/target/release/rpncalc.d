@@ -1,1 +1,0 @@
-C:\Users\sigur\Documents\900_github\000_lerning\Rust_workspace\rust_basics\practice\chapter04\samplecli\target\release\rpncalc.exe: C:\Users\sigur\Documents\900_github\000_lerning\Rust_workspace\rust_basics\practice\chapter04\samplecli\src\main.rs

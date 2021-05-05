@@ -1,1 +1,0 @@
-/home/ytakasugi/000_learning/workspace/Rust_workspace/Atcoder/beginner/188th/a188_three_point_shot/target/debug/a188_three_point_shot: /home/ytakasugi/000_learning/workspace/Rust_workspace/Atcoder/beginner/188th/a188_three_point_shot/src/main.rs

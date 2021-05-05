@@ -1,1 +1,0 @@
-/home/ytakasugi/000_learning/workspace/Rust_workspace/Atcoder/Contest/beginner/a189_slotmachine/target/debug/a189_slotmachine: /home/ytakasugi/000_learning/workspace/Rust_workspace/Atcoder/Contest/beginner/a189_slotmachine/src/main.rs

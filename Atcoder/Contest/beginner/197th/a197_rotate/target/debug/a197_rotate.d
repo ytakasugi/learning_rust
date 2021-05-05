@@ -1,1 +1,0 @@
-/home/ytakasugi/000_learning/workspace/Rust_workspace/Atcoder/Contest/beginner/197th/a197_rotate/target/debug/a197_rotate: /home/ytakasugi/000_learning/workspace/Rust_workspace/Atcoder/Contest/beginner/197th/a197_rotate/src/main.rs

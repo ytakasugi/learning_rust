@@ -1,1 +1,0 @@
-/home/ytakasugi/000_learning/workspace/Rust_workspace/introduction/section09/intro_0902/closures/target/debug/closures: /home/ytakasugi/000_learning/workspace/Rust_workspace/introduction/section09/intro_0902/closures/src/main.rs

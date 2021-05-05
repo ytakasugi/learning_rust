@@ -1,1 +1,0 @@
-C:\Users\sigur\Documents\900_github\000_lerning\Rust_workspace\introduction\intro_loop\target\debug\intro_loop.exe: C:\Users\sigur\Documents\900_github\000_lerning\Rust_workspace\introduction\intro_loop\src\main.rs

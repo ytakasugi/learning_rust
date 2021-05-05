@@ -1,1 +1,0 @@
-/home/ytakasugi/000_learning/workspace/Rust_workspace/rust_basics/basic/chapter05/chapter0504/target/debug/chapter0504: /home/ytakasugi/000_learning/workspace/Rust_workspace/rust_basics/basic/chapter05/chapter0504/src/main.rs

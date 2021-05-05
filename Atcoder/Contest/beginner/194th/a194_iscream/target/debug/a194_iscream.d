@@ -1,1 +1,0 @@
-/home/ytakasugi/000_learning/workspace/Rust_workspace/Atcoder/Contest/beginner/194th/a194_iscream/target/debug/a194_iscream: /home/ytakasugi/000_learning/workspace/Rust_workspace/Atcoder/Contest/beginner/194th/a194_iscream/src/main.rs

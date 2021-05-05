@@ -1,1 +1,0 @@
-/home/ytakasugi/000_learning/workspace/Rust_workspace/Atcoder/beginner/180th/b180_various_distances/target/debug/b180_various_distances: /home/ytakasugi/000_learning/workspace/Rust_workspace/Atcoder/beginner/180th/b180_various_distances/src/main.rs

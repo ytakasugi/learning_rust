@@ -1,1 +1,0 @@
-/home/ytakasugi/000_learning/workspace/Rust_workspace/rust_basics/basic/basic_learning/function/target/debug/function: /home/ytakasugi/000_learning/workspace/Rust_workspace/rust_basics/basic/basic_learning/function/src/main.rs

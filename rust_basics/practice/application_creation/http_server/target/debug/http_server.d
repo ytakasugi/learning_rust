@@ -1,1 +1,0 @@
-/home/ytakasugi/000_learning/workspace/Rust_workspace/rust_basics/practice/application_creation/http_server/target/debug/http_server: /home/ytakasugi/000_learning/workspace/Rust_workspace/rust_basics/practice/application_creation/http_server/src/main.rs /home/ytakasugi/000_learning/workspace/Rust_workspace/rust_basics/practice/application_creation/http_server/src/parser.rs

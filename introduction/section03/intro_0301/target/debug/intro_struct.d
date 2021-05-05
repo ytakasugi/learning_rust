@@ -1,1 +1,0 @@
-/home/ytakasugi/000_learning/workspace/Rust_workspace/introduction/section03/intro_0301/target/debug/intro_struct: /home/ytakasugi/000_learning/workspace/Rust_workspace/introduction/section03/intro_0301/src/main.rs

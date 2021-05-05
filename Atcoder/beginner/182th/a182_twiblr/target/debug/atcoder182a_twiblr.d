@@ -1,1 +1,0 @@
-/home/ytakasugi/000_learning/workspace/Rust_workspace/Atcoder/biginner/atcoder182a_twiblr/target/debug/atcoder182a_twiblr: /home/ytakasugi/000_learning/workspace/Rust_workspace/Atcoder/biginner/atcoder182a_twiblr/src/main.rs

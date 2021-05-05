@@ -1,1 +1,0 @@
-/home/ytakasugi/000_learning/workspace/Rust_workspace/Atcoder/Contest/beginner/199th/a199_square_lnequality/target/debug/a199_square_lnequality: /home/ytakasugi/000_learning/workspace/Rust_workspace/Atcoder/Contest/beginner/199th/a199_square_lnequality/src/main.rs

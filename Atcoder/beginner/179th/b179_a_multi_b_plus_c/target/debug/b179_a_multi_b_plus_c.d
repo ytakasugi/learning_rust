@@ -1,1 +1,0 @@
-/home/ytakasugi/000_learning/workspace/Rust_workspace/Atcoder/beginner/179th/b179_a_multi_b_plus_c/target/debug/b179_a_multi_b_plus_c: /home/ytakasugi/000_learning/workspace/Rust_workspace/Atcoder/beginner/179th/b179_a_multi_b_plus_c/src/main.rs

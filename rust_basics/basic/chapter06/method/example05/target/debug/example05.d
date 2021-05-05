@@ -1,1 +1,0 @@
-E:\000_GitHub\workspace\Rust_workspace\rust_basics\basic\chapter06\method\example05\target\debug\example05.exe: E:\000_GitHub\workspace\Rust_workspace\rust_basics\basic\chapter06\method\example05\src\main.rs
