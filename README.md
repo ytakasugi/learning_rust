@@ -55,7 +55,7 @@
 ### rust doc
 * [StandardLibrary](https://doc.rust-lang.org/stable/std/)
 * [Rust by Example](https://doc.rust-jp.rs/rust-by-example-ja/)
-* [The Rust Programming Language]()
+* [The Rust Programming Language](https://doc.rust-jp.rs/book-ja/)
 
 ### Reference site
 
