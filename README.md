@@ -84,3 +84,7 @@
 ### diesel
 
 * [diesel公式サイト](https://diesel.rs/guides/getting-started/)
+
+### other
+
+- [cargo-clean-recursive](https://crates.io/crates/cargo-clean-recursive)
