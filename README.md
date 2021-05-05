@@ -54,6 +54,8 @@
 
 ### rust doc
 * [StandardLibrary](https://doc.rust-lang.org/stable/std/)
+* [Rust by Example](https://doc.rust-jp.rs/rust-by-example-ja/)
+* [The Rust Programming Language]()
 
 ### Reference site
 
@@ -76,6 +78,8 @@
 * [Plotters Developer Guide](https://plotters-rs.github.io/book/intro/introduction.html)
 * [競プロ典型90問をRustで解く](https://dev.thanaism.com/tags/rust/)
 * [Rust における`From<T>`とか`Into<T>`とかの考え方](https://qiita.com/hadashiA/items/d0c34a4ba74564337d2f)
+* [Rustのライフタイムを理解する](https://qiita.com/lechatthecat/items/863198824bbb8c4ab1f4)
+* [Rustはこうやって勉強するといいんじゃないか、という一例](https://qiita.com/TakaakiFuruse/items/13e9ad9d1efe7e17811c)
 
 ### diesel
 
