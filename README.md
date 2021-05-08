@@ -53,7 +53,7 @@
 * [過去問精選 10 問](https://qiita.com/drken/items/fd4e5e363d0f5859067)
 
 ### rust doc
-* [StandardLibrary](https://doc.rust-lang.org/stable/std/)
+* [StandardLibrary](https://doc.rust-lang.org/std/)
 * [Rust by Example](https://doc.rust-jp.rs/rust-by-example-ja/)
 * [The Rust Programming Language](https://doc.rust-jp.rs/book-ja/)
 
