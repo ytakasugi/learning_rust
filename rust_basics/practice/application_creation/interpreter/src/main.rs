@@ -240,12 +240,14 @@ impl Parser {
             right,
         }));
     }
+
     fn is_peek(&self, token: &Token) -> bool {
         if self.peek.is_none() {
             return false;
         }
         mem::discriminant(self.peek.as_ref().unwrap()) == mem::discriminant(token)
     }
+    
     fn peek_precedence(&self) -> Precedence {
         let token = self.peek.borrow();
         if token.is_none() {
