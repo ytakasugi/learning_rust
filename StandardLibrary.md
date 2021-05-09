@@ -3664,6 +3664,24 @@ struct  Point {
 
 ---
 
+### slice::join
+
+- Description
+
+  `T`のスライスを単一の値`Self::Output`にフラット化し、それぞれの間に指定されたセパレータを配置します。
+
+- Example
+
+  ```rust
+  assert_eq!(["hello", "world"].join(" "), "hello world");
+  assert_eq!([[1, 2], [3, 4]].join(&0), [1, 2, 0, 3, 4]);
+  assert_eq!([[1, 2], [3, 4]].join(&[0, 0][..]), [1, 2, 0, 0, 3, 4]);
+  ```
+
+  
+
+---
+
 ### std::vec::Vec::dedup
 
 - Description
