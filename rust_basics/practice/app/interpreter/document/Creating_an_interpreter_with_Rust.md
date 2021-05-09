@@ -77,7 +77,7 @@
 * まずは字句解析器が出力する字句を `Token` 列挙体として定義します。
 * 今回は単純な四則演算だけできればいいので字句としては `数字`, `+`, `-`, `*`, `/`, `(`, `)` に相当するものを定義します。
 
-```rs
+```rust
 #[derive(Debug, PartialEq, Clone)]
 enum Token {
     Number(f64), // 数字
@@ -99,7 +99,7 @@ enum Token {
 * `+`, `-` などの演算子のようにひとつの文字にひとつの字句が対応する場合には変換は単純です。
 * `10`, `2.5` などの数字の場合はひとつ以上の文字にひとつの字句が対応するので少し複雑になります。文字の長さは決まっていないので、現在解析中の文字の次の文字が数字であるかどうかを確認し、数字であれば字句として取り込むという流れになります。
 
-```rs
+```rust
 struct Lexer {
     // 入力された文字列
     input: Vec<char>,
@@ -170,7 +170,7 @@ impl Lexer {
 
 * 実行方法の確認程度に極々簡単にテストを実装します。
 
-```rs
+```rust
 #[test]
 fn test_lexer() {
     let mut lexer = Lexer::new("1 + 2".chars().collect());
@@ -192,7 +192,7 @@ fn test_lexer() {
 * 今回実装するインタプリタはひとつの計算式を受け取ってすぐに計算して結果を出力するというものにするので、式と数字だけ定義します。
 * 式には、式の前に演算子のある `前置演算子式` と、式と式の間に演算子のある `中置演算子式` があります。
 
-```rs
+```rust
 enum Expr {
     // 数字
     Number(f64),
@@ -298,7 +298,7 @@ InfixExpr {
 * 構文解析器は構造体 `Parser` として定義します。
 * Parser は初期化時に Lexer を受け取り、Lexer の出力する字句を先頭から順に解析して構文木を作成します。
 
-```rs
+```rust
 struct Parser {
     // 字句解析器
     lexer: Lexer,
@@ -331,7 +331,7 @@ impl Parser {
 * 数字の解析は `Token::Number` を `Expr::Number` に変換するだけの単純なものです。
 * 前置演算子式の解析は、葉の位置の字句が `Token::Minus` である場合に行われます。前置演算子式の解析では "-" を演算子とし、右辺を `Parser::parse_expression` で解析します。Parser::parse_expression の詳細は後で解説しますが、ここでは前置演算子式の右辺には任意の式が当てはまるとだけ理解すれば大丈夫です。
 
-```rs
+```rust
 impl Parser {
     // 構文木の葉の要素の解析
     fn parse_prefix(&mut self) -> Option<Box<Expr>> {
@@ -367,7 +367,7 @@ impl Parser {
 * 優先度は `Precedence` 列挙体として定義します。優先度の比較を行うため `#[derive(PartialOrd, PartialEq)]` を指定します。
 * 構文解析器では `Parser::token_precedence` 関数で演算子の字句から優先度を導き出して演算子同士の優先度の比較を行います。
 
-```rs
+```rust
 #[derive(PartialOrd, PartialEq)]
 enum Precedence {
     // 最低
@@ -396,7 +396,7 @@ impl Parser {
 * 中置演算子式を含むすべての式の解析は `Parser::parse` 関数で行います。
 * まずは必要になるコードをすべて記載し、あとからひとつづつ解説していきます。
 
-```rs
+```rust
 impl Parser {
     fn parse(&mut self) -> Option<Box<Expr>> {
         self.parse_expression(Precedence::LOWEST)
@@ -455,7 +455,7 @@ impl Parser {
 * parse_expression はまず、先頭の字句を構文木の葉の要素とみなして `parser_prefix` 関数で解析し左辺とします。
 * そのあとに、次の字句を演算子とみなして先読みします。この演算子の優先度が「解析の基準となる優先度」よりも大きい場合、`parse_infix` 関数で中置演算子式として解析を行います。
 
-```rs
+```rust
     fn parse_expression(&mut self, precedence: Precedence) -> Option<Box<Expr>> {
         // (1). 葉の要素の解析
         let mut left = self.parse_prefix()?;
@@ -474,7 +474,7 @@ impl Parser {
 * 中置演算子式の解析は演算子の優先度が「解析の基準となる優先度」よりも大きい限り繰り返し実行されます。
 * `parse` で行っているように「解析の基準となる優先度」に `Precedence::LOWEST` という最低の優先度を指定すると、常に字句側の演算子の優先度が高くなるため、すべての字句の解析を行うことができます。
 
-```rs
+```rust
     fn parse(&mut self) -> Option<Box<Expr>> {
         self.parse_expression(Precedence::LOWEST)
     }
@@ -503,7 +503,7 @@ impl Parser {
 * **現在の演算子より次の演算子の優先度が小さいか同じ場合**、右辺の先頭の項だけが右辺の式として扱われます。
 * parse_infix_expression は左辺の式・演算子・右辺の式を使って中置演算子式を作成して返します
 
-```rs
+```rust
     fn parse_infix_expression(&mut self, left: Box<Expr>) -> Option<Box<Expr>> {
         let token = self.curr.as_ref()?;
         let operator = format!("{:?}", token);
@@ -733,7 +733,7 @@ impl Parser {
 * parse_expression が `)` に到達した際に処理を終わらせるのは parse_infix で `)` が中置演算子として定義されていないからです。
 * その後 parse_grouped_expression は `)` をスキップして葉の要素としてグループ化された式を返します。
 
-```rs
+```rust
     fn parse_prefix(&mut self) -> Option<Box<Expr>> {
         match self.curr.as_ref()? {
             Token::Minus => self.parse_minus(),
@@ -759,7 +759,7 @@ impl Parser {
 
 * 実行方法の確認程度に極々簡単にテストを実装します。
 
-```rs
+```rust
 #[test]
 fn test_parser() {
     do_parser(
@@ -783,7 +783,7 @@ fn do_parser(input: &str, expect: &str) {
 * `eval` 関数で構文木を実行します。
 * eval は構文木をパターンマッチで再帰的に評価して実行するための極単純な実装になります。
 
-```rs
+```rust
 fn eval(expr: &Expr) -> f64 {
     match expr {
         Expr::Number(n) => *n,
@@ -809,7 +809,7 @@ fn eval(expr: &Expr) -> f64 {
 
 * eval の実行はこのように行います。
 
-```rs
+```rust
 #[test]
 fn test_eval() {
     do_eval("1 + 2", 3_f64);
@@ -832,7 +832,7 @@ fn do_eval(input: &str, expect: f64) {
 * main 関数は無限ループで標準入力を待ち受けて、入力があったら文字列として字句解析し、構文解析し、実行するというものです。
 * `exit` と入力された場合はコマンドを終了するようになっています。
 
-```rs
+```rust
 fn main() {
     loop {
         print!(">> ");
