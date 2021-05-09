@@ -197,8 +197,11 @@ impl Parser {
 
     fn token_precedence(token: &Token) -> Precedence {
         match token {
+            // `Token::Plus` or `Token::Minus`のとき、`Precedence::SUM`
             Token::Plus | Token::Minus => Precedence::SUM,
+            // `Token::Slash` or `Token::Asterisk`のとき、`Precedence::PRODUCT`
             Token::Slash | Token::Asterisk => Precedence::PRODUCT,
+            // 上記に当てはまらない場合
             _ => Precedence::LOWEST,
         }
     }
@@ -207,17 +210,22 @@ impl Parser {
         self.parse_expression(Precedence::LOWEST)
     }
 
+    // すべての種類の式の解析
     fn parse_expression(&mut self, precedence: Precedence) -> Option<Box<Expr>> {
+        // (1). 葉の要素の解析
         let mut left = self.parse_prefix()?;
 
+        // (2). 優先度が大きければ中置演算子式の解析を繰り返す
         while self.peek.is_some() && precedence < self.peek_precedence() {
             self.next();
             left = self.parse_infix(left)?;
         }
 
+        // (3). 解析した式を返す
         return Some(left);
     }
 
+    // 中置演算子式の解析
     fn parse_infix(&mut self, left: Box<Expr>) -> Option<Box<Expr>> {
         let token = self.curr.as_ref()?;
         match token {
@@ -228,11 +236,14 @@ impl Parser {
         }
     }
 
+    // 中置演算子式の解析
+    // 引数で左辺の式を受け取る
     fn parse_infix_expression(&mut self, left: Box<Expr>) -> Option<Box<Expr>> {
         let token = self.curr.as_ref()?;
         let operator = format!("{:?}", token);
         let precedence = Self::token_precedence(token);
         self.next();
+        // `parse_expression`を実行して右辺の式を取得
         let right = self.parse_expression(precedence)?;
         return Some(Box::new(Expr::InfixExpr {
             left,

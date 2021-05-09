@@ -1028,7 +1028,28 @@ CopyトレイトとCloneトレイトの違いを以下に示す
   assert_eq!(None.and_then(sq).and_then(sq), None);
   ```
 
+
+
+
+---
+
+### std::option::Option::is_none
+
+- Description
+
+  オプションが`None`の場合は`true`を返します。
+
+- Example
+
+  ```rust
+  let x: Option<u32> = Some(2);
+  assert_eq!(x.is_none(), false);
   
+  let x: Option<u32> = None;
+  assert_eq!(x.is_none(), true);
+  ```
+
+
 
 ---
 
@@ -1258,6 +1279,38 @@ CopyトレイトとCloneトレイトの違いを以下に示す
 
   メモリを扱うための基本的な関数
   型のサイズや配列の問い合わせ、メモリの初期化や操作を行うための関数が含まれています。
+
+
+
+---
+
+### std::mem::discriminant
+
+- Description
+
+  vのenum variantを一意に識別する値を返します。
+
+  `T`がenumでない場合、この関数を呼び出しても未定義の動作にはなりませんが、戻り値は不定です。
+
+- Stability
+
+  enumの定義が変更された場合、enumのvariantの判別式は変更される可能性があります。あるバリアントの判別式は、同じコンパイラでコンパイルしても変わりません。
+
+- Example
+
+  これは、実際のデータを無視して、データを運ぶenumを比較するために使用することができます。
+
+  ```rust
+  use std::mem;
+  
+  enum Foo { A(&'static str), B(i32), C(i32) }
+  
+  assert_eq!(mem::discriminant(&Foo::A("bar")), mem::discriminant(&Foo::A("baz")));
+  assert_eq!(mem::discriminant(&Foo::B(1)), mem::discriminant(&Foo::B(2)));
+  assert_ne!(mem::discriminant(&Foo::B(3)), mem::discriminant(&Foo::C(3)));
+  ```
+
+
 
 ---
 
