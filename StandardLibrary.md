@@ -2592,7 +2592,67 @@ struct  Point {
   assert_eq!(v, vec![5, 5, 5, 5, 5]);
   ```
 
+
+
+
+---
+
+### std::iter::repeat_with
+
+- Description
+
+  `A`型の要素を延々と繰り返す新しいイテレータを作成します。このイテレータは、提供されたクロージャであるリピーター、`F: FnMut() -> A`を適用することによって作成されます。
+
+  `repeat_with()`関数は、リピーターを何度も何度も呼び出します。
+
+  `repeat_with()`のような無限のイテレータは、有限にするために`Iterator::take() `のようなアダプタと一緒に使われることが多いです。
+
+  必要なイテレータの要素タイプが`Clone`を実装していて、ソース要素をメモリ内に保持しても問題ない場合は、代わりに`repeat()`関数を使用するべきです。
+
+  `repeat_with()`が生成するイテレータは[`DoubleEndedIterator`](https://doc.rust-lang.org/std/iter/trait.DoubleEndedIterator.html)ではありません。`repeat_with()`が`DoubleEndedIterator`を返すようにしたい場合は、GitHub の issue を開いてその使用例を説明してください。
+
+- Example
+
+  Basic usage:
+
+  ```rust
+  use std::iter;
   
+  // let's assume we have some value of a type that is not `Clone`
+  // or which don't want to have in memory just yet because it is expensive:
+  #[derive(PartialEq, Debug)]
+  struct Expensive;
+  
+  // a particular value forever:
+  let mut things = iter::repeat_with(|| Expensive);
+  
+  assert_eq!(Some(Expensive), things.next());
+  assert_eq!(Some(Expensive), things.next());
+  assert_eq!(Some(Expensive), things.next());
+  assert_eq!(Some(Expensive), things.next());
+  assert_eq!(Some(Expensive), things.next());
+  ```
+
+  Using mutation and going finite:
+
+  ```rust
+  use std::iter;
+  
+  // From the zeroth to the third power of two:
+  let mut curr = 1;
+  let mut pow2 = iter::repeat_with(|| { let tmp = curr; curr *= 2; tmp })
+                      .take(4);
+  
+  assert_eq!(Some(1), pow2.next());
+  assert_eq!(Some(2), pow2.next());
+  assert_eq!(Some(4), pow2.next());
+  assert_eq!(Some(8), pow2.next());
+  
+  // ... and now we're done
+  assert_eq!(None, pow2.next());
+  ```
+
+
 
 ---
 
@@ -3714,7 +3774,36 @@ struct  Point {
 
   返されたベクタは指定された容量を持っていますが、ベクタの長さはゼロになることに注意することが重要です。長さと容量の違いについての説明は、容量と再割り当てを参照してください。
 
+
+
+---
+
+### std::vec::Vec::into_boxed_slice
+
+- Description
+
+  Vectorを`Box<[T]>`に変換します。
+
+  これにより、余った容量がなくなることに注意してください。
+
+- Example
+
+  ```rust
+  let v = vec![1, 2, 3];
   
+  let slice = v.into_boxed_slice();
+  ```
+
+  Any excess capacity is removed:
+
+  ```rust
+  let mut vec = Vec::with_capacity(10);
+  vec.extend([1, 2, 3].iter().cloned());
+  
+  assert_eq!(vec.capacity(), 10);
+  let slice = vec.into_boxed_slice();
+  assert_eq!(slice.into_vec().capacity(), 3);
+  ```
 
   
 
