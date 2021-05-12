@@ -1314,6 +1314,66 @@ CopyトレイトとCloneトレイトの違いを以下に示す
 
 ---
 
+### std::mem::replace
+
+- Description
+
+  `src`を参照されている`dest`に移動させ、前の`dest`の値を返します。
+
+  どちらの値も破棄しません。
+
+  - 2つの変数の値を入れ替えたい場合は、[`swap`](https://doc.rust-lang.org/std/mem/fn.swap.html)を参照してください。
+  - デフォルト値に置き換えたい場合は、[`take`](https://doc.rust-lang.org/std/mem/fn.take.html)をご覧ください。
+
+- Example
+
+  ```rust
+  use std::mem;
+  
+  let mut v: Vec<i32> = vec![1, 2];
+  
+  let old_v = mem::replace(&mut v, vec![3, 4, 5]);
+  assert_eq!(vec![1, 2], old_v);
+  assert_eq!(vec![3, 4, 5], v);
+  ```
+
+  `replace`は、構造体のフィールドを別の値に置き換えて消費することができます。置換を行わないと、以下のような問題が発生します。
+
+  ```rust
+  struct Buffer<T> { buf: Vec<T> }
+  
+  impl<T> Buffer<T> {
+      fn replace_index(&mut self, i: usize, v: T) -> T {
+          // error: cannot move out of dereference of `&mut`-pointer
+          let t = self.buf[i];
+          self.buf[i] = v;
+          t
+      }
+  }
+  ```
+
+  `T`は必ずしも`Clone`を実装しているわけではないので、ムーブを避けるために`self.buf[i]`を`clone`することもできないことに注意してください。しかし、`replace`を使えば、そのインデックスにある元の値を`self`から切り離し、それを返すことができます。
+
+  ```rust
+  use std::mem;
+  
+  impl<T> Buffer<T> {
+      fn replace_index(&mut self, i: usize, v: T) -> T {
+          mem::replace(&mut self.buf[i], v)
+      }
+  }
+  
+  let mut buffer = Buffer { buf: vec![0, 1] };
+  assert_eq!(buffer.buf[0], 0);
+  
+  assert_eq!(buffer.replace_index(0, 2), 0);
+  assert_eq!(buffer.buf[0], 2);
+  ```
+
+  
+
+---
+
 ### std::io::BufReader<R>
 
   - Description
@@ -2936,7 +2996,30 @@ struct  Point {
 
   返されるイテレータは、ペア`(i, val)`を返します。
 
-  `enumerate()`は、そのカウントを usize として保持します。異なるサイズの整数でカウントしたい場合は、`zip`関数も同様の機能を提供します。
+  `enumerate()`は、そのカウントを`usize`として保持します。異なるサイズの整数でカウントしたい場合は、`zip`関数も同様の機能を提供します。
+  
+- Over Behavior
+
+  このメソッドはオーバーフローに対するガードをしていないので、`usize::MAX`を超える要素を列挙すると、間違った結果になるか、パニックになります。デバッグアサーションが有効な場合は、パニックが保証されます。
+
+- Panics
+
+  返されたイテレータは、返されるべきインデックスが`usize`をオーバーフローするとパニックになるかもしれません。
+
+- Example
+
+  ```rust
+  let a = ['a', 'b', 'c'];
+  
+  let mut iter = a.iter().enumerate();
+  
+  assert_eq!(iter.next(), Some((0, &'a')));
+  assert_eq!(iter.next(), Some((1, &'b')));
+  assert_eq!(iter.next(), Some((2, &'c')));
+  assert_eq!(iter.next(), None);
+  ```
+
+  
 
 ---
 
@@ -3738,7 +3821,30 @@ struct  Point {
   assert_eq!([[1, 2], [3, 4]].join(&[0, 0][..]), [1, 2, 0, 0, 3, 4]);
   ```
 
+
+
+
+---
+
+### self::into_vec
+
+- Description
+
+  クローンやアロケーションを使わずに`self`を`vector`に変換します。
+
+  変換されたベクトルは、`Vec<T>`の`into_boxed_slice`メソッドによって、再び`Box<T>`に変換することができます。
+
+- Example
+
+  ```rust
+  let s: Box<[i32]> = Box::new([10, 40, 30]);
+  let x = s.into_vec();
+  // `s` cannot be used anymore because it has been converted into `x`.
   
+  assert_eq!(x, vec![10, 40, 30]);
+  ```
+
+
 
 ---
 
