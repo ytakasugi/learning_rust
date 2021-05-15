@@ -1053,6 +1053,25 @@ CopyトレイトとCloneトレイトの違いを以下に示す
 
 ---
 
+### std::option::Option::unwrap_or
+
+- Description
+
+  含まれる`Some`値または提供されたデフォルト値を返します。
+
+  `unwrap_or`に渡された引数は、熱心に評価されます。関数呼び出しの結果を渡している場合は、緩やかに評価される`unwrap_or_else`を使用することをお勧めします。
+
+- Example
+
+  ```rust
+  assert_eq!(Some("car").unwrap_or("bike"), "car");
+  assert_eq!(None.unwrap_or("bike"), "bike");
+  ```
+
+
+
+---
+
 ### std::convert::Into
 
 - Description
