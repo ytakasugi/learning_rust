@@ -54,8 +54,11 @@
 
 ### rust doc
 * [StandardLibrary](https://doc.rust-lang.org/std/)
+* [async_std](https://docs.rs/async-std/1.9.0/async_std/)
 * [Rust by Example](https://doc.rust-jp.rs/rust-by-example-ja/)
 * [The Rust Programming Language](https://doc.rust-jp.rs/book-ja/)
+* [rust-lang-ja](https://github.com/rust-lang-ja)
+* [the-rust-programming-language-ja](https://github.com/rust-lang-ja/the-rust-programming-language-ja)
 
 ### Reference site
 
@@ -64,7 +67,6 @@
 * [Tokio(JP)](https://zenn.dev/magurotuna/books/tokio-tutorial-ja)
 * [Rust入門](https://zenn.dev/mebiusbox/books/22d4c1ed9b0003/viewer/6d5875)
 * [Rustではじめるレイトレーシング入門](https://github.com/mebiusbox/docs/blob/master/Rust%E3%81%A7%E3%81%AF%E3%81%98%E3%82%81%E3%82%8B%E3%83%AC%E3%82%A4%E3%83%88%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%B3%E3%82%B0%E5%85%A5%E9%96%80.pdf)
-* [async_std](https://docs.rs/async-std/1.9.0/async_std/)
 * [とほほのWWW入門](http://www.tohoho-web.com/ex/rust.html)
 * [`impl Trait`について](https://qnighy.hatenablog.com/entry/2018/01/28/220000)
 * [本家Rustコンパイラのソースを読もうとしてみる（1）](https://qiita.com/0yoyoyo/items/eba97a019d0e60324263)
@@ -82,6 +84,8 @@
 * [Rustはこうやって勉強するといいんじゃないか、という一例](https://qiita.com/TakaakiFuruse/items/13e9ad9d1efe7e17811c)
 * [Rustでつくるインタプリタ](https://qiita.com/nirasan/items/f7a232af3372ea370f4b)
 * [構造体フィールドの所有権の部分借用/移動を理解する](https://qiita.com/yosqueoy/items/453e9aa85bf394388b86)
+* [Rust のポリモルフィズムとトレイトオブジェクト](http://sharply.hatenablog.com/entry/2020/04/19/001236)
+* [RustのSizedとfatポインタ](https://qnighy.hatenablog.com/entry/2017/03/04/131311)
 
 ### diesel
 
