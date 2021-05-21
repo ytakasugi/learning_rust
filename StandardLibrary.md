@@ -3238,6 +3238,31 @@ struct  Point {
 
   この構造体は、`[Vec]`の`into_iter`メソッドによって作成されます（`[IntoIterator] trait`によって提供されます）。
   
+
+---
+
+### std::iter::Iterator::cloned
+
+- Description
+
+  すべての要素のクローンを作成するイテレータを作成します。
+
+  これは、`&T`に対するイテレータを持っていて、`T`に対するイテレータが必要な場合に便利です。
+
+- Example
+
+  ```rust
+  let a = [1, 2, 3];
+  
+  let v_cloned: Vec<_> = a.iter().cloned().collect();
+  
+  // cloned is the same as .map(|&x| x), for integers
+  let v_map: Vec<_> = a.iter().map(|&x| x).collect();
+  
+  assert_eq!(v_cloned, vec![1, 2, 3]);
+  assert_eq!(v_map, vec![1, 2, 3]);
+  ```
+
   
 
 ---
@@ -5273,7 +5298,7 @@ struct  Point {
 
     スレッドセーフな参照カウントポインタ。`Arc`は`Atomically Reference Counted`の略。
 
-    `Arc<T>`型は、ヒープに割り当てられた`T`型の値の共有所有権を提供する。`Arc`上で`clone`を実行すると、参照カウントを増加させながら、ソース`Arc`と同じヒープ上の割り当てを指す新しい`Arc`インスタンスが生成される。与えられたアロケーションへの最後の Arc ポインタが破棄されると、そのアロケーションに格納されている値 (多くの場合、「内部値」と呼ばれます) も削除されます。
+    `Arc<T>`型は、ヒープに割り当てられた`T`型の値の共有所有権を提供する。`Arc`上で`clone`を実行すると、参照カウントを増加させながら、ソース`Arc`と同じヒープ上の割り当てを指す新しい`Arc`インスタンスが生成される。与えられたアロケーションへの最後の`Arc`ポインタが破棄されると、そのアロケーションに格納されている値 (多くの場合、「内部値」と呼ばれます) も削除されます。
 
     Rust の共有参照はデフォルトで突然変異を禁止しており、`Arc`も例外ではありません。`Arc`を通してミューテーションを行う必要がある場合は、`Mutex`、`RwLock`、または`Atomic`型のいずれかを使用してください。
 
@@ -5300,7 +5325,7 @@ struct  Point {
     ~~~
 
     - Deref behavior
-      `Arc<T>`は自動的に (Deref trait を介して) `T`に派生するので、`Arc<T>`型の値に対して`T`のメソッドを呼び出すことができる。`T`のメソッドとの名前の衝突を避けるため、`Arc<T>`のメソッドは関連する関数であり、完全修飾構文を用いて呼び出される。
+      `Arc<T>`は自動的に (`Deref`トレイトを介して) `T`に派生するので、`Arc<T>`型の値に対して`T`のメソッドを呼び出すことができる。`T`のメソッドとの名前の衝突を避けるため、`Arc<T>`のメソッドは関連する関数であり、完全修飾構文を用いて呼び出される。
 
     ~~~rust
     use std::sync::Arc;
@@ -5325,7 +5350,47 @@ struct  Point {
 
 ---
 
-### std::sync::RowLock
+### std::sync::Arc::new
+
+- Description
+
+  新しい`Arc<T>`を構築します。]
+
+- Example
+
+  ```rust
+  use std::sync::Arc;
+  
+  let five = Arc::new(5);
+  ```
+
+
+
+---
+
+### std::sync::Arc::clone
+
+- Description
+
+  `Arc`ポインタのクローンを作成します。
+
+  これにより、同じアロケーションへの別のポインタが作成され、強い参照カウントが増加します。
+
+- Example
+
+  ```rust
+  use std::sync::Arc;
+  
+  let five = Arc::new(5);
+  
+  let _ = Arc::clone(&five);
+  ```
+
+
+
+---
+
+### std::sync::RwLock
 
 - Description
 
@@ -5366,7 +5431,101 @@ struct  Point {
   } // write lock is dropped here
   ```
 
+
+
+
+---
+
+### std::sync::RwLock::new
+
+- Description
+
+  ロックが解除された`RwLock<T>`の新しいインスタンスを作成します。
+
+- Example
+
+  ```rust
+  use std::sync::RwLock;
   
+  let lock = RwLock::new(5);
+  ```
+
+
+
+---
+
+### std::sync::RwLock::read
+
+- Description
+
+  `rwlock`を共有の読み取りアクセスでロックし、それを取得できるまで現在のスレッドをブロックします。
+
+  呼び出したスレッドは、ロックを保持するライターが無くなるまでブロックされます。このメソッドが戻るときには、現在ロックの内側に他のリーダーがいるかもしれません。このメソッドは、競合するリーダとライタのどちらが先にロックを取得するかという順序に関して、いかなる保証も行いません。
+
+  このスレッドの共有アクセスが削除されると、それを解放する`RAII`ガードを返します。
+
+- Errors
+
+  この関数は、`RwLock`がポイズンされた場合、エラーを返します。`RwLock`は、排他的ロックを保持している間にライターがパニックを起こすと、ポイズンされます。ロックを取得した直後に障害が発生します。
+
+- Panics
+
+  この関数は、ロックがすでに現在のスレッドによって保持されている場合、呼び出されるとパニックになることがあります。
+
+- Example
+
+  ```rust
+  use std::sync::{Arc, RwLock};
+  use std::thread;
+  
+  let lock = Arc::new(RwLock::new(1));
+  let c_lock = Arc::clone(&lock);
+  
+  let n = lock.read().unwrap();
+  assert_eq!(*n, 1);
+  
+  thread::spawn(move || {
+      let r = c_lock.read();
+      assert!(r.is_ok());
+  }).join().unwrap();
+  ```
+
+
+
+---
+
+### std::sync::RwLock::write
+
+- Description
+
+  `rwlock`を排他的な書き込みアクセスでロックし、それが取得できるまで現在のスレッドをブロックします。
+
+  この関数は、他のライターまたは他のリーダーが現在ロックにアクセスしている間は戻りません。
+
+  ドロップされたときにこの`rwlock`の書き込みアクセスをドロップする`RAII`ガードを返します。
+
+- Errors
+
+  この関数は、`RwLock`がポイズンされた場合、エラーを返します。`RwLock`は、ライターが排他的ロックを保持している間にパニックになると、ポイズンされます。ロックを取得するとエラーが返されます。
+
+- Panics
+
+  この関数は、ロックがすでに現在のスレッドによって保持されている場合、呼び出されるとパニックになることがあります。
+
+- Example
+
+  ```rust
+  use std::sync::RwLock;
+  
+  let lock = RwLock::new(1);
+  
+  let mut n = lock.write().unwrap();
+  *n = 2;
+  
+  assert!(lock.try_read().is_err());
+  ```
+
+
 
 ---
 
@@ -5811,103 +5970,6 @@ struct  Point {
 
   詳細は、モジュールレベルの[ドキュメント](https://doc.rust-lang.org/stable/std/cell/index.html)をご覧ください。
 
----
-
-### std::net::TcpListener
-
-- Description
-
-  TCP ソケットサーバで、接続をリッスンします。
-
-  ソケットアドレスにバインドしてTcpListenerを作成した後、着信TCP接続をリッスンします。これらは accept を呼び出すか、incoming で返された Incoming イテレータを反復処理することで受け入れることができます。
-
-  値がドロップされるとソケットは閉じられます。
-
-  送信制御プロトコルはIETF RFC 793で規定されています。
-
-  - Example
-
-    ~~~rust
-    use std::net::{TcpListener, TcpStream};
-    
-    fn handle_client(stream: TcpStream) {
-        // ...
-    }
-    
-    fn main() -> std::io::Result<()> {
-        let listener = TcpListener::bind("127.0.0.1:80")?;
-    
-        // accept connections and process them serially
-        for stream in listener.incoming() {
-            handle_client(stream?);
-        }
-        Ok(())
-    }
-    ~~~
-
-    
-
-- Implementations
-
-  - bind
-
-    指定されたアドレスにバインドされる新しいTcpListenerを作成します。
-
-    返されたリスナーは、接続を受け入れる準備ができています。
-
-    ポート番号0でバインドすると、OSがこのリスナーにポートを割り当てるように要求します。割り当てられたポートは、`TcpListener::local_addr`メソッドで問い合わせることができます。
-
-    アドレス型は`ToSocketAddrs`トレイトの任意の実装を指定することができます。具体的な例については、そのドキュメントを参照してください。
-
-    `addr`が複数のアドレスを生成した場合、1つのアドレスが成功してリスナーを返すまで、それぞれのアドレスでバインドが試みられます。どのアドレスもリスナーの作成に成功しなかった場合、最後の試行 (最後のアドレス) から返されるエラーが返されます。
-
-    
-
-    - Example
-
-      127.0.0.0.1:80 にバインドされた TCP リスナーを作成します。
-
-      ~~~rust
-      use std::net::TcpListener;
-      
-      let listener = TcpListener::bind("127.0.0.1:80").unwrap();
-      ~~~
-
-      127.0.0.0.1:80 にバインドされた TCP リスナーを作成します。失敗した場合は、127.0.0.0.1:443 にバインドされた TCP リスナーを作成します。
-
-      ~~~rust
-      use std::net::{SocketAddr, TcpListener};
-      
-      let addrs = [
-          SocketAddr::from(([127, 0, 0, 1], 80)),
-          SocketAddr::from(([127, 0, 0, 1], 443)),
-      ];
-      let listener = TcpListener::bind(&addrs[..]).unwrap();
-      ~~~
-
-  - incoming
-
-    このリスナーで受信している接続のイテレータを返します。
-
-    返されるイテレータは `None`を返すことはなく、相手の`SocketAddr`構造体も返しません。これを繰り返し処理することは、ループ内で`TcpListener::accept`を呼び出すことと同じです。
-
-    - Example
-
-      ~~~rust
-      use std::net::TcpListener;
-      
-      let listener = TcpListener::bind("127.0.0.1:80").unwrap();
-      
-      for stream in listener.incoming() {
-          match stream {
-              Ok(stream) => {
-                  println!("new client!");
-              }
-              Err(e) => { /* connection failed */ }
-          }
-      }
-      ~~~
-
 
 
 ---
@@ -6031,6 +6093,105 @@ struct  Point {
   
   assert!(c.try_borrow_mut().is_ok());
   ```
+
+
+
+---
+
+### std::net::TcpListener
+
+- Description
+
+  TCP ソケットサーバで、接続をリッスンします。
+
+  ソケットアドレスにバインドしてTcpListenerを作成した後、着信TCP接続をリッスンします。これらは accept を呼び出すか、incoming で返された Incoming イテレータを反復処理することで受け入れることができます。
+
+  値がドロップされるとソケットは閉じられます。
+
+  送信制御プロトコルはIETF RFC 793で規定されています。
+
+  - Example
+
+    ~~~rust
+    use std::net::{TcpListener, TcpStream};
+    
+    fn handle_client(stream: TcpStream) {
+        // ...
+    }
+    
+    fn main() -> std::io::Result<()> {
+        let listener = TcpListener::bind("127.0.0.1:80")?;
+    
+        // accept connections and process them serially
+        for stream in listener.incoming() {
+            handle_client(stream?);
+        }
+        Ok(())
+    }
+    ~~~
+
+    
+
+- Implementations
+
+  - bind
+
+    指定されたアドレスにバインドされる新しいTcpListenerを作成します。
+
+    返されたリスナーは、接続を受け入れる準備ができています。
+
+    ポート番号0でバインドすると、OSがこのリスナーにポートを割り当てるように要求します。割り当てられたポートは、`TcpListener::local_addr`メソッドで問い合わせることができます。
+
+    アドレス型は`ToSocketAddrs`トレイトの任意の実装を指定することができます。具体的な例については、そのドキュメントを参照してください。
+
+    `addr`が複数のアドレスを生成した場合、1つのアドレスが成功してリスナーを返すまで、それぞれのアドレスでバインドが試みられます。どのアドレスもリスナーの作成に成功しなかった場合、最後の試行 (最後のアドレス) から返されるエラーが返されます。
+
+    
+
+    - Example
+
+      127.0.0.0.1:80 にバインドされた TCP リスナーを作成します。
+
+      ~~~rust
+      use std::net::TcpListener;
+      
+      let listener = TcpListener::bind("127.0.0.1:80").unwrap();
+      ~~~
+
+      127.0.0.0.1:80 にバインドされた TCP リスナーを作成します。失敗した場合は、127.0.0.0.1:443 にバインドされた TCP リスナーを作成します。
+
+      ~~~rust
+      use std::net::{SocketAddr, TcpListener};
+      
+      let addrs = [
+          SocketAddr::from(([127, 0, 0, 1], 80)),
+          SocketAddr::from(([127, 0, 0, 1], 443)),
+      ];
+      let listener = TcpListener::bind(&addrs[..]).unwrap();
+      ~~~
+
+  - incoming
+
+    このリスナーで受信している接続のイテレータを返します。
+
+    返されるイテレータは `None`を返すことはなく、相手の`SocketAddr`構造体も返しません。これを繰り返し処理することは、ループ内で`TcpListener::accept`を呼び出すことと同じです。
+
+    - Example
+
+      ~~~rust
+      use std::net::TcpListener;
+      
+      let listener = TcpListener::bind("127.0.0.1:80").unwrap();
+      
+      for stream in listener.incoming() {
+          match stream {
+              Ok(stream) => {
+                  println!("new client!");
+              }
+              Err(e) => { /* connection failed */ }
+          }
+      }
+      ~~~
 
 
 
