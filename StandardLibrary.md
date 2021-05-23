@@ -569,6 +569,88 @@ CopyトレイトとCloneトレイトの違いを以下に示す
 
 ---
 
+### lazy_static
+
+- Description
+
+  遅延評価されるスタティックを宣言するためのマクロです。
+
+  このマクロを使用すると、初期化されるために実行時にコードを必要とするスタティックを持つことができます。これには、`Vec`や`HashMap`のようにヒープの割り当てを必要とするものや、計算される関数呼び出しを必要とするものが含まれます。
+
+- Syntax
+
+  ```rust
+  lazy_static! {
+      [pub] static ref NAME_1: TYPE_1 = EXPR_1;
+      [pub] static ref NAME_2: TYPE_2 = EXPR_2;
+      ...
+      [pub] static ref NAME_N: TYPE_N = EXPR_N;
+  }
+  ```
+
+  属性（`doc`コメントを含む）にも対応しています。
+
+  ```rust
+  lazy_static! {
+      /// This is an example for using doc comment attributes
+      static ref EXAMPLE: u8 = 42;
+  }
+  ```
+
+- Semantics
+
+  与えられた`static ref NAME: TYPE = EXPR;`の場合、マクロは、`Deref<TYPE>`を実装したユニークな型を生成し、`NAME`という名前の`static`に格納します。(属性は最終的にこの型に添付されます)。
+
+  最初の`Deref`で`EXPR`が評価されて内部に保存され、以降のすべての`Deref`で同じオブジェクトへの参照を返すことができます。これは、初期化でお互いに依存している複数の遅延スタティックがある場合、デッドロックにつながる可能性があることに注意してください。
+
+  遅延初期化を除けば、結果として得られる `static ref `変数は、通常の `static`変数と同じ性質を持っています。
+
+  - これらの変数に含まれるすべての型は`Sync`トレイトを満たす必要があります。
+  - 型がデストラクタを持っている場合は、プロセスが終了したときに実行されません。
+
+- Example
+
+  ```rust
+  #[macro_use]
+  extern crate lazy_static;
+  
+  use std::collections::HashMap;
+  
+  lazy_static! {
+      static ref HASHMAP: HashMap<u32, &'static str> = {
+          let mut m = HashMap::new();
+          m.insert(0, "foo");
+          m.insert(1, "bar");
+          m.insert(2, "baz");
+          m
+      };
+      static ref COUNT: usize = HASHMAP.len();
+      static ref NUMBER: u32 = times_two(21);
+  }
+  
+  fn times_two(n: u32) -> u32 { n * 2 }
+  
+  fn main() {
+      println!("The map has {} entries.", *COUNT);
+      println!("The entry for `0` is \"{}\".", HASHMAP.get(&0).unwrap());
+      println!("A expensive calculation on a static results in: {}.", *NUMBER);
+  }
+  ```
+
+- implementation details
+
+  `Deref`の実装では、アクセスごとにアトミックなチェックで守られた隠れた静的変数を使用しています。
+
+- Cargo features
+
+  このクレートは1つのcargo機能を備えています。
+
+  - `spin_no_std`:これにより、スタンドアロンの`spin`クレートに依存することで、この`crate`を`std`のない環境で使用できるようになります。
+
+
+
+---
+
 ### core::borrow::Borrow
 
 - Description
@@ -3237,7 +3319,6 @@ struct  Point {
   ベクトルの外に移動するイテレータ。
 
   この構造体は、`[Vec]`の`into_iter`メソッドによって作成されます（`[IntoIterator] trait`によって提供されます）。
-  
 
 ---
 
@@ -3553,7 +3634,29 @@ struct  Point {
   assert_eq!("foo", s.as_str());
   ```
 
+
+
+
+---
+
+### std::string::String::into_bytes
+
+- Description
+
+  `String`をバイトベクターに変換します。
+
+  これは、`String`を消費するので、その内容をコピーする必要はありません。
+
+- Example
+
+  ```rust
+  let s = String::from("hello");
+  let bytes = s.into_bytes();
   
+  assert_eq!(&[104, 101, 108, 108, 111][..], &bytes[..]);
+  ```
+
+
 
 ---
 
@@ -4110,6 +4213,52 @@ struct  Point {
   ```rust
   assert_eq!('f'.to_digit(10), None);
   assert_eq!('z'.to_digit(16), None);
+  ```
+
+
+
+---
+
+### str::find
+
+- Description
+
+  この文字列スライスのパターンにマッチする最初の文字のバイトインデックスを返します。
+
+  パターンにマッチしない場合は`None`を返します。
+
+  パターンは、`&str`、`char`、`chars`のスライス、または、文字がマッチするかどうかを判断する関数やクロージャです。
+
+- Example
+
+  Simple patterns:
+
+  ```rust
+  let s = "Löwe 老虎 Léopard Gepardi";
+  
+  assert_eq!(s.find('L'), Some(0));
+  assert_eq!(s.find('é'), Some(14));
+  assert_eq!(s.find("pard"), Some(17));
+  ```
+
+  More complex patterns using point-free style and closures:
+
+  ```rust
+  let s = "Löwe 老虎 Léopard";
+  
+  assert_eq!(s.find(char::is_whitespace), Some(5));
+  assert_eq!(s.find(char::is_lowercase), Some(1));
+  assert_eq!(s.find(|c: char| c.is_whitespace() || c.is_lowercase()), Some(1));
+  assert_eq!(s.find(|c: char| (c < 'o') && (c > 'a')), Some(4));
+  ```
+
+  Not finding the pattern:
+
+  ```rust
+  let s = "Löwe 老虎 Léopard";
+  let x: &[_] = &['1', '2'];
+  
+  assert_eq!(s.find(x), None);
   ```
 
 
@@ -4845,11 +4994,11 @@ struct  Point {
 
 ---
 
-### std::collections::hash_set::union
+### std::collections::hash_set::HashSet::union
 
 - Description
 
-  結合を表す値、つまりselfやotherのすべての値を、重複することなくアクセスします。
+  結合を表す値、つまり`self`や`other`のすべての値を、重複することなくアクセスします。
 
 - Example
 
@@ -4871,7 +5020,7 @@ struct  Point {
 
 ---
 
-### std::collections::hase_set::contains
+### std::collections::hase_set::HashSet::contains
 
 - Description
 
@@ -4893,7 +5042,7 @@ struct  Point {
 
 ---
 
-### std::collections::hase_set::intersection
+### std::collections::hase_set::HashSet::intersection
 
 - Description
 
@@ -4919,7 +5068,7 @@ struct  Point {
 
 ---
 
-### std::collections::hase_set::difference
+### std::collections::HashSet::hase_set::difference
 
 - Description
 
