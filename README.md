@@ -59,8 +59,9 @@
 * [The Rust Programming Language](https://doc.rust-jp.rs/book-ja/)
 * [rust-lang-ja](https://github.com/rust-lang-ja)
 * [the-rust-programming-language-ja](https://github.com/rust-lang-ja/the-rust-programming-language-ja)
+* [Command Line Applications in Rust](https://rust-cli.github.io/book/index.html)
 
-### Reference site
+### Reference Site
 
 * [Re:FizzBuzzから始めるRust生活](https://qiita.com/hinastory/items/543ae9749c8bccb9afbc)
 * [Rust チートシート](https://cheats.rs/)
@@ -86,6 +87,10 @@
 * [構造体フィールドの所有権の部分借用/移動を理解する](https://qiita.com/yosqueoy/items/453e9aa85bf394388b86)
 * [Rust のポリモルフィズムとトレイトオブジェクト](http://sharply.hatenablog.com/entry/2020/04/19/001236)
 * [RustのSizedとfatポインタ](https://qnighy.hatenablog.com/entry/2017/03/04/131311)
+* [Rustの便利クレート](https://qiita.com/qryxip/items/7c16ab9ef3072c1d7199)
+* [Rustの型変換](https://zenn.dev/take4s5i/articles/rust-type-convertion)
+* [Command Line Toolを作ってみる in Rust](https://qiita.com/watawuwu/items/b20abfae62f76e4b4c0c)
+* [Rustでheadコマンドを作ってみる](https://nktafuse.hatenablog.com/entry/2017/12/19/202823)
 
 ### diesel
 
