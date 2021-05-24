@@ -101,6 +101,7 @@
 * [RustのSizedとfatポインタ](https://qnighy.hatenablog.com/entry/2017/03/04/131311)
 * [Rustの便利クレート](https://qiita.com/qryxip/items/7c16ab9ef3072c1d7199)
 * [Rustの型変換](https://zenn.dev/take4s5i/articles/rust-type-convertion)
+* [Rust入門日記](https://zenn.dev/kawahara/scraps/5a22db01d86ec9)
 
 ---
 
