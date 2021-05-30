@@ -4314,7 +4314,7 @@ struct  Point {
 
 ---
 
-std::vec::Vec::resize_with
+### std::vec::Vec::resize_with
 
 - Description
 
