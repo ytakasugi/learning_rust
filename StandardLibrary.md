@@ -4309,7 +4309,37 @@ struct  Point {
   assert_eq!(slice.into_vec().capacity(), 3);
   ```
 
+
+
+
+---
+
+std::vec::Vec::resize_with
+
+- Description
+
+  `len`が`new_len`と等しくなるように、`Vec`のサイズをその場で変更します。
+
+  `new_len`が`len`よりも大きい場合、`Vec`はその差だけ拡張され、追加された各スロットはクロージャ`f`を呼び出した結果で埋められます。
+
+  `new_len`が`len`よりも小さい場合、`Vec`は単に切り捨てられます。
+
+  このメソッドはクロージャを使って、プッシュのたびに新しい値を生成します。与えられた値のクローンを作りたい場合は、`Vec::resize`を使います。`Default`トレイトを使って値を生成したい場合には、2 番目の引数に`Default::default`を渡します。
+
+- Example
+
+  ```rust
+  let mut vec = vec![1, 2, 3];
+  vec.resize_with(5, Default::default);
+  assert_eq!(vec, [1, 2, 3, 0, 0]);
   
+  let mut vec = vec![];
+  let mut p = 1;
+  vec.resize_with(4, || { p *= 2; p });
+  assert_eq!(vec, [2, 4, 8, 16]);
+  ```
+
+
 
 ---
 
@@ -6378,6 +6408,46 @@ struct  Point {
   // which can always be mutated
   my_struct.special_field.set(new_value);
   assert_eq!(my_struct.special_field.get(), new_value);
+  ```
+
+
+
+---
+
+### std::cell::Cell::set
+
+- Description
+
+  含まれる値を設定します。
+
+- Example
+
+  ```rust
+  use std::cell::Cell;
+  
+  let c = Cell::new(5);
+  
+  c.set(10);
+  ```
+
+
+
+---
+
+### std::cell::Cell::get
+
+- Description
+
+  含まれる値のコピーを返します。
+
+- Example
+
+  ```rust
+  use std::cell::Cell;
+  
+  let c = Cell::new(5);
+  
+  let five = c.get();
   ```
 
 
