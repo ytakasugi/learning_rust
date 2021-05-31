@@ -101,6 +101,7 @@
 * [RustのSizedとfatポインタ](https://qnighy.hatenablog.com/entry/2017/03/04/131311)
 * [Rustの便利クレート](https://qiita.com/qryxip/items/7c16ab9ef3072c1d7199)
 * [Rustの型変換](https://zenn.dev/take4s5i/articles/rust-type-convertion)
+* [Rustのトレイトを使おう!(1)](https://zenn.dev/naughie/articles/0da40abd7bf3cf)
 * [Rust入門日記](https://zenn.dev/kawahara/scraps/5a22db01d86ec9)
 
 ---
@@ -114,5 +115,6 @@
 ### other
 
 - [cargo-clean-recursive](https://crates.io/crates/cargo-clean-recursive)
+- [zenn(rustlang)](https://zenn.dev/topics/rust?order=latest)
 - [Rust言語 2021年版の計画（抄訳）](https://zenn.dev/ice_creamer/articles/53c12111ab8d4b)
 - [Rustup 1.24.2 について（抄訳）](https://zenn.dev/ice_creamer/articles/a57addc6d5e200)
