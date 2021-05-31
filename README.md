@@ -44,7 +44,7 @@
 
 * [ghmagazine](https://github.com/ghmagazine/rustbook)
 * [forcia](https://github.com/forcia/rustbook)
-* [ytakasugi/workspace](https://github.com/ytakasugi/workspace)
+* [github.com/ytakasugi/](https://github.com/ytakasugi)
 
 ---
 
