@@ -1862,6 +1862,38 @@ CopyトレイトとCloneトレイトの違いを以下に示す
 
 ---
 
+### std::io::Write::write_all
+
+- Description
+
+  バッファ全体をこのライターに書き込もうとします。
+
+  このメソッドは、書き込むデータがなくなるか、`ErrorKind::Interrupted`以外の種類のエラーが返されるまで、継続して`write`を呼び出します。このメソッドは、バッファ全体が正常に書き込まれるか、そのようなエラーが発生するまで戻りません。このメソッドから生成された`ErrorKind::Interrupted`以外の種類の最初のエラーが返されます。
+
+  バッファにデータが含まれていない場合、このメソッドは決して`write`を呼び出しません。
+
+- Errors
+
+  この関数は、`ErrorKind::Interrupted`以外の種類のエラーで、`write`が返す最初のエラーを返します。
+
+- Example
+
+  ```rust
+  use std::io::prelude::*;
+  use std::fs::File;
+  
+  fn main() -> std::io::Result<()> {
+      let mut buffer = File::create("foo.txt")?;
+  
+      buffer.write_all(b"some bytes")?;
+      Ok(())
+  }
+  ```
+
+
+
+---
+
 ### std::convert::AsRef
 
   - Description
