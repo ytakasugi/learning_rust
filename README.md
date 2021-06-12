@@ -68,6 +68,7 @@
 * [Command Line Applications in Rust](https://rust-cli.github.io/book/index.html)
 * [Rust チートシート](https://cheats.rs/)
 * [Plotters Developer Guide](https://plotters-rs.github.io/book/intro/introduction.html)
+* [Tour of Rust](https://tourofrust.com/00_ja.html)
 
 ---
 
