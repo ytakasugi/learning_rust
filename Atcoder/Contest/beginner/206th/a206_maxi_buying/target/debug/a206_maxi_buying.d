@@ -1,1 +1,0 @@
-/home/ytakasugi/004_learning_rust/Atcoder/Contest/beginner/206th/a206_maxi_buying/target/debug/a206_maxi_buying: /home/ytakasugi/004_learning_rust/Atcoder/Contest/beginner/206th/a206_maxi_buying/src/main.rs

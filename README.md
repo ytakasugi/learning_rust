@@ -105,6 +105,8 @@
 * [Rustのトレイトを使おう!(1)](https://zenn.dev/naughie/articles/0da40abd7bf3cf)
 * [Rust入門日記](https://zenn.dev/kawahara/scraps/5a22db01d86ec9)
 * [Rustのイテレータの網羅的かつ大雑把な紹介](https://qiita.com/lo48576/items/34887794c146042aebf1)
+* [RustのOwnershipってなんなん](https://zenn.dev/ucwork/articles/cfe579cbf5647e)
+* [RustのLifetimeってなんなん](https://zenn.dev/ucwork/articles/6de5c9c2257f2d)
 
 ---
 
