@@ -69,6 +69,7 @@
 * [Rust チートシート](https://cheats.rs/)
 * [Plotters Developer Guide](https://plotters-rs.github.io/book/intro/introduction.html)
 * [Tour of Rust](https://tourofrust.com/00_ja.html)
+* [rustlings](https://github.com/rust-lang/rustlings)
 
 ---
 
@@ -79,6 +80,7 @@
 - [Rustでつくるインタプリタ](https://qiita.com/nirasan/items/f7a232af3372ea370f4b)
 - [Command Line Toolを作ってみる in Rust](https://qiita.com/watawuwu/items/b20abfae62f76e4b4c0c)
 - [Rustでheadコマンドを作ってみる](https://nktafuse.hatenablog.com/entry/2017/12/19/202823)
+- [Rustで書くUDPサーバー](https://zenn.dev/psyashes/articles/794f73304b0350)
 
 ---
 
@@ -107,6 +109,7 @@
 * [Rustのイテレータの網羅的かつ大雑把な紹介](https://qiita.com/lo48576/items/34887794c146042aebf1)
 * [RustのOwnershipってなんなん](https://zenn.dev/ucwork/articles/cfe579cbf5647e)
 * [RustのLifetimeってなんなん](https://zenn.dev/ucwork/articles/6de5c9c2257f2d)
+* [【初心者入門】Rustメモリ管理(所有権、借用、ライフタイム)](https://qiita.com/akito_tameto/items/a6840328224536e526a6)
 
 ---
 
