@@ -5252,6 +5252,54 @@ struct  Point {
 
 ---
 
+### std::collections::hash_map::HashMap::contains_key
+
+- Description
+
+  マップに指定されたキーに対応する値が含まれている場合、`true`を返します。
+
+  キーはマップのキータイプの借用形式であれば何でもかまいませんが、借用形式の`Hash`と`Eq`はキータイプのものと一致しなければなりません。
+
+- Example
+
+  ```rust
+  use std::collections::HashMap;
+  
+  let mut map = HashMap::new();
+  map.insert(1, "a");
+  assert_eq!(map.contains_key(&1), true);
+  assert_eq!(map.contains_key(&2), false);
+  ```
+
+
+
+---
+
+### std::collections::hash_map::HashMap::values
+
+- Desciption
+
+  任意の順序ですべての値にアクセスするイテレータ。イテレータの要素タイプは`&'a V`です。
+
+- Example
+
+  ```rust
+  use std::collections::HashMap;
+  
+  let mut map = HashMap::new();
+  map.insert("a", 1);
+  map.insert("b", 2);
+  map.insert("c", 3);
+  
+  for val in map.values() {
+      println!("{}", val);
+  }
+  ```
+
+
+
+---
+
 ### std::collections::HaseSet
 
 - Description
