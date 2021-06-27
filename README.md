@@ -81,6 +81,7 @@
 - [Command Line Toolを作ってみる in Rust](https://qiita.com/watawuwu/items/b20abfae62f76e4b4c0c)
 - [Rustでheadコマンドを作ってみる](https://nktafuse.hatenablog.com/entry/2017/12/19/202823)
 - [Rustで書くUDPサーバー](https://zenn.dev/psyashes/articles/794f73304b0350)
+- [RustでWebアプリケーションを作る](https://caddi.tech/archives/416)
 
 ---
 
