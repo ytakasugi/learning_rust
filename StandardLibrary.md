@@ -5488,7 +5488,7 @@ struct  Point {
 
 ---
 
-### std::marker::SSync
+### std::marker::Sync
 
 - Description
 
