@@ -1,26 +1,25 @@
-mod text_processing {
-
-    pub mod letters {
-        pub fn count_letters(text: &str) -> usize {
-            text.chars().filter(|ref c| c.is_alphabetic()).count()
-        }
-    }
-
-    pub mod numbers {
-        pub fn count_numbers(text: &str) -> usize {
-            text.chars().filter(|ref c| c.is_numeric()).count()
-        }
-    }
-}
-
-fn count_letters_and_numbers(text: &str) -> (usize, usize) {
-    let number_of_letters = text_processing::letters::count_letters(text);
-    let number_of_numbers = text_processing::numbers::count_numbers(text);
-    (number_of_letters, number_of_numbers)
-}
+use std::sync::{Mutex, Arc};
+use std::thread;
 
 fn main() {
-    assert_eq!(count_letters_and_numbers("221B Baker Street"), (12, 3));
-    assert_eq!(count_letters_and_numbers("711 Maple Street"), (11, 3));
-    assert_eq!(count_letters_and_numbers("4 Privet Drive"), (11, 1));
+    // `Arc`で値を内包した値の参照を作成し、スレッド間で共有する
+    // 値を`Mutex`でラップすることで、共有した値を変更可能にする
+    let counter = Arc::new(Mutex::new(0));
+    let mut handles = vec![];
+
+    for _ in 0..10 {
+        let counter = Arc::clone(&counter);
+        let handle = thread::spawn(move || {
+            // 値を変更するために、`lock`メソッドでロックを取得する
+            let mut num = counter.lock().unwrap();
+            *num += 1;
+        });
+        handles.push(handle);
+    }
+
+    for handle in handles {
+        // サブスレッドの処理が終わるまで待機する
+        handle.join().unwrap();
+    }
+    println!("Result: {}", counter.lock().unwrap());
 }
