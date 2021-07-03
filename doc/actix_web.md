@@ -46,6 +46,42 @@ Actix Webは、パワフルで実用的、かつ非常に高速なRust用のWeb�
 
 ---
 
+### actix_web::HttpServer
+
+- Description
+
+  HTTPサーバー。
+
+  アプリケーションファクトリで新しいHTTPサーバを作成します。
+
+- Implementations
+
+  ### actic_web::HttpServer::new
+
+  - Description
+
+    アプリケーションファクトリで新規にhttpサーバを作成します。
+
+  ### actix_web::HttpServer::bind
+
+  - Description
+
+    バインドするソケットのアドレス
+
+    複数のアドレスをバインドするために、このメソッドを複数回呼び出すことができます。
+
+  ### actix_web::HttpServer::run
+
+  - Description
+
+    コネクションの受信を開始します。
+
+    このメソッドは、いくつものhttpワーカーを別々のスレッドで起動します。各アドレスに対して、このメソッドはループで`accept()`を行う別のスレッドを開始します。
+
+    このメソッドは、ソケット・アドレスがバインドされていない場合や、`Actix`システムがまだ構成されていない場合には、パニックを起こします。
+
+---
+
 ### actix_web::Responder
 
 - Description
@@ -73,6 +109,71 @@ Actix Webは、パワフルで実用的、かつ非常に高速なRust用のWeb�
   - Description
 
     マッチしたパラメータを型変換せずに名前で取得
+
+---
+
+### actix_web::middleware::Logger
+
+- Description
+
+  リクエストやレスポンスの情報を端末に記録するためのミドルウェアです。
+
+  ロガーミドルウェアは、標準のログクレートを使用して情報を記録します。アクセスログを見るには、actix_webパッケージのロガーを有効にする必要があります。(`env_logger`など)
+
+- Usage
+
+  指定されたフォーマットでロガーのミドルウェアを作成します。デフォルトの`Logger`は、デフォルトのメソッドで作成することができ、デフォルトのフォーマットを使用します。
+
+  ```
+  %a "%r" %s %b "%{Referer}i" "%{User-Agent}i" %T
+  ```
+
+  ```rust
+  use actix_web::{middleware::Logger, App};
+  
+  std::env::set_var("RUST_LOG", "actix_web=info");
+  env_logger::init();
+  
+  let app = App::new()
+      .wrap(Logger::default())
+      .wrap(Logger::new("%a %{User-Agent}i"));
+  ```
+
+- Format
+
+  `%%` パーセント記号
+
+  `%a` リモートIPアドレス（リバースプロキシを使用する場合はプロキシのIPアドレス)
+
+  `%t` リクエストの処理が開始された時間（rfc3339形式)
+
+  `%r` 要求の最初の行
+
+  `%s` 応答のステータスコード
+
+  `%b` HTTP ヘッダを含む、バイト単位の応答のサイズ
+
+  `%T` 要求を処理するのにかかった時間 (秒単位、0.06f 形式の浮動小数点)
+
+  `%D` 要求を処理するのにかかった時間 (ミリ秒単位)
+
+  `%U` リクエストのURL
+
+  `%{r}a` 実際の IP リモート・アドレス *。
+
+  `%{FOO}i`リクエスト.ヘッダ['FOO']
+
+  `%{FOO}o` レスポンス.ヘッダ['FOO']
+
+  `%{FOO}e` os.environ['FOO']
+
+  `%{FOO}xi` [custom request replacement](https://docs.rs/actix-web/3.3.2/actix_web/middleware/struct.Logger.html#method.custom_request_replace) ラベル付き "FOO"
+
+- Security
+
+  * この値は[`ConnectionInfo::realip_remote_addr`](https://docs.rs/actix-web/3.3.2/actix_web/dev/struct.ConnectionInfo.html#method.realip_remote_addr)で計算されます。
+
+  この値を使用する場合は、すべてのリクエストが信頼できるホストからのものであることを確認してください。なぜなら、リモートクライアントが別のクライアントであることを簡単に装うことができるからです。
 
 ---
 
