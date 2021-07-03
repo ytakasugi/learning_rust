@@ -130,6 +130,7 @@
 ### other
 
 - [cargo-clean-recursive](https://crates.io/crates/cargo-clean-recursive)
+- [OPTiM TECH BLOG(Rust)](https://tech-blog.optim.co.jp/archive/category/Rust)
 - [zenn(rustlang)](https://zenn.dev/topics/rust?order=latest)
 - [Rust言語 2021年版の計画（抄訳）](https://zenn.dev/ice_creamer/articles/53c12111ab8d4b)
 - [Rustup 1.24.2 について（抄訳）](https://zenn.dev/ice_creamer/articles/a57addc6d5e200)
