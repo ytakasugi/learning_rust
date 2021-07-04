@@ -70,6 +70,8 @@
 * [Plotters Developer Guide](https://plotters-rs.github.io/book/intro/introduction.html)
 * [Tour of Rust](https://tourofrust.com/00_ja.html)
 * [rustlings](https://github.com/rust-lang/rustlings)
+* [Crate csv](https://docs.rs/csv/1.1.6/csv/)
+* [Overview Serde](https://serde.rs/)
 
 ---
 
