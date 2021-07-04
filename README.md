@@ -82,6 +82,7 @@
 - [Rustでheadコマンドを作ってみる](https://nktafuse.hatenablog.com/entry/2017/12/19/202823)
 - [Rustで書くUDPサーバー](https://zenn.dev/psyashes/articles/794f73304b0350)
 - [RustでWebアプリケーションを作る](https://caddi.tech/archives/416)
+- [【翻訳】RustとCSV解析](https://qiita.com/algebroid/items/c456d4ec555ae04c7f92)
 
 ---
 
