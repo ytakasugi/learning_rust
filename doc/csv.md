@@ -31,7 +31,7 @@ Rustが初めての方は[チュートリアル](https://docs.rs/csv/1.1.6/csv/t
   csv = "1.1"
   ```
 
-  カスタム構造体に`Serde`のカスタム導出機能を使用したい場合は、`argo.toml`の`[dependencies]`セクションにこれを追加します。
+  カスタム構造体に`Serde`のカスタム導出機能を使用したい場合は、`Cargo.toml`の`[dependencies]`セクションにこれを追加します。
 
 ---
 
