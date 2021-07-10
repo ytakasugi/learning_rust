@@ -45,6 +45,7 @@
 * [ghmagazine](https://github.com/ghmagazine/rustbook)
 * [forcia](https://github.com/forcia/rustbook)
 * [github.com/ytakasugi/](https://github.com/ytakasugi)
+* [rustviz](https://github.com/rustviz/rustviz)
 
 ---
 
@@ -85,6 +86,7 @@
 - [Rustで書くUDPサーバー](https://zenn.dev/psyashes/articles/794f73304b0350)
 - [RustでWebアプリケーションを作る](https://caddi.tech/archives/416)
 - [【翻訳】RustとCSV解析](https://qiita.com/algebroid/items/c456d4ec555ae04c7f92)
+- [A TCP Proxy in 30 lines of Rust](https://zmedley.com/tcp-proxy.html)
 
 ---
 
@@ -121,6 +123,8 @@
 * [マルチスレッドプログラミングのメモ](https://totem3.hatenablog.jp/entry/2017/05/10/210000)
 * [Rustはどのようにして安全な並列処理を提供するのか](https://qiita.com/nirasan/items/97263103f076bd525a7b)
 * [Rustの非同期プログラミングをマスターする](https://tech-blog.optim.co.jp/entry/2019/11/08/163000)
+* [やってみる](https://ytyaru.hatenablog.com/archive/category/Rust)
+* [Rustで`Vec<T>`に`&`を付けると`&[T]`が得られる理由](https://qiita.com/mosh/items/51bd202c9f738956829e)
 
 ---
 
