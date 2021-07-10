@@ -166,7 +166,7 @@
   - シリアライズしたい構造体や列挙体には、同じモジュール内で`use serde::Serialize;`として`derive`マクロをインポートし、構造体や列挙体に `#[derive(Serialize)]`と記述します。
   - 同様に，`serde::Deserialize;`をインポートして，デシリアライズしたい構造体や`enum`に`#[derive(Deserialize)]`と記述します。
 
-  ここでは、Cargo.tomlを紹介します。
+  ここでは、`Cargo.toml`を紹介します。
 
   ```toml
   [package]
@@ -340,9 +340,44 @@ enum E {
 
 - Variant attributes
 
+
+
+---
+
+### Examples
+
+- Structs and enums in JSON
+
+  Serde `Serializer`は、Rust構造体や列挙型をそのフォーマットで表現するための規約を選択する責任があります。以下は`serde_json`データフォーマットで選択された規約です。一貫性を保つために、他の人間が読めるフォーマットでも、可能な限り類似した規約を策定することが推奨されます。
+
+  ```rust
+  struct W {
+      a: i32,
+      b: i32,
+  }
+  let w = W { a: 0, b: 0 }; // Represented as `{"a":0,"b":0}`
   
+  struct X(i32, i32);
+  let x = X(0, 0); // Represented as `[0,0]`
+  
+  struct Y(i32);
+  let y = Y(0); // Represented as just the inner value `0`
+  
+  struct Z;
+  let z = Z; // Represented as `null`
+  
+  enum E {
+      W { a: i32, b: i32 },
+      X(i32, i32),
+      Y(i32),
+      Z,
+  }
+  let w = E::W { a: 0, b: 0 }; // Represented as `{"W":{"a":0,"b":0}}`
+  let x = E::X(0, 0);          // Represented as `{"X":[0,0]}`
+  let y = E::Y(0);             // Represented as `{"Y":0}`
+  let z = E::Z;                // Represented as `"Z"`
+  ```
 
   
 
-  
-
+​	
