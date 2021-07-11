@@ -1962,6 +1962,54 @@ CopyトレイトとCloneトレイトの違いを以下に示す
 
 ---
 
+### std::path::PathBuf
+
+- Description
+
+  所有権のある、変更可能なパス（Stringに似ている）。
+
+  このタイプには、パスをその場で変更する`push`や`set_extension`などのメソッドがあります。また、`Path`への`Deref`を実装しており、`Path`スライス上のすべてのメソッドは、`PathBuf`の値でも利用可能であることを意味します。
+
+  全体的なアプローチについての詳細は、モジュールのドキュメントに記載されています。
+
+- Example
+
+  `push`を使ってコンポーネントから`PathBuf`を構築することができます。
+
+  ```rust
+  use std::path::PathBuf;
+  
+  let mut path = PathBuf::new();
+  
+  path.push(r"C:\");
+  path.push("windows");
+  path.push("system32");
+  
+  path.set_extension("dll");
+  ```
+
+  しかし、`push`は動的な状況で使用するのがベストです。これは、すべてのコンポーネントを事前に知っている場合には、より良い方法です。
+
+  ```rust
+  use std::path::PathBuf;
+  
+  let path: PathBuf = [r"C:\", "windows", "system32.dll"].iter().collect();
+  ```
+
+  これよりももっと良い方法があります。これらはすべて文字列なので、`From::from`を使うことができます。
+
+  ```rust
+  use std::path::PathBuf;
+  
+  let path = PathBuf::from(r"C:\windows\system32.dll");
+  ```
+
+  どの方法が一番効果的かは、どのような状況にあるかによって異なります。
+
+
+
+---
+
 ### std::fs::File
 
 - Description
