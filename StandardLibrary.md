@@ -2552,15 +2552,15 @@ CopyトレイトとCloneトレイトの違いを以下に示す
 
     形式的には、(すべてのa,b,cに対して)等価でなければならない。
 
-    対称的： a == b は b == a を意味する。
-    推移的: a == b と b == c は a == c を意味する。
+    対称的：`a == b`は`b == a`を意味する。
+    推移的: `a == b`と`b == c`は`a == c`を意味する。
     これらの要件は、トレイト自体が対称的かつ推移的に実装されなければならないことを意味していることに注意すること。
 
-    もし T: PartialEq<U> と  U: PartialEq<V> の場合、 U: PartialEq<T> と T: PartialEq<V>となる。
+    もし`T: PartialEq<U>`と `U: PartialEq<V>`の場合、 `U: PartialEq<T>`と`T: PartialEq<V>`となる。
 
     このトレイトは、#[derive]と一緒に使うことができる。構造体で導出された場合、すべてのフィールドが等しい場合は2つのインスタンスが等しく、いずれかのフィールドが等しくない場合は等しくない。enumsで導出された場合、各バリアントはそれ自身と等しく、他のバリアントとは等しくない。
 
-    PartialEq`は`eq`メソッドを実装する必要があるだけで、`PartialEq`は`eq`メソッドを使用して定義されている。
+    `PartialEq`は`eq`メソッドを実装する必要があるだけで、`PartialEq`は`eq`メソッドを使用して定義されている。
 
     を手動で実装する場合は、`eq`は`PartialEq `の厳密な逆数であるというルールを守らなければならない。
 
@@ -2765,7 +2765,7 @@ let origin = Point { x: 0, y: 0 };
 assert_eq!(format!("The origin is: {:?}", origin), "The origin is: Point { x: 0, y: 0 }");
 ~~~
 
-    　◆手動で実装
+​    ◆手動で実装
 
 ~~~rust
 use std::fmt;
@@ -3563,6 +3563,57 @@ struct  Point {
   consume_with_relish(consume_and_return_x);
   
   // `consume_and_return_x` can no longer be invoked at this point
+  ```
+
+
+
+---
+
+### std::ops::Deref
+
+- Example
+
+  `*v`のような不変的な再参照操作に使用されます。
+
+  `Deref`は、不変的なコンテキストでの(単項)*演算子による明示的な参照外しに使用されるだけでなく、多くの状況でコンパイラによって暗黙的に使用されます。このメカニズムは「[`Deref` coercion](https://doc.rust-lang.org/std/ops/trait.Deref.html#more-on-deref-coercion)」と呼ばれています。変更可能なコンテキストでは、[`DerefMut`](https://doc.rust-lang.org/std/ops/trait.DerefMut.html)が使用されます。
+
+  スマートポインタに`Deref`を実装すると、その背後にあるデータへのアクセスが便利になるためです。一方で、`Deref`と[`DerefMut`](https://doc.rust-lang.org/std/ops/trait.DerefMut.html)に関するルールは、特にスマートポインタに対応するように設計されています。このため、混乱を避けるために、`Deref`はスマートポインタに対してのみ実装されるべきです。
+
+  同様の理由から、この特性は決して失敗してはいけません。`Deref`が暗黙のうちに起動されている場合、脱参照の際の失敗は非常に混乱を招きます。
+
+- More on `Deref` coercion
+
+  `T`が`Deref<Target = U>`を実装し、`x`が`T`型の値である場合。
+
+  - 不変のコンテクストでは、`*x`（Tは参照でも生のポインタでもない）は、`*Deref::deref(&x)`と同等です。
+  - `&T`型の値は`&U`型の値に強制的に変換されます。
+  - Tは、型Uのすべての（不変の）メソッドを暗黙のうちに実装しています。
+
+  詳細については、「The Rust Programming Language」の[該当の章](https://doc.rust-lang.org/book/ch15-02-deref.html)
+
+  や、[the dereference operator](https://doc.rust-lang.org/reference/expressions/operator-expr.html#the-dereference-operator)、[method resolution](https://doc.rust-lang.org/reference/expressions/method-call-expr.html)、[type coercions](https://doc.rust-lang.org/reference/type-coercions.html)に関するリファレンスセクションを参照してください。
+
+- Example
+
+  構造体をデリファレンスすることでアクセス可能な1つのフィールドを持つ構造体です。
+
+  ```rust
+  use std::ops::Deref;
+  
+  struct DerefExample<T> {
+      value: T
+  }
+  
+  impl<T> Deref for DerefExample<T> {
+      type Target = T;
+  
+      fn deref(&self) -> &Self::Target {
+          &self.value
+      }
+  }
+  
+  let x = DerefExample { value: 'a' };
+  assert_eq!('a', *x);
   ```
 
 
