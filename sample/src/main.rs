@@ -1,17 +1,17 @@
-use std::fmt;
+use std::convert::From;
 
-struct Password(String);
+#[derive(Debug)]
+struct Number {
+    value: i32,
+}
 
-impl fmt::Display for Password {
-    fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
-        write!(f, "{}", self.0.chars().map(|_| '*').collect::<String>())
+impl From<i32> for Number {
+    fn from(item: i32) -> Self {
+        Number { value: item }
     }
 }
 
 fn main() {
-    let a = String::from("123456789");
-    println!("{}", a);
-
-    let password = Password(String::from("123456789"));
-    println!("{}", password);
+    let num = Number::from(30);
+    println!("My number is {:?}", num);
 }
