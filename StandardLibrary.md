@@ -844,7 +844,7 @@ CopyトレイトとCloneトレイトの違いを以下に示す
 
 ---
 
-### core::result::Result::map
+#### std::result::Result::map
 
 - Description
 
@@ -866,7 +866,7 @@ CopyトレイトとCloneトレイトの違いを以下に示す
   ~~~
 ---
 
-### std::result::Result::and_then
+#### std::result::Result::and_then
 
   - Description
 
@@ -877,7 +877,7 @@ CopyトレイトとCloneトレイトの違いを以下に示す
 
 ---
 
-### [std::result::Result::is_err](https://doc.rust-lang.org/stable/std/result/enum.Result.html#method.is_err)
+#### [std::result::Result::is_err](https://doc.rust-lang.org/stable/std/result/enum.Result.html#method.is_err)
 
   - Description
 
@@ -885,7 +885,7 @@ CopyトレイトとCloneトレイトの違いを以下に示す
 
 ---
 
-### std::result::Result::map_err
+#### std::result::Result::map_err
 
 - Description
 
@@ -909,7 +909,7 @@ CopyトレイトとCloneトレイトの違いを以下に示す
 
 ---
 
-### std::result::Result::unwrap_or_else
+#### std::result::Result::unwrap_or_else
 
   - Description
 
@@ -925,7 +925,7 @@ CopyトレイトとCloneトレイトの違いを以下に示す
 
 ---
 
-### std::result::Result::ok
+#### std::result::Result::ok
 
 - Description
 
@@ -958,7 +958,15 @@ CopyトレイトとCloneトレイトの違いを以下に示す
 
 ---
 
-### [std::option::Option::as_ref](https://doc.rust-lang.org/stable/std/option/enum.Option.html#method.as_ref) 
+### std::option::Option
+
+- Description
+
+  オプションの種類です。詳細は、モジュールレベルの[ドキュメント](https://doc.rust-lang.org/std/option/index.html)を参照してください。
+
+---
+
+#### [std::option::Option::as_ref](https://doc.rust-lang.org/stable/std/option/enum.Option.html#method.as_ref) 
 
 - Description
 
@@ -980,7 +988,7 @@ CopyトレイトとCloneトレイトの違いを以下に示す
 
 ---
 
-### [std::option::Option::map_or](https://doc.rust-lang.org/stable/core/option/enum.Option.html#method.map_or)
+#### [std::option::Option::map_or](https://doc.rust-lang.org/stable/core/option/enum.Option.html#method.map_or)
 
 - Description
 
@@ -1003,7 +1011,7 @@ CopyトレイトとCloneトレイトの違いを以下に示す
 
 ---
 
-### std::option::Option::ok_or
+#### std::option::Option::ok_or
 
 - Description
 
@@ -1025,7 +1033,7 @@ CopyトレイトとCloneトレイトの違いを以下に示す
 
 ---
 
-### std::option::Option::ok_or_else
+#### std::option::Option::ok_or_else
 
 - Description
 
@@ -1045,7 +1053,7 @@ CopyトレイトとCloneトレイトの違いを以下に示す
 
 ---
 
-### std::option::Option::take
+#### std::option::Option::take
 
 - Description
 
@@ -1070,7 +1078,7 @@ CopyトレイトとCloneトレイトの違いを以下に示す
 
 ---
 
-### std::option::Option::unwrap_or_default
+#### std::option::Option::unwrap_or_default
 
 - Description
 
@@ -1097,7 +1105,7 @@ CopyトレイトとCloneトレイトの違いを以下に示す
 
 ---
 
-### std::option::Option::is_some
+#### std::option::Option::is_some
 
 - Description
 
@@ -1117,7 +1125,7 @@ CopyトレイトとCloneトレイトの違いを以下に示す
 
 ---
 
-### std::option::Option::and_then
+#### std::option::Option::and_then
 
 - Description
 
@@ -1142,7 +1150,7 @@ CopyトレイトとCloneトレイトの違いを以下に示す
 
 ---
 
-### std::option::Option::is_none
+#### std::option::Option::is_none
 
 - Description
 
@@ -1162,7 +1170,7 @@ CopyトレイトとCloneトレイトの違いを以下に示す
 
 ---
 
-### std::option::Option::unwrap_or
+#### std::option::Option::unwrap_or
 
 - Description
 
@@ -1181,7 +1189,27 @@ CopyトレイトとCloneトレイトの違いを以下に示す
 
 ---
 
-### std::convert::Into
+### std::covert
+
+- Description
+
+  型間の変換のためのトレイト。
+
+  このモジュールのトレイトは、ある型から別の型への変換方法を提供します。それぞれのトレイトは異なる目的を果たします。
+
+  - 参照から参照への変換を安価に行うための`AsRef`トレイトを実装する。
+  - `AsMut`トレイトを実装して、MutableからMutableへの変換を安価に行う。
+    値から値への変換を行う`From`を実装する。
+  - 現在のクレートの外にある型への値から値への変換を消費するために`Into` トレイトを実装する。
+  - `TryFrom`と`TryInto`のトレイトは`From`と`Into`のように動作しますが、変換が失敗する可能性がある場合に実装する必要があります。
+
+このモジュールのトレイトは、複数の型の引数をサポートするような汎用関数のトレイト境界としてよく使われます。例については、各トレイトのドキュメントを参照してください。
+
+  ライブラリ作者としては、`Into<U>`や`TryInto<U>`よりも`From<T>`や`TryFrom<T>`の実装を常に好むべきです。`From`や`TryFrom`はより柔軟性が高く、標準ライブラリに包括的に実装されているおかげで、同等の`Into`や`TryInto`の実装が無料で提供されているからです。Rust 1.41 より前のバージョンをターゲットにしている場合、現在のクレートの外にある型に変換するときに、`Into`または`TryInto`を直接実装する必要があるかもしれません。
+
+---
+
+#### std::convert::Into
 
 - Description
 
@@ -1241,11 +1269,9 @@ CopyトレイトとCloneトレイトの違いを以下に示す
   ```
 
 
-
-
 ---
 
-### std::convert::TryInto
+#### std::convert::TryInto
 
 - Description
 
@@ -1260,7 +1286,7 @@ CopyトレイトとCloneトレイトの違いを以下に示す
 
 ---
 
-### std::convert::From
+#### std::convert::From
 
 - Descrition
 
@@ -1330,7 +1356,7 @@ CopyトレイトとCloneトレイトの違いを以下に示す
 
 ---
 
-### std::convert::TryFrom
+#### std::convert::TryFrom
 
 - Description
 
@@ -1386,7 +1412,56 @@ CopyトレイトとCloneトレイトの違いを以下に示す
   assert!(try_successful_smaller_number.is_ok());
   ```
 
-  
+
+
+
+---
+
+#### std::convert::AsRef
+
+  - Description
+
+    簡単な参照間変換を行う。
+
+    このトレイトは、可変参照間の変換に使用される`FnMut`に似ている。
+
+    もし、高度な変換を行う必要がある場合は、`From`を`&T型`で実装するか、カスタム関数を実装するほうがよい。
+
+    `AsRef`は、参照と同じシグネチャを持っていますが、いくつか異なる点がある。
+
+     - `AsRef`とは異なり、参照は任意のTに対してブランケット実装(トレイト境界を満たすあらゆる型にトレイトを実装すること)を持っており、参照または値のどちらかを受け取るために使用できる
+
+     - 参照では、参照した値の`Hash`、`Eq`、`Ord`が同等であることが要求される
+
+     - 構造体の単一フィールドのみを借用したい場合は`Asref`を実施できますが、参照は実装できない。
+
+    
+
+    Note:このトレイトは失敗することができない。変換に失敗する可能性がある場合は、`Option<T>`または`Result<T, E>`を返す専用のメソッドを使用すること。
+
+   - Generic Implementations
+
+     `AsRef`は、内部の型が参照または変異可能な参照である場合に自動参照を行う (例: `foo.as_ref()`は、`foo`が`&mut Foo`または`&&mut Foo`の型を持っていても同じように動作する)。
+
+  - Example
+
+    トレイト境界を使うと、指定された型`T`に変換できる限り、異なる型の引数を受け入れることができます。
+
+    例えば`AsRef<str>`を受け取るジェネリック関数を作ることで、`&str`に変換できるすべての参照を引数として受け入れたいことを表現しています。`String`と`&str`はどちらも`AsRef<str>`を実装しているので、どちらも入力引数として受け入れることができます。
+
+  ~~~rust
+fn is_hello<T: AsRef<str>>(s: T) {
+   assert_eq!("hello", s.as_ref());
+}
+
+let s = "hello";
+is_hello(s);
+
+let s = "hello".to_string();
+is_hello(s);
+  ~~~
+
+
 
 ---
 
@@ -1412,7 +1487,7 @@ CopyトレイトとCloneトレイトの違いを以下に示す
 
 ---
 
-### std::mem::discriminant
+#### std::mem::discriminant
 
 - Description
 
@@ -1438,11 +1513,9 @@ CopyトレイトとCloneトレイトの違いを以下に示す
   assert_ne!(mem::discriminant(&Foo::B(3)), mem::discriminant(&Foo::C(3)));
   ```
 
-
-
 ---
 
-### std::mem::replace
+#### std::mem::replace
 
 - Description
 
@@ -1502,7 +1575,17 @@ CopyトレイトとCloneトレイトの違いを以下に示す
 
 ---
 
-### std::io::BufReader<R>
+### std::io
+
+- Description
+
+  I/Oのコア機能のためのトレイト、ヘルパー、型定義です。
+
+  `std::io`モジュールには、入出力を行う際に必要となる一般的なものが数多く含まれています。このモジュールの最も中心的な部分は、`Read`と`Write`のトレイトであり、入出力を読み書きするための最も一般的なインタフェースを提供しています。
+
+---
+
+#### std::io::BufReader<R>
 
   - Description
 
@@ -1540,7 +1623,7 @@ CopyトレイトとCloneトレイトの違いを以下に示す
 
 ---
 
-### std::io::Result
+#### std::io::Result
 
 - Description
 
@@ -1571,7 +1654,7 @@ CopyトレイトとCloneトレイトの違いを以下に示す
 
 ---
 
-### std::io::stdin
+#### std::io::stdin
 
 - Description
 
@@ -1617,7 +1700,7 @@ CopyトレイトとCloneトレイトの違いを以下に示す
 
 ---
 
-### std::io::stdout
+#### std::io::stdout
 
 - Description
 
@@ -1662,7 +1745,7 @@ CopyトレイトとCloneトレイトの違いを以下に示す
 
 ---
 
-### std::io::Stdout::flush
+#### std::io::Stdout::flush
 
 - Description
 
@@ -1672,7 +1755,7 @@ CopyトレイトとCloneトレイトの違いを以下に示す
 
 ---
 
-### std::io::Read::read
+#### std::io::Read::read
 
 - Description
 
@@ -1728,7 +1811,7 @@ CopyトレイトとCloneトレイトの違いを以下に示す
 
 ---
 
-### std::io::Read::read_to_string()
+#### std::io::Read::read_to_string()
 
   - Description
 
@@ -1744,7 +1827,7 @@ CopyトレイトとCloneトレイトの違いを以下に示す
 
 ---
 
-### std::io::Seek
+#### std::io::Seek
 
 - Description
 
@@ -1775,7 +1858,7 @@ CopyトレイトとCloneトレイトの違いを以下に示す
 
 ---
 
-### std::io::Seek::seek
+#### std::io::Seek::seek
 
 - Description
 
@@ -1791,7 +1874,7 @@ CopyトレイトとCloneトレイトの違いを以下に示す
 
 ---
 
-### std::io::SeekFrom
+#### std::io::SeekFrom
 
 - Description
 
@@ -1827,7 +1910,7 @@ CopyトレイトとCloneトレイトの違いを以下に示す
 
 ---
 
-### std::io::Write
+#### std::io::Write
 
   - Description
 
@@ -1852,7 +1935,7 @@ CopyトレイトとCloneトレイトの違いを以下に示す
 
 ---
 
-### std::io::BufRead::lines
+#### std::io::BufRead::lines
 
   - Description
 
@@ -1862,7 +1945,7 @@ CopyトレイトとCloneトレイトの違いを以下に示す
 
 ---
 
-### std::io::Write::write_all
+#### std::io::Write::write_all
 
 - Description
 
@@ -1890,54 +1973,6 @@ CopyトレイトとCloneトレイトの違いを以下に示す
   }
   ```
 
-
-
----
-
-### std::convert::AsRef
-
-  - Description
-
-    簡単な参照間変換を行う。
-
-    このトレイトは、可変参照間の変換に使用される`FnMut`に似ている。
-
-    もし、高度な変換を行う必要がある場合は、`From`を`&T型`で実装するか、カスタム関数を実装するほうがよい。
-
-    `AsRef`は、参照と同じシグネチャを持っていますが、いくつか異なる点がある。
-
-     - `AsRef`とは異なり、参照は任意のTに対してブランケット実装(トレイト境界を満たすあらゆる型にトレイトを実装すること)を持っており、参照または値のどちらかを受け取るために使用できる
-
-     - 参照では、参照した値の`Hash`、`Eq`、`Ord`が同等であることが要求される
-
-     - 構造体の単一フィールドのみを借用したい場合は`Asref`を実施できますが、参照は実装できない。
-
-    
-
-    Note:このトレイトは失敗することができない。変換に失敗する可能性がある場合は、`Option<T>`または`Result<T, E>`を返す専用のメソッドを使用すること。
-
-   - Generic Implementations
-
-     `AsRef`は、内部の型が参照または変異可能な参照である場合に自動参照を行う (例: `foo.as_ref()`は、`foo`が`&mut Foo`または`&&mut Foo`の型を持っていても同じように動作する)。
-
-  - Example
-
-    トレイト境界を使うと、指定された型`T`に変換できる限り、異なる型の引数を受け入れることができます。
-
-    例えば`AsRef<str>`を受け取るジェネリック関数を作ることで、`&str`に変換できるすべての参照を引数として受け入れたいことを表現しています。`String`と`&str`はどちらも`AsRef<str>`を実装しているので、どちらも入力引数として受け入れることができます。
-
-  ~~~rust
-  fn is_hello<T: AsRef<str>>(s: T) {
-     assert_eq!("hello", s.as_ref());
-  }
-  
-  let s = "hello";
-  is_hello(s);
-  
-  let s = "hello".to_string();
-  is_hello(s);
-  ~~~
-
 ---
 
 ### std::path::Path
@@ -1952,7 +1987,7 @@ CopyトレイトとCloneトレイトの違いを以下に示す
 
 ---
 
-### std::path::Path::new
+#### std::path::Path::new
 
 - Description
 
@@ -1962,7 +1997,7 @@ CopyトレイトとCloneトレイトの違いを以下に示す
 
 ---
 
-### std::path::PathBuf
+#### std::path::PathBuf
 
 - Description
 
@@ -2071,7 +2106,7 @@ CopyトレイトとCloneトレイトの違いを以下に示す
 
 ---
 
-### std::fs::File::metadata
+#### std::fs::File::metadata
 
 - Description
 
@@ -2093,7 +2128,7 @@ CopyトレイトとCloneトレイトの違いを以下に示す
 
 ---
 
-### std::fs::File::open
+#### std::fs::File::open
 
   - Description
 
@@ -2139,7 +2174,7 @@ CopyトレイトとCloneトレイトの違いを以下に示す
 
 ---
 
-### std::fs::OpenOptions::new
+#### std::fs::OpenOptions::new
 
 - Description
 
@@ -2160,7 +2195,7 @@ CopyトレイトとCloneトレイトの違いを以下に示す
 
 ---
 
-### std::fs::OpenOptions::read
+#### std::fs::OpenOptions::read
 
 - Description
 
@@ -2180,7 +2215,7 @@ CopyトレイトとCloneトレイトの違いを以下に示す
 
 ---
 
-### std::fs::OpenOptions::write
+#### std::fs::OpenOptions::write
 
 - Description
 
@@ -2202,7 +2237,7 @@ CopyトレイトとCloneトレイトの違いを以下に示す
 
 ---
 
-### std::fs::OpenOptions::create
+#### std::fs::OpenOptions::create
 
 - Description
 
@@ -2222,7 +2257,7 @@ CopyトレイトとCloneトレイトの違いを以下に示す
 
 ---
 
-### std::fs::OpenOptions::open
+#### std::fs::OpenOptions::open
 
 - Description
 
@@ -2828,7 +2863,7 @@ struct  Point {
 
 ---
 
-### std::iter::FromIterator
+#### std::iter::FromIterator
 
   - Description
 
@@ -2838,7 +2873,7 @@ struct  Point {
 
 ---
 
-### std::iter::FromIterator::from_iter
+#### std::iter::FromIterator::from_iter
 
 - Description
 
@@ -2863,7 +2898,7 @@ struct  Point {
 
 ---
 
-### std::iter::repeat_with
+#### std::iter::repeat_with
 
 - Description
 
@@ -2922,7 +2957,7 @@ struct  Point {
 
 ---
 
-###  std::iter::Iterator::collect
+####  std::iter::Iterator::collect
 
   - Description
 
@@ -2952,7 +2987,7 @@ struct  Point {
 
 ---
 
-### std::iter::Iterator::filter_map
+#### std::iter::Iterator::filter_map
 
 - Description
 
@@ -2990,7 +3025,7 @@ struct  Point {
 
 ---
 
-### std::iter::Iterator::partition
+#### std::iter::Iterator::partition
 
 - Description
 
@@ -3019,7 +3054,7 @@ struct  Point {
 
 ---
 
-### std::iter::Iterator::any
+#### std::iter::Iterator::any
 
 - Description
 
@@ -3033,13 +3068,13 @@ struct  Point {
 
 ---
 
-### std::iter::Iterator::find
+#### std::iter::Iterator::find
 
   - Description
 
 ---
 
-### std::iter::Iterator::find_map
+#### std::iter::Iterator::find_map
 
   - Description
 
@@ -3049,7 +3084,7 @@ struct  Point {
 
 ---
 
-### std::iter::Iterator::position
+#### std::iter::Iterator::position
 
   - Description
 
@@ -3061,7 +3096,7 @@ struct  Point {
 
 ---
 
-### std::iter::Iterator::rposition
+#### std::iter::Iterator::rposition
 
   - Description
 
@@ -3073,7 +3108,7 @@ struct  Point {
 
 ---
 
-### std::iter::Iterator::next
+#### std::iter::Iterator::next
 
   - Description
 
@@ -3081,7 +3116,7 @@ struct  Point {
 
 ---
 
-### std::iter::Iterator::take
+#### std::iter::Iterator::take
 
 - Description
 
@@ -3124,7 +3159,7 @@ struct  Point {
 
 ---
 
-### std::iter::Iterator::skip
+#### std::iter::Iterator::skip
 
 - Description
 
@@ -3145,7 +3180,7 @@ struct  Point {
 
 ---
 
-### std::iter::Iterator::filter
+#### std::iter::Iterator::filter
 
   - Description
 
@@ -3154,7 +3189,7 @@ struct  Point {
 
 ---
 
-### std::iter::Iterator::map
+#### std::iter::Iterator::map
 
   - Description
     クロージャを受け取り、各要素上でそのクロージャを呼び出すイテレータを作成します。
@@ -3164,7 +3199,7 @@ struct  Point {
 
 ---
 
-### std::iter::Iterator::take_while
+#### std::iter::Iterator::take_while
 
   - Description
     述語に基づいて要素を生成するイテレータを作成します。
@@ -3173,7 +3208,7 @@ struct  Point {
 
 ---
 
-### std::iter::Iterator::filter
+#### std::iter::Iterator::filter
 
   - Description
     クロージャを使用して要素を生成するかどうかを決定するイテレータを作成します。
@@ -3181,7 +3216,7 @@ struct  Point {
 
 ---
 
-### std::iter::Iterator::fold
+#### std::iter::Iterator::fold
 
   - Description
     関数を適用し、単一の最終値を生成するイテレータメソッド。
@@ -3194,7 +3229,7 @@ struct  Point {
 
 ---
 
-### std::iter::Iterator::enumerate
+#### std::iter::Iterator::enumerate
 
 - Description
 
@@ -3229,7 +3264,7 @@ struct  Point {
 
 ---
 
-### std::iter::Iterator::all
+#### std::iter::Iterator::all
 
 - Description
 
@@ -3268,7 +3303,7 @@ struct  Point {
 
 ---
 
-### std::iter::Iterator::peekable
+#### std::iter::Iterator::peekable
 
 - Description
 
@@ -3306,7 +3341,7 @@ struct  Point {
 
 ---
 
-### std::iter::Iterator::peek
+#### std::iter::Iterator::peek
 
 - Description
 
@@ -3344,7 +3379,7 @@ struct  Point {
 
 ---
 
-### std::iter::Iterator::rev
+#### std::iter::Iterator::rev
 
 - Description
 
@@ -3373,7 +3408,7 @@ struct  Point {
 
 ---
 
-### std::iter::Iterator::nth
+#### std::iter::Iterator::nth
 
   - Description
 
@@ -3389,7 +3424,7 @@ struct  Point {
 
 ---
 
-### std::iter::IntoIterator
+#### std::iter::IntoIterator
 
 - Description
 
@@ -3401,17 +3436,7 @@ struct  Point {
 
 ---
 
-### std::vec::IntoIter
-
-- Description
-
-  ベクトルの外に移動するイテレータ。
-
-  この構造体は、`[Vec]`の`into_iter`メソッドによって作成されます（`[IntoIterator] trait`によって提供されます）。
-
----
-
-### std::iter::Iterator::cloned
+#### std::iter::Iterator::cloned
 
 - Description
 
@@ -3437,6 +3462,16 @@ struct  Point {
 
 ---
 
+### std::vec::IntoIter
+
+- Description
+
+  ベクトルの外に移動するイテレータ。
+
+  この構造体は、`[Vec]`の`into_iter`メソッドによって作成されます（`[IntoIterator] trait`によって提供されます）。
+
+---
+
 ### std::vec::Vec::extend_from_slice
 
 - Description
@@ -3454,6 +3489,103 @@ struct  Point {
   vec.extend_from_slice(&[2, 3, 4]);
   assert_eq!(vec, [1, 2, 3, 4]);
   ~~~
+
+---
+
+### std::vec::Vec::dedup
+
+- Description
+
+  [PartialEq](https://doc.rust-lang.org/stable/std/cmp/trait.PartialEq.html)トレイトの実装に従って，ベクトル中の連続した繰り返し要素を削除します。
+
+  `Vec`がソートされている場合は，すべての重複した要素を削除します。
+
+- Example
+
+  ```rust
+  let mut vec = vec![1, 2, 2, 3, 2];
+  
+  vec.dedup();
+  
+  assert_eq!(vec, [1, 2, 3, 2]);
+  ```
+
+
+
+---
+
+### std::vec::Vec::with_capacity
+
+- Description
+
+  指定された容量の新しい空の`Vec<T>`を作成します。
+
+  `Vec`は、再割り当てを行わずに正確に容量要素を保持することができます。capacityが0の場合、ベクタは割り当てを行いません。
+
+  返されたベクタは指定された容量を持っていますが、ベクタの長さはゼロになることに注意することが重要です。長さと容量の違いについての説明は、容量と再割り当てを参照してください。
+
+
+
+---
+
+### std::vec::Vec::into_boxed_slice
+
+- Description
+
+  Vectorを`Box<[T]>`に変換します。
+
+  これにより、余った容量がなくなることに注意してください。
+
+- Example
+
+  ```rust
+  let v = vec![1, 2, 3];
+  
+  let slice = v.into_boxed_slice();
+  ```
+
+  Any excess capacity is removed:
+
+  ```rust
+  let mut vec = Vec::with_capacity(10);
+  vec.extend([1, 2, 3].iter().cloned());
+  
+  assert_eq!(vec.capacity(), 10);
+  let slice = vec.into_boxed_slice();
+  assert_eq!(slice.into_vec().capacity(), 3);
+  ```
+
+
+
+
+---
+
+### std::vec::Vec::resize_with
+
+- Description
+
+  `len`が`new_len`と等しくなるように、`Vec`のサイズをその場で変更します。
+
+  `new_len`が`len`よりも大きい場合、`Vec`はその差だけ拡張され、追加された各スロットはクロージャ`f`を呼び出した結果で埋められます。
+
+  `new_len`が`len`よりも小さい場合、`Vec`は単に切り捨てられます。
+
+  このメソッドはクロージャを使って、プッシュのたびに新しい値を生成します。与えられた値のクローンを作りたい場合は、`Vec::resize`を使います。`Default`トレイトを使って値を生成したい場合には、2 番目の引数に`Default::default`を渡します。
+
+- Example
+
+  ```rust
+  let mut vec = vec![1, 2, 3];
+  vec.resize_with(5, Default::default);
+  assert_eq!(vec, [1, 2, 3, 0, 0]);
+  
+  let mut vec = vec![];
+  let mut p = 1;
+  vec.resize_with(4, || { p *= 2; p });
+  assert_eq!(vec, [2, 4, 8, 16]);
+  ```
+
+
 
 ---
 
@@ -3569,7 +3701,7 @@ struct  Point {
 
 ---
 
-### std::ops::Deref
+#### std::ops::Deref
 
 - Example
 
@@ -3620,7 +3752,7 @@ struct  Point {
 
 ---
 
-### std::ops::Index
+#### std::ops::Index
 
 - Description
 
@@ -3673,7 +3805,7 @@ struct  Point {
 
 ---
 
-### std::ops::IndexMut
+#### std::ops::IndexMut
 
 - Description
 
@@ -3747,7 +3879,7 @@ struct  Point {
 
 ---
 
-### std::ops::Add
+#### std::ops::Add
 
 - Description
 
@@ -3923,7 +4055,7 @@ struct  Point {
 
 ---
 
-### std::process::Command::spawn
+#### std::process::Command::spawn
 
 - Description
 
@@ -3941,11 +4073,41 @@ struct  Point {
           .expect("ls command failed to start");
   ```
 
+
+
+
+---
+
+#### std::process::Command::output
+
+- Description
+
+  子プロセスとしてコマンドを実行し、コマンドの終了を待ち、その出力をすべて収集します。
+
+  デフォルトでは、`stdout`と`stderr`が収集されます（結果の出力にも使用されます）。`stdin`は親プロセスから継承されず、子プロセスが`stdin`ストリームから読み取ろうとすると、ストリームは直ちに閉じられます。
+
+- Example
+
+  ```rust
+  use std::process::Command;
+  use std::io::{self, Write};
+  let output = Command::new("/bin/cat")
+                       .arg("file.txt")
+                       .output()
+                       .expect("failed to execute process");
+  
+  println!("status: {}", output.status);
+  io::stdout().write_all(&output.stdout).unwrap();
+  io::stderr().write_all(&output.stderr).unwrap();
+  
+  assert!(output.status.success());
+  ```
+
   
 
 ---
 
-### std::process::exit
+#### std::process::exit
 
   - Description
 
@@ -3957,7 +4119,7 @@ struct  Point {
 
 ---
 
-### std::process::Child
+#### std::process::Child
 
 - Description
 
@@ -4138,6 +4300,105 @@ struct  Point {
 
 ---
 
+### str::to_lowercase
+
+  - Description
+
+    この文字列スライスの小文字に相当するものを、新しい [String] として返す。
+    `Lowercase`は、Unicode Derived Core Property Lowercaseの条項に従って定義される。
+    大文字小文字を変更すると複数の文字に展開されてしまう文字があるため、この関数はパラメータをそのまま変更するのではなく、[String]として返す。
+
+
+
+---
+
+### str::parse
+
+- Description
+
+  この文字列スライスを別の型にパースします。
+
+  `parse`は非常に一般的なので、型の推論に問題が生じることがあります。そのため、`parse`は「ターボフィッシュ」として親しまれている構文（`::<>`）を目にする数少ない機会となっています。これは、型推論アルゴリズムが、どの型にパースしようとしているのかを具体的に理解するのに役立ちます。
+
+  `parse`は、`FromStr`トレイトを実装したあらゆる型を解析することができます。
+
+- Errors
+
+  この文字列スライスを目的の型にパースできない場合は`Err`を返します。
+
+- Example
+
+  ```rust
+  let four: u32 = "4".parse().unwrap();
+  
+  assert_eq!(4, four);
+  ```
+
+  Using the ‘turbofish’ instead of annotating `four`:
+
+  ```rust
+  let four = "4".parse::<u32>();
+  
+  assert_eq!(Ok(4), four);
+  ```
+
+  Failing to parse:
+
+  ```rust
+  let nope = "j".parse::<u32>();
+  
+  assert!(nope.is_err());
+  ```
+
+
+---
+
+### str::find
+
+- Description
+
+  この文字列スライスのパターンにマッチする最初の文字のバイトインデックスを返します。
+
+  パターンにマッチしない場合は`None`を返します。
+
+  パターンは、`&str`、`char`、`chars`のスライス、または、文字がマッチするかどうかを判断する関数やクロージャです。
+
+- Example
+
+  Simple patterns:
+
+  ```rust
+  let s = "Löwe 老虎 Léopard Gepardi";
+  
+  assert_eq!(s.find('L'), Some(0));
+  assert_eq!(s.find('é'), Some(14));
+  assert_eq!(s.find("pard"), Some(17));
+  ```
+
+  More complex patterns using point-free style and closures:
+
+  ```rust
+  let s = "Löwe 老虎 Léopard";
+  
+  assert_eq!(s.find(char::is_whitespace), Some(5));
+  assert_eq!(s.find(char::is_lowercase), Some(1));
+  assert_eq!(s.find(|c: char| c.is_whitespace() || c.is_lowercase()), Some(1));
+  assert_eq!(s.find(|c: char| (c < 'o') && (c > 'a')), Some(4));
+  ```
+
+  Not finding the pattern:
+
+  ```rust
+  let s = "Löwe 老虎 Léopard";
+  let x: &[_] = &['1', '2'];
+  
+  assert_eq!(s.find(x), None);
+  ```
+
+
+
+---
+
 ### std::trim
 
 - Description
@@ -4287,9 +4548,6 @@ struct  Point {
   assert!(v == [5, 4, 3, 2, 1]);
   ```
 
-
-
-
 ---
 
 ### slice::sort_by_key
@@ -4420,103 +4678,6 @@ struct  Point {
 
 ---
 
-### std::vec::Vec::dedup
-
-- Description
-
-  [PartialEq](https://doc.rust-lang.org/stable/std/cmp/trait.PartialEq.html)トレイトの実装に従って，ベクトル中の連続した繰り返し要素を削除します。
-
-  `Vec`がソートされている場合は，すべての重複した要素を削除します。
-
-- Example
-
-  ```rust
-  let mut vec = vec![1, 2, 2, 3, 2];
-  
-  vec.dedup();
-  
-  assert_eq!(vec, [1, 2, 3, 2]);
-  ```
-
-
-
----
-
-### std::vec::Vec::with_capacity
-
-- Description
-
-  指定された容量の新しい空の`Vec<T>`を作成します。
-
-  `Vec`は、再割り当てを行わずに正確に容量要素を保持することができます。capacityが0の場合、ベクタは割り当てを行いません。
-
-  返されたベクタは指定された容量を持っていますが、ベクタの長さはゼロになることに注意することが重要です。長さと容量の違いについての説明は、容量と再割り当てを参照してください。
-
-
-
----
-
-### std::vec::Vec::into_boxed_slice
-
-- Description
-
-  Vectorを`Box<[T]>`に変換します。
-
-  これにより、余った容量がなくなることに注意してください。
-
-- Example
-
-  ```rust
-  let v = vec![1, 2, 3];
-  
-  let slice = v.into_boxed_slice();
-  ```
-
-  Any excess capacity is removed:
-
-  ```rust
-  let mut vec = Vec::with_capacity(10);
-  vec.extend([1, 2, 3].iter().cloned());
-  
-  assert_eq!(vec.capacity(), 10);
-  let slice = vec.into_boxed_slice();
-  assert_eq!(slice.into_vec().capacity(), 3);
-  ```
-
-
-
-
----
-
-### std::vec::Vec::resize_with
-
-- Description
-
-  `len`が`new_len`と等しくなるように、`Vec`のサイズをその場で変更します。
-
-  `new_len`が`len`よりも大きい場合、`Vec`はその差だけ拡張され、追加された各スロットはクロージャ`f`を呼び出した結果で埋められます。
-
-  `new_len`が`len`よりも小さい場合、`Vec`は単に切り捨てられます。
-
-  このメソッドはクロージャを使って、プッシュのたびに新しい値を生成します。与えられた値のクローンを作りたい場合は、`Vec::resize`を使います。`Default`トレイトを使って値を生成したい場合には、2 番目の引数に`Default::default`を渡します。
-
-- Example
-
-  ```rust
-  let mut vec = vec![1, 2, 3];
-  vec.resize_with(5, Default::default);
-  assert_eq!(vec, [1, 2, 3, 0, 0]);
-  
-  let mut vec = vec![];
-  let mut p = 1;
-  vec.resize_with(4, || { p *= 2; p });
-  assert_eq!(vec, [2, 4, 8, 16]);
-  ```
-
-
-
----
-
 ### std::collections::BTreeSet
 
 - Description
@@ -4559,61 +4720,6 @@ struct  Point {
 
   
 
-
----
-
-### str::to_lowercase
-
-  - Description
-
-    この文字列スライスの小文字に相当するものを、新しい [String] として返す。
-    `Lowercase`は、Unicode Derived Core Property Lowercaseの条項に従って定義される。
-    大文字小文字を変更すると複数の文字に展開されてしまう文字があるため、この関数はパラメータをそのまま変更するのではなく、[String]として返す。
-
-
-
----
-
-### str::parse
-
-- Description
-
-  この文字列スライスを別の型にパースします。
-
-  `parse`は非常に一般的なので、型の推論に問題が生じることがあります。そのため、`parse`は「ターボフィッシュ」として親しまれている構文（`::<>`）を目にする数少ない機会となっています。これは、型推論アルゴリズムが、どの型にパースしようとしているのかを具体的に理解するのに役立ちます。
-
-  `parse`は、`FromStr`トレイトを実装したあらゆる型を解析することができます。
-
-- Errors
-
-  この文字列スライスを目的の型にパースできない場合は`Err`を返します。
-
-- Example
-
-  ```rust
-  let four: u32 = "4".parse().unwrap();
-  
-  assert_eq!(4, four);
-  ```
-
-  Using the ‘turbofish’ instead of annotating `four`:
-
-  ```rust
-  let four = "4".parse::<u32>();
-  
-  assert_eq!(Ok(4), four);
-  ```
-
-  Failing to parse:
-
-  ```rust
-  let nope = "j".parse::<u32>();
-  
-  assert!(nope.is_err());
-  ```
-
-  
-
 ---
 
 ### char::to_digit
@@ -4652,52 +4758,6 @@ struct  Point {
   ```rust
   assert_eq!('f'.to_digit(10), None);
   assert_eq!('z'.to_digit(16), None);
-  ```
-
-
-
----
-
-### str::find
-
-- Description
-
-  この文字列スライスのパターンにマッチする最初の文字のバイトインデックスを返します。
-
-  パターンにマッチしない場合は`None`を返します。
-
-  パターンは、`&str`、`char`、`chars`のスライス、または、文字がマッチするかどうかを判断する関数やクロージャです。
-
-- Example
-
-  Simple patterns:
-
-  ```rust
-  let s = "Löwe 老虎 Léopard Gepardi";
-  
-  assert_eq!(s.find('L'), Some(0));
-  assert_eq!(s.find('é'), Some(14));
-  assert_eq!(s.find("pard"), Some(17));
-  ```
-
-  More complex patterns using point-free style and closures:
-
-  ```rust
-  let s = "Löwe 老虎 Léopard";
-  
-  assert_eq!(s.find(char::is_whitespace), Some(5));
-  assert_eq!(s.find(char::is_lowercase), Some(1));
-  assert_eq!(s.find(|c: char| c.is_whitespace() || c.is_lowercase()), Some(1));
-  assert_eq!(s.find(|c: char| (c < 'o') && (c > 'a')), Some(4));
-  ```
-
-  Not finding the pattern:
-
-  ```rust
-  let s = "Löwe 老虎 Léopard";
-  let x: &[_] = &['1', '2'];
-  
-  assert_eq!(s.find(x), None);
   ```
 
 
@@ -5145,7 +5205,7 @@ struct  Point {
 
   言い換えれば、2つのキーが等しい場合、それらのハッシュは等しくなければなりません。
 
-  キーがマップの中にある間に、Hash形質によって決定されるキーのハッシュや、`Eq`トレイトによって決定されるキーの等値性が変化するような方法でキーが修正されることは、論理エラーです。これは通常、`Cell`、`RefCell`、グローバルステート、I/O、または安全でないコードによってのみ可能です。このような論理エラーから生じる動作は規定されていませんが、未定義の動作になることはありません。これには、パニック、不正な結果、アボート、メモリリーク、終了しないことなどが含まれます。
+  キーがマップの中にある間に、Hashトレイトによって決定されるキーのハッシュや、`Eq`トレイトによって決定されるキーの等値性が変化するような方法でキーが修正されることは、論理エラーです。これは通常、`Cell`、`RefCell`、グローバルステート、I/O、または安全でないコードによってのみ可能です。このような論理エラーから生じる動作は規定されていませんが、未定義の動作になることはありません。これには、パニック、不正な結果、アボート、メモリリーク、終了しないことなどが含まれます。
 
   ハッシュテーブルの実装は、`Google`の`SwissTable`を`Rust`に移植したものです。オリジナルの`C++`バージョンの`SwissTable`はこちらで見ることができ、この`CppCon`の講演ではアルゴリズムがどのように動作するかの概要が説明されています。
 
@@ -5710,7 +5770,7 @@ struct  Point {
 
 ---
 
-### std::thread::spawn
+#### std::thread::spawn
 
 - Description
 
@@ -5773,7 +5833,7 @@ struct  Point {
 
 ---
 
-### [std](https://doc.rust-lang.org/stable/std/index.html)::[thread](https://doc.rust-lang.org/stable/std/thread/index.html)::JoinHandle
+#### [std](https://doc.rust-lang.org/stable/std/index.html)::[thread](https://doc.rust-lang.org/stable/std/thread/index.html)::JoinHandle
 
 - Description
 
@@ -5787,7 +5847,7 @@ struct  Point {
 
 ---
 
-### std::thread::JoinHandle::join
+#### std::thread::JoinHandle::join
 
   - Description
 
@@ -5799,7 +5859,7 @@ struct  Point {
 
 ---
 
-### std::thread::sleep
+#### std::thread::sleep
 
   - Description
 
@@ -5809,7 +5869,7 @@ struct  Point {
 
 ---
 
-### std::thread::LocalKey
+#### std::thread::LocalKey
 
 - Description
 
@@ -5866,7 +5926,7 @@ struct  Point {
 
 ---
 
-### std::thread::LocalKey::with
+#### std::thread::LocalKey::with
 
 - Description
 
@@ -6348,7 +6408,7 @@ struct  Point {
 
 ---
 
-### std::rc::Rc::new
+#### std::rc::Rc::new
 
 - Description
 
@@ -6366,7 +6426,7 @@ struct  Point {
 
 ---
 
-### std::rc::Rc::strong_count
+#### std::rc::Rc::strong_count
 
 - Description
 
@@ -6387,7 +6447,7 @@ struct  Point {
 
 ---
 
-### std::rc::Rc::clone
+#### std::rc::Rc::clone
 
 - Description
 
@@ -6410,7 +6470,7 @@ struct  Point {
 
 ---
 
-### std::rc::Rc::get_mut
+#### std::rc::Rc::get_mut
 
 - Description
 
@@ -6437,7 +6497,7 @@ struct  Point {
 
 ---
 
-### std::rc::Rc::downgrade
+#### std::rc::Rc::downgrade
 
 - Description
 
@@ -6457,7 +6517,7 @@ struct  Point {
 
 ---
 
-### std::rc::Weak::upgrade
+#### std::rc::Weak::upgrade
 
 - Description
 
@@ -6679,7 +6739,7 @@ struct  Point {
 
 ---
 
-### std::cell::Cell::set
+#### std::cell::Cell::set
 
 - Description
 
@@ -6699,7 +6759,7 @@ struct  Point {
 
 ---
 
-### std::cell::Cell::get
+#### std::cell::Cell::get
 
 - Description
 
@@ -6719,7 +6779,7 @@ struct  Point {
 
 ---
 
-### std::cell::Refcell
+#### std::cell::Refcell
 
 - Description
 
@@ -6731,11 +6791,11 @@ struct  Point {
 
 ---
 
-### std::cell::RefCell::new
+#### std::cell::RefCell::new
 
 - Description
 
-  値を含む新しいRefCellを作成します。
+  値を含む新しい`RefCell`を作成します。
 
 - Example
 
@@ -6749,7 +6809,7 @@ struct  Point {
 
 ---
 
-### std::cell::RefCell::borrow_mut
+#### std::cell::RefCell::borrow_mut
 
 - Description
 
@@ -6788,7 +6848,7 @@ struct  Point {
 
 ---
 
-### std::cell::RefCell::borrow
+#### std::cell::RefCell::borrow
 
 - Example
 
@@ -6826,7 +6886,7 @@ struct  Point {
 
 ---
 
-### std::cell::RefCell::try_borrow_mut
+#### std::cell::RefCell::try_borrow_mut
 
 - Description
 
@@ -6855,7 +6915,7 @@ struct  Point {
 
 ---
 
-### std::net::TcpListener
+#### std::net::TcpListener
 
 - Description
 
@@ -6954,7 +7014,7 @@ struct  Point {
 
 ---
 
-### std::net::TcpStream
+#### std::net::TcpStream
 
 - Description
 
