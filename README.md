@@ -125,6 +125,7 @@
 * [Rustの非同期プログラミングをマスターする](https://tech-blog.optim.co.jp/entry/2019/11/08/163000)
 * [やってみる](https://ytyaru.hatenablog.com/archive/category/Rust)
 * [Rustで`Vec<T>`に`&`を付けると`&[T]`が得られる理由](https://qiita.com/mosh/items/51bd202c9f738956829e)
+* [The Java Tutorials with Rust](https://rust-java-tutorials.netlify.app/blog/)
 
 ---
 
