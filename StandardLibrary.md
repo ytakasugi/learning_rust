@@ -2288,7 +2288,11 @@ is_hello(s);
 
 ---
 
-### std::fs::write
+### std::fs
+
+---
+
+#### std::fs::write
 
 - Descriptiom
 
@@ -2314,7 +2318,11 @@ is_hello(s);
 
 ---
 
-### std::env::Args
+### std::env
+
+---
+
+#### std::env::Args
 
   - Description
 
@@ -2324,7 +2332,7 @@ is_hello(s);
 
 ---
 
-### std::env::args
+#### std::env::args
 
   - Description
 
@@ -2332,7 +2340,7 @@ is_hello(s);
 
 ---
 
-### std::env::set_current_dir
+#### std::env::set_current_dir
 
 - Description
 
@@ -2342,37 +2350,19 @@ is_hello(s);
 
 ---
 
-### std::str::from_utf8
+#### std::env::var
 
-- Description
+  - Description
 
-  バイトのスライスを文字列のスライスに変換します。
-
-  文字列スライス(`&str`)はバイト(`[u8]`)でできており、バイトスライス(`&[u8]`)はバイトでできているので、この関数は両者を変換します。`from_utf8()`は、バイトが有効なUTF-8であることを確認してから変換を行います。
-
-  バイトスライスが有効な UTF-8 であることが確実で、有効性チェックのオーバーヘッドを発生させたくない場合は、この関数の安全ではないバージョンの`[from_utf8_unchecked]`があります。
-
-  `str`の代わりに`String`が必要な場合は、`String::from_utf8`を検討してください。
-
-  `[u8; N]`をスタック割り当てでき、その`&[u8]`を取ることができるので、この関数はスタック割り当てされた文字列を持つ一つの方法です。以下の例のセクションに例があります。
+    現在のプロセスから環境変数のキーを取得する。
 
 ---
 
-### String::from_utf8_lossy
-
-- Description
-
-  無効な文字を含むバイトのスライスを文字列に変換します。
-
-  文字列はバイト([u8])でできており、バイトのスライス(&[u8])はバイトでできているので、この関数は両者を変換します。ただし、すべてのバイトスライスが有効な文字列であるわけではありません: 文字列は有効なUTF-8である必要があります。この変換の際、`from_utf8_lossy()`は無効な UTF-8 シーケンスを`U+FFFD REPLACEMENT CHARACTER`で置き換えます。
-
-  バイトスライスが有効なUTF-8であることが確実で、変換のオーバーヘッドを発生させたくない場合は、この関数の安全でないバージョンである`from_utf8_unchecked`があります。
-
-  この関数は`Cow<'a, str>`を返します。バイトスライスが無効なUTF-8であれば、置換文字を挿入する必要がありますが、これは文字列のサイズを変えることになるので、Stringが必要になります。しかし、すでに有効なUTF-8であれば、新しい割り当ては必要ありません。この戻り値型は、両方のケースを処理することができます。
+### std::borrow
 
 ---
 
-### std::borrow::ToOwned
+#### std::borrow::ToOwned
 
 - Description
 
@@ -2380,7 +2370,11 @@ is_hello(s);
 
 ---
 
-### std::cmp::Eq
+### std::cmp
+
+---
+
+#### std::cmp::Eq
 
 - Description
 
@@ -2421,7 +2415,7 @@ is_hello(s);
 
 ---
 
-### std::cmp::Ord
+#### std::cmp::Ord
 
 - Description
 
@@ -2479,7 +2473,7 @@ is_hello(s);
 
 ---
 
-### std::cmp::Ord::max
+#### std::cmp::Ord::max
 
 - Description
 
@@ -2494,11 +2488,9 @@ is_hello(s);
   assert_eq!(2, 2.max(2));
   ```
 
-
-
 ---
 
-### std::cmp::Ord::min
+#### std::cmp::Ord::min
 
 - Description
 
@@ -2517,7 +2509,7 @@ is_hello(s);
 
 ---
 
-### std::cmp::Ord::cmp
+#### std::cmp::Ord::cmp
 
 - Description
 
@@ -2539,7 +2531,7 @@ is_hello(s);
 
 ---
 
-### std::cmp::Ordering::reverse
+#### std::cmp::Ordering::reverse
 
 - Description
 
@@ -2575,7 +2567,7 @@ is_hello(s);
 
 ---
 
-### std::cmp::PartialEq
+#### std::cmp::PartialEq
 
   - Description
 
@@ -2635,7 +2627,7 @@ is_hello(s);
 
 ---
 
-### std::cmp::PartialOrd
+#### std::cmp::PartialOrd
 
   - Description
     並べ替え順序で比較できる値の特徴。
@@ -2709,7 +2701,11 @@ impl PartialEq for Person {
 
 ---
 
-### std::default::Default
+### std::default
+
+---
+
+#### std::default::Default
 
   - Description
     型に有用なデフォルト値を与えるためのトレイト。
@@ -2776,7 +2772,11 @@ struct SomeOptions {
 
 ---
 
-### std::fmt::Debug
+### std::fmt
+
+---
+
+#### std::fmt::Debug
 
   - Description
     `?`フォーマット。
@@ -3462,7 +3462,10 @@ struct  Point {
 
 ---
 
-### std::vec::IntoIter
+### std::vec
+
+---
+#### std::vec::IntoIter
 
 - Description
 
@@ -3472,7 +3475,7 @@ struct  Point {
 
 ---
 
-### std::vec::Vec::extend_from_slice
+#### std::vec::Vec::extend_from_slice
 
 - Description
 
@@ -3492,7 +3495,7 @@ struct  Point {
 
 ---
 
-### std::vec::Vec::dedup
+#### std::vec::Vec::dedup
 
 - Description
 
@@ -3514,7 +3517,7 @@ struct  Point {
 
 ---
 
-### std::vec::Vec::with_capacity
+#### std::vec::Vec::with_capacity
 
 - Description
 
@@ -3528,7 +3531,7 @@ struct  Point {
 
 ---
 
-### std::vec::Vec::into_boxed_slice
+#### std::vec::Vec::into_boxed_slice
 
 - Description
 
@@ -3560,7 +3563,7 @@ struct  Point {
 
 ---
 
-### std::vec::Vec::resize_with
+#### std::vec::Vec::resize_with
 
 - Description
 
@@ -3962,7 +3965,19 @@ struct  Point {
 
 ---
 
-### std::process::Command
+#### std::process::exit
+
+  - Description
+
+    指定した終了コードで現在のプロセスを終了させる。
+
+    この関数は何も返却せず、現在のプロセスを即座に終了させる。終了コードは基盤となるOSに渡され、別のプロセスで使用できるようになる。
+
+    この関数は何も返却せず、プロセスを終了するので、現在のスタックや他のスレッドのスタック上のデストラクタは実行されないことに注意すること。クリーンなシャットダウンが必要な場合は、実行するデストラクタがなくなった時点でのみこの関数を呼び出すことを検討すること。
+
+---
+
+####  std::process::Command
 
 - Description
 
@@ -4107,18 +4122,6 @@ struct  Point {
 
 ---
 
-#### std::process::exit
-
-  - Description
-
-    指定した終了コードで現在のプロセスを終了させる。
-
-    この関数は何も返却せず、現在のプロセスを即座に終了させる。終了コードは基盤となるOSに渡され、別のプロセスで使用できるようになる。
-
-    この関数は何も返却せず、プロセスを終了するので、現在のスタックや他のスレッドのスタック上のデストラクタは実行されないことに注意すること。クリーンなシャットダウンが必要な場合は、実行するデストラクタがなくなった時点でのみこの関数を呼び出すことを検討すること。
-
----
-
 #### std::process::Child
 
 - Description
@@ -4155,11 +4158,27 @@ struct  Point {
   assert!(ecode.success());
   ```
 
+---
 
+### std::string::String
 
 ---
 
-### std::string::String::as_str
+#### String::from_utf8_lossy
+
+- Description
+
+  無効な文字を含むバイトのスライスを文字列に変換します。
+
+  文字列はバイト([u8])でできており、バイトのスライス(&[u8])はバイトでできているので、この関数は両者を変換します。ただし、すべてのバイトスライスが有効な文字列であるわけではありません: 文字列は有効なUTF-8である必要があります。この変換の際、`from_utf8_lossy()`は無効な UTF-8 シーケンスを`U+FFFD REPLACEMENT CHARACTER`で置き換えます。
+
+  バイトスライスが有効なUTF-8であることが確実で、変換のオーバーヘッドを発生させたくない場合は、この関数の安全でないバージョンである`from_utf8_unchecked`があります。
+
+  この関数は`Cow<'a, str>`を返します。バイトスライスが無効なUTF-8であれば、置換文字を挿入する必要がありますが、これは文字列のサイズを変えることになるので、Stringが必要になります。しかし、すでに有効なUTF-8であれば、新しい割り当ては必要ありません。この戻り値型は、両方のケースを処理することができます。
+
+---
+
+#### std::string::String::as_str
 
 - Description
 
@@ -4174,11 +4193,9 @@ struct  Point {
   ```
 
 
-
-
 ---
 
-### std::string::String::into_bytes
+#### std::string::String::into_bytes
 
 - Description
 
@@ -4199,7 +4216,27 @@ struct  Point {
 
 ---
 
-### str::contains
+### std::str
+
+---
+
+#### std::str::from_utf8
+
+- Description
+
+  バイトのスライスを文字列のスライスに変換します。
+
+  文字列スライス(`&str`)はバイト(`[u8]`)でできており、バイトスライス(`&[u8]`)はバイトでできているので、この関数は両者を変換します。`from_utf8()`は、バイトが有効なUTF-8であることを確認してから変換を行います。
+
+  バイトスライスが有効な UTF-8 であることが確実で、有効性チェックのオーバーヘッドを発生させたくない場合は、この関数の安全ではないバージョンの`[from_utf8_unchecked]`があります。
+
+  `str`の代わりに`String`が必要な場合は、`String::from_utf8`を検討してください。
+
+  `[u8; N]`をスタック割り当てでき、その`&[u8]`を取ることができるので、この関数はスタック割り当てされた文字列を持つ一つの方法です。以下の例のセクションに例があります。
+
+---
+
+#### str::contains
 
   - Description
 
@@ -4209,7 +4246,7 @@ struct  Point {
 
 ---
 
-### str::chars
+#### str::chars
 
 - Description
 
@@ -4244,7 +4281,7 @@ struct  Point {
 
 ---
 
-### str::split_whitespace
+#### str::split_whitespace
 
 - Description
 
@@ -4286,7 +4323,7 @@ struct  Point {
 
 ---
 
-### str::lines
+#### str::lines
 
   - Description
 
@@ -4300,7 +4337,7 @@ struct  Point {
 
 ---
 
-### str::to_lowercase
+#### str::to_lowercase
 
   - Description
 
@@ -4312,7 +4349,7 @@ struct  Point {
 
 ---
 
-### str::parse
+#### str::parse
 
 - Description
 
@@ -4353,7 +4390,7 @@ struct  Point {
 
 ---
 
-### str::find
+#### str::find
 
 - Description
 
@@ -4431,7 +4468,11 @@ struct  Point {
 
 ---
 
-### slice::windows
+### slice
+
+---
+
+#### slice::windows
 
 - Description
 
@@ -4452,7 +4493,7 @@ struct  Point {
 
 ---
 
-### slice::contains
+#### slice::contains
 
 - Descriptiom
 
@@ -4460,7 +4501,7 @@ struct  Point {
 
 ---
 
-### slice::starts_with
+#### slice::starts_with
 
 - Description
 
@@ -4468,7 +4509,7 @@ struct  Point {
 
 ---
 
-### slice::ends_with
+#### slice::ends_with
 
 - Description
 
@@ -4478,7 +4519,7 @@ struct  Point {
 
 ---
 
-### slice::sort
+#### slice::sort
 
 - Description
 
@@ -4507,7 +4548,7 @@ struct  Point {
 
 ---
 
-### slice::sort_by
+#### slice::sort_by
 
 - Description
 
@@ -4550,7 +4591,7 @@ struct  Point {
 
 ---
 
-### slice::sort_by_key
+#### slice::sort_by_key
 
 - Description
 
@@ -4581,7 +4622,7 @@ struct  Point {
 
 ---
 
-### slice::iter_mut
+#### slice::iter_mut
 
 - Description
 
@@ -4591,7 +4632,7 @@ struct  Point {
 
 ---
 
-### slice::iter
+#### slice::iter
 
 - Description
 
@@ -4614,7 +4655,7 @@ struct  Point {
 
 ---
 
-### slice::get
+#### slice::get
 
 - Descroption
 
@@ -4637,7 +4678,7 @@ struct  Point {
 
 ---
 
-### slice::join
+#### slice::join
 
 - Description
 
@@ -4656,7 +4697,7 @@ struct  Point {
 
 ---
 
-### slice::into_vec
+#### slice::into_vec
 
 - Description
 
@@ -4678,51 +4719,10 @@ struct  Point {
 
 ---
 
-### std::collections::BTreeSet
-
-- Description
-
-  `B-Tree`をベースにしたセットです。
-
-  このコレクションの性能上の利点と欠点についての詳しい説明は、[`BTreeMap`](https://doc.rust-lang.org/stable/std/collections/struct.BTreeMap.html)のドキュメントを参照してください。
-
-  セットの中にあるアイテムが、[`Ord`](https://doc.rust-lang.org/stable/std/cmp/trait.Ord.html)トレイトによって決定される、他のアイテムに対するアイテムの順序が変更されるような方法で変更されることは、論理エラーです。これは通常、[`Cell`](https://doc.rust-lang.org/stable/std/cell/struct.Cell.html)、[`RefCell`](https://doc.rust-lang.org/stable/std/cell/struct.RefCell.html)、グローバルステート、`I/O`、または`unsafe`コードによってのみ可能です。このような論理エラーから生じる動作は規定されていませんが、未定義の動作になることはありません。これには、パニック、不正な結果、アボート、メモリリーク、終了しないことなどが含まれる。
-  
-- Example
-
-  ```rust
-  use std::collections::BTreeSet;
-  
-  // Type inference lets us omit an explicit type signature (which
-  // would be `BTreeSet<&str>` in this example).
-  let mut books = BTreeSet::new();
-  
-  // Add some books.
-  books.insert("A Dance With Dragons");
-  books.insert("To Kill a Mockingbird");
-  books.insert("The Odyssey");
-  books.insert("The Great Gatsby");
-  
-  // Check for a specific one.
-  if !books.contains("The Winds of Winter") {
-      println!("We have {} books, but The Winds of Winter ain't one.",
-               books.len());
-  }
-  
-  // Remove a book.
-  books.remove("The Odyssey");
-  
-  // Iterate over everything.
-  for book in &books {
-      println!("{}", book);
-  }
-  ```
-
-  
+### char
 
 ---
-
-### char::to_digit
+#### char::to_digit
 
 - Description
 
@@ -4764,7 +4764,7 @@ struct  Point {
 
 ---
 
-### char::is_whitespace
+#### char::is_whitespace
 
 - Description
 
@@ -4787,7 +4787,7 @@ struct  Point {
 
 ---
 
-### char::is_ascii::digit
+#### char::is_ascii::digit
 
 - Description
 
@@ -4873,7 +4873,7 @@ struct  Point {
 
 ---
 
-### std::any::TypeId
+#### std::any::TypeId
 
 - Description
 
@@ -4911,105 +4911,14 @@ struct  Point {
     assert_eq!(is_string(&"cookie monster".to_string()), true);
     ~~~
 
-    
-
 ---
 
-### std::marker::PhantomData
-
-- Description
-
-  `T`型を所有しているかのように「振る舞う」ものをマークするために使用されるゼロサイズの型。
-  型に`PhantomData<T>`フィールドを追加すると、実際には`T`型の値を格納していないにもかかわらず、あたかも`T`型の値を格納しているかのように振る舞うことをコンパイラに伝えます。この情報は、特定の安全プロパティを計算する際に使用されます。
-  PhantomData<T>の使用方法については、[Nomicon](https://doc.rust-lang.org/nomicon/phantom-data.html)を参照してください。
-
-- Example
-
-  - Unused lifetime parameters
-
-    おそらくPhantomDataの最も一般的な使用例は、未使用の寿命パラメータを持つ構造体で、通常は安全でないコードの一部として使用されます。例えば、ここには`*const T`型の2つのポインタを持つ`Slice`構造体があり、おそらくどこかの配列を指していると思われます。
-
-    ~~~rust
-    struct Slice<'a, T> {
-        start: *const T,
-        end: *const T,
-    }
-    ~~~
-
-    この意図は、基礎となるデータはライフタイム`'a`に対してのみ有効なので、`Slice`は`'a`よりも長生きしてはいけないということです。しかし、この意図はコードでは表現されていません。ライフタイム`'a`の用途がないため、どのデータに適用されるのかが明確ではありません。これを修正するには、コンパイラに`Slice`構造体に参照`&'a T`が含まれているかのように動作するように指示します。
-
-    ~~~rust
-    use std::marker::PhantomData;
-    
-    struct Slice<'a, T: 'a> {
-        start: *const T,
-        end: *const T,
-        phantom: PhantomData<&'a T>,
-    }
-    ~~~
-
-    これにより、`T: 'a`というアノテーションが必要になり、T内の参照が有効期間`'a`にわたって有効であることを示します。
-    `Slice`を初期化する際には、`Phantom`フィールドに`PhantomData`という値を指定するだけです。
-
-    ~~~rust
-    fn borrow_vec<T>(vec: &Vec<T>) -> Slice<'_, T> {
-        let ptr = vec.as_ptr();
-        Slice {
-            start: ptr,
-            end: unsafe { ptr.add(vec.len()) },
-            phantom: PhantomData,
-        }
-    }
-    ~~~
-
-  - Unused type parameters
-
-    構造体自体にはデータが存在しないにもかかわらず、未使用の型パラメータが存在し、構造体がどのようなデータに「関連付けられているか」を示すことがあります。ここでは、`FFI`でこのような問題が発生する例を示します。外部インターフェイスでは、異なるタイプの`Rust`値を参照するために`*mut()`型のハンドルを使用します。ハンドルをラップする`ExternalResource`構造体のファントム型パラメータを使用して`Rust`型を追跡します。
-
-    ~~~rust
-    use std::marker::PhantomData;
-    use std::mem;
-    
-    struct ExternalResource<R> {
-       resource_handle: *mut (),
-       resource_type: PhantomData<R>,
-    }
-    
-    impl<R: ResType> ExternalResource<R> {
-        fn new() -> Self {
-            let size_of_res = mem::size_of::<R>();
-            Self {
-                resource_handle: foreign_lib::new(size_of_res),
-                resource_type: PhantomData,
-            }
-        }
-    
-        fn do_stuff(&self, param: ParamType) {
-            let foreign_params = convert_params(param);
-            foreign_lib::do_stuff(self.resource_handle, foreign_params);
-        }
-    }
-    ~~~
-
-  - Ownership and the drop check
-
-    `PhantomData<T>`型のフィールドを追加することは、あなたの型が`T`型のデータを所有していることを示します。これは、あなたの型がドロップされたときに、`T`型の1つ以上のインスタンスをドロップする可能性があることを意味しています。これは、`Rust`コンパイラのドロップチェック解析に関係します。
-    構造体が実際に`T`型のデータを所有していない場合は、所有権を示さないように`PhantomData<&'a T>`(理想的には)または`PhantomData<*const T>`(ライフタイムが適用されない場合)のような参照型を使用した方が良いでしょう。
-
----
-
-### std::env::var
-
-  - Description
-
-    現在のプロセスから環境変数のキーを取得する。
-
-
+### std::time
 
 
 ---
 
-### std::time::Duration
+#### std::time::Duration
 
   - Description
 
@@ -5019,7 +4928,7 @@ struct  Point {
 
 ---
 
-### std::time::Instant
+#### std::time::Instant
 
 - Description
 
@@ -5051,7 +4960,11 @@ struct  Point {
 
 ---
 
-### `std::hash::Hash`
+### std::hash
+
+---
+
+#### `std::hash::Hash`
 
 - Description
 
@@ -5154,7 +5067,7 @@ struct  Point {
 
 ---
 
-### `std::hash::Hasher`
+#### `std::hash::Hasher`
 
 - Description
 
@@ -5180,12 +5093,14 @@ struct  Point {
   println!("Hash is {:x}!", hasher.finish());
   ~~~
 
+---
 
+### std::collections
 
 
 ---
 
-### std::collections::HashMap
+#### std::collections::HashMap
 
 - Description
 
@@ -5337,7 +5252,7 @@ struct  Point {
 
 ---
 
-### std::collections::hash_map::HashMap::insert
+#### std::collections::hash_map::HashMap::insert
 
 - Description
 
@@ -5365,7 +5280,7 @@ struct  Point {
 
 ---
 
-### std::collections::hash_map::HashMap::get
+#### std::collections::hash_map::HashMap::get
 
 - Description
 
@@ -5388,7 +5303,7 @@ struct  Point {
 
 ---
 
-### std::collections::hash_map::HashMap::remove
+#### std::collections::hash_map::HashMap::remove
 
 - Description
 
@@ -5411,7 +5326,7 @@ struct  Point {
 
 ---
 
-### std::collections::hash_map::HashMap::contains_key
+#### std::collections::hash_map::HashMap::contains_key
 
 - Description
 
@@ -5434,7 +5349,7 @@ struct  Point {
 
 ---
 
-### std::collections::hash_map::HashMap::values
+#### std::collections::hash_map::HashMap::values
 
 - Desciption
 
@@ -5459,7 +5374,7 @@ struct  Point {
 
 ---
 
-### std::collections::HaseSet
+#### std::collections::HaseSet
 
 - Description
 
@@ -5541,7 +5456,7 @@ struct  Point {
 
 ---
 
-### std::collections::hash_set::HashSet::union
+#### std::collections::hash_set::HashSet::union
 
 - Description
 
@@ -5567,7 +5482,7 @@ struct  Point {
 
 ---
 
-### std::collections::hash_set::HashSet::contains
+#### std::collections::hash_set::HashSet::contains
 
 - Description
 
@@ -5589,7 +5504,7 @@ struct  Point {
 
 ---
 
-### std::collections::hash_set::HashSet::intersection
+#### std::collections::hash_set::HashSet::intersection
 
 - Description
 
@@ -5615,7 +5530,7 @@ struct  Point {
 
 ---
 
-### std::collections::HashSet::hash_set::difference
+#### std::collections::HashSet::hash_set::difference
 
 - Description
 
@@ -5642,12 +5557,58 @@ struct  Point {
   assert_eq!(diff, [4].iter().collect());
   ```
 
+---
 
+### std::collections::BTreeSet
+
+- Description
+
+  `B-Tree`をベースにしたセットです。
+
+  このコレクションの性能上の利点と欠点についての詳しい説明は、[`BTreeMap`](https://doc.rust-lang.org/stable/std/collections/struct.BTreeMap.html)のドキュメントを参照してください。
+
+  セットの中にあるアイテムが、[`Ord`](https://doc.rust-lang.org/stable/std/cmp/trait.Ord.html)トレイトによって決定される、他のアイテムに対するアイテムの順序が変更されるような方法で変更されることは、論理エラーです。これは通常、[`Cell`](https://doc.rust-lang.org/stable/std/cell/struct.Cell.html)、[`RefCell`](https://doc.rust-lang.org/stable/std/cell/struct.RefCell.html)、グローバルステート、`I/O`、または`unsafe`コードによってのみ可能です。このような論理エラーから生じる動作は規定されていませんが、未定義の動作になることはありません。これには、パニック、不正な結果、アボート、メモリリーク、終了しないことなどが含まれる。
+
+- Example
+
+  ```rust
+  use std::collections::BTreeSet;
+  
+  // Type inference lets us omit an explicit type signature (which
+  // would be `BTreeSet<&str>` in this example).
+  let mut books = BTreeSet::new();
+  
+  // Add some books.
+  books.insert("A Dance With Dragons");
+  books.insert("To Kill a Mockingbird");
+  books.insert("The Odyssey");
+  books.insert("The Great Gatsby");
+  
+  // Check for a specific one.
+  if !books.contains("The Winds of Winter") {
+      println!("We have {} books, but The Winds of Winter ain't one.",
+               books.len());
+  }
+  
+  // Remove a book.
+  books.remove("The Odyssey");
+  
+  // Iterate over everything.
+  for book in &books {
+      println!("{}", book);
+  }
+  ```
+
+  
 
 
 ---
 
-### std::marker::Sync
+### std::marker
+
+---
+
+#### std::marker::Sync
 
 - Description
 
@@ -5673,7 +5634,7 @@ struct  Point {
 
 ---
 
-### std::marker::Send
+#### std::marker::Send
 
 - Description
 
@@ -5685,7 +5646,88 @@ struct  Point {
 
   詳しくは[Nomicon](https://doc.rust-lang.org/nomicon/send-and-sync.html)をご覧ください。
 
+---
 
+#### std::marker::PhantomData
+
+- Description
+
+  `T`型を所有しているかのように「振る舞う」ものをマークするために使用されるゼロサイズの型。
+  型に`PhantomData<T>`フィールドを追加すると、実際には`T`型の値を格納していないにもかかわらず、あたかも`T`型の値を格納しているかのように振る舞うことをコンパイラに伝えます。この情報は、特定の安全プロパティを計算する際に使用されます。
+  PhantomData<T>の使用方法については、[Nomicon](https://doc.rust-lang.org/nomicon/phantom-data.html)を参照してください。
+
+- Example
+
+  - Unused lifetime parameters
+
+    おそらくPhantomDataの最も一般的な使用例は、未使用の寿命パラメータを持つ構造体で、通常は安全でないコードの一部として使用されます。例えば、ここには`*const T`型の2つのポインタを持つ`Slice`構造体があり、おそらくどこかの配列を指していると思われます。
+
+    ~~~rust
+    struct Slice<'a, T> {
+        start: *const T,
+        end: *const T,
+    }
+    ~~~
+
+    この意図は、基礎となるデータはライフタイム`'a`に対してのみ有効なので、`Slice`は`'a`よりも長生きしてはいけないということです。しかし、この意図はコードでは表現されていません。ライフタイム`'a`の用途がないため、どのデータに適用されるのかが明確ではありません。これを修正するには、コンパイラに`Slice`構造体に参照`&'a T`が含まれているかのように動作するように指示します。
+
+    ~~~rust
+    use std::marker::PhantomData;
+    
+    struct Slice<'a, T: 'a> {
+        start: *const T,
+        end: *const T,
+        phantom: PhantomData<&'a T>,
+    }
+    ~~~
+
+    これにより、`T: 'a`というアノテーションが必要になり、T内の参照が有効期間`'a`にわたって有効であることを示します。
+    `Slice`を初期化する際には、`Phantom`フィールドに`PhantomData`という値を指定するだけです。
+
+    ~~~rust
+    fn borrow_vec<T>(vec: &Vec<T>) -> Slice<'_, T> {
+        let ptr = vec.as_ptr();
+        Slice {
+            start: ptr,
+            end: unsafe { ptr.add(vec.len()) },
+            phantom: PhantomData,
+        }
+    }
+    ~~~
+
+  - Unused type parameters
+
+    構造体自体にはデータが存在しないにもかかわらず、未使用の型パラメータが存在し、構造体がどのようなデータに「関連付けられているか」を示すことがあります。ここでは、`FFI`でこのような問題が発生する例を示します。外部インターフェイスでは、異なるタイプの`Rust`値を参照するために`*mut()`型のハンドルを使用します。ハンドルをラップする`ExternalResource`構造体のファントム型パラメータを使用して`Rust`型を追跡します。
+
+    ~~~rust
+    use std::marker::PhantomData;
+    use std::mem;
+    
+    struct ExternalResource<R> {
+       resource_handle: *mut (),
+       resource_type: PhantomData<R>,
+    }
+    
+    impl<R: ResType> ExternalResource<R> {
+        fn new() -> Self {
+            let size_of_res = mem::size_of::<R>();
+            Self {
+                resource_handle: foreign_lib::new(size_of_res),
+                resource_type: PhantomData,
+            }
+        }
+    
+        fn do_stuff(&self, param: ParamType) {
+            let foreign_params = convert_params(param);
+            foreign_lib::do_stuff(self.resource_handle, foreign_params);
+        }
+    }
+    ~~~
+
+  - Ownership and the drop check
+
+    `PhantomData<T>`型のフィールドを追加することは、あなたの型が`T`型のデータを所有していることを示します。これは、あなたの型がドロップされたときに、`T`型の1つ以上のインスタンスをドロップする可能性があることを意味しています。これは、`Rust`コンパイラのドロップチェック解析に関係します。
+    構造体が実際に`T`型のデータを所有していない場合は、所有権を示さないように`PhantomData<&'a T>`(理想的には)または`PhantomData<*const T>`(ライフタイムが適用されない場合)のような参照型を使用した方が良いでしょう。
 
 
 ---
@@ -5942,7 +5984,11 @@ struct  Point {
 
 ---
 
-### std::sync::mpsc
+### std::sync
+
+---
+
+#### std::sync::mpsc
 
   - Description
 
@@ -5968,7 +6014,7 @@ struct  Point {
 
 ---
 
-### std::sync::mpsc::channel
+#### std::sync::mpsc::channel
 
   - Description
 
@@ -5979,7 +6025,7 @@ struct  Point {
 
 ---
 
-### std::sync::mpsc::Sender::send
+#### std::sync::mpsc::Sender::send
 
   - Description
 
@@ -5989,7 +6035,7 @@ struct  Point {
 
 ---
 
-### std::sync::mpsc::Receive::recv
+#### std::sync::mpsc::Receive::recv
 
   - Description
 
@@ -5999,7 +6045,7 @@ struct  Point {
 
 ---
 
-### std::sync::Mutex
+#### std::sync::Mutex
 
   - Description
 
@@ -6015,7 +6061,7 @@ struct  Point {
 
 ---
 
-### std::sync::Mutex::lock
+#### std::sync::Mutex::lock
 
   - Description
 
@@ -6031,7 +6077,7 @@ struct  Point {
 
 ---
 
-### std::sync::Arc
+#### std::sync::Arc
 
   - Description
 
@@ -6089,7 +6135,7 @@ struct  Point {
 
 ---
 
-### std::sync::Arc::new
+#### std::sync::Arc::new
 
 - Description
 
@@ -6107,7 +6153,7 @@ struct  Point {
 
 ---
 
-### std::sync::Arc::clone
+#### std::sync::Arc::clone
 
 - Description
 
@@ -6129,7 +6175,7 @@ struct  Point {
 
 ---
 
-### std::sync::RwLock
+#### std::sync::RwLock
 
 - Description
 
@@ -6175,7 +6221,7 @@ struct  Point {
 
 ---
 
-### std::sync::RwLock::new
+#### std::sync::RwLock::new
 
 - Description
 
@@ -6193,7 +6239,7 @@ struct  Point {
 
 ---
 
-### std::sync::RwLock::read
+#### std::sync::RwLock::read
 
 - Description
 
@@ -6233,7 +6279,7 @@ struct  Point {
 
 ---
 
-### std::sync::RwLock::write
+#### std::sync::RwLock::write
 
 - Description
 
@@ -6268,7 +6314,7 @@ struct  Point {
 
 ---
 
-### std::sync::atomic
+#### std::sync::atomic
 
 - Description
 
@@ -6394,7 +6440,7 @@ struct  Point {
 
 ---
 
-### std::rc::Rc
+#### std::rc::Rc
 
 - Description
 
@@ -6701,7 +6747,7 @@ struct  Point {
 
 ---
 
-### std::cell::Cell
+#### std::cell::Cell
 
 - Description
 
