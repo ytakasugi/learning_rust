@@ -65,6 +65,7 @@
 * [Rust by Example](https://doc.rust-jp.rs/rust-by-example-ja/)
 * [The Rust Programming Language](https://doc.rust-jp.rs/book-ja/)
 * [rust-lang-ja](https://github.com/rust-lang-ja)
+* [The Rust Programming Language(旧和訳リポジトリ)](https://github.com/rust-lang-ja/the-rust-programming-language-ja/tree/master/1.9/ja/book)
 * [the-rust-programming-language-ja](https://github.com/rust-lang-ja/the-rust-programming-language-ja)
 * [Command Line Applications in Rust](https://rust-cli.github.io/book/index.html)
 * [Rust チートシート](https://cheats.rs/)
@@ -120,6 +121,7 @@
   * [Rustで`Vec<T>`に`&`を付けると`&[T]`が得られる理由](https://qiita.com/mosh/items/51bd202c9f738956829e)
   * [The Java Tutorials with Rust](https://rust-java-tutorials.netlify.app/blog/)
   * [Rustのファイルパスの扱いが複雑すぎる件](https://qiita.com/kujirahand/items/b5ab1429b51ab674f5cf)
+  * [Rustの参照、Box、Rcを関数の引数・返り値にした場合の挙動](https://zenn.dev/exyrias/articles/c1d1c6d825fbbb166d44)
   
 * 構文
   * [とほほのWWW入門](http://www.tohoho-web.com/ex/rust.html)
