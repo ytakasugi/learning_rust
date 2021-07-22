@@ -119,7 +119,8 @@
   * [やってみる](https://ytyaru.hatenablog.com/archive/category/Rust)
   * [Rustで`Vec<T>`に`&`を付けると`&[T]`が得られる理由](https://qiita.com/mosh/items/51bd202c9f738956829e)
   * [The Java Tutorials with Rust](https://rust-java-tutorials.netlify.app/blog/)
-
+  * [Rustのファイルパスの扱いが複雑すぎる件](https://qiita.com/kujirahand/items/b5ab1429b51ab674f5cf)
+  
 * 構文
   * [とほほのWWW入門](http://www.tohoho-web.com/ex/rust.html)
   * [`impl Trait`について](https://qnighy.hatenablog.com/entry/2018/01/28/220000)
