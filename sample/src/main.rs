@@ -1,38 +1,24 @@
-trait Foo {
-    fn method(&self) -> String;
-}
+struct Adder;
 
-impl Foo for u8 {
-    fn method(&self) -> String {
-        format!("u8: {}", *self)
+impl Adder {
+    fn add(x: u8, y: u8, f: impl Fn(u8, u8) -> u8) -> u8 {
+        f(x, y)
     }
 }
-
-impl Foo for String {
-    fn method(&self) -> String {
-        format!("string: {}", *self)
-    }
-}
-
-fn do_something(x: &dyn Foo) {
-    x.method();
-}
-
-// `Box<dyn Foo>`で記述した場合
-// fn do_something(x: Box<dyn Foo>) {
-//     x.method();
-// }
 
 fn main() {
-    let x = 5u8;
-    let y = "Hello".to_string();
+    let arith_adder = |x, y| x + y;
+    let bool_adder = |x, y| {
+        if x == 1 || y == 1 {
+            1
+        } else {
+            0
+        }
+    };
 
-    do_something(&x);
-    do_something(&y);
+    let custom_adder = |x, y| 2 * x + y;
 
-    // `Box<dyn Foo>`の場合は、以下のように記述する
-    //do_something(Box::new(x));
-    //do_something(Box::new(x));
-
-    
+    println!("{}", Adder::add(4, 5, arith_adder));
+    println!("{}", Adder::add(0, 1, bool_adder));
+    println!("{}", Adder::add(1, 3, custom_adder));
 }

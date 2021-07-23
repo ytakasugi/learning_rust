@@ -122,6 +122,7 @@
   * [The Java Tutorials with Rust](https://rust-java-tutorials.netlify.app/blog/)
   * [Rustのファイルパスの扱いが複雑すぎる件](https://qiita.com/kujirahand/items/b5ab1429b51ab674f5cf)
   * [Rustの参照、Box、Rcを関数の引数・返り値にした場合の挙動](https://zenn.dev/exyrias/articles/c1d1c6d825fbbb166d44)
+  * [Rustのゼロコスト抽象化の効果をアセンブラで確認](https://blog.rust-jp.rs/tatsuya6502/posts/2019-12-zero-cost-abstraction/)
   
 * 構文
   * [とほほのWWW入門](http://www.tohoho-web.com/ex/rust.html)

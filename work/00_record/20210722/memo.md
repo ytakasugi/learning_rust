@@ -34,6 +34,62 @@ fn main() {
 }
 ```
 
+- 引数で使われた場合
+
+引数位置の`impl Trait`は、匿名の型引数に翻訳されます。頻出例は以下のようにコールバック関数を使う場合です。例えば、
+
+```rust
+// コールバックに42を渡すだけの関数
+fn give_42_to_callback(callback: impl Fn(i32)) {
+    callback(42)
+}
+```
+
+という関数があった場合、これは以下のように翻訳されます。
+
+```rust
+// コールバックに42を渡すだけの関数
+fn give_42_to_callback<F: Fn(i32)>(callback: F) {
+    callback(42)
+}
+```
+
+このように、 `impl Trait` が引数で使われた場合は、 `Trait` を実装する匿名の型引数に置き換えられます。したがって、**引数位置の `impl Trait` は単なる[シンタックス](http://d.hatena.ne.jp/keyword/%A5%B7%A5%F3%A5%BF%A5%C3%A5%AF%A5%B9)シュガー**ですが、これは戻り値位置の `impl Trait` を理解する上でも重要な点を含んでいます。つまり、
+
+- 引数位置の `impl Trait` の型は、**呼び出し側**によって**静的に**決定される
+
+ということです。
+
+- 戻り値で使われた場合
+
+上に書いたことを戻り値で置き換えたものがそのまま成り立ちます。つまり、
+
+- 戻り値位置の `impl Trait` の型は、**呼び出された側**によって**静的に**決定される
+
+ということです。この「呼び出された側によって決まる型」は**存在型**といいますが、このための構文はまだRustには実装されていません。ここでは、将来実装されるであろう[RFC2071](https://github.com/rust-lang/rfcs/blob/master/text/2071-impl-trait-type-alias.md)から記法を借用することとすると、
+
+```rust
+
+// 42を返すクロージャを返す
+fn defer_42() -> (impl Fn() -> i32) {
+    || 42
+}
+```
+
+は、以下のように匿名の存在型に置き換えられると考えることができます。
+
+```rust
+
+// 42を返すクロージャを返す
+fn defer_42() -> Anon1 {
+    || 42
+}
+existential type Anon1: Fn() -> i32;
+```
+
+**`Fn() -> i32` を実装する特定の型**だが、**その中身が何なのかは明かされない**のがポイントです。このexistential typeは[newtypeパターン](https://rustbyexample.com/generics/new_types.html)とも似ていますが、[クロージャ](http://d.hatena.ne.jp/keyword/%A5%AF%A5%ED%A1%BC%A5%B8%A5%E3)のような特殊な型も含められることと、手動で `Fn() -> i32` を実装しなくてもよいところが特徴です。
+
+
 ---
 
 ### 動的ディスパッチ
