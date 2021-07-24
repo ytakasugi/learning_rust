@@ -4236,6 +4236,10 @@ struct  Point {
 
 ---
 
+### str
+
+---
+
 #### str::contains
 
   - Description
@@ -4433,6 +4437,41 @@ struct  Point {
   ```
 
 
+
+---
+
+#### std::char_indices
+
+- Description
+
+  文字列スライスの文字列とその位置を表すイテレータを返します。
+
+  文字列スライスは有効なUTF-8で構成されているので、文字列スライスを`char`で反復することができます。このメソッドは、これらの文字列とそのバイト位置の両方のイテレータを返します。
+
+  このイテレータはタプルを生成します。位置が最初で、文字が2番目です。
+
+- Example
+
+  ```rust
+  let word = "goodbye";
+  
+  let count = word.char_indices().count();
+  assert_eq!(7, count);
+  
+  let mut char_indices = word.char_indices();
+  
+  assert_eq!(Some((0, 'g')), char_indices.next());
+  assert_eq!(Some((1, 'o')), char_indices.next());
+  assert_eq!(Some((2, 'o')), char_indices.next());
+  assert_eq!(Some((3, 'd')), char_indices.next());
+  assert_eq!(Some((4, 'b')), char_indices.next());
+  assert_eq!(Some((5, 'y')), char_indices.next());
+  assert_eq!(Some((6, 'e')), char_indices.next());
+  
+  assert_eq!(None, char_indices.next());
+  ```
+
+  
 
 ---
 
