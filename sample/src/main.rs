@@ -1,24 +1,20 @@
-struct Adder;
-
-impl Adder {
-    fn add(x: u8, y: u8, f: impl Fn(u8, u8) -> u8) -> u8 {
-        f(x, y)
+// 文字列から文字を検索する関数
+// 文字列スライスとcharを引数にとり、`Option`型を返す
+fn find(haystack: &str, needle: char) -> Option<usize> {
+    for (offset, c) in haystack.char_indices() {
+        if c == needle {
+            return Some(offset);
+        }
     }
+    None
+}
+
+fn extension(file_name: &str) -> Option<&str> {
+    find(file_name, '.').map(|i| &file_name[i+1..])
 }
 
 fn main() {
-    let arith_adder = |x, y| x + y;
-    let bool_adder = |x, y| {
-        if x == 1 || y == 1 {
-            1
-        } else {
-            0
-        }
-    };
-
-    let custom_adder = |x, y| 2 * x + y;
-
-    println!("{}", Adder::add(4, 5, arith_adder));
-    println!("{}", Adder::add(0, 1, bool_adder));
-    println!("{}", Adder::add(1, 3, custom_adder));
+    let file_name = "foobar,rs";
+    
+    extension(file_name).unwrap_or("rs");
 }
