@@ -72,6 +72,7 @@
 * [Plotters Developer Guide](https://plotters-rs.github.io/book/intro/introduction.html)
 * [Tour of Rust](https://tourofrust.com/00_ja.html)
 * [rustlings](https://github.com/rust-lang/rustlings)
+  * [解答例](https://github.com/tenajima/tena_rustlings/tree/master/exercises)
 * [Crate csv](https://docs.rs/csv/1.1.6/csv/)
 * [Overview Serde](https://serde.rs/)
 * [Rust Design Patterns](https://rust-unofficial.github.io/patterns/intro.html)
