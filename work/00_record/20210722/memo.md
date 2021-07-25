@@ -156,7 +156,7 @@ pub struct TraitObject {
 # }
 ```
 
-つまり、 `&Foo` のようなトレイトオブジェクトは「data」ポインタと「vtable」ポインタから成るわけです。
+つまり、 `&dyn Foo` のようなトレイトオブジェクトは「data」ポインタと「vtable」ポインタから成るわけです。
 
 dataポインタはトレイトオブジェクトが保存している（何らかの不明な型 `T` の）データを指しており、vtableポインタは `T` への `Foo` の実装に対応するvtable（「virtual method table」）を指しています。
 
@@ -192,8 +192,6 @@ static Foo_for_u8_vtable: FooVtable = FooVtable {
 // String:
 
 fn call_method_on_String(x: *const ()) -> String {
-# //     // the compiler guarantees that this function is only called
-# //     // with `x` pointing to a String
     // コンパイラは `x` がStringを指しているときにのみこの関数が呼ばれることを保障します
     let string: &String = unsafe { &*(x as *const String) };
 
@@ -210,9 +208,9 @@ static Foo_for_String_vtable: FooVtable = FooVtable {
 };
 ```
 
-各vtableの `destructor` フィールドはvtableが対応する型のリソースを片付ける関数を指しています。 `u8` のvtableは単純な型なので何もしませんが、 `String` のvtableはメモリを解放します。 このフィールドは `Box<Foo>` のような自作トレイトオブジェクトのために必要であり、 `Box` によるアロケートは勿論のことスコープ外に出た際に内部の型のリソースを片付けるのにも必要です。 `size` 及び `align` フィールドは消去された型のサイズとアライメント要件を保存しています。 これらの情報はデストラクタにも組み込まれているため現時点では基本的に使われていませんが、将来、トレイトオブジェクトがより柔軟になることで使われるようになるでしょう。
+各vtableの `destructor` フィールドはvtableが対応する型のリソースを片付ける関数を指しています。 `u8` のvtableは単純な型なので何もしませんが、`String`のvtableはメモリを解放します。 このフィールドは`Box<dyn Foo>`のような自作トレイトオブジェクトのために必要であり、`Box`によるアロケートは勿論のことスコープ外に出た際に内部の型のリソースを片付けるのにも必要です。 `size` 及び `align` フィールドは消去された型のサイズとアライメント要件を保存しています。 これらの情報はデストラクタにも組み込まれているため現時点では基本的に使われていませんが、将来、トレイトオブジェクトがより柔軟になることで使われるようになるでしょう。
 
-例えば `Foo` を実装する値を幾つか得たとします。 `Foo` トレイトオブジェクトを作る、あるいは使う時のコードを明示的に書いたものは少しだけ似ているでしょう。 （型の違いを無視すればですが、どのみちただのポインタになります）
+例えば`Foo`を実装する値を幾つか得たとします。 `Foo`トレイトオブジェクトを作る、あるいは使う時のコードを明示的に書いたものは少しだけ似ているでしょう。 （型の違いを無視すればですが、どのみちただのポインタになります）
 
 ```rust
 let a: String = "foo".to_string();

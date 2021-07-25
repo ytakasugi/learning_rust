@@ -109,6 +109,8 @@ GoをWSL2にインストールする手順を残しておく(Rustは関係ない
 ```
 $ wget https://golang.org/dl/go1.16.6.linux-amd64.tar.gz
 
+$ sudo tar -C /usr/local -xzf go1.16.linux-amd64.tar.gz
+
 $ vi ~/.bashrc
 # add lines
 export GOROOT=/usr/local/go
