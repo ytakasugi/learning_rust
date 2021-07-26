@@ -662,7 +662,11 @@ CopyトレイトとCloneトレイトの違いを以下に示す
 
 ---
 
-### core::borrow::Borrow
+### std::borrow
+
+---
+
+#### std::borrow::Borrow
 
 - Description
 
@@ -777,6 +781,26 @@ CopyトレイトとCloneトレイトの違いを以下に示す
 
 ---
 
+#### std::borrow::ToOwned::to_owned
+
+- Description
+
+  借用したデータから所有するデータを作成します。通常はクローンを作成します。
+
+- Example
+
+  ```rust
+  let s: &str = "a";
+  let ss: String = s.to_owned();
+  
+  let v: &[i32] = &[1, 2];
+  let vv: Vec<i32> = v.to_owned();
+  ```
+
+  
+
+---
+
 ### [std::result](https://doc.rust-lang.org/std/result/index.html)
 
 - Description
@@ -872,7 +896,19 @@ CopyトレイトとCloneトレイトの違いを以下に示す
 
     結果が`Ok`の場合は`op`を呼び出し、そうでない場合は`self`の`Err`値を返す
 
-    
+- Example
+
+  ```rust
+  fn sq(x: u32) -> Result<u32, u32> { Ok(x * x) }
+  fn err(x: u32) -> Result<u32, u32> { Err(x) }
+  
+  assert_eq!(Ok(2).and_then(sq).and_then(sq), Ok(16));
+  assert_eq!(Ok(2).and_then(sq).and_then(err), Err(4));
+  assert_eq!(Ok(2).and_then(err).and_then(sq), Err(2));
+  assert_eq!(Err(3).and_then(sq).and_then(sq), Err(3));
+  ```
+
+  
 
 
 ---
@@ -882,6 +918,18 @@ CopyトレイトとCloneトレイトの違いを以下に示す
   - Description
 
     結果が`Err`なら`true`を返す。
+    
+- Example
+
+  ```rust
+  let x: Result<i32, &str> = Ok(-3);
+  assert_eq!(x.is_err(), false);
+  
+  let x: Result<i32, &str> = Err("Some error message");
+  assert_eq!(x.is_err(), true);
+  ```
+
+  
 
 ---
 
@@ -2326,7 +2374,7 @@ is_hello(s);
 
   - Description
 
-    プロセスの引数に対するイテレータで、各引数の String 値を返す。
+    プロセスの引数に対するイテレータで、各引数の`String`値を返す。
     この構造体は`env::args()`によって作成される。詳細はドキュメントを参照のこと。
     最初の要素は伝統的に実行ファイルのパスですが、任意のテキストを設定することもでき、存在しない場合もある。つまり、このプロパティはセキュリティのために頼るべきではないということである。
 
@@ -2336,7 +2384,30 @@ is_hello(s);
 
   - Description
 
-    このプログラムが開始されたときの引数を返す（通常はコマンドライン経由で渡される）
+    このプログラムが開始されたときの引数（通常はコマンドラインで渡される）を返します。
+    
+    最初の要素は伝統的には実行ファイルのパスですが、任意のテキストに設定することができ、存在しない可能性もあります。つまり、このプロパティをセキュリティ目的で信頼してはいけないということです。
+    
+    Unixシステムでは、シェルは通常、引用符で囲まれていない引数をグロブパターン（`*`や`?`など）で展開します。Windowsではこのような処理は行われず、そのような引数はそのまま渡されます。
+    
+    glibc Linuxシステムでは、引数は、関数を`.init_array`に置くことで取得されます。glibcは、非標準の拡張として、`argc`、`argv`、および`envp`を`.init_array`の関数に渡します。これにより、`cdylib`や`staticlib`であっても、macOSやWindowsのように`std::env::args`が動作するようになります。
+    
+- Panics
+
+  返されたイテレータは、プロセスへの引数が有効なUnicodeでない場合、反復中にパニックを起こします。これが望ましくない場合は、代わりに`args_os`関数を使用してください。
+
+- Example
+
+  ```rust
+  use std::env;
+  
+  // Prints each argument on a separate line
+  for argument in env::args() {
+      println!("{}", argument);
+  }
+  ```
+
+  
 
 ---
 

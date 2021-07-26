@@ -1,15 +1,19 @@
-use std::num::ParseIntError;
-use std::result;
+use std::env;
 
-type Result<T> = result::Result<T, ParseIntError>;
-
-fn double_number(s: &str) -> Result<i32> {
-    s.parse::<i32>().map(|n| 2 * n)
+fn arguments(mut argv: env::Args) -> Result<i32, String> {
+    argv.nth(1)
+        // `Option::ok_or`コンビネータを使用して、`Option<T>`を`Result<T, E>`に変換
+        .ok_or("Please give at least one argument".to_owned())
+        // `arg.parse::<i32>`が返す`Result<i32, ParseIntError`>を
+        // `Result::map_err`コンビネータで`Result<i32, String>`へ変換
+        .and_then(|arg| arg.parse::<i32>()
+            .map_err(|err| err.to_string()))
+        .map(|n| 2 * n)
 }
 
 fn main() {
-    match double_number("10") {
-        Ok(n) => assert_eq!(n, 20),
-        Err(e) => println!("Error: {:?}", e),
+    match arguments(env::args()) {
+        Ok(n) => println!("{}", n),
+        Err(err) => println!("Error: {}", err),
     }
 }
