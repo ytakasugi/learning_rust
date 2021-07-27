@@ -1,18 +1,25 @@
-use std::env;
+use std::fs::File;
+use std::io::Read;
+use std::path::Path;
 
-fn arguments(mut argv: env::Args) -> Result<i32, String> {
-    argv.nth(1)
-        // `Option::ok_or`コンビネータを使用して、`Option<T>`を`Result<T, E>`に変換
-        .ok_or("Please give at least one argument".to_owned())
-        // `arg.parse::<i32>`が返す`Result<i32, ParseIntError`>を
-        // `Result::map_err`コンビネータで`Result<i32, String>`へ変換
-        .and_then(|arg| arg.parse::<i32>()
-            .map_err(|err| err.to_string()))
+fn opener<P: AsRef<Path>>(file_path: P) -> Result<i32, String> {
+    File::open(file_path)
+        .map_err(|err| err.to_string())
+        .and_then(|mut file| {
+            let mut contents = String::new();
+            file.read_to_string(&mut contents)
+            .map_err(|err| err.to_string())
+            .map(|_| contents)
+        })
+        .and_then(|contents| {
+            contents.trim().parse::<i32>()
+                .map_err(|err| err.to_string())
+        })
         .map(|n| 2 * n)
 }
 
 fn main() {
-    match arguments(env::args()) {
+    match opener("foobar") {
         Ok(n) => println!("{}", n),
         Err(err) => println!("Error: {}", err),
     }
