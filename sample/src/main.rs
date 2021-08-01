@@ -1,38 +1,16 @@
-use std::io;
-use std::num;
-use std::fs::File;
-use std::io::Read;
-use std::path::Path;
+use axum::prelude::*;
+use std::net::SocketAddr;
 
-#[derive(Debug)]
-enum CliError {
-    Io(::std::io::Error), 
-    Parse(::std::num::ParseIntError)
+#[tokio::main]
+async fn main() {
+    let app = route("/", get(root));
+    let addr = SocketAddr::from(([127, 0, 0, 1], 3000));
+    hyper::Server::bind(&addr)
+        .serve(app.into_make_service())
+        .await
+        .unwrap();
 }
 
-impl From<io::Error> for CliError {
-    fn from(err: io::Error) -> CliError { 
-        CliError::Io(err) 
-    }
-}
-
-impl From<num::ParseIntError> for CliError {
-    fn from(err: num::ParseIntError) -> CliError { 
-        CliError::Parse(err) 
-    }
-}
-
-fn opener<P: AsRef<Path>>(file_path: P) -> Result<i32, CliError> {
-    let mut file = File::open(file_path)?;
-    let mut contents = String::new();
-    file.read_to_string(&mut contents)?;
-    let n: i32 = contents.trim().parse()?;
-    Ok(2 * n)
-}
-
-fn main() {
-    match opener("foobar") {
-        Ok(n) => println!("{}", n),
-        Err(err) => println!("Error: {:?}", err),
-    }
+async fn root() -> &'static str {
+    "Hello, World!"
 }
