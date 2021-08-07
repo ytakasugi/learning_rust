@@ -185,7 +185,39 @@
   
     `log` crateの0.3と0.4のバージョンは、ほぼ完全に互換性があります。`log` 0.3を使用して作成されたログメッセージは、`log` 0.4を使用するloggerの実装に透過的に転送されます。`log` 0.4を使用して作成されたログメッセージは `log` 0.3を使用するloggerの実装に転送されますが、メッセージに関連するモジュールパスとファイル名の情報は残念ながら失われます。
   
-    
-  
-  
 
+---
+
+### log::Record
+
+- Description
+
+  `Record`構造体は、Logトレイトのlogメソッドのパラメータとして渡されます。loggerの実装者は、これらの構造体を操作して、ログメッセージを表示します。レコードは`log!`マクロによって自動的に作成されるので、logのユーザには見えません。
+
+  なお、`level()`と`target()`のアクセサは、それぞれ`self.metadata().level()`と `self.metadata().target()`に相当します。これらのメソッドは、この構造体のユーザーの便宜のために提供されています。
+
+- Example
+
+  次の例は、渡された`Record`のレベル、モジュールパス、メッセージを表示するシンプルなロガーです。
+
+```rust
+struct SimpleLogger;
+
+impl log::Log for SimpleLogger {
+   fn enabled(&self, metadata: &log::Metadata) -> bool {
+       true
+   }
+
+   fn log(&self, record: &log::Record) {
+       if !self.enabled(record.metadata()) {
+           return;
+       }
+
+       println!("{}:{} -- {}",
+                record.level(),
+                record.target(),
+                record.args());
+   }
+   fn flush(&self) {}
+}
+```
