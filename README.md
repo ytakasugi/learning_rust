@@ -46,6 +46,7 @@
 * [forcia](https://github.com/forcia/rustbook)
 * [github.com/ytakasugi/](https://github.com/ytakasugi)
 * [rustviz](https://github.com/rustviz/rustviz)
+* [rust blog](https://github.com/pretzelhammer/rust-blog)
 
 ---
 
@@ -94,6 +95,7 @@
 - [【翻訳】RustとCSV解析](https://qiita.com/algebroid/items/c456d4ec555ae04c7f92)
 - [A TCP Proxy in 30 lines of Rust](https://zmedley.com/tcp-proxy.html)
 - [ちいさなWebブラウザを作ろう](https://browserbook.shift-js.info/)
+- [RESTful API in Sync & Async Rust](https://github.com/pretzelhammer/rust-blog/blob/master/posts/restful-api-in-sync-and-async-rust.md)
 
 ---
 

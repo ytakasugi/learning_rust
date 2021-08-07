@@ -6,4 +6,5 @@
 - https://github.com/ytakasugi/introduction_to_rust.git
 - https://github.com/ytakasugi/kyopro_educational_90.git
 - https://github.com/ytakasugi/learning_typescript.git
+- https://github.com/ytakasugi/kanban.git
 
