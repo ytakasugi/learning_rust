@@ -2186,6 +2186,18 @@ is_hello(s);
 
 ---
 
+#### std::fs::File::create
+
+- Description
+
+  ファイルを書き込み専用で開きます。
+
+  この関数は、ファイルが存在しない場合はファイルを作成し、存在する場合は切り捨てます。
+
+  詳しくは、`OpenOptions::open`関数を参照してください。
+
+---
+
 ### std::fs::OpenOptions
 
 - Description
