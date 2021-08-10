@@ -80,6 +80,7 @@
   * [『Rust Design Patterns』を翻訳してみました（Idiom 編）](https://qiita.com/Yappii_111/items/4ccc3a8461cdd4035651)
   * [『Rust Design Patterns』を翻訳してみました（デザインパターン・アンチパターン編）](https://qiita.com/Yappii_111/items/654717e6a6a980722189)
 * [Futures Explained in 200 Lines of Rust](https://cfsamson.github.io/books-futures-explained/introduction.html)
+* [Error Handling in Rust](https://blog.burntsushi.net/rust-error-handling/#working-with-multiple-error-types)
 
 ---
 
@@ -93,6 +94,7 @@
 - [Rustで書くUDPサーバー](https://zenn.dev/psyashes/articles/794f73304b0350)
 - [RustでWebアプリケーションを作る](https://caddi.tech/archives/416)
 - [【翻訳】RustとCSV解析](https://qiita.com/algebroid/items/c456d4ec555ae04c7f92)
+  - [サンプルデータ](https://github.com/BurntSushi/rust-csv/blob/master/examples/data/uspop.csv)
 - [A TCP Proxy in 30 lines of Rust](https://zmedley.com/tcp-proxy.html)
 - [ちいさなWebブラウザを作ろう](https://browserbook.shift-js.info/)
 - [RESTful API in Sync & Async Rust](https://github.com/pretzelhammer/rust-blog/blob/master/posts/restful-api-in-sync-and-async-rust.md)
