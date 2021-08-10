@@ -1,24 +1,72 @@
 // 標準ライブラリ
 use std::env;
 use std::fs::File;
+use std::path::Path;
+use std::error::Error;
+use std::io;
 // 外部ライブラリ
+extern crate serde;
+
 use getopts::Options;
 use serde::Deserialize;
 
-#[derive(Debug, Eq, PartialEq, Deserialize)]
+#[derive(Debug, Deserialize)]
 struct Row {
+    #[serde(rename = "Country")]
     country: String,
+    #[serde(rename = "City")]
     city: String,
+    #[serde(rename = "AccentCity")]
     accent_city: String,
+    #[serde(rename = "Region")]
     region: String,
+    #[serde(rename = "Population")]
+    #[serde(deserialize_with = "csv::invalid_option")]
     population: Option<u64>,
-    latitude: Option<u64>,
-    longitude: Option<u64>,
+    #[serde(rename = "Latitude")]
+    latitude: Option<f64>,
+    #[serde(rename = "Longitude")]
+    longitude: Option<f64>,
 }
 
+struct PopulationCount {
+    city: String,
+    country: String,
+    count: u64,
+}
+
+fn search<P: AsRef<Path>>(file_path: &Option<P>, city: &str) -> Result<Vec<PopulationCount>, Box<dyn Error + Send + Sync>> {
+    let mut found = vec![];
+    let input: Box<dyn io::Read> = match *file_path {
+        None => Box::new(io::stdin()),
+        // 所有権をムーブさせるのではなく、借用する
+        Some(ref file_path) => Box::new(File::open(file_path)?),
+    };
+    let mut rdr = csv::Reader::from_reader(input);
+
+    for row in rdr.deserialize() {
+        let row: Row = row?;
+
+        match row.population {
+            None => {},
+            Some(count) => if row.city == city {
+                found.push(PopulationCount {
+                    city: row.city,
+                    country: row.country,
+                    count: count,
+                });
+            },
+        }
+    }
+    if found.is_empty() {
+        Err(From::from("No matching cities with a population where found."))
+    } else {
+        Ok(found)
+    }
+}
 
 fn print_usage(program: &str, opts: Options) {
-    println!("{}", opts.usage(&format!("Usage: {} [options] <data-path> <city>", program)));
+    println!("{}", opts.usage(&format!("Usage: {} [options] <city>", program)));
 }
 
 fn main() {
@@ -30,6 +78,9 @@ fn main() {
     // 空の引数フラグを作成
     let mut opts = Options::new();
     // 引数フラグをセットする
+    // 引数を取るオプションを作成
+    opts.optopt("f", "file", "Choose an input file, instead of using STDIN.", "NAME");
+    // 引数を取らないオプションを作成
     opts.optflag("h", "help", "Show this usage message.");
 
     // 引数をパースする
@@ -50,22 +101,22 @@ fn main() {
         return;
     }
 
-    let data_path = &args[1];
-    let city: &str = &args[2];
+    let file = matches.opt_str("f");
+    let data_path = &file.as_ref().map(Path::new);
 
-    let file = File::open(data_path).unwrap();
-    let mut rdr = csv::Reader::from_reader(file);
+    let city = if !matches.free.is_empty() {
+        &matches.free[0] 
+    } else {
+        print_usage(&program, opts);
+        return;
+    };
 
-    for row in rdr.deserialize() {
-        let row: Row = row.unwrap();
-
-        if row.city == city {
-            println!(
-                "{}, {}: {:?}",
-                row.city, 
-                row.country,
-                row.population.expect("population count")
-            );
+    match search(data_path, city) {
+        Ok(pops) => {
+            for pop in pops {
+                println!("{}, {}: {:?}", pop.city, pop.country, pop.count);
+            }
         }
+        Err(err) => println!("{}", err)
     }
 }
