@@ -98,6 +98,7 @@
 - [A TCP Proxy in 30 lines of Rust](https://zmedley.com/tcp-proxy.html)
 - [ちいさなWebブラウザを作ろう](https://browserbook.shift-js.info/)
 - [RESTful API in Sync & Async Rust](https://github.com/pretzelhammer/rust-blog/blob/master/posts/restful-api-in-sync-and-async-rust.md)
+- [A Simple Web Server](https://ibraheem.ca/writings/a-simple-web-server/)
 
 ---
 
@@ -108,6 +109,7 @@
   * [Rust の最初のステップ](https://docs.microsoft.com/ja-jp/learn/paths/rust-first-steps/)
   * [Rust入門](https://zenn.dev/mebiusbox/books/22d4c1ed9b0003/viewer/6d5875)
   * [Rust入門日記](https://zenn.dev/kawahara/scraps/5a22db01d86ec9)
+  * [Rustハンズオン@エウレカ社](https://speakerdeck.com/helloyuk13/rusthanzuon-at-eurekashe)
   * [Rust勉強会](https://scrapbox.io/nomlab/Rust%E5%8B%89%E5%BC%B7%E4%BC%9A)
   * [Rustはこうやって勉強するといいんじゃないか、という一例](https://qiita.com/TakaakiFuruse/items/13e9ad9d1efe7e17811c)
   * [Re:FizzBuzzから始めるRust生活](https://qiita.com/hinastory/items/543ae9749c8bccb9afbc)
