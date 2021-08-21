@@ -1,27 +1,34 @@
-use std::thread;
-use std::sync::mpsc;
-use std::time::Duration;
+use crate::List::{Cons, Nil};
 
-fn main() {
-    let (tx, rx) = mpsc::channel();
+enum List {
+    Cons(i32, Box<List>),
+    Nil
+} 
 
-    thread::spawn(move || {
-        let vals = vec![
-            String::from("Rust"),
-            String::from("is"),
-            String::from("a"),
-            String::from("well"),
-            String::from("loved"),
-            String::from("language")
-        ];
-
-        for i in vals {
-            tx.send(i).unwrap();
-            thread::sleep(Duration::from_secs(1));
-        }
-    });
-
-    for r in rx {
-        println!("Got: {}", r);
+fn print_list(list: &List) {
+    match list {
+        Cons(val, ls) => {
+            println!("val: {}", val);
+            print_list(ls);
+        },
+        Nil => {}
     }
+}
+
+fn append(list: &List, val: i32) -> List {
+    match list {
+        Cons(x, ls) => {
+            Cons(*x, Box::new(append(ls, val)))
+        },
+        Nil => {
+            Cons(val, Box::new(Nil))
+        }
+    }
+}
+
+    fn main() {
+    let list = Cons(2, Box::new(Cons(5, Box::new(Cons(3, Box::new(Nil))))));
+    let list2 = append(&list, 7);
+
+    print_list(&list2);
 }
