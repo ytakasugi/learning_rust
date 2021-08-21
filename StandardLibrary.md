@@ -1513,6 +1513,30 @@ is_hello(s);
 
 ---
 
+#### std::convert::Infallible
+
+- Description
+
+  絶対に起こりえないエラーのためのエラータイプです。
+
+  この列挙型にはバリアントがないため、この型の値が実際に存在することはありません。これは、結果が常に`Ok `であることを示すために、`Result`を使用してエラー タイプをパラメータ化する汎用 API に役立ちます。
+
+  例えば、`TryFrom`トレイト（Resultを返す変換）には、逆の`Into`実装が存在するすべての型に対する包括的な実装があります。
+
+  ```rust
+  impl<T, U> TryFrom<U> for T where U: Into<T> {
+      type Error = Infallible;
+  
+      fn try_from(value: U) -> Result<Self, Infallible> {
+          Ok(U::into(value))  // Never returns `Err`
+      }
+  }
+  ```
+
+
+
+---
+
 ### std::num::ParseIntError
 
 - Description

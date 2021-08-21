@@ -138,6 +138,7 @@
   * [RustのPlottersでグラフ描画を試す](https://qiita.com/showchan33/items/0b58b598c5e0e7bf1689)
   * [Borrow, rules?](https://zenn.dev/toyboot4e/articles/aliasing-rules)
   * [Rustのスマートポインタ（Derefトレイト）](https://ytyaru.hatenablog.com/entry/2020/10/08/000000)
+  * [Getting Started with Systems Programming with Rust (Part 1)](https://dev.to/bexxmodd/getting-started-with-systems-programming-with-rust-part-1-2i13)
 * 構文
   * [とほほのWWW入門](http://www.tohoho-web.com/ex/rust.html)
   * [`impl Trait`について](https://qnighy.hatenablog.com/entry/2018/01/28/220000)
