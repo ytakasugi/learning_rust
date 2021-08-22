@@ -6474,6 +6474,194 @@ struct  Point {
 
 ---
 
+#### std::sync::Condvar
+
+- Description
+
+  コンディション変数
+
+  コンディション変数とは、あるイベントの発生を待つ間、CPU時間を消費しないようにスレッドをブロックする機能です。コンディション変数は通常、ブーリアン値の述語（コンディション）とミューテックスに関連付けられています。述語は、スレッドをブロックしなければならないと判断する前に、常にミューテックスの内部で検証されます。
+
+  このモジュールの関数は、現在の実行スレッドをブロックします。同じ条件変数に複数のミューテックスを使おうとすると、ランタイム・パニックを起こす可能性があることに注意してください。
+
+- Example
+
+  ```rust
+  use std::sync::{Arc, Mutex, Condvar};
+  use std::thread;
+  
+  let pair = Arc::new((Mutex::new(false), Condvar::new()));
+  let pair2 = Arc::clone(&pair);
+  
+  // Inside of our lock, spawn a new thread, and then wait for it to start.
+  thread::spawn(move|| {
+      let (lock, cvar) = &*pair2;
+      let mut started = lock.lock().unwrap();
+      *started = true;
+      // We notify the condvar that the value has changed.
+      cvar.notify_one();
+  });
+  
+  // Wait for the thread to start up.
+  let (lock, cvar) = &*pair;
+  let mut started = lock.lock().unwrap();
+  while !*started {
+      started = cvar.wait(started).unwrap();
+  }
+  ```
+
+
+
+---
+
+#### std::sync::Condvar::wait
+
+- Description
+
+  この条件変数が通知を受け取るまで、現在のスレッドをブロックします。
+
+  この関数は、指定された（guardで表される）ミューテックスをアトミックにアンロックし、現在のスレッドをブロックします。これは、ミューテックスのロックが解除された後に論理的に発生する`notify_one`や`notify_all`の呼び出しが、このスレッドを起こす候補になることを意味します。この関数呼び出しが戻るとき、指定されたロックは再取得されています。
+
+  この関数は、偽のウェイクアップの影響を受けやすいことに注意してください。条件変数には通常、ブーリアン値の述語が関連付けられており、偽のウェイクアップから守るために、この関数が戻るたびに述語をチェックしなければなりません。
+
+- Example
+
+  ```rust
+  use std::sync::{Arc, Mutex, Condvar};
+  use std::thread;
+  
+  let pair = Arc::new((Mutex::new(false), Condvar::new()));
+  let pair2 = Arc::clone(&pair);
+  
+  thread::spawn(move|| {
+      let (lock, cvar) = &*pair2;
+      let mut started = lock.lock().unwrap();
+      *started = true;
+      // We notify the condvar that the value has changed.
+      cvar.notify_one();
+  });
+  
+  // Wait for the thread to start up.
+  let (lock, cvar) = &*pair;
+  let mut started = lock.lock().unwrap();
+  // As long as the value inside the `Mutex<bool>` is `false`, we wait.
+  while !*started {
+      started = cvar.wait(started).unwrap();
+  }
+  ```
+
+
+
+---
+
+#### std::sync::Condvar::notify_all
+
+- Description
+
+  この条件変数でブロックされているすべてのスレッドを起動させます。
+
+  このメソッドは、条件変数の現在の待機者がすべて起こされることを保証します。`notify_all()`の呼び出しは、いかなる方法でもバッファリングされません。
+
+  1つのスレッドだけを目覚めさせるには、`notify_one`を参照してください。
+
+- Example
+
+  ```rust
+  use std::sync::{Arc, Mutex, Condvar};
+  use std::thread;
+  
+  let pair = Arc::new((Mutex::new(false), Condvar::new()));
+  let pair2 = Arc::clone(&pair);
+  
+  thread::spawn(move|| {
+      let (lock, cvar) = &*pair2;
+      let mut started = lock.lock().unwrap();
+      *started = true;
+      // We notify the condvar that the value has changed.
+      cvar.notify_all();
+  });
+  
+  // Wait for the thread to start up.
+  let (lock, cvar) = &*pair;
+  let mut started = lock.lock().unwrap();
+  // As long as the value inside the `Mutex<bool>` is `false`, we wait.
+  while !*started {
+      started = cvar.wait(started).unwrap();
+  }
+  ```
+
+---
+
+#### std::sync::Barrier
+
+- Description
+
+  バリアは、複数のスレッドがある計算の開始を同期させるためのものです。
+
+- Example
+
+  ```rust
+  use std::sync::{Arc, Barrier};
+  use std::thread;
+  
+  let mut handles = Vec::with_capacity(10);
+  let barrier = Arc::new(Barrier::new(10));
+  for _ in 0..10 {
+      let c = Arc::clone(&barrier);
+      // The same messages will be printed together.
+      // You will NOT see any interleaving.
+      handles.push(thread::spawn(move|| {
+          println!("before wait");
+          c.wait();
+          println!("after wait");
+      }));
+  }
+  // Wait for other threads to finish.
+  for handle in handles {
+      handle.join().unwrap();
+  }
+  ```
+
+---
+
+#### std::sync::Barrier::wait
+
+- Description
+
+  すべてのスレッドがここでランデブーするまで、現在のスレッドをブロックします。
+
+  バリアは、すべてのスレッドが一度ランデブーした後も再利用可能で、継続的に使用することができます。
+
+  単一の（任意の）スレッドは、この関数から戻るときに`BarrierWaitResult::is_leader()`から`true`を返す `BarrierWaitResult`を受け取り、他のすべてのスレッドは`BarrierWaitResult::is_leader()`から`false`を返す結果を受け取ることになります。
+
+- Example
+
+  ```rust
+  use std::sync::{Arc, Barrier};
+  use std::thread;
+  
+  let mut handles = Vec::with_capacity(10);
+  let barrier = Arc::new(Barrier::new(10));
+  for _ in 0..10 {
+      let c = Arc::clone(&barrier);
+      // The same messages will be printed together.
+      // You will NOT see any interleaving.
+      handles.push(thread::spawn(move|| {
+          println!("before wait");
+          c.wait();
+          println!("after wait");
+      }));
+  }
+  // Wait for other threads to finish.
+  for handle in handles {
+      handle.join().unwrap();
+  }
+  ```
+
+  
+
+---
+
 ### std::rc
 
  - Description
