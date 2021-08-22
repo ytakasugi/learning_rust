@@ -101,6 +101,7 @@
 - [RESTful API in Sync & Async Rust](https://github.com/pretzelhammer/rust-blog/blob/master/posts/restful-api-in-sync-and-async-rust.md)
 - [A Simple Web Server](https://ibraheem.ca/writings/a-simple-web-server/)
 - [Getting Started with Systems Programming with Rust (Part 1)](https://dev.to/bexxmodd/getting-started-with-systems-programming-with-rust-part-1-2i13)
+- [Practical Rust Web Development - Front-End](https://dev.to/werner/practical-rust-web-development-front-end-538d)
 
 ---
 
@@ -141,6 +142,8 @@
   * [Rustのスマートポインタ（Derefトレイト）](https://ytyaru.hatenablog.com/entry/2020/10/08/000000)
   * [[Rust] 引数 &self や戻り値の型 Self に基づくメソッドディスパッチ](https://qiita.com/kerupani129/items/3818b805dfab81ed4da4)
   * [[Rust] 「パターン」を用いた非構造化変数束縛](https://qiita.com/kerupani129/items/f30596eed4e5b2ca7cd1)
+  * [[Rust] フォード・ファルカーソン法を実装する](https://qiita.com/deepgreenAN/items/aa9d8b9d19384fa0a70a)
+  * [非同期 Rust パターン](https://qiita.com/legokichi/items/4f2c09330f90626600a6)
 * 構文
   * [とほほのWWW入門](http://www.tohoho-web.com/ex/rust.html)
   * [`impl Trait`について](https://qnighy.hatenablog.com/entry/2018/01/28/220000)
@@ -154,6 +157,7 @@
   * [RustのOwnershipってなんなん](https://zenn.dev/ucwork/articles/cfe579cbf5647e)
   * [【初心者入門】Rustメモリ管理(所有権、借用、ライフタイム)](https://qiita.com/akito_tameto/items/a6840328224536e526a6)
   * [rustの所有権と参照](https://qiita.com/winzu44/items/d40292557ed7e12de77b)
+  * [あの日見た匿名ライフタイム](https://zenn.dev/takanori_is/articles/anonymous-lifetime-the-lifetime-we-saw-that-day)
 * コンパイラ
   * [本家Rustコンパイラのソースを読もうとしてみる（1）](https://qiita.com/0yoyoyo/items/eba97a019d0e60324263)
 * Future

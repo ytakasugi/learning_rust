@@ -1,11 +1,21 @@
 use hyper::service::{make_service_fn, service_fn};
 use hyper::{Body, Error, Request, Response, Server, Method};
 use tera::{Context, Tera};
+use serde::Deserialize;
+use uuid::Uuid;
+use rusqlite::{params, Connection};
+use tokio::sync::Mutex;
 use std::{convert::Infallible, net::SocketAddr};
 use std::str;
 use std::sync::Arc;
 
 static TEMPLATE: &str = "Hello, {{name}}!";
+
+#[derive(Deserialize)]
+struct NewPost<'a> {
+    title: &'a str,
+    content: &'a str,
+}
 
 async fn handle(_: Request<Body>) -> Result<Response<Body>, Infallible> {
     Ok(Response::new("Hello, World!".into()))
@@ -31,6 +41,28 @@ async fn handle_with_body(req: Request<Body>, tera: Arc<Tera>) -> Result<Respons
     let rendered = tera.render("hello", &ctx).unwrap();
 
     Ok(Response::new(rendered.into()))
+}
+
+async fn create_post(
+    req: Request<Body>,
+    _: Arc<Tera>,
+    // Mutexによって排他制御されたConnection
+    conn: Arc<Mutex<Connection>>
+) -> Result<Response<Body>, Error> {
+    let body = hyper::body::to_bytes(req.into_body()).await?;
+    let new_post = serde_urlencoded::from_bytes::<NewPost>(&body).unwrap();
+    let id = Uuid::new_v4();
+
+    conn.lock()
+        .await
+        .execute(
+            "INSERT INTO posts(id, title, content) VALUES (?1, ?2, ?3)",
+            params![&id, new_post.title, new_post.content],
+        )
+        .unwrap();
+
+        // `id`をクライアントに返す
+        Ok(Response::new(id.to_string().into()))
 }
 
 #[tokio::main]
