@@ -6658,7 +6658,147 @@ struct  Point {
   }
   ```
 
-  
+
+
+
+---
+
+#### std::sync::atomic::AtomicUsize
+
+- Description
+
+  スレッド間で安全に共有することができる整数型。
+
+  この型は、基礎となる整数型である`usize`と同じメモリ内表現を持ちます。アトミック型と非アトミック型の違いや、この型の移植性については、モジュールレベルのドキュメントを参照してください。
+
+  注意：この型は、`usize`のアトミックなロードとストアをサポートするプラットフォームでのみ使用できます。
+
+- Implementations
+
+  - fetch_add
+
+    - Description
+
+      現在の値に加算し、前の値を返します。
+
+      この操作は、オーバーフロー時に折り返します。
+
+      `fetch_add`は、この操作のメモリ順序を記述する`Ordering`引数を取ります。すべての順序モードが可能です。`Acquire`を使用すると、この操作のストア部分がRelaxedになり、`Release`を使用するとロード部分が`Relaxed`になることに注意してください。
+
+      注：このメソッドは、`usize`のアトミック操作をサポートするプラットフォームでのみ使用できます。
+
+    - Example
+
+      ```rust
+      use std::sync::atomic::{AtomicUsize, Ordering};
+      
+      let foo = AtomicUsize::new(0);
+      assert_eq!(foo.fetch_add(10, Ordering::SeqCst), 0);
+      assert_eq!(foo.load(Ordering::SeqCst), 10);
+      ```
+
+  - fetch_sub
+
+    - Description
+
+      現在の値から減算し、前の値を返します。
+
+      この操作は、オーバーフロー時に折り返します。
+
+      `fetch_sub`は、この操作のメモリ順序を記述する`Ordering`引数を取ります。すべての順序モードが可能です。`Acquire`を使用すると、この操作のストア部分が`Relaxed`になり、`Release`を使用するとロード部分が`Relaxed`になることに注意してください。
+
+      注：このメソッドは、`usize`のアトミック操作をサポートするプラットフォームでのみ使用できます。
+
+    - Example
+
+      ```rust
+      use std::sync::atomic::{AtomicUsize, Ordering};
+      
+      let foo = AtomicUsize::new(20);
+      assert_eq!(foo.fetch_sub(10, Ordering::SeqCst), 20);
+      assert_eq!(foo.load(Ordering::SeqCst), 10);
+      ```
+
+  - load
+
+    - Description
+
+      Atomicな整数から値をロードします。
+
+      `load`は、この操作のメモリ順序を記述する`Ordering`引数を取ります。可能な値は、`SeqCst`、`Acquire`、`Relaxed`です。
+
+    - panics
+
+      orderがが`Release`や`AcqRel`の場合はパニックになります。
+
+    - Example
+
+      ```rust
+      use std::sync::atomic::{AtomicUsize, Ordering};
+      
+      let some_var = AtomicUsize::new(5);
+      
+      assert_eq!(some_var.load(Ordering::Relaxed), 5);
+      ```
+
+---
+
+#### std::sync::atomic::Ordering
+
+- Description
+
+  アトミックメモリの順序付け
+
+  メモリの順序付けは、原子演算がメモリを同期させる方法を指定します。最も弱い`Ordering::Relaxed`では、操作によって直接触れられたメモリだけが同期される。一方、`Ordering::SeqCst`のストア・ロードのペアは、他のメモリを同期させ、さらにすべてのスレッドでそのような操作の合計順序を保持します。
+
+  Rust のメモリ順序は、C++20のものと同じです。
+
+  詳細は[nomicon](https://doc.rust-lang.org/nomicon/atomics.html)を参照してください。
+
+- Variants 
+
+  - Relaxed
+    順序の制約はなく、アトミックな操作のみ。
+
+    C++20 の`memory_order_relaxed`に相当します。
+
+  - Release
+
+    ストアと組み合わせた場合、以前のすべての操作は、`Acquire`（またはそれ以上）の順序でこの値のロードの前に順序付けられます。特に、以前の書き込みはすべて、この値の`Acquire`（またはそれ以上）のロードを実行するすべてのスレッドから見えるようになります。
+
+    ロードとストアを組み合わせた操作にこの順序を使用すると、`Relaxed load`操作になることに注意してください。
+
+    この順序は、ストアを実行できる操作にのみ適用されます。
+
+    C++20 では`memory_order_release`に対応しています。
+
+  - Acquire
+
+    ロードと組み合わせた場合、ロードされた値が`Release`（またはより強い）順序のストア操作によって書き込まれた場合、後続のすべての操作はそのストアの後に順序付けられるようになります。特に、後続のロードはすべて、ストアの前に書き込まれたデータを見ることになります。
+
+    ロードとストアを組み合わせた操作にこの順序を使用すると、`Relaxed store`操作になることに注意してください。
+
+    この順序は、ロードを行うことができる操作にのみ適用されます。
+
+    C++20 の`memory_order_acquire`に対応しています。
+
+  - AcqRel
+
+    `Acquire`と`Release`の両方の効果を併せ持つ。ロードでは`Acquire`順序を使用し、ストアでは`Release`順序を使用します。
+
+    `compare_and_swap`の場合は、操作がストアを実行せずに終わる可能性があるため、Acquire 順序だけになっていることに注意してください。しかし、`AcqRel`が`Relaxed`アクセスを実行することはありません。
+
+    この順序は、ロードとストアの両方を組み合わせた操作にのみ適用されます。
+
+    C++20 の`memory_order_acq_rel`に対応しています。
+
+  - SeqCst
+
+    `Acquire`/`Release`/`AcqRel`（それぞれロード、ストア、ストア付きロードの操作）に、すべてのスレッドがすべての連続した操作を同じ順序で見ることができるという保証を追加したもの。
+
+    C++20 の`memory_order_seq_cst`に対応しています。
+
+
 
 ---
 

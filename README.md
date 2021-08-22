@@ -146,6 +146,9 @@
   * [非同期 Rust パターン](https://qiita.com/legokichi/items/4f2c09330f90626600a6)
   * [[Rust] メソッド呼び出し時におけるメソッド探索の仕組み: 自動参照 & 自動参照外し及び Unsized 型強制](https://qiita.com/kerupani129/items/8dba9f5bb2c009c4d08d)
   * [趣味でプログラミングする人がRustを勉強する](https://qiita.com/tonesuke/items/52e469f18e747c794376)
+  * [Rustを覚えて間もない頃にやってしまいがちなこと](https://qiita.com/mosh/items/709effc9e451b9b8a5f4)
+  * [Rustのイテレータの網羅的かつ大雑把な紹介](https://qiita.com/lo48576/items/34887794c146042aebf1)
+  * [Rustの構造体に文字列を持たせるいくつかの方法](https://qiita.com/Kogia_sima/items/6899c5196813cf231054)
 * 構文
   * [とほほのWWW入門](http://www.tohoho-web.com/ex/rust.html)
   * [`impl Trait`について](https://qnighy.hatenablog.com/entry/2018/01/28/220000)
