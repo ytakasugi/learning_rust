@@ -8,4 +8,5 @@
 - https://github.com/ytakasugi/learning_typescript.git
 - https://github.com/ytakasugi/kanban.git
 - https://github.com/ytakasugi/tokio_tutorial.git
+- https://github.com/ytakasugi/concurrent-programming-with-rust.git
 
