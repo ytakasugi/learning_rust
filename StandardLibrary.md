@@ -3565,6 +3565,37 @@ struct  Point {
   assert_eq!(v_map, vec![1, 2, 3]);
   ```
 
+
+
+
+---
+
+#### std::iter::Iterator::zip
+
+- Description
+
+  2 つのイテレータを、ペアの単一のイテレータに「Zip Up」します。
+
+  `zip()`は、他の2つのイテレータを反復処理し、最初の要素が最初のイテレータから、2番目の要素が2番目のイテレータから得られるタプルを返す新しいイテレータを返します。
+
+  言い換えれば、2つのイテレータをまとめて1つのイテレータにします。
+
+  どちらかのイテレータが`None`を返した場合、圧縮されたイテレータの次の要素は`None`を返します。最初のイテレータが`None`を返した場合、`zip`は短絡的に実行され、2 番目のイテレータの`next`は呼び出されません。
+
+- Example
+
+  ```rust
+  let a1 = [1, 2, 3];
+  let a2 = [4, 5, 6];
+  
+  let mut iter = a1.iter().zip(a2.iter());
+  
+  assert_eq!(iter.next(), Some((&1, &4)));
+  assert_eq!(iter.next(), Some((&2, &5)));
+  assert_eq!(iter.next(), Some((&3, &6)));
+  assert_eq!(iter.next(), None);
+  ```
+
   
 
 ---

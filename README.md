@@ -149,6 +149,7 @@
   * [Rustを覚えて間もない頃にやってしまいがちなこと](https://qiita.com/mosh/items/709effc9e451b9b8a5f4)
   * [Rustのイテレータの網羅的かつ大雑把な紹介](https://qiita.com/lo48576/items/34887794c146042aebf1)
   * [Rustの構造体に文字列を持たせるいくつかの方法](https://qiita.com/Kogia_sima/items/6899c5196813cf231054)
+  * [[Rust] 配列やベクタが自動でスライスに変換される仕組み](https://qiita.com/kerupani129/items/17584274379f0c65fc34)
 * 構文
   * [とほほのWWW入門](http://www.tohoho-web.com/ex/rust.html)
   * [`impl Trait`について](https://qnighy.hatenablog.com/entry/2018/01/28/220000)
@@ -200,3 +201,5 @@
 - [Rust言語 2021年版の計画（抄訳）](https://zenn.dev/ice_creamer/articles/53c12111ab8d4b)
 - [Rustup 1.24.2 について（抄訳）](https://zenn.dev/ice_creamer/articles/a57addc6d5e200)
 - [ハーバード大学 プログラミング講座](https://cs50.jp/)
+- [一週間で身につくアルゴリズムとデータ構造](http://sevendays-study.com/algorithm/index.html)
+- [計算量オーダーについて](https://qiita.com/asksaito/items/59e0d48408f1eab081b5)
