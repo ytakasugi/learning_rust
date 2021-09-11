@@ -68,6 +68,8 @@
 * [rust-lang-ja](https://github.com/rust-lang-ja)
 * [The Rust Programming Language(旧和訳リポジトリ)](https://github.com/rust-lang-ja/the-rust-programming-language-ja/tree/master/1.9/ja/book)
 * [the-rust-programming-language-ja](https://github.com/rust-lang-ja/the-rust-programming-language-ja)
+* [The Rustonomicon](https://doc.rust-lang.org/nomicon/intro.html)
+* [RustBelt](https://plv.mpi-sws.org/rustbelt/#publications)
 * [Command Line Applications in Rust](https://rust-cli.github.io/book/index.html)
 * [Rust チートシート](https://cheats.rs/)
 * [Plotters Developer Guide](https://plotters-rs.github.io/book/intro/introduction.html)
@@ -150,6 +152,8 @@
   * [Rustのイテレータの網羅的かつ大雑把な紹介](https://qiita.com/lo48576/items/34887794c146042aebf1)
   * [Rustの構造体に文字列を持たせるいくつかの方法](https://qiita.com/Kogia_sima/items/6899c5196813cf231054)
   * [[Rust] 配列やベクタが自動でスライスに変換される仕組み](https://qiita.com/kerupani129/items/17584274379f0c65fc34)
+  * [[Rust] 文字列 String から文字列スライス str へ変換される仕組み](https://qiita.com/kerupani129/items/1d170d59720328d7a7c1)
+  * [Rustでドメイン固有型を作る際のコツ](https://zenn.dev/j5ik2o/articles/d37bd2c6924446)
 * 構文
   * [とほほのWWW入門](http://www.tohoho-web.com/ex/rust.html)
   * [`impl Trait`について](https://qnighy.hatenablog.com/entry/2018/01/28/220000)
@@ -164,6 +168,7 @@
   * [【初心者入門】Rustメモリ管理(所有権、借用、ライフタイム)](https://qiita.com/akito_tameto/items/a6840328224536e526a6)
   * [rustの所有権と参照](https://qiita.com/winzu44/items/d40292557ed7e12de77b)
   * [あの日見た匿名ライフタイム](https://zenn.dev/takanori_is/articles/anonymous-lifetime-the-lifetime-we-saw-that-day)
+  * [わかる！？Rustの所有権システム](https://zenn.dev/j5ik2o/articles/918c54411d5a61)
 * コンパイラ
   * [本家Rustコンパイラのソースを読もうとしてみる（1）](https://qiita.com/0yoyoyo/items/eba97a019d0e60324263)
 * Future
