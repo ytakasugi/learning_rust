@@ -157,6 +157,7 @@
   * [Rustでドメイン固有型を作る際のコツ](https://zenn.dev/j5ik2o/articles/d37bd2c6924446)
   * [[Rust] 「パターン」を用いた非構造化変数束縛](https://qiita.com/kerupani129/items/f30596eed4e5b2ca7cd1)
   * [Rustでどんな値型も格納できるHashMapを実装する](https://zenn.dev/j5ik2o/articles/21d477b8dbbf70)
+  * [Rustのパブリックなコンストラクタメソッドを持つ構造体とは](https://qiita.com/c3drive/items/0a10cdb82ff3b2eae0e5)
 * 構文
   * [とほほのWWW入門](http://www.tohoho-web.com/ex/rust.html)
   * [`impl Trait`について](https://qnighy.hatenablog.com/entry/2018/01/28/220000)
