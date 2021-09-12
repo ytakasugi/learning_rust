@@ -3285,14 +3285,7 @@ struct  Point {
     assert_eq!(iter.next(), None);
     ~~~
 
----
 
-#### std::iter::Iterator::filter
-
-  - Description
-
-    クロージャを使用して要素を生成するかどうかを決定するイテレータを作成する。
-    要素が与えられると、クロージャは`true`または`false`を返さなければならない。返されるイテレータは、クロージャが`true`を返す要素のみを返す。
 
 ---
 
@@ -3312,6 +3305,19 @@ struct  Point {
     述語に基づいて要素を生成するイテレータを作成します。
     `take_while()`はクロージャを引数に取ります。これは、イテレータの各要素でこのクロージャを呼び出し、それが真を返す間に要素を生成します。
     `false`が返された後、`take_while()`の作業は終了し、残りの要素は無視されます。
+    
+  - Example
+
+    ```rust
+    let a = [-1i32, 0, 1];
+    
+    let mut iter = a.iter().take_while(|x| x.is_negative());
+    
+    assert_eq!(iter.next(), Some(&-1));
+    assert_eq!(iter.next(), None);
+    ```
+
+    
 
 ---
 
@@ -3321,6 +3327,20 @@ struct  Point {
 
     クロージャを使用して要素を生成するかどうかを決定するイテレータを作成します。
     要素が与えられると、クロージャは`true`または`false`を返さなければなりません。返されるイテレータは、クロージャが`true`を返す要素のみを返します。
+    
+- Example
+
+  ```rust
+  let a = [0i32, 1, 2];
+  
+  let mut iter = a.iter().filter(|x| x.is_positive());
+  
+  assert_eq!(iter.next(), Some(&1));
+  assert_eq!(iter.next(), Some(&2));
+  assert_eq!(iter.next(), None);
+  ```
+
+  
 
 ---
 
@@ -3336,6 +3356,63 @@ struct  Point {
     折りたたみは、何かのコレクションを持っていて、そこから単一の値を生成したいときに便  利です。
     
     注意:`fold()`や、イテレータ全体を横断する同様のメソッドは、結果が有限時間内に決定可能な   トレイトあって   も、無限のイテレータでは終了しないことがあります。
+    
+- Example
+
+  ```rust
+  let a = [1, 2, 3];
+  
+  // the sum of all of the elements of the array
+  let sum = a.iter().fold(0, |acc, x| acc + x);
+  
+  assert_eq!(sum, 6);
+  ```
+
+  ここでは、イテレーションの各ステップを説明します。
+
+  | element | acc  | x    | result |
+  | :------ | :--- | :--- | :----- |
+  |         | 0    |      |        |
+  | 1       | 0    | 1    | 1      |
+  | 2       | 1    | 2    | 3      |
+  | 3       | 3    | 3    | 6      |
+
+  そして、最終的な結果、6となりました。
+
+  この例では、`fold()`の左結合の性質を示しています。つまり、初期値から始まり、各要素の前から後ろまで、文字列を構築します。
+
+  ```rust
+  let numbers = [1, 2, 3, 4, 5];
+  
+  let zero = "0".to_string();
+  
+  let result = numbers.iter().fold(zero, |acc, &x| {
+      format!("({} + {})", acc, x)
+  });
+  
+  assert_eq!(result, "(((((0 + 1) + 2) + 3) + 4) + 5)");
+  ```
+
+  イテレータをあまり使ったことがない人は、結果を構築するためにリストを使ったforループを使うのが一般的です。それらは、`fold()`に変えることができます。
+
+  ```rust
+  let numbers = [1, 2, 3, 4, 5];
+  
+  let mut result = 0;
+  
+  // for loop:
+  for i in &numbers {
+      result = result + i;
+  }
+  
+  // fold:
+  let result2 = numbers.iter().fold(0, |acc, &x| acc + x);
+  
+  // they're the same
+  assert_eq!(result, result2);
+  ```
+
+  
 
 ---
 
