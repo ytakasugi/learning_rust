@@ -3676,6 +3676,39 @@ struct  Point {
   assert_eq!(iter.next(), None);
   ```
 
+
+---
+
+#### std::iter::Iterator::for_each
+
+- Description
+
+  イテレータの各要素でクロージャを呼び出します。
+
+  これはイテレータに`for`ループを使うのと同じですが、クロージャから`break`や`continue`はできません。一般的には`for`ループを使った方がわかりやすいですが、長いイテレータチェーンの最後にあるアイテムを処理する場合は`for_each`の方が読みやすいかもしれません。場合によっては`for_each`の方がループよりも速いかもしれません。なぜなら、`Chain`のようなアダプタでは内部で反復処理を行うからです。
+
+- Example
+
+  ```rust
+  use std::sync::mpsc::channel;
+  
+  let (tx, rx) = channel();
+  (0..5).map(|x| x * 2 + 1)
+        .for_each(move |x| tx.send(x).unwrap());
+  
+  let v: Vec<_> =  rx.iter().collect();
+  assert_eq!(v, vec![1, 3, 5, 7, 9]);
+  ```
+
+  このような小さな例では、`for`ループの方がすっきりするかもしれませんが、イテレータを長くして機能的なスタイルを維持するには`for_each`の方が望ましいかもしれません。
+
+  ```rust
+  (0..5).flat_map(|x| x * 100 .. x * 110)
+        .enumerate()
+        .filter(|&(i, x)| (i + x) % 3 == 0)
+        .for_each(|(i, x)| println!("{}:{}", i, x));
+  ```
+
   
 
 ---
@@ -3807,6 +3840,26 @@ struct  Point {
   ```
 
 
+
+---
+
+#### std::vec::Vec::insert
+
+- Description
+
+  `Vec<T>`の位置indexに要素を挿入し、それ以降のすべての要素を右にシフトします。
+
+- Example
+
+  ```rust
+  let mut vec = vec![1, 2, 3];
+  vec.insert(1, 4);
+  assert_eq!(vec, [1, 4, 2, 3]);
+  vec.insert(4, 5);
+  assert_eq!(vec, [1, 4, 2, 3, 5]);
+  ```
+
+  
 
 ---
 
