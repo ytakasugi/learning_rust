@@ -3340,7 +3340,40 @@ struct  Point {
   assert_eq!(iter.next(), None);
   ```
 
+  `filter()`に渡されたクロージャは参照を取り、多くのイテレータは参照を反復するので、クロージャの型が二重参照であるという混乱を招く可能性があります。
   
+  ```rust
+  let a = [0, 1, 2];
+  
+  let mut iter = a.iter().filter(|x| **x > 1); // need two *s!
+  
+  assert_eq!(iter.next(), Some(&2));
+  assert_eq!(iter.next(), None);
+  ```
+  
+  その代わりに、引数にデストラクションを使用して 1 つを取り除くのが一般的です。
+  
+  ```rust
+  let a = [0, 1, 2];
+  
+  let mut iter = a.iter().filter(|&x| *x > 1); // both & and *
+  
+  assert_eq!(iter.next(), Some(&2));
+  assert_eq!(iter.next(), None);
+  ```
+  
+  または
+  
+  ```rust
+  let a = [0, 1, 2];
+  
+  let mut iter = a.iter().filter(|&&x| x > 1); // two &s
+  
+  assert_eq!(iter.next(), Some(&2));
+  assert_eq!(iter.next(), None);
+  ```
+  
+  なお、`iter.filter(f).next()`は`iter.find(f)`と同じです。
 
 ---
 

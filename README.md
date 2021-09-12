@@ -138,6 +138,7 @@
   * [Rustとactix_webでWebアプリケーションを作ってみる](https://qiita.com/c3drive/items/71dda219f0193ae72069)
   * [RustのPlottersでグラフ描画を試す](https://qiita.com/showchan33/items/0b58b598c5e0e7bf1689)
   * [Rustのスマートポインタ（Derefトレイト）](https://ytyaru.hatenablog.com/entry/2020/10/08/000000)
+  * [RustのSmart pointersってなんなん](https://zenn.dev/ucwork/articles/4fc4cfa47cda26)
   * [[Rust] 引数 &self や戻り値の型 Self に基づくメソッドディスパッチ](https://qiita.com/kerupani129/items/3818b805dfab81ed4da4)
   * [[Rust] 「パターン」を用いた非構造化変数束縛](https://qiita.com/kerupani129/items/f30596eed4e5b2ca7cd1)
   * [[Rust] フォード・ファルカーソン法を実装する](https://qiita.com/deepgreenAN/items/aa9d8b9d19384fa0a70a)
