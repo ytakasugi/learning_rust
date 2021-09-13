@@ -189,6 +189,7 @@
   * [Combining Axum, Hyper, Tonic, and Tower for hybrid web/gRPC apps: Part 1](https://www.fpcomplete.com/blog/axum-hyper-tonic-tower-part1/)
   * [Combining Axum, Hyper, Tonic, and Tower for hybrid web/gRPC apps: Part 2](https://www.fpcomplete.com/blog/axum-hyper-tonic-tower-part2/)
   * [Combining Axum, Hyper, Tonic, and Tower for hybrid web/gRPC apps: Part 3](https://www.fpcomplete.com/blog/axum-hyper-tonic-tower-part3/)
+  * [[Rust] Tokio stack overview: Runtime](https://dev.to/rogertorres/rust-tokio-stack-overview-runtime-9fh)
 
 ---
 
@@ -211,6 +212,7 @@
 - [OPTiM TECH BLOG(Rust)](https://tech-blog.optim.co.jp/archive/category/Rust)
 - [CADDi ENGINEER TECH BLOG](https://caddi.tech/archives/category/technology/backend)
 - [zenn(rustlang)](https://zenn.dev/topics/rust?order=latest)
+- [言語処理100本ノック 2015](http://www.cl.ecei.tohoku.ac.jp/nlp100/)
 - [Rust で Web バックエンド開発をはじめる](https://developers.cyberagent.co.jp/blog/archives/31110/)
 - [Rustハンズオン@エウレカ社](https://speakerdeck.com/helloyuk13/rusthanzuon-at-eurekashe)
 - [Rust勉強会](https://scrapbox.io/nomlab/Rust%E5%8B%89%E5%BC%B7%E4%BC%9A)
@@ -221,3 +223,4 @@
 - [計算量オーダーについて](https://qiita.com/asksaito/items/59e0d48408f1eab081b5)
 - [teratail](https://teratail.com/tags/Rust/active/1)
 - [やってみる](https://ytyaru.hatenablog.com/archive/category/Rust)
+- [30歳からのプログラミング](https://numb86-tech.hatenablog.com/archive/category/Rust)
