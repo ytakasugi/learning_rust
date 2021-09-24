@@ -9,4 +9,5 @@
 - https://github.com/ytakasugi/kanban.git
 - https://github.com/ytakasugi/tokio_tutorial.git
 - https://github.com/ytakasugi/concurrent-programming-with-rust.git
+- https://github.com/ytakasugi/zero-to-production.git
 
