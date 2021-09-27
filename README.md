@@ -189,7 +189,7 @@
   * [Smart Pointers in Rust: What, why and how?](https://dev.to/rogertorres/smart-pointers-in-rust-what-why-and-how-oma)
   * [RustのSizedとfatポインタ](https://qnighy.hatenablog.com/entry/2017/03/04/131311)
   * [Rustの参照、Box、Rcを関数の引数・返り値にした場合の挙動](https://zenn.dev/exyrias/articles/c1d1c6d825fbbb166d44)
-  * * [RustのSmart pointersってなんなん](https://zenn.dev/ucwork/articles/4fc4cfa47cda26)
+  * [RustのSmart pointersってなんなん](https://zenn.dev/ucwork/articles/4fc4cfa47cda26)
 * 参考
   * [II. Implementing ICMP in Rust](https://dev.to/xphoniex/ii-implementing-icmp-in-rust-3bk5)
   * [Polymorphism in Rust](https://oswalt.dev/2021/06/polymorphism-in-rust/)
