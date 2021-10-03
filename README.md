@@ -105,6 +105,7 @@
 - [A Simple Web Server](https://ibraheem.ca/writings/a-simple-web-server/)
 - [Getting Started with Systems Programming with Rust (Part 1)](https://dev.to/bexxmodd/getting-started-with-systems-programming-with-rust-part-1-2i13)
 - [Practical Rust Web Development - Front-End](https://dev.to/werner/practical-rust-web-development-front-end-538d)
+- [Rustで土日祝を色付きで出力するCLIツールを作ってみた](https://zenn.dev/mayo_dev/articles/ce7d14ea8ee1b9)
 
 ---
 
