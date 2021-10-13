@@ -57,6 +57,7 @@
 * [RustCoder](https://zenn.dev/toga/books/rust-atcoder)
 * [競プロ 典型90問](https://github.com/E869120/kyopro_educational_90)
 * [競プロ典型90問をRustで解く](https://dev.thanaism.com/tags/rust/)
+* [競技プログラミングでの典型アルゴリズムとデータ構造](https://algo-logic.info/competitive-programming-must/)
 
 ---
 
