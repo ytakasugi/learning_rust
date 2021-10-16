@@ -149,6 +149,8 @@
   * [[Rust] 引数 &self や戻り値の型 Self に基づくメソッドディスパッチ](https://qiita.com/kerupani129/items/3818b805dfab81ed4da4)
 * エラーハンドリング(`Option`型、`Result`型)
   * [Rust のエラーハンドリングはシンタックスシュガーが豊富で完全に初見殺しなので自信を持って使えるように整理してみたら完全に理解した](https://qiita.com/nirasan/items/321e7cc42e0e0f238254?utm_content=buffera6970&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer)
+  * [[Rust] Result メソッド早見表](https://qiita.com/kerupani129/items/1e2c5f267081d0dba023)
+  * [[Rust] Option メソッド早見表](https://qiita.com/kerupani129/items/a45c614279e7fc58f129)
 
 - 列挙型
   * [Rust: Enums to wrap multiple errors](https://fettblog.eu/rust-enums-wrapping-errors/)
@@ -221,6 +223,8 @@
   * [[Rust] 「パターン」を用いた非構造化変数束縛](https://qiita.com/kerupani129/items/f30596eed4e5b2ca7cd1)
   * [Rustで型を強めにつけ、バリデーション情報を型に落とす方法](https://blog-dry.com/entry/2021/07/01/211114)
   * [[Rust] ゲームでありがちなミュータブル参照の問題](https://qiita.com/msakuta/items/450a0d23505126f644af)
+  * [Rustでログってどう取るの？](https://zenn.dev/belle/articles/900e490ae8dbfe)
+  * [日経平均のチャート画像を毎日Twitter投稿するLambda関数（Rust）を作る](https://qiita.com/c3drive/items/59fbdfade4aa2317db83)
 
 ---
 
