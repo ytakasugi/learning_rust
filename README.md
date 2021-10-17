@@ -71,6 +71,8 @@
 * [The Rust Programming Language(旧和訳リポジトリ)](https://github.com/rust-lang-ja/the-rust-programming-language-ja/tree/master/1.9/ja/book)
 * [the-rust-programming-language-ja](https://github.com/rust-lang-ja/the-rust-programming-language-ja)
 * [The Rustonomicon](https://doc.rust-lang.org/nomicon/intro.html)
+* [The Rust Reference](https://doc.rust-lang.org/reference/introduction.html)
+* [This Week in Rust](https://this-week-in-rust.org/)
 * [RustBelt](https://plv.mpi-sws.org/rustbelt/#publications)
 * [Command Line Applications in Rust](https://rust-cli.github.io/book/index.html)
 * [Rust チートシート](https://cheats.rs/)
