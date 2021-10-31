@@ -1,14 +1,24 @@
-use select::document::Document;
-use select::predicate::Name;
+use std::env;
+
+use reqwest::blocking::ClientBuilder;
+use url::Url;
+use mini_crawler::LinkExtractor;
+
 
 fn main() -> eyre::Result<()> {
-    let body = reqwest::blocking::get("https://www.rust-lang.org")?
-        .text()?;
+    env_logger::init();
     
-    let doc = Document::from(body.as_str());
+    let url = env::args()
+        .nth(1)
+        .unwrap_or("https://www.rust-lang.org".to_owned());
+    let url = Url::parse(&url)?;
+    let client = ClientBuilder::new()
+        .build()?;
+    let extractor = LinkExtractor::from_client(client);
 
-    for a in doc.find(Name("a")) {
-        println!("{:?}", a);
+    let links = extractor.get_links(url)?;
+    for link in links.iter() {
+        println!("{}", link);
     }
 
     Ok(())
