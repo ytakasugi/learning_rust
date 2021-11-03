@@ -129,6 +129,7 @@
   * [rust String &str の変換と、文字列 数値 の変換](https://qiita.com/smicle/items/29a4d5d1d14ad7f77f60)
   * [[Rust] &strとStringを理解しようと思ったらsliceやmutを理解できてないことに気づいた話](https://qiita.com/yagince/items/e7474839246ced595f7a)
   * [[Rust] 配列等から文字列のベクタ`Vec<String>`への変換とその仕組み](https://qiita.com/kerupani129/items/37e9e04a47da195267ef)
+  * [Rust - strが引数/戻り値で使えない理由について](https://zenn.dev/philomagi/articles/rust_why_cant_use_str_as_both_argument_and_return)
 * イテレータ
   * [Rustのイテレータの網羅的かつ大雑把な紹介](https://qiita.com/lo48576/items/34887794c146042aebf1)
   * [Rust のイテレータを使いこなしたい](https://blog-dry.com/entry/2020/06/23/002318)
@@ -239,6 +240,12 @@
 ### framework
 
 - [Rustの新しいWEBフレームワークaxumを触ってみた](https://zenn.dev/techno_tanoc/articles/99e54c82cb049f)
+
+---
+
+### ライブラリ
+
+- [RustのコマンドラインライブラリArghの使い方](https://zenn.dev/nak3/articles/76c98cde31aa0d)
 
 
 ---
