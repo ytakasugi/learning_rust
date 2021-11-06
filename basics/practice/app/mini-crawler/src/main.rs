@@ -10,6 +10,7 @@ fn main() -> eyre::Result<()> {
     
     let url = env::args()
         .nth(1)
+        // 引数でURLを渡されていなければ、Rustの公式サイトの情報を取得
         .unwrap_or("https://www.rust-lang.org".to_owned());
     let url = Url::parse(&url)?;
     let client = ClientBuilder::new()
