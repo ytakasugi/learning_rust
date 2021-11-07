@@ -5,6 +5,8 @@ use url::Url;
 use url::ParseError as UrlParseError;
 use thiserror::Error;
 
+pub mod crawler;
+
 #[derive(Error,Debug)]
 pub enum GetLinksError {
     #[error("Failed to send a request")]
@@ -35,8 +37,10 @@ impl LinkExtractor {
             .get(url)
             .send()
             .map_err(|e| GetLinksError::SendRequest(e))?;
+        
         let response = response.error_for_status()
             .map_err(|e| GetLinksError::SendRequest(e))?;
+        
         let base_url = response.url().clone();
         let status = response.status();
         let body = response.text()?;

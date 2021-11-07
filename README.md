@@ -234,6 +234,7 @@
   * [Rustでログってどう取るの？](https://zenn.dev/belle/articles/900e490ae8dbfe)
   * [日経平均のチャート画像を毎日Twitter投稿するLambda関数（Rust）を作る](https://qiita.com/c3drive/items/59fbdfade4aa2317db83)
   * [Builder pattern in Rust](https://www.greyblake.com/blog/2021-10-19-builder-pattern-in-rust/)
+  * [BFSをrustで実装](https://qiita.com/butzsuppin/items/4ec9bd61047aba286e95)
 
 ---
 
