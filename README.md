@@ -66,6 +66,8 @@
 * [async_std](https://docs.rs/async-std/1.9.0/async_std/)
 * [Rust by Example](https://doc.rust-jp.rs/rust-by-example-ja/)
 * [The Rust Programming Language](https://doc.rust-jp.rs/book-ja/)
+  * [The Rust Programming Languageの問題を解いてみた　その１](https://qiita.com/kaclar_ef/items/7ccf3859f44554b5f0ac)
+
 * [Guide to Rustc Development](https://rustc-dev-guide.rust-lang.org/)
 * [rust-lang-ja](https://github.com/rust-lang-ja)
 * [The Rust Programming Language(旧和訳リポジトリ)](https://github.com/rust-lang-ja/the-rust-programming-language-ja/tree/master/1.9/ja/book)
