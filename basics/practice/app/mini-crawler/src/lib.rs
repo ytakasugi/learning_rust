@@ -73,3 +73,28 @@ impl LinkExtractor {
         Ok(links)
     }
 }
+
+impl crawler::AdjacentNodes for LinkExtractor {
+    type Node = Url;
+
+    fn adjacent_nodes(&self, v: &Self::Node) -> Vec<Self::Node> {
+        match self.get_links(v.clone()) {
+            Ok(links) => links,
+            Err(e) => {
+                log::warn!("Error occurred: {}", e);
+
+                let mut e = e.source();
+
+                loop {
+                    if let Some(err) = e {
+                        log::warn!("Error source: {}", err);
+                        e = err.source();
+                    } else {
+                        break;
+                    }
+                }
+                vec![]
+            },
+        }
+    }
+}
