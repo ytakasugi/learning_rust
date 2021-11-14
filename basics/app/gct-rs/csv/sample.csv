@@ -1,4 +1,4 @@
-type,event,time,total, used, free
+name,event,time,total,used,free
 start,gc,2021-01-01 23:30,13075804,256668,12819136
 start,gc,2021-01-01 23:33,13075804,396420,12679384
 start,gc,2021-01-01 23:34,13075804,936736,12139068
