@@ -63,11 +63,11 @@
 
 ### rust doc
 * [StandardLibrary](https://doc.rust-lang.org/std/)
+* [Edition Guide](https://doc.rust-jp.rs/edition-guide/)
 * [async_std](https://docs.rs/async-std/1.9.0/async_std/)
 * [Rust by Example](https://doc.rust-jp.rs/rust-by-example-ja/)
 * [The Rust Programming Language](https://doc.rust-jp.rs/book-ja/)
   * [The Rust Programming Languageの問題を解いてみた　その１](https://qiita.com/kaclar_ef/items/7ccf3859f44554b5f0ac)
-
 * [Guide to Rustc Development](https://rustc-dev-guide.rust-lang.org/)
 * [rust-lang-ja](https://github.com/rust-lang-ja)
 * [The Rust Programming Language(旧和訳リポジトリ)](https://github.com/rust-lang-ja/the-rust-programming-language-ja/tree/master/1.9/ja/book)
@@ -215,7 +215,10 @@
   * [Rustの `Arc` を読む(1): Arc/Rcの基本](https://qiita.com/qnighy/items/4bbbb20e71cf4ae527b9)
 * ジェネリクス
   * [jeffa.io](https://jeffa.io/)
-* 参考
+* 原文翻訳
+  * [【翻訳】Rustにおけるパフォーマンスの落とし穴](https://codom.hatenablog.com/entry/2017/06/03/221318)
+
+* 未分類(英語)
   * [II. Implementing ICMP in Rust](https://dev.to/xphoniex/ii-implementing-icmp-in-rust-3bk5)
   * [Polymorphism in Rust](https://oswalt.dev/2021/06/polymorphism-in-rust/)
   * [How to build a job queue with Rust and PostgreSQL](https://kerkour.com/blog/rust-job-queue-with-postgresql/)
@@ -226,6 +229,10 @@
   * [Combining Axum, Hyper, Tonic, and Tower for hybrid web/gRPC apps: Part 3](https://www.fpcomplete.com/blog/axum-hyper-tonic-tower-part3/)
   * [Combining Axum, Hyper, Tonic, and Tower for hybrid web/gRPC apps: Part 4](https://www.fpcomplete.com/blog/axum-hyper-tonic-tower-part4/)
   * [[Rust] Tokio stack overview: Runtime](https://dev.to/rogertorres/rust-tokio-stack-overview-runtime-9fh)
+  * [Rust data structures with circular references](https://eli.thegreenplace.net/2021/rust-data-structures-with-circular-references/)
+  * [Monitoring Rust web application with Prometheus and Grafana](https://romankudryashov.com/blog/2021/11/monitoring-rust-web-application/)
+  * [A Data Pipeline for Go Trains Delay Analysis — Part 1](https://towardsdatascience.com/a-data-pipeline-for-go-trains-delay-analysis-part-1-21b2c2496aca)
+  * [Builder pattern in Rust](https://www.greyblake.com/blog/2021-10-19-builder-pattern-in-rust/)
 * 未分類
   * [Rust の型変換イディオム](https://qiita.com/legokichi/items/0f1c592d46a9aaf9a0ea)
   * [The Java Tutorials with Rust](https://rust-java-tutorials.netlify.app/blog/)
@@ -241,7 +248,6 @@
   * [[Rust] ゲームでありがちなミュータブル参照の問題](https://qiita.com/msakuta/items/450a0d23505126f644af)
   * [Rustでログってどう取るの？](https://zenn.dev/belle/articles/900e490ae8dbfe)
   * [日経平均のチャート画像を毎日Twitter投稿するLambda関数（Rust）を作る](https://qiita.com/c3drive/items/59fbdfade4aa2317db83)
-  * [Builder pattern in Rust](https://www.greyblake.com/blog/2021-10-19-builder-pattern-in-rust/)
   * [BFSをrustで実装](https://qiita.com/butzsuppin/items/4ec9bd61047aba286e95)
 
 ---
