@@ -3920,7 +3920,51 @@ struct  Point {
   assert_eq!(vec, [1, 4, 2, 3, 5]);
   ```
 
-  
+
+---
+
+#### std::vec::Vec::reserve
+
+- Description
+
+  与えられた`Vec<T>`に挿入される少なくとも追加の要素のための容量を確保します。コレクションは、頻繁な再割り当てを避けるために、より多くの容量を確保することができます。`reserve`を呼び出した後の容量は、`self.len() + additional`以上になります。容量がすでに十分な場合は何もしません。
+
+- Panics
+
+  新しい容量が`isize::MAX`バイトを超えるとパニックになります。
+
+- Example
+
+  ```rust
+  let mut vec = vec![1];
+  vec.reserve(10);
+  assert!(vec.capacity() >= 11);
+  ```
+
+
+---
+
+#### std::vec::Vec::append
+
+- Description
+
+  他方の要素をすべて自分自身に移動させ、他方を空にします。
+
+- Panics
+
+  ベクタの要素数が`usize`を超えた場合、パニックを起こします。
+
+- Example
+
+  ```rust
+  let mut vec = vec![1, 2, 3];
+  let mut vec2 = vec![4, 5, 6];
+  vec.append(&mut vec2);
+  assert_eq!(vec, [1, 2, 3, 4, 5, 6]);
+  assert_eq!(vec2, []);
+  ```
+
+
 
 ---
 
