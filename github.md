@@ -11,5 +11,5 @@
 - https://github.com/ytakasugi/concurrent-programming-with-rust.git
 - https://github.com/ytakasugi/zero-to-production.git
 -  https://github.com/ytakasugi/eligibility.git
--  https://github.com/ytakasugi/detailed-explained-rust-programming.git
+-  https://github.com/ytakasugi/rust-in-action
 
