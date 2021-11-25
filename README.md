@@ -123,10 +123,13 @@
   * [Rust の最初のステップ](https://docs.microsoft.com/ja-jp/learn/paths/rust-first-steps/)
   * [Rust入門](https://zenn.dev/mebiusbox/books/22d4c1ed9b0003/viewer/6d5875)
   * [Rust入門日記](https://zenn.dev/kawahara/scraps/5a22db01d86ec9)
+  * [Rust学習日記](https://zenn.dev/okkn/books/906cd8690329de)
+  * [Rust from the beginning, your first program](https://dev.to/azure/rust-from-the-beginning-your-first-program-30cp)
   * [Rustはこうやって勉強するといいんじゃないか、という一例](https://qiita.com/TakaakiFuruse/items/13e9ad9d1efe7e17811c)
   * [Re:FizzBuzzから始めるRust生活](https://qiita.com/hinastory/items/543ae9749c8bccb9afbc)
   * [Rustを覚えて間もない頃にやってしまいがちなこと](https://qiita.com/mosh/items/709effc9e451b9b8a5f4)
   * [Rust初心者殺しの文法10選](https://qiita.com/muumu/items/8cdcc79fa881912adf51)
+  * [Rust のデバッグチートシート](https://qiita.com/legokichi/items/e2f807f70316a916f4be)
 * 文字列
   * [[Rust] 文字列 String から文字列スライス str へ変換される仕組み](https://qiita.com/kerupani129/items/1d170d59720328d7a7c1)
   * [[Rust] 文字列スライス str から文字列 String への変換とその仕組み](https://qiita.com/kerupani129/items/89f31bab79ebba43aeb4)
