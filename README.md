@@ -15,13 +15,13 @@
 
   * main.rs
 
-  ```rust
+```rust
   use proconio::input;
-  ```
+```
 
   * 入出力マクロ
 
-  ```rust
+```rust
   use std::io::*;
   use std::str::FromStr;
   
@@ -36,7 +36,7 @@
         .collect();
     token.parse().ok().expect("failed to parse token")
   }
-  ```
+```
 
 ---
 
