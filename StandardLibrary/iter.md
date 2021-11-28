@@ -340,16 +340,48 @@
 #### std::iter::Iterator::map
 
   - Description
+
     クロージャを受け取り、各要素上でそのクロージャを呼び出すイテレータを作成します。
+    
     `map()`は、引数である`FnMut`を実装したものを使って、あるイテレータを別のイテレータに変換します。これは、元のイテレータの各要素に対してこのクロージャを呼び出す新しいイテレータを生成します。
+    
     型で考えるのが得意な人は、`map()`をこのように考えることができます。ある型`A`の要素を与えるイテレータがあり、他の型`B`のイテレータが欲しい場合は`map()`を使用し、`A`を受け取り`B`を返すクロージャを渡すことができます。
+    
     `map()`は、概念的には`for`ループに似ています。しかし、 map() は怠惰なので、すでに他のイテレータを使用している場合に使用するのが最適です。副次的な効果のために何らかのループを行う場合は、`map()`よりも`for`を使用した方が慣用的だと考えられています。
+
+- Example
+
+```rust
+let a = [1, 2, 3];
+
+let mut iter = a.iter().map(|x| 2 * x);
+
+assert_eq!(iter.next(), Some(2));
+assert_eq!(iter.next(), Some(4));
+assert_eq!(iter.next(), Some(6));
+assert_eq!(iter.next(), None);
+```
+
+ある種の副作用がある場合は、`map()`よりも`for`の方がいいでしょう。
+
+```rust
+// don't do this:
+(0..5).map(|x| println!("{}", x));
+
+// it won't even execute, as it is lazy. Rust will warn you about this.
+
+// Instead, use for:
+for x in 0..5 {
+    println!("{}", x);
+}
+```
 
 ---
 
 #### std::iter::Iterator::take_while
 
   - Description
+
     述語に基づいて要素を生成するイテレータを作成します。
     `take_while()`はクロージャを引数に取ります。これは、イテレータの各要素でこのクロージャを呼び出し、それが真を返す間に要素を生成します。
     `false`が返された後、`take_while()`の作業は終了し、残りの要素は無視されます。
