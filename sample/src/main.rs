@@ -1,61 +1,44 @@
-struct Point {
-    x: f64,
-    y: f64,
-}
-
-impl Point {
-    fn origin() -> Point {
-        Point { x: 0.0, y: 0.0 }
-    }
-
-    fn new(x: f64, y: f64) -> Point {
-        Point { x: x, y: y }
+fn check_size(height: &i32, width: &i32, &depth: &i32) -> bool {
+    if 180 >= height + width + depth {
+        true
+    } else {
+        false
     }
 }
 
-struct Rectangle {
-    p1: Point,
-    p2: Point,
-}
+fn price(height: i32, width: i32, depth: i32, weight: i32) -> i32 {
+    let length = height + width + depth;
+    let mut  fee = 0;
 
-impl Rectangle {
-    fn area(&self) -> f64 {
-        let Point { x: x1, y: y1 } = self.p1;
-        let Point { x: x2, y: y2 } = self.p2;
-
-        ((x1 - x2) * (y1 - y2)).abs()
+    if length <= 90 {
+        if weight <= 5 {
+            fee += 500;
+        } else if weight <= 10 {
+            fee += 1000;
+        } else {
+            fee += 1500;
+        }
+    } else {
+        if weight <= 5 {
+            fee += 1000;
+        } else if weight <= 10 {
+            fee += 2000;
+        } else {
+            fee += 3000;
+        }
     }
-
-    fn perimeter(&self) -> f64 {
-        let Point { x: x1, y: y1 } = self.p1;
-        let Point { x: x2, y: y2 } = self.p2;
-
-        2.0 * ((x1 - x2).abs() + (y1 - y2).abs())
-    }
-
-    fn translate(&mut self, x: f64, y: f64) {
-        self.p1.x += x;
-        self.p2.x += x;
-
-        self.p1.y += y;
-        self.p2.y += y;
-    }
+    fee
 }
 
 fn main() {
-    let rectangle = Rectangle {
-        p1: Point::origin(),
-        p2: Point::new(3.0, 4.0),
-    };
+    let height = 10;
+    let width = 10;
+    let depth = 10;
+    let weight = 10;
 
-    println!("Rectangle perimeter: {}", rectangle.perimeter());
-    println!("Rectangle area: {}", rectangle.area());
-
-    let mut square = Rectangle {
-        p1: Point::origin(),
-        p2: Point::new(1.0, 1.0),
-    };
-
-    square.translate(1.0, 1.0);
-
+    if check_size(&height, &width, &depth) == true {
+        println!("{}", price(height, width, depth, weight))
+    } else {
+        println!("size over");
+    }
 }
