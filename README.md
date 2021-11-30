@@ -217,6 +217,7 @@
   * [Rustの所有権(Ownership)について](https://qiita.com/tajihiro/items/e4ef749812acf29620ad)
   * [Rustの変数がメモリ上でどのように配置され、moveしたときにどのような挙動をするか](https://qiita.com/iwatake2222/items/79fe0f33fa33d7e2f5c5)
   * [[Rust] ゲームでありがちなミュータブル参照の問題](https://qiita.com/msakuta/items/450a0d23505126f644af)
+  * [Rustのライフタイム注釈について調べてみた](https://blog-mk2.d-yama7.com/2020/12/20201230_rust_lifetime/)
 * コンパイラ
   * [本家Rustコンパイラのソースを読もうとしてみる（1）](https://qiita.com/0yoyoyo/items/eba97a019d0e60324263)
 * Future
