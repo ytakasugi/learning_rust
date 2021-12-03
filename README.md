@@ -173,6 +173,7 @@
   * [[Rust] Result メソッド早見表](https://qiita.com/kerupani129/items/1e2c5f267081d0dba023)
   * [[Rust] Option メソッド早見表](https://qiita.com/kerupani129/items/a45c614279e7fc58f129)
   * [RustでOptionの配列の最大値・最小値を取り出す](https://zenn.dev/shotaro_tsuji/articles/9c7eedd24b5002)
+  * [Rust/AnyhowのTips](https://zenn.dev/yukinarit/articles/b39cd42820f29e)
 
 - 列挙型
   * [Rust: Enums to wrap multiple errors](https://fettblog.eu/rust-enums-wrapping-errors/)
@@ -287,6 +288,8 @@
 
 ### other
 
+- [Rust Advent Calendar2020](https://qiita.com/advent-calendar/2020/rust)
+- [Rust Advent Calendar2021](https://qiita.com/advent-calendar/2021/rust)
 - [cargo-clean-recursive](https://crates.io/crates/cargo-clean-recursive)
 - [OPTiM TECH BLOG(Rust)](https://tech-blog.optim.co.jp/archive/category/Rust)
 - [CADDi ENGINEER TECH BLOG](https://caddi.tech/archives/category/technology/backend)
