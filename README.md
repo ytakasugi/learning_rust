@@ -8,10 +8,10 @@
 
   * Cargo.toml
 
-  ```
-  [dependencies]
-  proconio = "0.4.1"
-  ```
+```
+[dependencies]
+proconio = "0.4.1"
+```
 
   * main.rs
 
@@ -233,6 +233,7 @@
   * [Rustの `Arc` を読む(1): Arc/Rcの基本](https://qiita.com/qnighy/items/4bbbb20e71cf4ae527b9)
 * ジェネリクス
   * [jeffa.io](https://jeffa.io/)
+  * [【Rust】ジェネリクスの取説](https://qiita.com/quasardtm/items/09952838a6ee9582db1d)
 * ゼロコスト抽象化
   * [Rustのゼロコスト抽象化の効果をアセンブラで確認](https://blog.rust-jp.rs/tatsuya6502/posts/2019-12-zero-cost-abstraction/)
 
