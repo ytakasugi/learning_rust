@@ -227,6 +227,40 @@
 
   - Description
 
+    述語を満たすイテレータの要素を検索します。
+
+    `find()`は、`true`または`false`を返すクロージャを受け取ります。このクロージャをイテレータの各要素に適用し、どれか一つでも真を返せば、`find()`は`Some(element)`を返します。すべての要素が偽を返した場合は`None`を返します。
+
+    `find()`は短絡的です。言い換えれば、クロージャが真を返すとすぐに処理を停止します。
+
+    `find()`は参照を取り、多くのイテレータは参照を反復処理するので、引数が二重参照の場合には混乱する可能性があります。以下の例では、`&&x`でこの効果を見ることができます。
+    
+- Example
+
+```rust
+let a = [1, 2, 3];
+
+assert_eq!(a.iter().find(|&&x| x == 2), Some(&2));
+
+assert_eq!(a.iter().find(|&&x| x == 5), None);
+```
+
+Stopping at the first `true`:
+
+```rust
+let a = [1, 2, 3];
+
+let mut iter = a.iter();
+
+assert_eq!(iter.find(|&&x| x == 2), Some(&2));
+
+// we can still use `iter`, as there are more elements.
+assert_eq!(iter.next(), Some(&3));
+```
+
+なお、`iter.find(f)`は`iter.filter(f).next()`と同等です。
+
+
 ---
 
 #### std::iter::Iterator::find_map
@@ -291,7 +325,7 @@
       assert_eq!(iter.next(), None);
 ~~~
 
-    - `take()`は、無限イテレータを使って有限にするためによく使われる
+`take()`は、無限イテレータを使って有限にするためによく使われる
 
 ~~~ rust
       let mut iter = (0..).take(3);
