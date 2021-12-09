@@ -58,6 +58,7 @@ proconio = "0.4.1"
 * [競プロ 典型90問](https://github.com/E869120/kyopro_educational_90)
 * [競プロ典型90問をRustで解く](https://dev.thanaism.com/tags/rust/)
 * [競技プログラミングでの典型アルゴリズムとデータ構造](https://algo-logic.info/competitive-programming-must/)
+* [AtCoder Beginner Contestで最低限理解する必要がある（と感じた）数学的知識](https://qiita.com/Ll_e_ki/items/fe70b9e3408c5b14ae2e?utm_campaign=post_article&utm_medium=twitter&utm_source=twitter_share)
 
 ---
 
@@ -306,5 +307,8 @@ proconio = "0.4.1"
 - [一週間で身につくアルゴリズムとデータ構造](http://sevendays-study.com/algorithm/index.html)
 - [計算量オーダーについて](https://qiita.com/asksaito/items/59e0d48408f1eab081b5)
 - [teratail](https://teratail.com/tags/Rust/active/1)
+- [初学者に教えたい、MicrosoftがGitHubで公開している教材が最高だった！](https://qiita.com/ozora/items/9c801d3b0137eccc32fa)
+
+### 個人ブログ
 - [やってみる](https://ytyaru.hatenablog.com/archive/category/Rust)
 - [30歳からのプログラミング](https://numb86-tech.hatenablog.com/archive/category/Rust)
