@@ -25,9 +25,10 @@ pub fn run() -> Result<Vec<(String, i32)>, Box<dyn Error>> {
     Ok(v)
 }
 
-pub fn parse_time(time_str: &str) -> Date<Local> {
+pub fn parse_time(time_str: &String) -> Date<Local> {
+    let time_str = time_str.as_str();
     Local.datetime_from_str(
-        &format!("{} 0:0", time_str),
+        &format!("{}", time_str),
         "%Y-%m-%d %H:%M"
     )
     .unwrap()

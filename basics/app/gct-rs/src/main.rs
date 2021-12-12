@@ -1,5 +1,3 @@
-//use gct_rs::{run, parse_time};
-
 use plotters::prelude::*;
 use chrono::offset::Local;
 use chrono::Date;
@@ -9,7 +7,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 /* (1) プロット用データの準備 */
 
 // データを取得。この時点では(日付,値)のタプルのVector型になっている
-let data = gct_rs::run()?;
+let data = gct_rs::run().unwrap();
 
 /* x軸とy軸で個別のVector型にする */
 

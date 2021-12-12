@@ -91,6 +91,7 @@ proconio = "0.4.1"
   * [『Rust Design Patterns』を翻訳してみました（デザインパターン・アンチパターン編）](https://qiita.com/Yappii_111/items/654717e6a6a980722189)
 * [Futures Explained in 200 Lines of Rust](https://cfsamson.github.io/books-futures-explained/introduction.html)
 * [Error Handling in Rust](https://blog.burntsushi.net/rust-error-handling/#working-with-multiple-error-types)
+* [Learn Rust With Entirely Too Many Linked Lists](https://rust-unofficial.github.io/too-many-lists/index.html)
 
 ---
 
@@ -267,6 +268,7 @@ proconio = "0.4.1"
   * [Rustでログってどう取るの？](https://zenn.dev/belle/articles/900e490ae8dbfe)
   * [日経平均のチャート画像を毎日Twitter投稿するLambda関数（Rust）を作る](https://qiita.com/c3drive/items/59fbdfade4aa2317db83)
   * [BFSをrustで実装](https://qiita.com/butzsuppin/items/4ec9bd61047aba286e95)
+  * [RustのPlottersでグラフ描画を試す](https://qiita.com/showchan33/items/0b58b598c5e0e7bf1689)
 
 ---
 
