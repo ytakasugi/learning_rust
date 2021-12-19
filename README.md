@@ -302,6 +302,7 @@ proconio = "0.4.1"
 - [言語処理100本ノック 2015](http://www.cl.ecei.tohoku.ac.jp/nlp100/)
 - [Rust で Web バックエンド開発をはじめる](https://developers.cyberagent.co.jp/blog/archives/31110/)
 - [Rustハンズオン@エウレカ社](https://speakerdeck.com/helloyuk13/rusthanzuon-at-eurekashe)
+- [Rustハンズオン @ Rust CA 1 Day Youth Boot Camp](https://speakerdeck.com/helloyuk13/rusthanzuon-at-rust-ca-1-day-youth-boot-camp)
 - [Rust勉強会](https://scrapbox.io/nomlab/Rust%E5%8B%89%E5%BC%B7%E4%BC%9A)
 - [Rust言語 2021年版の計画（抄訳）](https://zenn.dev/ice_creamer/articles/53c12111ab8d4b)
 - [Rustup 1.24.2 について（抄訳）](https://zenn.dev/ice_creamer/articles/a57addc6d5e200)
