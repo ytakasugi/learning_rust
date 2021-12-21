@@ -115,6 +115,8 @@ proconio = "0.4.1"
 - [Making My Website Part 1: Monitoring On A Raspberry Pi](https://www.rotoclone.zone/blog/posts/raspberry-pi-monitoring)
 - [Building My First Command Line Interface (CLI) with Rust](https://devtails.medium.com/building-my-first-command-line-interface-cli-with-rust-b6beb9c284e0)
 - [Rustでsupabaseにサインアップする](https://zenn.dev/brainvader/articles/eef5630fcd88fb)
+- [Rustで実装するmalloc](https://engineers.ntt.com/entry/2021/12/21/125459)
+- [Rustで始める自作シェル その1](https://tech.buty4649.net/entry/2021/12/19/235124)
 
 ---
 
