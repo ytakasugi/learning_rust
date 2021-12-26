@@ -126,8 +126,7 @@ proconio = "0.4.1"
   * [Rust を始めるための資料集](https://blog-dry.com/entry/2021/01/23/141936)
   * [Rust の最初のステップ](https://docs.microsoft.com/ja-jp/learn/paths/rust-first-steps/)
   * [Rust入門](https://zenn.dev/mebiusbox/books/22d4c1ed9b0003/viewer/6d5875)
-  * [Rust入門日記](https://zenn.dev/kawahara/scraps/5a22db01d86ec9)
-  * [Rust学習日記](https://zenn.dev/okkn/books/906cd8690329de)
+  * [Rust入門(mebiusbox)](https://github.com/mebiusbox/docs/blob/master/Rustjp.pdf)
   * [Rust from the beginning, your first program](https://dev.to/azure/rust-from-the-beginning-your-first-program-30cp)
   * [Rustはこうやって勉強するといいんじゃないか、という一例](https://qiita.com/TakaakiFuruse/items/13e9ad9d1efe7e17811c)
   * [Re:FizzBuzzから始めるRust生活](https://qiita.com/hinastory/items/543ae9749c8bccb9afbc)
@@ -277,7 +276,6 @@ proconio = "0.4.1"
   * [Rustでログってどう取るの？](https://zenn.dev/belle/articles/900e490ae8dbfe)
   * [日経平均のチャート画像を毎日Twitter投稿するLambda関数（Rust）を作る](https://qiita.com/c3drive/items/59fbdfade4aa2317db83)
   * [BFSをrustで実装](https://qiita.com/butzsuppin/items/4ec9bd61047aba286e95)
-  * [RustのPlottersでグラフ描画を試す](https://qiita.com/showchan33/items/0b58b598c5e0e7bf1689)
 
 ---
 
