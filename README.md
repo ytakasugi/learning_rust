@@ -126,7 +126,6 @@ proconio = "0.4.1"
   * [Rust を始めるための資料集](https://blog-dry.com/entry/2021/01/23/141936)
   * [Rust の最初のステップ](https://docs.microsoft.com/ja-jp/learn/paths/rust-first-steps/)
   * [Rust入門](https://zenn.dev/mebiusbox/books/22d4c1ed9b0003/viewer/6d5875)
-  * [Rust入門(mebiusbox)](https://github.com/mebiusbox/docs/blob/master/Rustjp.pdf)
   * [Rust from the beginning, your first program](https://dev.to/azure/rust-from-the-beginning-your-first-program-30cp)
   * [Rustはこうやって勉強するといいんじゃないか、という一例](https://qiita.com/TakaakiFuruse/items/13e9ad9d1efe7e17811c)
   * [Re:FizzBuzzから始めるRust生活](https://qiita.com/hinastory/items/543ae9749c8bccb9afbc)
