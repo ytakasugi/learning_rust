@@ -315,6 +315,7 @@ proconio = "0.4.1"
     - [github](https://github.com/yuk1ty/rust-basic-handson/)
 - [Rust ハンズオン@chikoski](https://chikoski.info/rust-handson/)
 - [プログラムがメモリをどう使うかを理解する(1)](https://zenn.dev/rita0222/articles/e6ff75245d79b5)
+- [基本からしっかり学ぶRust入門(@IT)](https://atmarkit.itmedia.co.jp/ait/series/24844/)
 - [Rust勉強会](https://scrapbox.io/nomlab/Rust%E5%8B%89%E5%BC%B7%E4%BC%9A)
 - [Rust言語 2021年版の計画（抄訳）](https://zenn.dev/ice_creamer/articles/53c12111ab8d4b)
 - [Rustup 1.24.2 について（抄訳）](https://zenn.dev/ice_creamer/articles/a57addc6d5e200)
