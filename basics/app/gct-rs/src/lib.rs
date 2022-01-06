@@ -11,7 +11,7 @@ use chrono::Date;
 
 type Record = (String, i32);
 
-pub fn run() -> Result<Vec<(String, i32)>, Box<dyn Error>> {
+pub fn get_data() -> Result<Vec<(String, i32)>, Box<dyn Error>> {
     let file_path = get_first_arg()?;
     let file = File::open(file_path)?;
     let mut rdr = csv::Reader::from_reader(file);
@@ -25,10 +25,9 @@ pub fn run() -> Result<Vec<(String, i32)>, Box<dyn Error>> {
     Ok(v)
 }
 
-pub fn parse_time(time_str: &String) -> Date<Local> {
-    let time_str = time_str.as_str();
+pub fn parse_time(time_str: &str) -> Date<Local> {
     Local.datetime_from_str(
-        &format!("{}", time_str),
+        time_str,
         "%Y-%m-%d %H:%M"
     )
     .unwrap()
