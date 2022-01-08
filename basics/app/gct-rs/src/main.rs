@@ -23,14 +23,10 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
                       .map(|(_, _, _, y, _ , _)| *y)
                       .collect();
 
-  //println!("{:?}", y_total);
-
   // y軸: 値のVector
   let y_used: Vec<i64> = data.iter()
                       .map(|(_, _, _, _, y , _)| *y)
                       .collect::<Vec<_>>();
-
-  //println!("{:?}", y_used);
 
   /* (2) 描画先の情報を設定 */
   let image_width = 1080;
@@ -40,7 +36,6 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
       ("plot.png", (image_width, image_height)).into_drawing_area();
   // 背景を白にする
   root.fill(&WHITE)?;
-
 
   /* (3) グラフ全般の設定 */
 
@@ -55,9 +50,9 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
       // 上下左右全ての余白
       .margin(10)
       // x軸ラベル部分の余白
-      .x_label_area_size(20)
+      .x_label_area_size(40)
       // y軸ラベル部分の余白
-      .y_label_area_size(60)
+      .y_label_area_size(90)
       // x軸とy軸の数値の範囲を指定する
       .build_cartesian_2d(
       // x軸の範囲
@@ -73,7 +68,13 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
   /* (4) グラフの描画 */
 
   // x軸y軸、グリッド線などを描画
-  chart.configure_mesh().draw()?;
+  chart
+    .configure_mesh()
+    .x_labels(10)
+    .y_labels(10)
+    .x_desc("TIME")
+    .y_desc("USED")
+    .draw()?;
 
   // 折れ線グラフの定義＆描画
   let line_series_used = LineSeries::new(
