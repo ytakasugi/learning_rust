@@ -1,15 +1,7 @@
-// クロージャを返す関数
-fn return_closure(init: i32) -> impl FnMut() -> i32 {
-    let mut x = init;
-    move || {
-        let ret = x;
-        x += 1;
-        ret
-    }
-}
-
-// クロージャを返す関数を使用するには、`function()` + クロージャに与える引数(`()`)としなければならない。
-// 今回であれば、`FnMut`は引数を取らないのでユニットとなる
+use chrono::*;
 fn main() {
-    println!("{}", return_closure(1)());
+    let time_str = "2021-01-01 23:30";
+    let date = Local.datetime_from_str(time_str, "%Y-%m-%d %H:%M")
+                            .unwrap();
+    println!("{}", date);
 }

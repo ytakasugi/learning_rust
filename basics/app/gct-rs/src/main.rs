@@ -1,76 +1,98 @@
 use plotters::prelude::*;
-use chrono::offset::Local;
-use chrono::Date;
+use chrono::*;
 
+const Y_AXIS_MAX: i64 = 400000000;
+const Y_AXIS_MIN: i64 = 0;
 fn main() -> Result<(), Box<dyn std::error::Error>> {
 
-/* (1) プロット用データの準備 */
+  /* (1) プロット用データの準備 */
 
-// データを取得。この時点では(日付,値)のタプルのVector型になっている
-let data = gct_rs::get_data().unwrap();
+  // データを取得。この時点では(日付,値)のタプルのVector型になっている
+  let data = gct_rs::get_data().unwrap();
 
-/* x軸とy軸で個別のVector型にする */
+  /* x軸とy軸で個別のVector型にする */
 
-// x軸 : 日付のVector
-let xs: Vec<Date<Local>> = data.iter()
-                            .map(|(x, _)| gct_rs::parse_time(&*x))
-                            .collect();
-// y軸: 値のVector
-let ys: Vec<i32> = data.iter()
-                    .map(|(_, y)| *y)
-                    .collect();
+  // x軸 : 日付のVector
+  let x: Vec<DateTime<Local>> = data.iter()
+                              .map(|(_, _, x, _, _ , _)| gct_rs::parse_time(x.to_string()))
+                              .collect();
+  //println!("{:?}", x);
+
+  // y軸: 値のVector
+  let y_total: Vec<i64> = data.iter()
+                      .map(|(_, _, _, y, _ , _)| *y)
+                      .collect();
+
+  //println!("{:?}", y_total);
+
+  // y軸: 値のVector
+  let y_used: Vec<i64> = data.iter()
+                      .map(|(_, _, _, _, y , _)| *y)
+                      .collect::<Vec<_>>();
+
+  //println!("{:?}", y_used);
+
+  /* (2) 描画先の情報を設定 */
+  let image_width = 1080;
+  let image_height = 720;
+  // 描画先を指定。画像出力する場合はBitMapBackend
+  let root = BitMapBackend::new
+      ("plot.png", (image_width, image_height)).into_drawing_area();
+  // 背景を白にする
+  root.fill(&WHITE)?;
 
 
-/* (2) 描画先の情報を設定 */
+  /* (3) グラフ全般の設定 */
 
-let image_width = 1080;
-let image_height = 720;
-// 描画先を指定。画像出力する場合はBitMapBackend
-let root = BitMapBackend::new
-    ("plot.png", (image_width, image_height)).into_drawing_area();
+  // グラフタイトル
+  let caption = "Sample Plot";
+  // グラフのフォント、サイズ
+  let font = ("sans-serif", 20);
 
-// 背景を白にする
-root.fill(&WHITE)?;
-
-
-/* (3) グラフ全般の設定 */
-
-/* y軸の最大最小値を算出
-f32型はNaNが定義されていてys.iter().max()等が使えないので工夫が必要
- */
-let (y_min, y_max) = ys.iter()
-                        .fold(
-                        (0, 0),
-                        |(m,n), v| (*v.min(&m), *v.max(&n))
-                        );
-
-let caption = "Sample Plot";
-let font = ("sans-serif", 20);
-
-let mut chart = ChartBuilder::on(&root)
-    .caption(caption, font.into_font()) // キャプションのフォントやサイズ
-    .margin(10)                         // 上下左右全ての余白
-    .x_label_area_size(16)              // x軸ラベル部分の余白
-    .y_label_area_size(42)              // y軸ラベル部分の余白
-    .build_cartesian_2d(                // x軸とy軸の数値の範囲を指定する
-      *xs.first().unwrap()..*xs.last().unwrap(), // x軸の範囲
-      y_min..y_max                               // y軸の範囲
-    )?;
-
+  let mut chart = ChartBuilder::on(&root)
+      // キャプションのフォントやサイズ
+      .caption(caption, font.into_font())
+      // 上下左右全ての余白
+      .margin(10)
+      // x軸ラベル部分の余白
+      .x_label_area_size(20)
+      // y軸ラベル部分の余白
+      .y_label_area_size(60)
+      // x軸とy軸の数値の範囲を指定する
+      .build_cartesian_2d(
+      // x軸の範囲
+      *x.first().unwrap()..*x.last().unwrap(),
+      // y軸の範囲
+      Y_AXIS_MIN..Y_AXIS_MAX
+      )?
+      .set_secondary_coord(
+        *x.first().unwrap()..*x.last().unwrap(),
+        Y_AXIS_MIN..Y_AXIS_MAX
+      );
 
   /* (4) グラフの描画 */
 
   // x軸y軸、グリッド線などを描画
-chart.configure_mesh().draw()?;
+  chart.configure_mesh().draw()?;
 
   // 折れ線グラフの定義＆描画
-let line_series = LineSeries::new(
-                    xs.iter()
-                    .zip(ys.iter())
-                      .map(|(x, y)| (*x, *y)),
-                    &RED
+  let line_series_used = LineSeries::new(
+        x.iter()
+            .zip(y_used.iter())
+            .map(|(x, y)| (*x, *y)),
+        &RED
 );
-chart.draw_series(line_series)?;
 
-Ok(())
+chart.draw_series(line_series_used)?;
+
+    // 折れ線グラフの定義＆描画
+    let line_series_total = LineSeries::new(
+      x.iter()
+          .zip(y_total.iter())
+          .map(|(x, y)| (*x, *y)),
+      &BLUE
+);
+  chart.draw_secondary_series(line_series_total)?;
+
+  Ok(())
 }
