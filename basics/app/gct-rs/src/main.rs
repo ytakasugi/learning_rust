@@ -22,13 +22,13 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 
     // y軸: 値のVector
     let y_total: Vec<i64> = data.iter()
-                                .map(|(_, _, _, y, _, _)| *y)
-                                .collect();
+                            .map(|(_, _, _, y, _, _)| *y)
+                            .collect();
 
     // y軸: 値のVector
     let y_used: Vec<i64> = data.iter()
                             .map(|(_, _, _, _, y, _)| *y)
-                            .collect::<Vec<_>>();
+                            .collect();
 
   /* (2) 描画先の情報を設定 */
 
