@@ -21,9 +21,9 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
                                     .collect();
 
     // y軸: 値のVector
-  let y_total: Vec<i64> = data.iter()
-                              .map(|(_, _, _, y, _, _)| *y)
-                              .collect();
+    let y_total: Vec<i64> = data.iter()
+                                .map(|(_, _, _, y, _, _)| *y)
+                                .collect();
 
     // y軸: 値のVector
     let y_used: Vec<i64> = data.iter()
@@ -58,14 +58,14 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         // y軸の範囲
             Y_AXIS_MIN..Y_AXIS_MAX
         )?
-      .set_secondary_coord(
+        .set_secondary_coord(
             *x.first().unwrap()..*x.last().unwrap(),
             Y_AXIS_MIN..Y_AXIS_MAX
         );
 
     /* (4) グラフの描画 */
 
-    // x軸y軸、グリッド線などを描画
+    // 折れ線グラフの定義＆描画
     chart
         .configure_mesh()
         .x_labels(10)
@@ -76,20 +76,20 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 
     // 折れ線グラフの定義＆描画
     let line_series_used = LineSeries::new(
-              x.iter()
-              .zip(y_used.iter())
-              .map(|(x, y)| (*x, *y)),
-              &RED
-);
+                x.iter()
+                .zip(y_used.iter())
+                .map(|(x, y)| (*x, *y)),
+                &RED
+    );
 
     chart.draw_series(line_series_used)?;
 
     // 折れ線グラフの定義＆描画
     let line_series_total = LineSeries::new(
-              x.iter()
-              .zip(y_total.iter())
-              .map(|(x, y)| (*x, *y)),
-              &BLUE
+                x.iter()
+                .zip(y_total.iter())
+                .map(|(x, y)| (*x, *y)),
+                &BLUE
     );
     chart.draw_secondary_series(line_series_total)?;
 

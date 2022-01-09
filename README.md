@@ -245,6 +245,8 @@ proconio = "0.4.1"
   * [Rustのゼロコスト抽象化の効果をアセンブラで確認](https://blog.rust-jp.rs/tatsuya6502/posts/2019-12-zero-cost-abstraction/)
 * マクロ
     * [RustでJSONから値をゆるりと取り出すマクロを書いた話](https://zenn.dev/jiftechnify/articles/rust-macro-for-query-json)
+    * [Rustのマクロを覚える](https://qiita.com/k5n/items/758111b12740600cc58f)
+    * [Rustの全マクロ種別が分かったつもりになれる話](https://speakerdeck.com/optim/rust-all-kinds-of-macro)
 
 * 原文翻訳
   * [【翻訳】Rustにおけるパフォーマンスの落とし穴](https://codom.hatenablog.com/entry/2017/06/03/221318)
