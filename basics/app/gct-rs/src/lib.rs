@@ -25,8 +25,7 @@ pub fn get_data() -> Result<Vec<Record>, Box<dyn Error>> {
     Ok(v)
 }
 
-pub fn parse_time(time_str: String) -> DateTime<Local> {
-    let time_str = time_str.as_str();
+pub fn parse_time(time_str: &str) -> DateTime<Local> {
     Local.datetime_from_str(
         time_str,
         "%Y-%m-%d %H:%M"

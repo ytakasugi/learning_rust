@@ -17,7 +17,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 
     // x軸 : 日付のVector
     let x: Vec<DateTime<Local>> = data.iter()
-                                    .map(|(_, _, x, _, _ , _)| gct_rs::parse_time(x.to_string()))
+                                    .map(|(_, _, x, _, _ , _)| gct_rs::parse_time(x))
                                     .collect();
 
     // y軸: 値のVector
