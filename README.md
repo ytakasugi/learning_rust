@@ -271,6 +271,9 @@ proconio = "0.4.1"
   * [A Beginner's Guide to Parsing in Rust](https://depth-first.com/articles/2021/12/16/a-beginners-guide-to-parsing-in-rust/)
   * [Thread Safety in C++ and Rust](https://blog.reverberate.org/2021/12/18/thread-safety-cpp-rust.html)
 
+* cargo
+    * [cargo new でgitを使わない（バージョン管理システムを指定する）方法](https://qiita.com/nobushi95/items/2ce37f6761938efaf339)
+
 * 未分類
   * [Rustのファイルパスの扱いが複雑すぎる件](https://qiita.com/kujirahand/items/b5ab1429b51ab674f5cf)
   * [Rustでお手軽スクレイピング 2020年夏](https://qiita.com/YoshiTheQiita/items/f66828d61293c75a4585)
