@@ -435,13 +435,13 @@ impl Clone for MyStruct {
     }
 ~~~
 
-    構造体`PointList`は、`Vec<T>` が `Copy`ではないので、`Copy`を実装できません。`Copy`の実装を導出しようとすると、エラーが発生します。
+構造体`PointList`は、`Vec<T>` が `Copy`ではないので、`Copy`を実装できません。`Copy`の実装を導出しようとすると、エラーが発生します。
 
 ~~~
-    the trait `Copy` may not be implemented for this type; field `points` does not implement `Copy`
+the trait `Copy` may not be implemented for this type; field `points` does not implement `Copy`
 ~~~
 
-    共有参照`(&T)`も`Copy`なので、型が`Copy`ではない型Tの共有参照を保持していても、型はCopyになることができます。次の構造体を考えてみましょう。これは、上から見ても`Copy`ではない型`PointList`の共有参照を保持しているだけなので、`Copy`を実装することができます。
+共有参照`(&T)`も`Copy`なので、型が`Copy`ではない型Tの共有参照を保持していても、型はCopyになることができます。次の構造体を考えてみましょう。これは、上から見ても`Copy`ではない型`PointList`の共有参照を保持しているだけなので、`Copy`を実装することができます。
 
 ~~~rust
     #[derive(Copy, Clone)]
