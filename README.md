@@ -117,6 +117,7 @@ proconio = "0.4.1"
 - [Rustでsupabaseにサインアップする](https://zenn.dev/brainvader/articles/eef5630fcd88fb)
 - [Rustで実装するmalloc](https://engineers.ntt.com/entry/2021/12/21/125459)
 - [Rustで始める自作シェル その1](https://tech.buty4649.net/entry/2021/12/19/235124)
+- [Rust でパーサコンビネータを作ってみる (前編)](https://zenn.dev/nojima/articles/05cb9ffa0f993b)
 
 ---
 
@@ -290,6 +291,7 @@ proconio = "0.4.1"
   * [日経平均のチャート画像を毎日Twitter投稿するLambda関数（Rust）を作る](https://qiita.com/c3drive/items/59fbdfade4aa2317db83)
   * [BFSをrustで実装](https://qiita.com/butzsuppin/items/4ec9bd61047aba286e95)
   * [RustでBinary treeの left, right のポインターに使うデータ型を考える](https://qiita.com/syuuu/items/11743f61852672c92268)
+  * [RustのOptionの as_ref() を堪能できる Hello wold](https://qiita.com/syuuu/items/ac3f72370ee07998be70)
 
 ---
 

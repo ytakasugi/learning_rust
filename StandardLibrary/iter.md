@@ -336,7 +336,7 @@ assert_eq!(iter.next(), Some(&3));
       assert_eq!(iter.next(), None);
 ~~~
 
-    - 利用可能な要素がn個よりも少ない場合、takeはそれ自身を基礎となるイテレータのサイズに制限します。
+利用可能な要素がn個よりも少ない場合、takeはそれ自身を基礎となるイテレータのサイズに制限します。
 
 ~~~rust
       let v = vec![1, 2];
@@ -422,14 +422,14 @@ for x in 0..5 {
     
   - Example
 
-  ```rust
-    let a = [-1i32, 0, 1];
+```rust
+let a = [-1i32, 0, 1];
     
-    let mut iter = a.iter().take_while(|x| x.is_negative());
+let mut iter = a.iter().take_while(|x| x.is_negative());
     
-    assert_eq!(iter.next(), Some(&-1));
-    assert_eq!(iter.next(), None);
-  ```
+assert_eq!(iter.next(), Some(&-1));
+assert_eq!(iter.next(), None);
+```
 
     
 
