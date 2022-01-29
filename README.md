@@ -144,6 +144,7 @@ proconio = "0.4.1"
   * [Rust - strが引数/戻り値で使えない理由について](https://zenn.dev/philomagi/articles/rust_why_cant_use_str_as_both_argument_and_return)
   * [[Rust] to_string メソッド等は呼び出し時に自動参照外しされない](https://qiita.com/kerupani129/items/eaf16e41bc1786a6d049)
   * [[Rust] &str と &&str で呼ばれる to_string メソッドが異なる](https://qiita.com/kerupani129/items/2f61c2f76803c49dede3)
+  * [Rustの文字列結合はどうしてString+&strなのか](https://qiita.com/fujiharuka/items/6ef45a3c58ab8153c712)
 * イテレータ
   * [Rustのイテレータの網羅的かつ大雑把な紹介](https://qiita.com/lo48576/items/34887794c146042aebf1)
   * [Rust のイテレータを使いこなしたい](https://blog-dry.com/entry/2020/06/23/002318)
@@ -292,6 +293,7 @@ proconio = "0.4.1"
   * [BFSをrustで実装](https://qiita.com/butzsuppin/items/4ec9bd61047aba286e95)
   * [RustでBinary treeの left, right のポインターに使うデータ型を考える](https://qiita.com/syuuu/items/11743f61852672c92268)
   * [RustのOptionの as_ref() を堪能できる Hello wold](https://qiita.com/syuuu/items/ac3f72370ee07998be70)
+  * [順列の組み合わせ全列挙（再帰関数の理解含む）](https://qiita.com/butzsuppin/items/c32f3d30e3a4e9d4fc55)
 
 ---
 
