@@ -134,6 +134,7 @@ proconio = "0.4.1"
   * [趣味でプログラミングする人がRustを勉強する](https://qiita.com/tonesuke/items/52e469f18e747c794376)
   * [Rust初心者殺しの文法10選](https://qiita.com/muumu/items/8cdcc79fa881912adf51)
   * [Rust のデバッグチートシート](https://qiita.com/legokichi/items/e2f807f70316a916f4be)
+  * [Rustのcloneはディープコピーなのか](https://zenn.dev/garasubo/articles/aa9a1b5b96e8e9)
 * 文字列
   * [[Rust] 文字列 String から文字列スライス str へ変換される仕組み](https://qiita.com/kerupani129/items/1d170d59720328d7a7c1)
   * [[Rust] 文字列スライス str から文字列 String への変換とその仕組み](https://qiita.com/kerupani129/items/89f31bab79ebba43aeb4)
