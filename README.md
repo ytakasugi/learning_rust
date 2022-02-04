@@ -135,6 +135,12 @@ proconio = "0.4.1"
   * [Rust初心者殺しの文法10選](https://qiita.com/muumu/items/8cdcc79fa881912adf51)
   * [Rust のデバッグチートシート](https://qiita.com/legokichi/items/e2f807f70316a916f4be)
   * [Rustのcloneはディープコピーなのか](https://zenn.dev/garasubo/articles/aa9a1b5b96e8e9)
+  * Tour of Rust まとめ
+      * [第1章](https://zenn.dev/kouschatten/articles/tour-of-rust)
+      * [第2章](https://zenn.dev/kouschatten/articles/tour-of-rust2)
+      * [第3章](https://zenn.dev/kouschatten/articles/tour-of-rust3)
+      * [第4章](https://zenn.dev/kouschatten/articles/tour-of-rust4)
+      * [第5章](https://zenn.dev/kouschatten/articles/tour-of-rust5)
 * 文字列
   * [[Rust] 文字列 String から文字列スライス str へ変換される仕組み](https://qiita.com/kerupani129/items/1d170d59720328d7a7c1)
   * [[Rust] 文字列スライス str から文字列 String への変換とその仕組み](https://qiita.com/kerupani129/items/89f31bab79ebba43aeb4)
@@ -160,6 +166,7 @@ proconio = "0.4.1"
   * [[Rust] 「パターン」を用いた非構造化変数束縛](https://qiita.com/kerupani129/items/f30596eed4e5b2ca7cd1)
   * [Rustで型を強めにつけ、バリデーション情報を型に落とす方法](https://blog-dry.com/entry/2021/07/01/211114)
   * [Rust の型変換イディオム](https://qiita.com/legokichi/items/0f1c592d46a9aaf9a0ea) 
+  * [PhantomDataまとめ](https://qnighy.hatenablog.com/entry/2018/01/14/220000)
   
 * 構造体
   * [構造体フィールドの所有権の部分借用/移動を理解する](https://qiita.com/yosqueoy/items/453e9aa85bf394388b86)
@@ -224,6 +231,7 @@ proconio = "0.4.1"
   * [Rust は何を解決しようとしたのか；メモリとリソースと所有権](https://zenn.dev/karno/articles/630a64fbc9c65e29b566)
   * [【Rust】ライフタイムとVariance](https://qiita.com/maueki/items/b5df36e92561450938dd)
   * [Rustのライフタイムを理解する](https://qiita.com/lechatthecat/items/863198824bbb8c4ab1f4)
+  * [[Rust] Lifetime of associated types パターンについて](https://qiita.com/yasuo-ozu/items/40b444dae4404775fe38)
   * [RustのLifetimeってなんなん](https://zenn.dev/ucwork/articles/6de5c9c2257f2d)
   * [RustのOwnershipってなんなん](https://zenn.dev/ucwork/articles/cfe579cbf5647e)
   * [rustの所有権と参照](https://qiita.com/winzu44/items/d40292557ed7e12de77b)
