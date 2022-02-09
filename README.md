@@ -184,6 +184,7 @@ proconio = "0.4.1"
   * [Rustで継承を使いたい人への処方箋](https://qiita.com/muumu/items/a0d111d129d20240d182)
   * [関連型のパターンについて](https://github.com/KeenS/KeenS.github.io/blob/dffbe384cb448cf5409fc35e3e79b36492f0b2ce/content/post/Rustnokanrenkatanotsukaidokoro.md)
   * [[Rust] マーカトレイトから見る言語仕様](https://zenn.dev/senk/articles/0e57e6da138e77)
+  * [rustのimpl分岐テクニック](https://qiita.com/wada314/items/12cd69dfd7b02f46b6a6)
 * 関数ポインタ、クロージャ
     * [Rustにおける関数ポインタやクロージャ](https://zenn.dev/garasubo/articles/97f794cfd469b9d51c7b)
 * エラーハンドリング(`Option`型、`Result`型)
@@ -305,6 +306,7 @@ proconio = "0.4.1"
   * [RustのOptionの as_ref() を堪能できる Hello wold](https://qiita.com/syuuu/items/ac3f72370ee07998be70)
   * [順列の組み合わせ全列挙（再帰関数の理解含む）](https://qiita.com/butzsuppin/items/c32f3d30e3a4e9d4fc55)
   * [Rust の Default::default(), T::new(), T::from() の使い分け](https://qiita.com/syuuu/items/0e4ad366d60d6eb0c7ed)
+  * [CI/CDでRustビルド高速化](https://qiita.com/pham_thanh_thuong/items/e2c5c1b94a87e941dfff)
 
 ---
 
