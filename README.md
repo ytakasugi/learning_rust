@@ -241,6 +241,7 @@ proconio = "0.4.1"
   * [Non-Lexical Lifetimes](https://qiita.com/_EnumHack/items/8b6ecdeb52e69a4ff384)
   * [Rustの所有権(Ownership)について](https://qiita.com/tajihiro/items/e4ef749812acf29620ad)
   * [[Rust] ゲームでありがちなミュータブル参照の問題](https://qiita.com/msakuta/items/450a0d23505126f644af)
+  * [Rustの参照渡しを使いこなすためにその１](https://qiita.com/etnk/items/795f52ffcc6001cb0723)
 * コンパイラ
   * [本家Rustコンパイラのソースを読もうとしてみる（1）](https://qiita.com/0yoyoyo/items/eba97a019d0e60324263)
 * Future
@@ -307,6 +308,7 @@ proconio = "0.4.1"
   * [順列の組み合わせ全列挙（再帰関数の理解含む）](https://qiita.com/butzsuppin/items/c32f3d30e3a4e9d4fc55)
   * [Rust の Default::default(), T::new(), T::from() の使い分け](https://qiita.com/syuuu/items/0e4ad366d60d6eb0c7ed)
   * [CI/CDでRustビルド高速化](https://qiita.com/pham_thanh_thuong/items/e2c5c1b94a87e941dfff)
+  * [【Rust】モダンなKey-Value型データベースSledのテーブルをSerdeとTraitで管理してORMapperを実現する](https://zenn.dev/yosemat/articles/3c281c7d6e073d)
 
 ---
 
