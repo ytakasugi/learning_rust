@@ -185,6 +185,7 @@ proconio = "0.4.1"
   * [関連型のパターンについて](https://github.com/KeenS/KeenS.github.io/blob/dffbe384cb448cf5409fc35e3e79b36492f0b2ce/content/post/Rustnokanrenkatanotsukaidokoro.md)
   * [[Rust] マーカトレイトから見る言語仕様](https://zenn.dev/senk/articles/0e57e6da138e77)
   * [rustのimpl分岐テクニック](https://qiita.com/wada314/items/12cd69dfd7b02f46b6a6)
+  * [トレイト境界の落とし穴](https://zenn.dev/toru3/articles/f27cb26c98cc26)
 * 関数ポインタ、クロージャ
     * [Rustにおける関数ポインタやクロージャ](https://zenn.dev/garasubo/articles/97f794cfd469b9d51c7b)
 * エラーハンドリング(`Option`型、`Result`型)
