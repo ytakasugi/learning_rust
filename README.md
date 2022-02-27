@@ -242,7 +242,9 @@ proconio = "0.4.1"
   * [Non-Lexical Lifetimes](https://qiita.com/_EnumHack/items/8b6ecdeb52e69a4ff384)
   * [Rustの所有権(Ownership)について](https://qiita.com/tajihiro/items/e4ef749812acf29620ad)
   * [[Rust] ゲームでありがちなミュータブル参照の問題](https://qiita.com/msakuta/items/450a0d23505126f644af)
-  * [Rustの参照渡しを使いこなすためにその１](https://qiita.com/etnk/items/795f52ffcc6001cb0723)
+  * Rustの参照渡しを使いこなすために
+      * [Rustの参照渡しを使いこなすためにその１](https://qiita.com/etnk/items/795f52ffcc6001cb0723)
+      * [ustの参照渡しを使いこなすためにその２](https://qiita.com/etnk/items/eac576506322c3bb3e04)
 * コンパイラ
   * [本家Rustコンパイラのソースを読もうとしてみる（1）](https://qiita.com/0yoyoyo/items/eba97a019d0e60324263)
 * Future
@@ -323,6 +325,7 @@ proconio = "0.4.1"
 
 - [RustのコマンドラインライブラリArghの使い方](https://zenn.dev/nak3/articles/76c98cde31aa0d)
 - [Rustで手軽にCLIツールを作れるclapを軽く紹介する](https://qiita.com/Tadahiro_Yamamura/items/4ae32347fb4be07ea642)
+- [Rust のフロントエンドフレームワーク Yew の始め方](https://blog1.mammb.com/entry/2022/02/24/232622)
 
 
 ---
