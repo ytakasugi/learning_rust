@@ -141,6 +141,7 @@ proconio = "0.4.1"
       * [第3章](https://zenn.dev/kouschatten/articles/tour-of-rust3)
       * [第4章](https://zenn.dev/kouschatten/articles/tour-of-rust4)
       * [第5章](https://zenn.dev/kouschatten/articles/tour-of-rust5)
+      * [第6章](https://zenn.dev/kouschatten/articles/tour-of-rust6)
 * 文字列
   * [[Rust] 文字列 String から文字列スライス str へ変換される仕組み](https://qiita.com/kerupani129/items/1d170d59720328d7a7c1)
   * [[Rust] 文字列スライス str から文字列 String への変換とその仕組み](https://qiita.com/kerupani129/items/89f31bab79ebba43aeb4)
