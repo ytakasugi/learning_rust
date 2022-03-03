@@ -59,6 +59,12 @@ proconio = "0.4.1"
 
 ---
 
+### CPU
+
+* [CPU使用率とは何か](https://t-keita.hatenadiary.jp/entry/2021/11/18/014135)
+
+---
+
 ### 競技プログラミング
 
 * [Atcoder Problems](https://kenkoooo.com/atcoder/#/table/)
