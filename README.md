@@ -50,6 +50,15 @@ proconio = "0.4.1"
 
 ---
 
+### プログラムがメモリをどう使うかを理解する
+      
+* [その1](https://zenn.dev/rita0222/articles/e6ff75245d79b5)
+* [その2](https://zenn.dev/rita0222/articles/beda4311d9a6bf)
+* [その3](https://zenn.dev/rita0222/articles/f59b79bab45a2a)
+* [その4](https://zenn.dev/rita0222/articles/1f37a5bf910282)
+
+---
+
 ### 競技プログラミング
 
 * [Atcoder Problems](https://kenkoooo.com/atcoder/#/table/)
@@ -234,6 +243,7 @@ proconio = "0.4.1"
   * [Rustのライフタイム注釈について調べてみた](https://blog-mk2.d-yama7.com/2020/12/20201230_rust_lifetime/)
   * [あの日見た匿名ライフタイム](https://zenn.dev/takanori_is/articles/anonymous-lifetime-the-lifetime-we-saw-that-day)
   * [Rustの変数がメモリ上でどのように配置され、moveしたときにどのような挙動をするか](https://qiita.com/iwatake2222/items/79fe0f33fa33d7e2f5c5)
+  * [Memory usage of different types for rust structures](https://qiita.com/shooter/items/42a20aae8256e241e924)
   * [Rustで始めるwebフロント開発。フロントエンジニアのためのRustメモリ管理入門](https://zenn.dev/masayannuu/articles/beed577d02dec5)
   * [Rust は何を解決しようとしたのか；メモリとリソースと所有権](https://zenn.dev/karno/articles/630a64fbc9c65e29b566)
   * [【Rust】ライフタイムとVariance](https://qiita.com/maueki/items/b5df36e92561450938dd)
@@ -250,6 +260,7 @@ proconio = "0.4.1"
   * Rustの参照渡しを使いこなすために
       * [Rustの参照渡しを使いこなすためにその１](https://qiita.com/etnk/items/795f52ffcc6001cb0723)
       * [Rustの参照渡しを使いこなすためにその２](https://qiita.com/etnk/items/eac576506322c3bb3e04)
+
 * コンパイラ
   * [本家Rustコンパイラのソースを読もうとしてみる（1）](https://qiita.com/0yoyoyo/items/eba97a019d0e60324263)
 * Future
