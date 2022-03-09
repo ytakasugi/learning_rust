@@ -185,6 +185,7 @@ proconio = "0.4.1"
   * [Rust の型変換イディオム](https://qiita.com/legokichi/items/0f1c592d46a9aaf9a0ea) 
   * [PhantomDataまとめ](https://qnighy.hatenablog.com/entry/2018/01/14/220000)
   * [Rust の型でスタック操作の正しさを保証する](https://qiita.com/magicant/items/281067cdc6d3eced482f)
+  * [Typesafe State in Rust](https://zenn.dev/kinzal/scraps/1556db123f334e)
 
 * パターン
     * [[Rust] 「パターン」を用いた非構造化変数束縛](https://qiita.com/kerupani129/items/f30596eed4e5b2ca7cd1)
@@ -334,6 +335,8 @@ proconio = "0.4.1"
   * [Rust の Default::default(), T::new(), T::from() の使い分け](https://qiita.com/syuuu/items/0e4ad366d60d6eb0c7ed)
   * [CI/CDでRustビルド高速化](https://qiita.com/pham_thanh_thuong/items/e2c5c1b94a87e941dfff)
   * [【Rust】モダンなKey-Value型データベースSledのテーブルをSerdeとTraitで管理してORMapperを実現する](https://zenn.dev/yosemat/articles/3c281c7d6e073d)
+  * [RustでMacで動くCコンパイラを作成する](https://qiita.com/AtsukiTak/items/0819ee57af2639891ecf)
+  * [Rustを学ぶための実装：Monte Carlo編](https://qiita.com/Merdane/items/54ea60a0ee9daa56851c)
 
 ---
 
