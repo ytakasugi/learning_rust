@@ -185,7 +185,7 @@ proconio = "0.4.1"
   * [Rust の型変換イディオム](https://qiita.com/legokichi/items/0f1c592d46a9aaf9a0ea) 
   * [PhantomDataまとめ](https://qnighy.hatenablog.com/entry/2018/01/14/220000)
   * [Rust の型でスタック操作の正しさを保証する](https://qiita.com/magicant/items/281067cdc6d3eced482f)
-  * [Typesafe State in Rust](https://zenn.dev/kinzal/scraps/1556db123f334e)
+  * [Typesafe State in Rust](https://zenn.dev/kinzal/books/aa109c0c428089)
 
 * パターン
     * [[Rust] 「パターン」を用いた非構造化変数束縛](https://qiita.com/kerupani129/items/f30596eed4e5b2ca7cd1)
