@@ -339,6 +339,7 @@ proconio = "0.4.1"
   * [RustでMacで動くCコンパイラを作成する](https://qiita.com/AtsukiTak/items/0819ee57af2639891ecf)
   * [Rustを学ぶための実装：Monte Carlo編](https://qiita.com/Merdane/items/54ea60a0ee9daa56851c)
   * [コンセプトから理解したいRust (願望) Trait編](https://qiita.com/seikoudoku2000/items/28c5c6b09dcaea1744dc)
+  * [Ruby脳のためのRustの配列的なやつの主なメソッド](https://qiita.com/akicho8/items/f68495f5270ba29d45d4)
 
 ---
 
