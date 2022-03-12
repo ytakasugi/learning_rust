@@ -266,6 +266,7 @@ proconio = "0.4.1"
   * Rustの参照渡しを使いこなすために
       * [Rustの参照渡しを使いこなすためにその１](https://qiita.com/etnk/items/795f52ffcc6001cb0723)
       * [Rustの参照渡しを使いこなすためにその２](https://qiita.com/etnk/items/eac576506322c3bb3e04)
+      * [The “ref” keyword in Rust](https://levelup.gitconnected.com/the-ref-keyword-in-rust-a81e64cda3af)
 
 * コンパイラ
   * [本家Rustコンパイラのソースを読もうとしてみる（1）](https://qiita.com/0yoyoyo/items/eba97a019d0e60324263)
