@@ -186,10 +186,9 @@ proconio = "0.4.1"
   * [PhantomDataまとめ](https://qnighy.hatenablog.com/entry/2018/01/14/220000)
   * [Rust の型でスタック操作の正しさを保証する](https://qiita.com/magicant/items/281067cdc6d3eced482f)
   * [Typesafe State in Rust](https://zenn.dev/kinzal/books/aa109c0c428089)
-
 * パターン
     * [[Rust] 「パターン」を用いた非構造化変数束縛](https://qiita.com/kerupani129/items/f30596eed4e5b2ca7cd1)
-  
+    * [Rustでの 抽象化 3パターンについて](https://zenn.dev/j5ik2o/articles/045737392958a3)
 * 構造体
   * [構造体フィールドの所有権の部分借用/移動を理解する](https://qiita.com/yosqueoy/items/453e9aa85bf394388b86)
   * [[Rust] メソッド呼び出し時におけるメソッド探索の仕組み: 自動参照 & 自動参照外し及び Unsized 型強制](https://qiita.com/kerupani129/items/8dba9f5bb2c009c4d08d)
