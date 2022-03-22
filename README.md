@@ -85,6 +85,7 @@ proconio = "0.4.1"
 * [The Rust Programming Language](https://doc.rust-jp.rs/book-ja/)
   * [The Rust Programming Languageの問題を解いてみた　その１](https://qiita.com/kaclar_ef/items/7ccf3859f44554b5f0ac)
 * [Guide to Rustc Development](https://rustc-dev-guide.rust-lang.org/)
+* [Easy Rust](https://dhghomon.github.io/easy_rust/Chapter_0.html)
 * [rust-lang-ja](https://github.com/rust-lang-ja)
 * [The Rust Programming Language(旧和訳リポジトリ)](https://github.com/rust-lang-ja/the-rust-programming-language-ja/tree/master/1.9/ja/book)
 * [the-rust-programming-language-ja](https://github.com/rust-lang-ja/the-rust-programming-language-ja)
@@ -215,6 +216,7 @@ proconio = "0.4.1"
   * [Rust の Option と Result のメソッド早見表](https://qiita.com/akicho8/items/90545e7e92788198a180)
   * [RustでOptionの配列の最大値・最小値を取り出す](https://zenn.dev/shotaro_tsuji/articles/9c7eedd24b5002)
   * [Rust/AnyhowのTips](https://zenn.dev/yukinarit/articles/b39cd42820f29e)
+  * [RustのResultとOptionの変換関数](https://qiita.com/mikiymk001/items/5df69c072472f198c173)
 
 - 列挙型
   * [Rust: Enums to wrap multiple errors](https://fettblog.eu/rust-enums-wrapping-errors/)
@@ -235,6 +237,7 @@ proconio = "0.4.1"
   * [非同期 Rust パターン](https://qiita.com/legokichi/items/4f2c09330f90626600a6)
   * [Rust でお気楽非同期プログラミング](https://qiita.com/Kumassy/items/fec47952d70b5073b1b7)
   * [Rust で複数の非同期処理を並行的に実行する](https://qiita.com/yongikim/items/f4a9449b3730048a2398)
+  * [Rust のreqwest を使った非同期HTTP Client のお試し](https://qiita.com/mypsychology0/items/60d638ffa8231f4379c0)
 * クレート
   * [Rustの便利クレート](https://qiita.com/qryxip/items/7c16ab9ef3072c1d7199)
 * 構文
@@ -341,12 +344,15 @@ proconio = "0.4.1"
   * [Rustを学ぶための実装：Monte Carlo編](https://qiita.com/Merdane/items/54ea60a0ee9daa56851c)
   * [コンセプトから理解したいRust (願望) Trait編](https://qiita.com/seikoudoku2000/items/28c5c6b09dcaea1744dc)
   * [Ruby脳のためのRustの配列的なやつの主なメソッド](https://qiita.com/akicho8/items/f68495f5270ba29d45d4)
+  * [多コピーの原罪](https://blog.ojisan.io/many-copies-original-sin/)
+  * [【Rust】SystemTimeをString型の年月日に変換したい](https://zenn.dev/alfina2538/articles/9aa0fe81e424f6)
 
 ---
 
 ### framework
 
 - [Rustの新しいWEBフレームワークaxumを触ってみた](https://zenn.dev/techno_tanoc/articles/99e54c82cb049f)
+- [Rustの非同期ランタイム `#[tokio::main]`を深堀り](https://qiita.com/ryuma017/items/1f31f5441ed5df80f1cc)
 
 ---
 
