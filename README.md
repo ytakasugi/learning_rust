@@ -133,7 +133,7 @@ proconio = "0.4.1"
 - [Rustでsupabaseにサインアップする](https://zenn.dev/brainvader/articles/eef5630fcd88fb)
 - [Rustで実装するmalloc](https://engineers.ntt.com/entry/2021/12/21/125459)
 - [Rustで始める自作シェル その1](https://tech.buty4649.net/entry/2021/12/19/235124)
-- [Rst でパーサコンビネータを作ってみる]
+- Rst でパーサコンビネータを作ってみる
     - [前編](https://zenn.dev/nojima/articles/05cb9ffa0f993b)
     - [後編](https://zenn.dev/nojima/articles/e597d22660205d)
 
