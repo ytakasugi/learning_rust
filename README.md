@@ -349,9 +349,13 @@ proconio = "0.4.1"
   * [RustでMacで動くCコンパイラを作成する](https://qiita.com/AtsukiTak/items/0819ee57af2639891ecf)
   * [Rustを学ぶための実装：Monte Carlo編](https://qiita.com/Merdane/items/54ea60a0ee9daa56851c)
   * [コンセプトから理解したいRust (願望) Trait編](https://qiita.com/seikoudoku2000/items/28c5c6b09dcaea1744dc)
-  * [Ruby脳のためのRustの配列的なやつの主なメソッド](https://qiita.com/akicho8/items/f68495f5270ba29d45d4)
   * [多コピーの原罪](https://blog.ojisan.io/many-copies-original-sin/)
   * [【Rust】SystemTimeをString型の年月日に変換したい](https://zenn.dev/alfina2538/articles/9aa0fe81e424f6)
+
+* 他言語比較
+  * [Ruby脳のためのRustの配列的なやつの主なメソッド](https://qiita.com/akicho8/items/f68495f5270ba29d45d4)
+  * [Ruby脳のためのRustの文字列メソッド](https://qiita.com/akicho8/items/8d4eb552987c1cfd7195)
+
 
 ---
 
