@@ -160,6 +160,7 @@ proconio = "0.4.1"
       * [第4章](https://zenn.dev/kouschatten/articles/tour-of-rust4)
       * [第5章](https://zenn.dev/kouschatten/articles/tour-of-rust5)
       * [第6章](https://zenn.dev/kouschatten/articles/tour-of-rust6)
+  
 * 文字列
   * [[Rust] 文字列 String から文字列スライス str へ変換される仕組み](https://qiita.com/kerupani129/items/1d170d59720328d7a7c1)
   * [[Rust] 文字列スライス str から文字列 String への変換とその仕組み](https://qiita.com/kerupani129/items/89f31bab79ebba43aeb4)
@@ -325,6 +326,11 @@ proconio = "0.4.1"
   * [Thread Safety in C++ and Rust](https://blog.reverberate.org/2021/12/18/thread-safety-cpp-rust.html)
   * [Investigating Memory Allocations in Rust](https://ysantos.com/blog/malloc-in-rust)
   * [Functional Programming in Rust](https://kerkour.com/rust-functional-programming)
+  * Procedural macros under the hood
+      * [Procedural macros under the hood](https://blog.jetbrains.com/rust/2022/03/18/procedural-macros-under-the-hood-part-i/)
+  * [I do understand the * operator in Rust now (updated)](https://micouy.github.io/rust-dereferencing/)
+  * [Do we really need language support for self-references?](https://robinmoussu.gitlab.io/blog/post/2022-03-16_do_we_really_need_language_support_for_self_references/)
+  * [Learning Rust: My 6 Key Moments](https://apollolabsblog.hashnode.dev/learning-rust-my-6-key-moments)  
 
 * 未分類
   * [Rustのファイルパスの扱いが複雑すぎる件](https://qiita.com/kujirahand/items/b5ab1429b51ab674f5cf)
@@ -395,6 +401,7 @@ proconio = "0.4.1"
 - [一週間で身につくアルゴリズムとデータ構造](http://sevendays-study.com/algorithm/index.html)
 - [計算量オーダーについて](https://qiita.com/asksaito/items/59e0d48408f1eab081b5)
 - [初学者に教えたい、MicrosoftがGitHubで公開している教材が最高だった！](https://qiita.com/ozora/items/9c801d3b0137eccc32fa)
+- [RDBのデータモデリング・テーブル設計の際に参考にしている考え方と資料](https://zenn.dev/rebi/articles/28c7f1fee5730a)
 
 ### 個人ブログ
 - [やってみる](https://ytyaru.hatenablog.com/archive/category/Rust)
