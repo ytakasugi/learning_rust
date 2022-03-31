@@ -87,6 +87,7 @@ proconio = "0.4.1"
   * [The Rust Programming Languageの問題を解いてみた　その１](https://qiita.com/kaclar_ef/items/7ccf3859f44554b5f0ac)
 * [Guide to Rustc Development](https://rustc-dev-guide.rust-lang.org/)
 * [Easy Rust](https://dhghomon.github.io/easy_rust/Chapter_0.html)
+* [High Assurance Rust Developing Secure and Robust Software](https://highassurance.rs)
 * [rust-lang-ja](https://github.com/rust-lang-ja)
 * [The Rust Programming Language(旧和訳リポジトリ)](https://github.com/rust-lang-ja/the-rust-programming-language-ja/tree/master/1.9/ja/book)
 * [the-rust-programming-language-ja](https://github.com/rust-lang-ja/the-rust-programming-language-ja)
@@ -376,6 +377,7 @@ proconio = "0.4.1"
 - [RustのコマンドラインライブラリArghの使い方](https://zenn.dev/nak3/articles/76c98cde31aa0d)
 - [Rustで手軽にCLIツールを作れるclapを軽く紹介する](https://qiita.com/Tadahiro_Yamamura/items/4ae32347fb4be07ea642)
 - [Rust のフロントエンドフレームワーク Yew の始め方](https://blog1.mammb.com/entry/2022/02/24/232622)
+- [Rust GUI / iced 入門](https://zenn.dev/hideakitai/articles/rust_gui_iced_introduction_ht)
 
 
 ---
