@@ -154,7 +154,6 @@ proconio = "0.4.1"
   * [趣味でプログラミングする人がRustを勉強する](https://qiita.com/tonesuke/items/52e469f18e747c794376)
   * [Rust初心者殺しの文法10選](https://qiita.com/muumu/items/8cdcc79fa881912adf51)
   * [Rust のデバッグチートシート](https://qiita.com/legokichi/items/e2f807f70316a916f4be)
-  * [Rustのcloneはディープコピーなのか](https://zenn.dev/garasubo/articles/aa9a1b5b96e8e9)
   * Tour of Rust まとめ
       * [第1章](https://zenn.dev/kouschatten/articles/tour-of-rust)
       * [第2章](https://zenn.dev/kouschatten/articles/tour-of-rust2)
@@ -162,7 +161,14 @@ proconio = "0.4.1"
       * [第4章](https://zenn.dev/kouschatten/articles/tour-of-rust4)
       * [第5章](https://zenn.dev/kouschatten/articles/tour-of-rust5)
       * [第6章](https://zenn.dev/kouschatten/articles/tour-of-rust6)
-  
+
+* 構文
+  * [とほほのWWW入門](http://www.tohoho-web.com/ex/rust.html)
+  * [`impl Trait`について](https://qnighy.hatenablog.com/entry/2018/01/28/220000)
+  * [Rustのパターンマッチを完全に理解した](https://frozenlib.net/blog/2018-03-11_rust-pattern-match/)
+  * [Rust における`From<T>`とか`Into<T>`とかの考え方](https://qiita.com/hadashiA/items/d0c34a4ba74564337d2f)
+  * [【Rust】ループとイテレータの使い方](https://tyfkda.github.io/blog/2020/06/13/rust-iter.html)
+
 * 文字列
   * [[Rust] 文字列 String から文字列スライス str へ変換される仕組み](https://qiita.com/kerupani129/items/1d170d59720328d7a7c1)
   * [[Rust] 文字列スライス str から文字列 String への変換とその仕組み](https://qiita.com/kerupani129/items/89f31bab79ebba43aeb4)
@@ -211,6 +217,7 @@ proconio = "0.4.1"
   * [[Rust] マーカトレイトから見る言語仕様](https://zenn.dev/senk/articles/0e57e6da138e77)
   * [rustのimpl分岐テクニック](https://qiita.com/wada314/items/12cd69dfd7b02f46b6a6)
   * [トレイト境界の落とし穴](https://zenn.dev/toru3/articles/f27cb26c98cc26)
+  * [Rustの`std::convert`の`From`とか`Into`トレイトがわからなくなった時に見る記事](https://qiita.com/SenK/items/b42b4dc95ab979098f12)
 * 関数ポインタ、クロージャ
     * [Rustにおける関数ポインタやクロージャ](https://zenn.dev/garasubo/articles/97f794cfd469b9d51c7b)
 * `Option`型、`Result`型
@@ -222,7 +229,7 @@ proconio = "0.4.1"
   * [Rust/AnyhowのTips](https://zenn.dev/yukinarit/articles/b39cd42820f29e)
   * [RustのResultとOptionの変換関数](https://qiita.com/mikiymk001/items/5df69c072472f198c173)
 
-- 列挙型
+* 列挙型
   * [Rust: Enums to wrap multiple errors](https://fettblog.eu/rust-enums-wrapping-errors/)
   * [Rustの列挙型enumの使い方まとめRustの列挙型enumの使い方まとめ](https://qiita.com/kujirahand/items/dd655a813a7c2b902f0b)
 
@@ -242,17 +249,11 @@ proconio = "0.4.1"
   * [Rust でお気楽非同期プログラミング](https://qiita.com/Kumassy/items/fec47952d70b5073b1b7)
   * [Rust で複数の非同期処理を並行的に実行する](https://qiita.com/yongikim/items/f4a9449b3730048a2398)
   * [Rust のreqwest を使った非同期HTTP Client のお試し](https://qiita.com/mypsychology0/items/60d638ffa8231f4379c0)
-* クレート
-  * [Rustの便利クレート](https://qiita.com/qryxip/items/7c16ab9ef3072c1d7199)
-* 構文
-  * [とほほのWWW入門](http://www.tohoho-web.com/ex/rust.html)
-  * [`impl Trait`について](https://qnighy.hatenablog.com/entry/2018/01/28/220000)
-  * [Rustのパターンマッチを完全に理解した](https://frozenlib.net/blog/2018-03-11_rust-pattern-match/)
-  * [Rust における`From<T>`とか`Into<T>`とかの考え方](https://qiita.com/hadashiA/items/d0c34a4ba74564337d2f)
-  * [Rustの`std::convert`の`From`とか`Into`トレイトがわからなくなった時に見る記事](https://qiita.com/SenK/items/b42b4dc95ab979098f12)
+
 * セマンティクス
   * [コピーセマンティクスとムーブセマンティクス](https://opaupafz2.hatenablog.com/entry/2021/07/17/202701)
   * [多コピーの原罪](https://blog.ojisan.io/many-copies-original-sin/)
+  * [Rustのcloneはディープコピーなのか](https://zenn.dev/garasubo/articles/aa9a1b5b96e8e9)
 * ライフタイム、メモリ関連
   * [Rustのライフタイムについてのよくある誤解](https://github.com/pretzelhammer/rust-blog/blob/master/posts/translations/jp/common-rust-lifetime-misconceptions.md)
   * [Rustのライフタイム注釈について調べてみた](https://blog-mk2.d-yama7.com/2020/12/20201230_rust_lifetime/)
@@ -374,10 +375,12 @@ proconio = "0.4.1"
 
 ### ライブラリ
 
+- * [Rustの便利クレート](https://qiita.com/qryxip/items/7c16ab9ef3072c1d7199)
 - [RustのコマンドラインライブラリArghの使い方](https://zenn.dev/nak3/articles/76c98cde31aa0d)
 - [Rustで手軽にCLIツールを作れるclapを軽く紹介する](https://qiita.com/Tadahiro_Yamamura/items/4ae32347fb4be07ea642)
 - [Rust のフロントエンドフレームワーク Yew の始め方](https://blog1.mammb.com/entry/2022/02/24/232622)
 - [Rust GUI / iced 入門](https://zenn.dev/hideakitai/articles/rust_gui_iced_introduction_ht)
+- [Rustで良さげなエラーメッセージを出力 w/ anyhow, thiserror](https://zenn.dev/tos_kamiya/articles/71171d0423b1d6)
 
 
 ---
