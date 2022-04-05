@@ -298,6 +298,7 @@ proconio = "0.4.1"
     * [RustでJSONから値をゆるりと取り出すマクロを書いた話](https://zenn.dev/jiftechnify/articles/rust-macro-for-query-json)
     * [Rustのマクロを覚える](https://qiita.com/k5n/items/758111b12740600cc58f)
     * [Rustの全マクロ種別が分かったつもりになれる話](https://speakerdeck.com/optim/rust-all-kinds-of-macro)
+    * [[Rust] Procedural Macroの仕組みと実装方法](https://zenn.dev/tak_iwamoto/articles/890771ea5b8ad3)
 
 * パフォーマンス
     * [Rust のパフォーマンスに何が影響を与えているのか](https://qiita.com/benki/items/ee14ee6cb9f209a080e1)
