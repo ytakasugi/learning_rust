@@ -238,6 +238,7 @@ proconio = "0.4.1"
   * [RustでWebアプリケーションを作る](https://caddi.tech/archives/416)
   * [RustでWeb APIを叩く](https://qiita.com/odayushin/items/0e2a5a3d047e6b08c811)
   * [[Rust]reqwestで祝日の取得(json, csv)](https://qiita.com/deepgreenAN/items/f4ac8aa384315675b788)
+  * [A Rust web server / frontend setup like it's 2022 (with axum and yew)](https://robert.kra.hn/posts/2022-04-03_rust-web-wasm/)
 * マルチスレッド
   * [マルチスレッドプログラミングのメモ](https://totem3.hatenablog.jp/entry/2017/05/10/210000)
   * [Rustはどのようにして安全な並列処理を提供するのか](https://qiita.com/nirasan/items/97263103f076bd525a7b)
@@ -249,6 +250,7 @@ proconio = "0.4.1"
   * [Rust でお気楽非同期プログラミング](https://qiita.com/Kumassy/items/fec47952d70b5073b1b7)
   * [Rust で複数の非同期処理を並行的に実行する](https://qiita.com/yongikim/items/f4a9449b3730048a2398)
   * [Rust のreqwest を使った非同期HTTP Client のお試し](https://qiita.com/mypsychology0/items/60d638ffa8231f4379c0)
+  * [Futures Nostalgia](https://fasterthanli.me/articles/futures-nostalgia)
 
 * セマンティクス
   * [コピーセマンティクスとムーブセマンティクス](https://opaupafz2.hatenablog.com/entry/2021/07/17/202701)
@@ -359,6 +361,7 @@ proconio = "0.4.1"
   * [Rustを学ぶための実装：Monte Carlo編](https://qiita.com/Merdane/items/54ea60a0ee9daa56851c)
   * [コンセプトから理解したいRust (願望) Trait編](https://qiita.com/seikoudoku2000/items/28c5c6b09dcaea1744dc)
   * [Rustの std::sync::RwLock はLinuxでwriter starvation問題を起こす (macOSなら平気)](https://laysakura.github.io/2022/03/30/rust-RwLock-writer-starvation/)
+  * [RustでGroupBy(ToDictionary)をしたい](https://qiita.com/season3/items/9d404e8b24afa784398e)
 
 * 他言語比較
   * [Ruby脳のためのRustの配列的なやつの主なメソッド](https://qiita.com/akicho8/items/f68495f5270ba29d45d4)
