@@ -311,6 +311,7 @@ proconio = "0.4.1"
     * [[CI/CDでRustビルド高速化](https://qiita.com/pham_thanh_thuong/items/e2c5c1b94a87e941dfff)]
 * アルゴリズム
     * [パン屋のアルゴリズム](https://zenn.dev/ekusiadadus/articles/qiita_export_bread)
+    * [Rustで線形探索と2分探索を書いてみる](https://zenn.dev/utamono832/articles/54a6937966399a)
 
 * 原文翻訳
   * [【翻訳】Rustにおけるパフォーマンスの落とし穴](https://codom.hatenablog.com/entry/2017/06/03/221318)
