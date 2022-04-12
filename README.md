@@ -232,7 +232,6 @@ proconio = "0.4.1"
 * 列挙型
   * [Rust: Enums to wrap multiple errors](https://fettblog.eu/rust-enums-wrapping-errors/)
   * [Rustの列挙型enumの使い方まとめ](https://qiita.com/kujirahand/items/dd655a813a7c2b902f0b)
-  * [Rust初心者にとってEnumは難しい！JavaのEnumと何が違うの？](https://qiita.com/Miyukiumoo/items/ec7441cb6783c61e58cf)
 
 * WEB
   * [Rustとactix_webでWebアプリケーションを作ってみる](https://qiita.com/c3drive/items/71dda219f0193ae72069)
@@ -368,6 +367,8 @@ proconio = "0.4.1"
 * 他言語比較
   * [Ruby脳のためのRustの配列的なやつの主なメソッド](https://qiita.com/akicho8/items/f68495f5270ba29d45d4)
   * [Ruby脳のためのRustの文字列メソッド](https://qiita.com/akicho8/items/8d4eb552987c1cfd7195)
+  * [Rust初心者にとってEnumは難しい！JavaのEnumと何が違うの？](https://qiita.com/Miyukiumoo/items/ec7441cb6783c61e58cf)
+
 
 
 ---
