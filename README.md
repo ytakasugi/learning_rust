@@ -353,6 +353,8 @@ proconio = "0.4.1"
   * [Building a crawler in Rust: Associated Types](https://kerkour.com/rust-crawler-associated-types)
   * [Implied bounds and perfect derive](https://smallcultfollowing.com/babysteps/blog/2022/04/12/implied-bounds-and-perfect-derive/)
   * [dyn* doesn't need to be special](https://dev.to/cad97/dyn-doesnt-need-to-be-special-3ldm)
+  * [Rust's Unsafe Pointer Types Need An Overhaul](https://gankra.github.io/blah/fix-rust-pointers/)
+  * [The Tower of Weakenings: Memory Models For Everyone](https://gankra.github.io/blah/tower-of-weakenings/)
 
 * 未分類
   * [Rustのファイルパスの扱いが複雑すぎる件](https://qiita.com/kujirahand/items/b5ab1429b51ab674f5cf)
@@ -439,5 +441,6 @@ proconio = "0.4.1"
 - [RDBのデータモデリング・テーブル設計の際に参考にしている考え方と資料](https://zenn.dev/rebi/articles/28c7f1fee5730a)
 
 ### 個人ブログ
+- [簡潔なQ](https://qnighy.hatenablog.com/archive/category/Rust)
 - [やってみる](https://ytyaru.hatenablog.com/archive/category/Rust)
 - [30歳からのプログラミング](https://numb86-tech.hatenablog.com/archive/category/Rust)
