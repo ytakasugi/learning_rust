@@ -325,8 +325,9 @@ proconio = "0.4.1"
 
   * A Data Pipeline for Go Trains Delay Analysis
       * [A Data Pipeline for Go Trains Delay Analysis — Part 1](https://towardsdatascience.com/a-data-pipeline-for-go-trains-delay-analysis-part-1-21b2c2496aca)
-
-  * [II. Implementing ICMP in Rust](https://dev.to/xphoniex/ii-implementing-icmp-in-rust-3bk5)
+  * Implementing ICMP in Rust
+      * [I. Implementing ICMP in Rust](https://dev.to/xphoniex/i-implementing-icmp-in-rust-296o)
+      * [II. Implementing ICMP in Rust](https://dev.to/xphoniex/ii-implementing-icmp-in-rust-3bk5)
   * [Polymorphism in Rust](https://oswalt.dev/2021/06/polymorphism-in-rust/)
   * [How to build a job queue with Rust and PostgreSQL](https://kerkour.com/blog/rust-job-queue-with-postgresql/)
   * [Asynchronous Rust: basic concepts](https://dev.to/rogertorres/asynchronous-rust-basic-concepts-44ed)
@@ -345,6 +346,12 @@ proconio = "0.4.1"
   * [I do understand the * operator in Rust now (updated)](https://micouy.github.io/rust-dereferencing/)
   * [Do we really need language support for self-references?](https://robinmoussu.gitlab.io/blog/post/2022-03-16_do_we_really_need_language_support_for_self_references/)
   * [Learning Rust: My 6 Key Moments](https://apollolabsblog.hashnode.dev/learning-rust-my-6-key-moments)  
+  * Pointers Are Complicated
+      * [Pointers Are Complicated, or: What's in a Byte?](https://www.ralfj.de/blog/2018/07/24/pointers-and-bytes.html)
+      * [Pointers Are Complicated II, or: We need better language specs](https://www.ralfj.de/blog/2020/12/14/provenance.html)
+      * [Pointers Are Complicated III, or: Pointer-integer casts exposed](https://www.ralfj.de/blog/2022/04/11/provenance-exposed.html)
+  * [Building a crawler in Rust: Associated Types](https://kerkour.com/rust-crawler-associated-types)
+  * [Implied bounds and perfect derive](https://smallcultfollowing.com/babysteps/blog/2022/04/12/implied-bounds-and-perfect-derive/)
 
 * 未分類
   * [Rustのファイルパスの扱いが複雑すぎる件](https://qiita.com/kujirahand/items/b5ab1429b51ab674f5cf)
