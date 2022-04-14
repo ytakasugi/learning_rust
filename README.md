@@ -352,6 +352,7 @@ proconio = "0.4.1"
       * [Pointers Are Complicated III, or: Pointer-integer casts exposed](https://www.ralfj.de/blog/2022/04/11/provenance-exposed.html)
   * [Building a crawler in Rust: Associated Types](https://kerkour.com/rust-crawler-associated-types)
   * [Implied bounds and perfect derive](https://smallcultfollowing.com/babysteps/blog/2022/04/12/implied-bounds-and-perfect-derive/)
+  * [dyn* doesn't need to be special](https://dev.to/cad97/dyn-doesnt-need-to-be-special-3ldm)
 
 * 未分類
   * [Rustのファイルパスの扱いが複雑すぎる件](https://qiita.com/kujirahand/items/b5ab1429b51ab674f5cf)
