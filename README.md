@@ -393,7 +393,7 @@ proconio = "0.4.1"
 
 ### ライブラリ
 
-- * [Rustの便利クレート](https://qiita.com/qryxip/items/7c16ab9ef3072c1d7199)
+- [Rustの便利クレート](https://qiita.com/qryxip/items/7c16ab9ef3072c1d7199)
 - [RustのコマンドラインライブラリArghの使い方](https://zenn.dev/nak3/articles/76c98cde31aa0d)
 - [Rustで手軽にCLIツールを作れるclapを軽く紹介する](https://qiita.com/Tadahiro_Yamamura/items/4ae32347fb4be07ea642)
 - [Rust のフロントエンドフレームワーク Yew の始め方](https://blog1.mammb.com/entry/2022/02/24/232622)
