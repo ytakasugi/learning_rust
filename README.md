@@ -222,6 +222,7 @@ proconio = "0.4.1"
     * [Rustにおける関数ポインタやクロージャ](https://zenn.dev/garasubo/articles/97f794cfd469b9d51c7b)
 * `Option`型、`Result`型
   * [Rust のエラーハンドリングはシンタックスシュガーが豊富で完全に初見殺しなので自信を持って使えるように整理してみたら完全に理解した](https://qiita.com/nirasan/items/321e7cc42e0e0f238254?utm_content=buffera6970&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer)
+  * [thiserrorでカスタムエラーを実装する](https://zenn.dev/hideoka/articles/e2408b1eb8ee3f)
   * [[Rust] Result メソッド早見表](https://qiita.com/kerupani129/items/1e2c5f267081d0dba023)
   * [[Rust] Option メソッド早見表](https://qiita.com/kerupani129/items/a45c614279e7fc58f129)
   * [Rust の Option と Result のメソッド早見表](https://qiita.com/akicho8/items/90545e7e92788198a180)
