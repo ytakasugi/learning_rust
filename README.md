@@ -75,6 +75,9 @@ proconio = "0.4.1"
 * [競技プログラミングでの典型アルゴリズムとデータ構造](https://algo-logic.info/competitive-programming-must/)
 * [AtCoder Beginner Contestで最低限理解する必要がある（と感じた）数学的知識](https://qiita.com/Ll_e_ki/items/fe70b9e3408c5b14ae2e?utm_campaign=post_article&utm_medium=twitter&utm_source=twitter_share)
 * [Rustで競技プログラミングを始めた人のためのデータ構造紹介](https://zenn.dev/tai_calg/articles/ecbd269503dd61)
+* Rustで蟻本
+    * [その1](https://qiita.com/mochafe/items/1076aa4effd148d7626f)
+    * [その2](https://qiita.com/mochafe/items/daf30e19f85d3a42651e)
 
 ---
 
@@ -145,6 +148,7 @@ proconio = "0.4.1"
 
 * 入門記事
   * [Rust を始めるための資料集](https://blog-dry.com/entry/2021/01/23/141936)
+  * [Rustを始める時に役立つ資料](https://qiita.com/kxkx5150/items/ff70c564c5c136ba3d25)
   * [Rust の最初のステップ](https://docs.microsoft.com/ja-jp/learn/paths/rust-first-steps/)
   * [Rust入門](https://zenn.dev/mebiusbox/books/22d4c1ed9b0003/viewer/6d5875)
   * [Rust from the beginning, your first program](https://dev.to/azure/rust-from-the-beginning-your-first-program-30cp)
@@ -281,6 +285,7 @@ proconio = "0.4.1"
       * [Rustの参照渡しを使いこなすためにその１](https://qiita.com/etnk/items/795f52ffcc6001cb0723)
       * [Rustの参照渡しを使いこなすためにその２](https://qiita.com/etnk/items/eac576506322c3bb3e04)
   * [The “ref” keyword in Rust](https://levelup.gitconnected.com/the-ref-keyword-in-rust-a81e64cda3af)
+  * [Rustのメモリ管理って面白い](https://qiita.com/ksato9700/items/312be99d8264b553b193)
 
 * コンパイラ
   * [本家Rustコンパイラのソースを読もうとしてみる（1）](https://qiita.com/0yoyoyo/items/eba97a019d0e60324263)
