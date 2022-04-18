@@ -168,9 +168,6 @@ proconio = "0.4.1"
 
 * 構文
   * [とほほのWWW入門](http://www.tohoho-web.com/ex/rust.html)
-  * [`impl Trait`について](https://qnighy.hatenablog.com/entry/2018/01/28/220000)
-  * [Rustのパターンマッチを完全に理解した](https://frozenlib.net/blog/2018-03-11_rust-pattern-match/)
-  * [Rust における`From<T>`とか`Into<T>`とかの考え方](https://qiita.com/hadashiA/items/d0c34a4ba74564337d2f)
   * [【Rust】ループとイテレータの使い方](https://tyfkda.github.io/blog/2020/06/13/rust-iter.html)
 
 * 文字列
@@ -205,6 +202,7 @@ proconio = "0.4.1"
 * パターン
     * [[Rust] 「パターン」を用いた非構造化変数束縛](https://qiita.com/kerupani129/items/f30596eed4e5b2ca7cd1)
     * [Rustでの 抽象化 3パターンについて](https://zenn.dev/j5ik2o/articles/045737392958a3)
+    * [Rustのパターンマッチを完全に理解した](https://frozenlib.net/blog/2018-03-11_rust-pattern-match/)
 * 構造体
   * [構造体フィールドの所有権の部分借用/移動を理解する](https://qiita.com/yosqueoy/items/453e9aa85bf394388b86)
   * [[Rust] メソッド呼び出し時におけるメソッド探索の仕組み: 自動参照 & 自動参照外し及び Unsized 型強制](https://qiita.com/kerupani129/items/8dba9f5bb2c009c4d08d)
@@ -225,6 +223,8 @@ proconio = "0.4.1"
   * [トレイト境界の落とし穴](https://zenn.dev/toru3/articles/f27cb26c98cc26)
   * [Rustの`std::convert`の`From`とか`Into`トレイトがわからなくなった時に見る記事](https://qiita.com/SenK/items/b42b4dc95ab979098f12)
   * [Rustのderiveはあまり頭がよくない](https://qnighy.hatenablog.com/entry/2017/06/01/070000)
+  * [Rust における`From<T>`とか`Into<T>`とかの考え方](https://qiita.com/hadashiA/items/d0c34a4ba74564337d2f)
+  * [`impl Trait`について](https://qnighy.hatenablog.com/entry/2018/01/28/220000)
 * 関数ポインタ、クロージャ
     * [Rustにおける関数ポインタやクロージャ](https://zenn.dev/garasubo/articles/97f794cfd469b9d51c7b)
 * `Option`型、`Result`型
