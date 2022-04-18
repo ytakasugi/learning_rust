@@ -210,6 +210,7 @@ proconio = "0.4.1"
   * [[Rust] メソッド呼び出し時におけるメソッド探索の仕組み: 自動参照 & 自動参照外し及び Unsized 型強制](https://qiita.com/kerupani129/items/8dba9f5bb2c009c4d08d)
   * [Rustの構造体に文字列を持たせるいくつかの方法](https://qiita.com/Kogia_sima/items/6899c5196813cf231054)
   * [Rustのパブリックなコンストラクタメソッドを持つ構造体とは](https://qiita.com/c3drive/items/0a10cdb82ff3b2eae0e5)
+  * [【Rust】可変な構造体に対してgetterを作るべきではない](https://qiita.com/quasardtm/items/d5eae9294fb0e8374aff)
 * トレイト
   * [Rust のポリモルフィズムとトレイトオブジェクト](http://sharply.hatenablog.com/entry/2020/04/19/001236)
   * [Rustの型変換](https://zenn.dev/take4s5i/articles/rust-type-convertion)
@@ -223,6 +224,7 @@ proconio = "0.4.1"
   * [rustのimpl分岐テクニック](https://qiita.com/wada314/items/12cd69dfd7b02f46b6a6)
   * [トレイト境界の落とし穴](https://zenn.dev/toru3/articles/f27cb26c98cc26)
   * [Rustの`std::convert`の`From`とか`Into`トレイトがわからなくなった時に見る記事](https://qiita.com/SenK/items/b42b4dc95ab979098f12)
+  * [Rustのderiveはあまり頭がよくない](https://qnighy.hatenablog.com/entry/2017/06/01/070000)
 * 関数ポインタ、クロージャ
     * [Rustにおける関数ポインタやクロージャ](https://zenn.dev/garasubo/articles/97f794cfd469b9d51c7b)
 * `Option`型、`Result`型
@@ -287,6 +289,8 @@ proconio = "0.4.1"
       * [Rustの参照渡しを使いこなすためにその２](https://qiita.com/etnk/items/eac576506322c3bb3e04)
   * [The “ref” keyword in Rust](https://levelup.gitconnected.com/the-ref-keyword-in-rust-a81e64cda3af)
   * [Rustのメモリ管理って面白い](https://qiita.com/ksato9700/items/312be99d8264b553b193)
+  * [Rust のメモリーコンテナー的な何かをわかりやすく整理したチートシートのメモ; T, Cell, RefCell, AtomicT, Mutex, RwLock, Rc, Arc](https://usagi.hatenablog.jp/entry/2020/08/22/040059)
+  * [所有権と借用について](https://qiita.com/yz2cm/items/9a8337c368cf055b4255)
 
 * コンパイラ
   * [本家Rustコンパイラのソースを読もうとしてみる（1）](https://qiita.com/0yoyoyo/items/eba97a019d0e60324263)
@@ -309,7 +313,8 @@ proconio = "0.4.1"
     * [Rustのマクロを覚える](https://qiita.com/k5n/items/758111b12740600cc58f)
     * [Rustの全マクロ種別が分かったつもりになれる話](https://speakerdeck.com/optim/rust-all-kinds-of-macro)
     * [[Rust] Procedural Macroの仕組みと実装方法](https://zenn.dev/tak_iwamoto/articles/890771ea5b8ad3)
-
+* テスト
+    * [Rust sqlxでデータベースに依存した部分のテストを書く](https://zenn.dev/htlsne/articles/rust-sqlx-test)
 * パフォーマンス
     * [Rust のパフォーマンスに何が影響を与えているのか](https://qiita.com/benki/items/ee14ee6cb9f209a080e1)
 
@@ -403,6 +408,7 @@ proconio = "0.4.1"
 - [Rustの便利クレート](https://qiita.com/qryxip/items/7c16ab9ef3072c1d7199)
 - [RustのコマンドラインライブラリArghの使い方](https://zenn.dev/nak3/articles/76c98cde31aa0d)
 - [Rustで手軽にCLIツールを作れるclapを軽く紹介する](https://qiita.com/Tadahiro_Yamamura/items/4ae32347fb4be07ea642)
+- [Clap の Derive API で列挙型のコマンドラインオプションを実装する](https://zenn.dev/takanori_is/articles/rust-clap-derive-api-arg-enum)
 - [Rust のフロントエンドフレームワーク Yew の始め方](https://blog1.mammb.com/entry/2022/02/24/232622)
 - [Rust GUI / iced 入門](https://zenn.dev/hideakitai/articles/rust_gui_iced_introduction_ht)
 - [Rustで良さげなエラーメッセージを出力 w/ anyhow, thiserror](https://zenn.dev/tos_kamiya/articles/71171d0423b1d6)
