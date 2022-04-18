@@ -151,6 +151,7 @@ proconio = "0.4.1"
   * [Rustを始める時に役立つ資料](https://qiita.com/kxkx5150/items/ff70c564c5c136ba3d25)
   * [Rust の最初のステップ](https://docs.microsoft.com/ja-jp/learn/paths/rust-first-steps/)
   * [Rust入門](https://zenn.dev/mebiusbox/books/22d4c1ed9b0003/viewer/6d5875)
+  * [とほほのWWW入門](http://www.tohoho-web.com/ex/rust.html)
   * [Rust from the beginning, your first program](https://dev.to/azure/rust-from-the-beginning-your-first-program-30cp)
   * [Rustはこうやって勉強するといいんじゃないか、という一例](https://qiita.com/TakaakiFuruse/items/13e9ad9d1efe7e17811c)
   * [Re:FizzBuzzから始めるRust生活](https://qiita.com/hinastory/items/543ae9749c8bccb9afbc)
@@ -165,10 +166,6 @@ proconio = "0.4.1"
       * [第4章](https://zenn.dev/kouschatten/articles/tour-of-rust4)
       * [第5章](https://zenn.dev/kouschatten/articles/tour-of-rust5)
       * [第6章](https://zenn.dev/kouschatten/articles/tour-of-rust6)
-
-* 構文
-  * [とほほのWWW入門](http://www.tohoho-web.com/ex/rust.html)
-  * [【Rust】ループとイテレータの使い方](https://tyfkda.github.io/blog/2020/06/13/rust-iter.html)
 
 * 文字列
   * [[Rust] 文字列 String から文字列スライス str へ変換される仕組み](https://qiita.com/kerupani129/items/1d170d59720328d7a7c1)
@@ -185,6 +182,7 @@ proconio = "0.4.1"
   * [Rustのイテレータの網羅的かつ大雑把な紹介](https://qiita.com/lo48576/items/34887794c146042aebf1)
   * [Rust のイテレータを使いこなしたい](https://blog-dry.com/entry/2020/06/23/002318)
   * [[Rust] 個人的によく使うイテレーターのメソッドのメモ](https://www.amusement-creators.info/articles/rust/introduce_iterator_methods/)
+  * [【Rust】ループとイテレータの使い方](https://tyfkda.github.io/blog/2020/06/13/rust-iter.html)
 * コレクション型
   * [Rustで`Vec<T>`に`&`を付けると`&[T]`が得られる理由](https://qiita.com/mosh/items/51bd202c9f738956829e)
   * [[Rust] 配列やベクタが自動でスライスに変換される仕組み](https://qiita.com/kerupani129/items/17584274379f0c65fc34)
