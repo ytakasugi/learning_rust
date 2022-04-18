@@ -290,6 +290,7 @@ proconio = "0.4.1"
   * [The “ref” keyword in Rust](https://levelup.gitconnected.com/the-ref-keyword-in-rust-a81e64cda3af)
   * [Rustのメモリ管理って面白い](https://qiita.com/ksato9700/items/312be99d8264b553b193)
   * [Rust のメモリーコンテナー的な何かをわかりやすく整理したチートシートのメモ; T, Cell, RefCell, AtomicT, Mutex, RwLock, Rc, Arc](https://usagi.hatenablog.jp/entry/2020/08/22/040059)
+      * [解説](https://qiita.com/usagi/items/fc329895cebd3466910e)
   * [所有権と借用について](https://qiita.com/yz2cm/items/9a8337c368cf055b4255)
 
 * コンパイラ
