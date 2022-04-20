@@ -223,6 +223,7 @@ proconio = "0.4.1"
   * [Rustのderiveはあまり頭がよくない](https://qnighy.hatenablog.com/entry/2017/06/01/070000)
   * [Rust における`From<T>`とか`Into<T>`とかの考え方](https://qiita.com/hadashiA/items/d0c34a4ba74564337d2f)
   * [`impl Trait`について](https://qnighy.hatenablog.com/entry/2018/01/28/220000)
+  * [【Rust】ジェネリック境界わかんないッピ…](https://qiita.com/moyamoyac/items/f49e1ef3ce717d35fee6)
 * 関数ポインタ、クロージャ
     * [Rustにおける関数ポインタやクロージャ](https://zenn.dev/garasubo/articles/97f794cfd469b9d51c7b)
 * `Option`型、`Result`型
