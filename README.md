@@ -78,6 +78,8 @@ proconio = "0.4.1"
 * Rustで蟻本
     * [その1](https://qiita.com/mochafe/items/1076aa4effd148d7626f)
     * [その2](https://qiita.com/mochafe/items/daf30e19f85d3a42651e)
+    * [Rustで蟻本　〜データ構造〜](https://qiita.com/mochafe/items/0bc5e26ab75fef875fe6)
+* [Rustでも格子探索を楽したい！](https://qiita.com/jjitch/items/1e6f9861e506acf4abae) 
 
 ---
 
@@ -208,6 +210,7 @@ proconio = "0.4.1"
   * [Rustの構造体に文字列を持たせるいくつかの方法](https://qiita.com/Kogia_sima/items/6899c5196813cf231054)
   * [Rustのパブリックなコンストラクタメソッドを持つ構造体とは](https://qiita.com/c3drive/items/0a10cdb82ff3b2eae0e5)
   * [【Rust】可変な構造体に対してgetterを作るべきではない](https://qiita.com/quasardtm/items/d5eae9294fb0e8374aff)
+  * [Rustで継承する裏技(トレイトを使わずに)](https://qiita.com/nagisakuya/items/f9a352f279b9ec276819)
 * トレイト
   * [Rust のポリモルフィズムとトレイトオブジェクト](http://sharply.hatenablog.com/entry/2020/04/19/001236)
   * [Rustの型変換](https://zenn.dev/take4s5i/articles/rust-type-convertion)
@@ -225,6 +228,9 @@ proconio = "0.4.1"
   * [Rust における`From<T>`とか`Into<T>`とかの考え方](https://qiita.com/hadashiA/items/d0c34a4ba74564337d2f)
   * [`impl Trait`について](https://qnighy.hatenablog.com/entry/2018/01/28/220000)
   * [【Rust】ジェネリック境界わかんないッピ…](https://qiita.com/moyamoyac/items/f49e1ef3ce717d35fee6)
+  * [erased_serdeで学ぶobject safeじゃないtraitをtrait objectで使う方法](https://qiita.com/aobat/items/f8499e29d0c38cfe32c8)
+  * [Rangeを引数として受け取る](https://qiita.com/nagisakuya/items/21d72ff3c0f66b9fc62c)
+  * [`Arc<impl trait>`をスレッドに渡す方法](https://qiita.com/nagisakuya/items/581d232d53cf4b382093)
 * 関数ポインタ、クロージャ
     * [Rustにおける関数ポインタやクロージャ](https://zenn.dev/garasubo/articles/97f794cfd469b9d51c7b)
 * `Option`型、`Result`型
@@ -304,6 +310,7 @@ proconio = "0.4.1"
   * [Rustの参照、Box、Rcを関数の引数・返り値にした場合の挙動](https://zenn.dev/exyrias/articles/c1d1c6d825fbbb166d44)
   * [RustのSmart pointersってなんなん](https://zenn.dev/ucwork/articles/4fc4cfa47cda26)
   * [Rustの `Arc` を読む(1): Arc/Rcの基本](https://qiita.com/qnighy/items/4bbbb20e71cf4ae527b9)
+  * [【Rust勉強】スマートポインタをざっくり](https://qiita.com/moyamoyac/items/5aea471d6676625dcd62)
 * ジェネリクス
   * [jeffa.io](https://jeffa.io/)
   * [【Rust】ジェネリクスの取説](https://qiita.com/quasardtm/items/09952838a6ee9582db1d)
@@ -369,6 +376,9 @@ proconio = "0.4.1"
   * [Rust's Unsafe Pointer Types Need An Overhaul](https://gankra.github.io/blah/fix-rust-pointers/)
   * [The Tower of Weakenings: Memory Models For Everyone](https://gankra.github.io/blah/tower-of-weakenings/)
   * [Rust on Nails:A full stack architecture for Rust web applications](https://cloak.software/blog/rust-on-nails/https://cloak.software/blog/rust-on-nails/)
+  * [What a better Rust would look like](https://kerkour.com/what-a-better-rust-would-look-like)
+  * [Rust traits and dependency injection](https://jmmv.dev/2022/04/rust-traits-and-dependency-injection.html)
+  * [The magic of AsRef](https://swatinem.de/blog/magic-asref/)
 
 * 未分類
   * [Rustのファイルパスの扱いが複雑すぎる件](https://qiita.com/kujirahand/items/b5ab1429b51ab674f5cf)
@@ -388,6 +398,7 @@ proconio = "0.4.1"
   * [コンセプトから理解したいRust (願望) Trait編](https://qiita.com/seikoudoku2000/items/28c5c6b09dcaea1744dc)
   * [Rustの std::sync::RwLock はLinuxでwriter starvation問題を起こす (macOSなら平気)](https://laysakura.github.io/2022/03/30/rust-RwLock-writer-starvation/)
   * [RustでGroupBy(ToDictionary)をしたい](https://qiita.com/season3/items/9d404e8b24afa784398e)
+  * [RustとPostgreSQLで色々な型をやりとりしてみた(NUMERIC対応)](https://qiita.com/aoyagikouhei/items/d03fcd2c874d42adcab0)
 
 * 他言語比較
   * [Ruby脳のためのRustの配列的なやつの主なメソッド](https://qiita.com/akicho8/items/f68495f5270ba29d45d4)
