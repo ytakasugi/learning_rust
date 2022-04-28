@@ -379,6 +379,7 @@ proconio = "0.4.1"
   * [What a better Rust would look like](https://kerkour.com/what-a-better-rust-would-look-like)
   * [Rust traits and dependency injection](https://jmmv.dev/2022/04/rust-traits-and-dependency-injection.html)
   * [The magic of AsRef](https://swatinem.de/blog/magic-asref/)
+  * [Request coalescing in async Rust](https://fasterthanli.me/articles/request-coalescing-in-async-rust)
 
 * 未分類
   * [Rustのファイルパスの扱いが複雑すぎる件](https://qiita.com/kujirahand/items/b5ab1429b51ab674f5cf)
