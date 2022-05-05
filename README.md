@@ -383,6 +383,8 @@ proconio = "0.4.1"
   * [Rust traits and dependency injection](https://jmmv.dev/2022/04/rust-traits-and-dependency-injection.html)
   * [The magic of AsRef](https://swatinem.de/blog/magic-asref/)
   * [Request coalescing in async Rust](https://fasterthanli.me/articles/request-coalescing-in-async-rust)
+  * [The Better Alternative to Lifetime GATs](https://sabrinajewson.org/blog/the-better-alternative-to-lifetime-gats)
+  * [A shiny future with GATs](https://jackh726.github.io/rust/2022/05/04/a-shiny-future-with-gats.html)
 
 * 未分類
   * [Rustのファイルパスの扱いが複雑すぎる件](https://qiita.com/kujirahand/items/b5ab1429b51ab674f5cf)
