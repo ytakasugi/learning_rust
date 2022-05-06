@@ -85,6 +85,8 @@ proconio = "0.4.1"
 
 ### rust doc
 * [StandardLibrary](https://doc.rust-lang.org/std/)
+* [Rust API Guidelines](https://rust-lang.github.io/api-guidelines/about.html)
+    * [非公式日本語訳](https://sinkuu.github.io/api-guidelines/about.html)
 * [Edition Guide](https://doc.rust-jp.rs/edition-guide/)
 * [async_std](https://docs.rs/async-std/1.9.0/async_std/)
 * [Rust by Example](https://doc.rust-jp.rs/rust-by-example-ja/)
