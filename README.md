@@ -201,6 +201,7 @@ proconio = "0.4.1"
   * [Rustでドメイン固有型を作る際のコツ](https://zenn.dev/j5ik2o/articles/d37bd2c6924446)
   * [Rustで型を強めにつけ、バリデーション情報を型に落とす方法](https://blog-dry.com/entry/2021/07/01/211114)
   * [Rust の型変換イディオム](https://qiita.com/legokichi/items/0f1c592d46a9aaf9a0ea) 
+  * [Rustで強めに型をつける](https://keens.github.io/categories/rust%E3%81%A7%E5%BC%B7%E3%82%81%E3%81%AB%E5%9E%8B%E3%82%92%E3%81%A4%E3%81%91%E3%82%8B/)
   * [PhantomDataまとめ](https://qnighy.hatenablog.com/entry/2018/01/14/220000)
   * [Rust の型でスタック操作の正しさを保証する](https://qiita.com/magicant/items/281067cdc6d3eced482f)
   * [Typesafe State in Rust](https://zenn.dev/kinzal/books/aa109c0c428089)
@@ -483,6 +484,7 @@ proconio = "0.4.1"
 - [RDBのデータモデリング・テーブル設計の際に参考にしている考え方と資料](https://zenn.dev/rebi/articles/28c7f1fee5730a)
 
 ### 個人ブログ
+- [κeenのHappy Hacκing Blog](https://keens.github.io/categories/rust/)
 - [簡潔なQ](https://qnighy.hatenablog.com/archive/category/Rust)
 - [やってみる](https://ytyaru.hatenablog.com/archive/category/Rust)
 - [30歳からのプログラミング](https://numb86-tech.hatenablog.com/archive/category/Rust)
