@@ -226,6 +226,7 @@ proconio = "0.4.1"
 * 列挙型
   * [Rust: Enums to wrap multiple errors](https://fettblog.eu/rust-enums-wrapping-errors/)
   * [Rustの列挙型enumの使い方まとめ](https://qiita.com/kujirahand/items/dd655a813a7c2b902f0b)
+  * [Rustで`Int(1)`と`Add { id: 1 }`の使い分け](https://zenn.dev/ryo33/articles/a005b562854d46)
 * メソッド
     * [Rust の Default::default(), T::new(), T::from() の使い分け](https://qiita.com/syuuu/items/0e4ad366d60d6eb0c7ed)
 * トレイト
@@ -279,6 +280,7 @@ proconio = "0.4.1"
   * [Rust で複数の非同期処理を並行的に実行する](https://qiita.com/yongikim/items/f4a9449b3730048a2398)
   * [Rust のreqwest を使った非同期HTTP Client のお試し](https://qiita.com/mypsychology0/items/60d638ffa8231f4379c0)
   * [Futures Nostalgia](https://fasterthanli.me/articles/futures-nostalgia)
+  * [Rustの非同期を浅く整理する](https://zenn.dev/belle/articles/3f3b4fff25c5e9)
 
 * セマンティクス
   * [コピーセマンティクスとムーブセマンティクス](https://opaupafz2.hatenablog.com/entry/2021/07/17/202701)
@@ -311,6 +313,7 @@ proconio = "0.4.1"
   * [Rust のメモリーコンテナー的な何かをわかりやすく整理したチートシートのメモ; T, Cell, RefCell, AtomicT, Mutex, RwLock, Rc, Arc](https://usagi.hatenablog.jp/entry/2020/08/22/040059)
       * [解説](https://qiita.com/usagi/items/fc329895cebd3466910e)
   * [所有権と借用について](https://qiita.com/yz2cm/items/9a8337c368cf055b4255)
+  * [Rustの落とし穴の話](https://zenn.dev/mith_mmk/articles/e6483b2b372784)
 
 * コンパイラ
   * [本家Rustコンパイラのソースを読もうとしてみる（1）](https://qiita.com/0yoyoyo/items/eba97a019d0e60324263)
