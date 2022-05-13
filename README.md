@@ -190,6 +190,7 @@ proconio = "0.4.1"
   * [[Rust] to_string メソッド等は呼び出し時に自動参照外しされない](https://qiita.com/kerupani129/items/eaf16e41bc1786a6d049)
   * [[Rust] &str と &&str で呼ばれる to_string メソッドが異なる](https://qiita.com/kerupani129/items/2f61c2f76803c49dede3)
   * [Rustの文字列結合はどうしてString+&strなのか](https://qiita.com/fujiharuka/items/6ef45a3c58ab8153c712)
+  * [Rustで文字列の先頭文字や部分文字列を取得する](https://qiita.com/HelloRusk/items/7fb68395984958987a54)
 * イテレータ
   * [Rustのイテレータの網羅的かつ大雑把な紹介](https://qiita.com/lo48576/items/34887794c146042aebf1)
   * [Rust のイテレータを使いこなしたい](https://blog-dry.com/entry/2020/06/23/002318)
@@ -346,6 +347,10 @@ proconio = "0.4.1"
     * [cargo new でgitを使わない（バージョン管理システムを指定する）方法](https://qiita.com/nobushi95/items/2ce37f6761938efaf339)
 * ビルド、CI/CD
     * [[CI/CDでRustビルド高速化](https://qiita.com/pham_thanh_thuong/items/e2c5c1b94a87e941dfff)]
+* モジュール
+    * [Rustのモジュールの使い方 2018 Edition版](https://keens.github.io/blog/2018/12/08/rustnomoju_runotsukaikata_2018_editionhan/)
+    * [Rustのmodule完全に理解した。](https://zenn.dev/newgyu/articles/3b4677b4086768)
+    * [【Rust】親子関係にない別ディレクトリにあるmoduleを参照したい](https://zenn.dev/someone7140/articles/4c03867adaa018)
 * アルゴリズム
     * [パン屋のアルゴリズム](https://zenn.dev/ekusiadadus/articles/qiita_export_bread)
     * [Rustで線形探索と2分探索を書いてみる](https://zenn.dev/utamono832/articles/54a6937966399a)
@@ -398,6 +403,8 @@ proconio = "0.4.1"
   * [Request coalescing in async Rust](https://fasterthanli.me/articles/request-coalescing-in-async-rust)
   * [The Better Alternative to Lifetime GATs](https://sabrinajewson.org/blog/the-better-alternative-to-lifetime-gats)
   * [A shiny future with GATs](https://jackh726.github.io/rust/2022/05/04/a-shiny-future-with-gats.html)
+  * [Converting Integers to Floats Using Hyperfocus](https://blog.m-ou.se/floats/)
+  * [Parsing / Recursive Descent Parser](https://www.huy.rocks/everyday/05-08-2022-parsing-recursive-descent-parser)
 
 * 未分類
   * [Rustのファイルパスの扱いが複雑すぎる件](https://qiita.com/kujirahand/items/b5ab1429b51ab674f5cf)
