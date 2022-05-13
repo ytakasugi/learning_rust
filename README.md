@@ -351,6 +351,10 @@ proconio = "0.4.1"
     * [Rustのモジュールの使い方 2018 Edition版](https://keens.github.io/blog/2018/12/08/rustnomoju_runotsukaikata_2018_editionhan/)
     * [Rustのmodule完全に理解した。](https://zenn.dev/newgyu/articles/3b4677b4086768)
     * [【Rust】親子関係にない別ディレクトリにあるmoduleを参照したい](https://zenn.dev/someone7140/articles/4c03867adaa018)
+
+* ベンチマーク
+    * [【New SQL実装編】Docker + Rust + PostgreSQL/CockroachDBでベンチマーク](https://qiita.com/murata0531/items/f4ed691b5bfb6af973dc)
+
 * アルゴリズム
     * [パン屋のアルゴリズム](https://zenn.dev/ekusiadadus/articles/qiita_export_bread)
     * [Rustで線形探索と2分探索を書いてみる](https://zenn.dev/utamono832/articles/54a6937966399a)
