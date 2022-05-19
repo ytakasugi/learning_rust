@@ -251,6 +251,8 @@ proconio = "0.4.1"
   * [erased_serdeで学ぶobject safeじゃないtraitをtrait objectで使う方法](https://qiita.com/aobat/items/f8499e29d0c38cfe32c8)
   * [Rangeを引数として受け取る](https://qiita.com/nagisakuya/items/21d72ff3c0f66b9fc62c)
   * [`Arc<impl trait>`をスレッドに渡す方法](https://qiita.com/nagisakuya/items/581d232d53cf4b382093)
+  * A new impl Trait
+      * [A new impl Trait 1/4](https://davidkoloski.me/blog/a-new-impl-trait-1/)
 * 関数ポインタ、クロージャ
     * [Rustにおける関数ポインタやクロージャ](https://zenn.dev/garasubo/articles/97f794cfd469b9d51c7b)
 * `Option`型、`Result`型
