@@ -409,6 +409,9 @@ proconio = "0.4.1"
   * [A shiny future with GATs](https://jackh726.github.io/rust/2022/05/04/a-shiny-future-with-gats.html)
   * [Converting Integers to Floats Using Hyperfocus](https://blog.m-ou.se/floats/)
   * [Parsing / Recursive Descent Parser](https://www.huy.rocks/everyday/05-08-2022-parsing-recursive-descent-parser)
+  * [Extending SQLite with Rust](https://ricardoanderegg.com/posts/extending-sqlite-with-rust/)
+  * [A Guided Tour of Streams in Rust](https://www.qovery.com/blog/a-guided-tour-of-streams-in-rust)
+  * [Let's talk about this async](https://conradludgate.com/posts/async)
 
 * 未分類
   * [Rustのファイルパスの扱いが複雑すぎる件](https://qiita.com/kujirahand/items/b5ab1429b51ab674f5cf)
