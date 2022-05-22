@@ -272,6 +272,7 @@ proconio = "0.4.1"
   * [[Rust]reqwestで祝日の取得(json, csv)](https://qiita.com/deepgreenAN/items/f4ac8aa384315675b788)
   * [A Rust web server / frontend setup like it's 2022 (with axum and yew)](https://robert.kra.hn/posts/2022-04-03_rust-web-wasm/)
   * [Rust初心者がRust + actix-web + diesel(MySQL) + serdeでREST APIを作ってみた](https://qiita.com/c0ridrew/items/42bcf381766ba224eed7)
+  * [Rustのhttp/httpsクライアントcurl](https://qiita.com/showchan33/items/9f4648bc2a1dec34aa83)
 * マルチスレッド
   * [マルチスレッドプログラミングのメモ](https://totem3.hatenablog.jp/entry/2017/05/10/210000)
   * [Rustはどのようにして安全な並列処理を提供するのか](https://qiita.com/nirasan/items/97263103f076bd525a7b)
