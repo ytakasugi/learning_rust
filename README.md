@@ -273,6 +273,7 @@ proconio = "0.4.1"
   * [A Rust web server / frontend setup like it's 2022 (with axum and yew)](https://robert.kra.hn/posts/2022-04-03_rust-web-wasm/)
   * [Rust初心者がRust + actix-web + diesel(MySQL) + serdeでREST APIを作ってみた](https://qiita.com/c0ridrew/items/42bcf381766ba224eed7)
   * [Rustのhttp/httpsクライアントcurl](https://qiita.com/showchan33/items/9f4648bc2a1dec34aa83)
+  * [【サンプルコードあり】Rustで作るWebアプリケーション――データベース利用と自動テストの基本事項を押さえる](https://atmarkit.itmedia.co.jp/ait/articles/2205/26/news001.html)
 * マルチスレッド
   * [マルチスレッドプログラミングのメモ](https://totem3.hatenablog.jp/entry/2017/05/10/210000)
   * [Rustはどのようにして安全な並列処理を提供するのか](https://qiita.com/nirasan/items/97263103f076bd525a7b)
@@ -415,6 +416,9 @@ proconio = "0.4.1"
   * [Parsing / Recursive Descent Parser](https://www.huy.rocks/everyday/05-08-2022-parsing-recursive-descent-parser)
   * [Extending SQLite with Rust](https://ricardoanderegg.com/posts/extending-sqlite-with-rust/)
   * [A Guided Tour of Streams in Rust](https://www.qovery.com/blog/a-guided-tour-of-streams-in-rust)
+  * [Build a REST API with Rust and MongoDB - Actix web Version](https://dev.to/hackmamba/build-a-rest-api-with-rust-and-mongodb-actix-web-version-ei1)
+  * [Testing and building your Rust project with GitHub Actions](https://kerkour.com/rust-github-actions-ci-cd)
+  * [Fixing Memory Leaks in Rust](https://onesignal.com/blog/solving-memory-leaks-in-rust/)
 
 
 * 未分類
