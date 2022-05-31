@@ -455,6 +455,7 @@ proconio = "0.4.1"
 ### framework
 
 - [Rustの新しいWEBフレームワークaxumを触ってみた](https://zenn.dev/techno_tanoc/articles/99e54c82cb049f)
+- [RustのTokio製WEBフレームワークaxum version 0.5.6 を使ってみた](https://zenn.dev/asamin/articles/7891f65a719ad3)
 - [Rustの非同期ランタイム `#[tokio::main]`を深堀り](https://qiita.com/ryuma017/items/1f31f5441ed5df80f1cc)
 
 ---
