@@ -256,6 +256,11 @@ proconio = "0.4.1"
   * [`Arc<impl trait>`をスレッドに渡す方法](https://qiita.com/nagisakuya/items/581d232d53cf4b382093)
   * A new impl Trait
       * [A new impl Trait 1/4](https://davidkoloski.me/blog/a-new-impl-trait-1/)
+      * [A new impl Trait 2/4](https://davidkoloski.me/blog/a-new-impl-trait-2/)
+      * [A new impl Trait 3/4](https://davidkoloski.me/blog/a-new-impl-trait-3/)
+      * [A new impl Trait 4/4](https://davidkoloski.me/blog/a-new-impl-trait-4/)
+  * Introduction to Rust generics
+      * [Introduction to Rust generics [1/2]: Traits](https://kerkour.com/rust-generics-traits)
 * 関数ポインタ、クロージャ
     * [Rustにおける関数ポインタやクロージャ](https://zenn.dev/garasubo/articles/97f794cfd469b9d51c7b)
 * `Option`型、`Result`型
@@ -355,6 +360,7 @@ proconio = "0.4.1"
     * [cargo new でgitを使わない（バージョン管理システムを指定する）方法](https://qiita.com/nobushi95/items/2ce37f6761938efaf339)
 * ビルド、CI/CD
     * [[CI/CDでRustビルド高速化](https://qiita.com/pham_thanh_thuong/items/e2c5c1b94a87e941dfff)]
+    * [How I speeded up my Rust builds on GitHub ~30 times](https://ectobit.com/blog/speed-up-github-actions-rust-pipelines/)
 * モジュール
     * [Rustのモジュールの使い方 2018 Edition版](https://keens.github.io/blog/2018/12/08/rustnomoju_runotsukaikata_2018_editionhan/)
     * [Rustのmodule完全に理解した。](https://zenn.dev/newgyu/articles/3b4677b4086768)
@@ -369,60 +375,6 @@ proconio = "0.4.1"
 
 * 原文翻訳
   * [【翻訳】Rustにおけるパフォーマンスの落とし穴](https://codom.hatenablog.com/entry/2017/06/03/221318)
-* This Week in Rust
-  * Combining Axum, Hyper, Tonic, and Tower for hybrid web/gRPC apps
-    * [Combining Axum, Hyper, Tonic, and Tower for hybrid web/gRPC apps: Part 1](https://www.fpcomplete.com/blog/axum-hyper-tonic-tower-part1/)
-    * [Combining Axum, Hyper, Tonic, and Tower for hybrid web/gRPC apps: Part 2](https://www.fpcomplete.com/blog/axum-hyper-tonic-tower-part2/)
-    * [Combining Axum, Hyper, Tonic, and Tower for hybrid web/gRPC apps: Part 3](https://www.fpcomplete.com/blog/axum-hyper-tonic-tower-part3/)
-    * [Combining Axum, Hyper, Tonic, and Tower for hybrid web/gRPC apps: Part 4](https://www.fpcomplete.com/blog/axum-hyper-tonic-tower-part4/)
-
-  * A Data Pipeline for Go Trains Delay Analysis
-      * [A Data Pipeline for Go Trains Delay Analysis — Part 1](https://towardsdatascience.com/a-data-pipeline-for-go-trains-delay-analysis-part-1-21b2c2496aca)
-  * Implementing ICMP in Rust
-      * [I. Implementing ICMP in Rust](https://dev.to/xphoniex/i-implementing-icmp-in-rust-296o)
-      * [II. Implementing ICMP in Rust](https://dev.to/xphoniex/ii-implementing-icmp-in-rust-3bk5)
-  * [Polymorphism in Rust](https://oswalt.dev/2021/06/polymorphism-in-rust/)
-  * [How to build a job queue with Rust and PostgreSQL](https://kerkour.com/blog/rust-job-queue-with-postgresql/)
-  * [Asynchronous Rust: basic concepts](https://dev.to/rogertorres/asynchronous-rust-basic-concepts-44ed)
-  * [Rust Option and Result](https://saidvandeklundert.net/learn/2021-09-01-rust-option-and-result/)
-  * [[Rust] Tokio stack overview: Runtime](https://dev.to/rogertorres/rust-tokio-stack-overview-runtime-9fh)
-  * [Rust data structures with circular references](https://eli.thegreenplace.net/2021/rust-data-structures-with-circular-references/)
-  * [Monitoring Rust web application with Prometheus and Grafana](https://romankudryashov.com/blog/2021/11/monitoring-rust-web-application/)
-  * [The Java Tutorials with Rust](https://rust-java-tutorials.netlify.app/blog/)
-  * [Builder pattern in Rust](https://www.greyblake.com/blog/2021-10-19-builder-pattern-in-rust/)
-  * [A Beginner's Guide to Parsing in Rust](https://depth-first.com/articles/2021/12/16/a-beginners-guide-to-parsing-in-rust/)
-  * [Thread Safety in C++ and Rust](https://blog.reverberate.org/2021/12/18/thread-safety-cpp-rust.html)
-  * [Investigating Memory Allocations in Rust](https://ysantos.com/blog/malloc-in-rust)
-  * [Functional Programming in Rust](https://kerkour.com/rust-functional-programming)
-  * Procedural macros under the hood
-      * [Procedural macros under the hood](https://blog.jetbrains.com/rust/2022/03/18/procedural-macros-under-the-hood-part-i/)
-  * [I do understand the * operator in Rust now (updated)](https://micouy.github.io/rust-dereferencing/)
-  * [Do we really need language support for self-references?](https://robinmoussu.gitlab.io/blog/post/2022-03-16_do_we_really_need_language_support_for_self_references/)
-  * [Learning Rust: My 6 Key Moments](https://apollolabsblog.hashnode.dev/learning-rust-my-6-key-moments)  
-  * Pointers Are Complicated
-      * [Pointers Are Complicated, or: What's in a Byte?](https://www.ralfj.de/blog/2018/07/24/pointers-and-bytes.html)
-      * [Pointers Are Complicated II, or: We need better language specs](https://www.ralfj.de/blog/2020/12/14/provenance.html)
-      * [Pointers Are Complicated III, or: Pointer-integer casts exposed](https://www.ralfj.de/blog/2022/04/11/provenance-exposed.html)
-  * [Building a crawler in Rust: Associated Types](https://kerkour.com/rust-crawler-associated-types)
-  * [Implied bounds and perfect derive](https://smallcultfollowing.com/babysteps/blog/2022/04/12/implied-bounds-and-perfect-derive/)
-  * [dyn* doesn't need to be special](https://dev.to/cad97/dyn-doesnt-need-to-be-special-3ldm)
-  * [Rust's Unsafe Pointer Types Need An Overhaul](https://gankra.github.io/blah/fix-rust-pointers/)
-  * [The Tower of Weakenings: Memory Models For Everyone](https://gankra.github.io/blah/tower-of-weakenings/)
-  * [Rust on Nails:A full stack architecture for Rust web applications](https://cloak.software/blog/rust-on-nails/https://cloak.software/blog/rust-on-nails/)
-  * [What a better Rust would look like](https://kerkour.com/what-a-better-rust-would-look-like)
-  * [Rust traits and dependency injection](https://jmmv.dev/2022/04/rust-traits-and-dependency-injection.html)
-  * [The magic of AsRef](https://swatinem.de/blog/magic-asref/)
-  * [Request coalescing in async Rust](https://fasterthanli.me/articles/request-coalescing-in-async-rust)
-  * [The Better Alternative to Lifetime GATs](https://sabrinajewson.org/blog/the-better-alternative-to-lifetime-gats)
-  * [A shiny future with GATs](https://jackh726.github.io/rust/2022/05/04/a-shiny-future-with-gats.html)
-  * [Converting Integers to Floats Using Hyperfocus](https://blog.m-ou.se/floats/)
-  * [Parsing / Recursive Descent Parser](https://www.huy.rocks/everyday/05-08-2022-parsing-recursive-descent-parser)
-  * [Extending SQLite with Rust](https://ricardoanderegg.com/posts/extending-sqlite-with-rust/)
-  * [A Guided Tour of Streams in Rust](https://www.qovery.com/blog/a-guided-tour-of-streams-in-rust)
-  * [Build a REST API with Rust and MongoDB - Actix web Version](https://dev.to/hackmamba/build-a-rest-api-with-rust-and-mongodb-actix-web-version-ei1)
-  * [Testing and building your Rust project with GitHub Actions](https://kerkour.com/rust-github-actions-ci-cd)
-  * [Fixing Memory Leaks in Rust](https://onesignal.com/blog/solving-memory-leaks-in-rust/)
-
 
 * 未分類
   * [Rustのファイルパスの扱いが複雑すぎる件](https://qiita.com/kujirahand/items/b5ab1429b51ab674f5cf)
