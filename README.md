@@ -328,6 +328,7 @@ proconio = "0.4.1"
       * [解説](https://qiita.com/usagi/items/fc329895cebd3466910e)
   * [所有権と借用について](https://qiita.com/yz2cm/items/9a8337c368cf055b4255)
   * [Rustの落とし穴の話](https://zenn.dev/mith_mmk/articles/e6483b2b372784)
+  * [Cloneは用法容量を守って使いましょう。](https://qiita.com/aobat/items/5b1a16cbbcb9641f84e9)
 
 * コンパイラ
   * [本家Rustコンパイラのソースを読もうとしてみる（1）](https://qiita.com/0yoyoyo/items/eba97a019d0e60324263)
