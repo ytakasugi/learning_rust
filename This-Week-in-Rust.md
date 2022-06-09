@@ -57,3 +57,6 @@
 * [Arc and Mutex in Rust](https://itsallaboutthebit.com/arc-mutex/)
 * [Some notes on internal working of profiler](https://inspektor.cloud/blog/how-profiler-works/)
 * [Builder Lite](https://matklad.github.io/2022/05/29/builder-lite.html)
+* [(async) Rust doesn't have to be hard](https://itsallaboutthebit.com/async-simple/)
+* [Testability: Reimagining OOP design patterns in Rust](https://audunhalland.github.io/blog/testability-reimagining-oop-design-patterns-in-rust/)
+* [The entrait pattern](https://audunhalland.github.io/blog/entrait-pattern/)

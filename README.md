@@ -261,6 +261,7 @@ proconio = "0.4.1"
       * [A new impl Trait 4/4](https://davidkoloski.me/blog/a-new-impl-trait-4/)
   * Introduction to Rust generics
       * [Introduction to Rust generics [1/2]: Traits](https://kerkour.com/rust-generics-traits)
+      * [Introduction to Rust generics [2/2]: Trait Objects (Static vs Dynamic dispatch)](https://kerkour.com/rust-generics-trait-objects)
 * 関数ポインタ、クロージャ
     * [Rustにおける関数ポインタやクロージャ](https://zenn.dev/garasubo/articles/97f794cfd469b9d51c7b)
 * `Option`型、`Result`型
@@ -272,6 +273,7 @@ proconio = "0.4.1"
   * [RustでOptionの配列の最大値・最小値を取り出す](https://zenn.dev/shotaro_tsuji/articles/9c7eedd24b5002)
   * [Rust/AnyhowのTips](https://zenn.dev/yukinarit/articles/b39cd42820f29e)
   * [RustのResultとOptionの変換関数](https://qiita.com/mikiymk001/items/5df69c072472f198c173)
+  * [Beginner-Intermediate Rust Error Handling](https://blog.vashishtha.in/rust-error-handling/)
 
 * WEB
   * [Rustとactix_webでWebアプリケーションを作ってみる](https://qiita.com/c3drive/items/71dda219f0193ae72069)
