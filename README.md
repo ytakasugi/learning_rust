@@ -179,6 +179,7 @@ proconio = "0.4.1"
       * [第4章](https://zenn.dev/kouschatten/articles/tour-of-rust4)
       * [第5章](https://zenn.dev/kouschatten/articles/tour-of-rust5)
       * [第6章](https://zenn.dev/kouschatten/articles/tour-of-rust6)
+  * [Rustの「if let」とは何なのか？](https://qiita.com/plotter/items/0d8dc2782f21178d64f1) 
 
 * 定数
     * [[Rust] once_cell にできて lazy-static にできないこと](https://zenn.dev/sai_ys/articles/f66f1143fb45d1)
