@@ -332,6 +332,7 @@ proconio = "0.4.1"
   * [所有権と借用について](https://qiita.com/yz2cm/items/9a8337c368cf055b4255)
   * [Rustの落とし穴の話](https://zenn.dev/mith_mmk/articles/e6483b2b372784)
   * [Cloneは用法容量を守って使いましょう。](https://qiita.com/aobat/items/5b1a16cbbcb9641f84e9)
+  * [ライフタイム回りに関する一考察](https://zenn.dev/tokeiya3/articles/8f9a9b9069c0db)
 
 * コンパイラ
   * [本家Rustコンパイラのソースを読もうとしてみる（1）](https://qiita.com/0yoyoyo/items/eba97a019d0e60324263)
@@ -479,4 +480,3 @@ proconio = "0.4.1"
 - [簡潔なQ](https://qnighy.hatenablog.com/archive/category/Rust)
 - [やってみる](https://ytyaru.hatenablog.com/archive/category/Rust)
 - [30歳からのプログラミング](https://numb86-tech.hatenablog.com/archive/category/Rust)
-
