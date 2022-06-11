@@ -479,3 +479,4 @@ proconio = "0.4.1"
 - [簡潔なQ](https://qnighy.hatenablog.com/archive/category/Rust)
 - [やってみる](https://ytyaru.hatenablog.com/archive/category/Rust)
 - [30歳からのプログラミング](https://numb86-tech.hatenablog.com/archive/category/Rust)
+
