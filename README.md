@@ -182,6 +182,7 @@ proconio = "0.4.1"
       * [第5章](https://zenn.dev/kouschatten/articles/tour-of-rust5)
       * [第6章](https://zenn.dev/kouschatten/articles/tour-of-rust6)
   * [Rustの「if let」とは何なのか？](https://qiita.com/plotter/items/0d8dc2782f21178d64f1) 
+  * [プログラミング既修者向けRust音速入門書](https://qiita.com/nagisakuya/items/a2c78bad9a6b98973106)
 
 * 定数
     * [[Rust] once_cell にできて lazy-static にできないこと](https://zenn.dev/sai_ys/articles/f66f1143fb45d1)
@@ -237,6 +238,7 @@ proconio = "0.4.1"
   * [Rustで`Int(1)`と`Add { id: 1 }`の使い分け](https://zenn.dev/ryo33/articles/a005b562854d46)
 * メソッド
     * [Rust の Default::default(), T::new(), T::from() の使い分け](https://qiita.com/syuuu/items/0e4ad366d60d6eb0c7ed)
+    * [メソッドにおける `(&mut self)` と `(self) -> self` の使い分け](https://qiita.com/peperontium1517/items/b5b3e46a7a6b36c7bad8)
 * トレイト
   * [Rust のポリモルフィズムとトレイトオブジェクト](http://sharply.hatenablog.com/entry/2020/04/19/001236)
   * [Rustの型変換](https://zenn.dev/take4s5i/articles/rust-type-convertion)
@@ -292,6 +294,7 @@ proconio = "0.4.1"
   * [Rustはどのようにして安全な並列処理を提供するのか](https://qiita.com/nirasan/items/97263103f076bd525a7b)
   * [Multithreading in Rust](https://nickymeuleman.netlify.app/blog/multithreading-rust)
   * [Rustで安全にスレッド間共有変数を利用できることのありがたみと実装例](https://qiita.com/muumu/items/f264ad781486d3dd037b)
+  * [Rustのスレッドとチャネルと共有メモリの話](https://zenn.dev/tfutada/articles/16766e3b4560db)
 * 非同期
   * [Rustの非同期プログラミングをマスターする](https://tech-blog.optim.co.jp/entry/2019/11/08/163000)
   * [非同期 Rust パターン](https://qiita.com/legokichi/items/4f2c09330f90626600a6)
@@ -359,6 +362,7 @@ proconio = "0.4.1"
     * [Rustのマクロを覚える](https://qiita.com/k5n/items/758111b12740600cc58f)
     * [Rustの全マクロ種別が分かったつもりになれる話](https://speakerdeck.com/optim/rust-all-kinds-of-macro)
     * [[Rust] Procedural Macroの仕組みと実装方法](https://zenn.dev/tak_iwamoto/articles/890771ea5b8ad3)
+    * [セバスチャンマクロを作って学ぶRustの手続きマクロ](https://zenn.dev/kazatsuyu/articles/33e130563b87b1)
 * テスト
     * [Rust sqlxでデータベースに依存した部分のテストを書く](https://zenn.dev/htlsne/articles/rust-sqlx-test)
 * パフォーマンス
