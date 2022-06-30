@@ -153,7 +153,10 @@ proconio = "0.4.1"
 - Rst でパーサコンビネータを作ってみる
     - [前編](https://zenn.dev/nojima/articles/05cb9ffa0f993b)
     - [後編](https://zenn.dev/nojima/articles/e597d22660205d)
-
+- Rust+LLVMでコンパイラを作る
+    - [環境構築](https://qiita.com/_53a/items/de260505610256a00dbe)
+    - [概要と方針](https://qiita.com/_53a/items/304f1562b3aa0cad616d)
+    - [大枠づくり](https://qiita.com/_53a/items/d7d4e4fc250bfd945d9e)
 ---
 
 ### Reference Site
