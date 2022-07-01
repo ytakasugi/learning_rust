@@ -157,6 +157,8 @@ proconio = "0.4.1"
     - [環境構築](https://qiita.com/_53a/items/de260505610256a00dbe)
     - [概要と方針](https://qiita.com/_53a/items/304f1562b3aa0cad616d)
     - [大枠づくり](https://qiita.com/_53a/items/d7d4e4fc250bfd945d9e)
+- [LLVM入門 - javascript使いがLLVM(Rust:inkwell)でjavascriptをJITコンパイルするまで](https://zenn.dev/silverbirder/articles/d6ae6419ac167e) 
+
 ---
 
 ### Reference Site
@@ -409,13 +411,13 @@ proconio = "0.4.1"
   * [Rustの std::sync::RwLock はLinuxでwriter starvation問題を起こす (macOSなら平気)](https://laysakura.github.io/2022/03/30/rust-RwLock-writer-starvation/)
   * [RustでGroupBy(ToDictionary)をしたい](https://qiita.com/season3/items/9d404e8b24afa784398e)
   * [RustとPostgreSQLで色々な型をやりとりしてみた(NUMERIC対応)](https://qiita.com/aoyagikouhei/items/d03fcd2c874d42adcab0)
+  * [Rust axum Websocketを使用したChatの実装](https://zenn.dev/asamin/articles/399d43237044c1)
+  * [RustでArgon2 Hashing & Verifying!](https://qiita.com/ryuma017/items/a3773d46b5e3b32908d1)
 
 * 他言語比較
   * [Ruby脳のためのRustの配列的なやつの主なメソッド](https://qiita.com/akicho8/items/f68495f5270ba29d45d4)
   * [Ruby脳のためのRustの文字列メソッド](https://qiita.com/akicho8/items/8d4eb552987c1cfd7195)
   * [Rust初心者にとってEnumは難しい！JavaのEnumと何が違うの？](https://qiita.com/Miyukiumoo/items/ec7441cb6783c61e58cf)
-
-
 
 ---
 
