@@ -344,6 +344,7 @@ proconio = "0.4.1"
   * [Cloneは用法容量を守って使いましょう。](https://qiita.com/aobat/items/5b1a16cbbcb9641f84e9)
   * [ライフタイム回りに関する一考察](https://zenn.dev/tokeiya3/articles/8f9a9b9069c0db)
   * [What is `Box<str>` and how is it different from String in Rust?](https://mahdi.blog/rust-box-str-vs-string/)
+  * [【Rust】変数のスコープまとめ](https://zenn.dev/heppoko_quasar/articles/806fd48308e6c4)
 
 * コンパイラ
   * [本家Rustコンパイラのソースを読もうとしてみる（1）](https://qiita.com/0yoyoyo/items/eba97a019d0e60324263)
