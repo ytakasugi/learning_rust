@@ -241,6 +241,7 @@ proconio = "0.4.1"
   * [Rust: Enums to wrap multiple errors](https://fettblog.eu/rust-enums-wrapping-errors/)
   * [Rustの列挙型enumの使い方まとめ](https://qiita.com/kujirahand/items/dd655a813a7c2b902f0b)
   * [Rustで`Int(1)`と`Add { id: 1 }`の使い分け](https://zenn.dev/ryo33/articles/a005b562854d46)
+  * [Optimized enum sizes in Rust](https://adeschamps.github.io/enum-size)
 * メソッド
     * [Rust の Default::default(), T::new(), T::from() の使い分け](https://qiita.com/syuuu/items/0e4ad366d60d6eb0c7ed)
     * [メソッドにおける `(&mut self)` と `(self) -> self` の使い分け](https://qiita.com/peperontium1517/items/b5b3e46a7a6b36c7bad8)
@@ -414,6 +415,7 @@ proconio = "0.4.1"
   * [RustとPostgreSQLで色々な型をやりとりしてみた(NUMERIC対応)](https://qiita.com/aoyagikouhei/items/d03fcd2c874d42adcab0)
   * [Rust axum Websocketを使用したChatの実装](https://zenn.dev/asamin/articles/399d43237044c1)
   * [RustでArgon2 Hashing & Verifying!](https://qiita.com/ryuma017/items/a3773d46b5e3b32908d1)
+  * [そもそも、時間の取り扱いってどうすれば良いんだっけ？](https://qiita.com/segfo/items/8d27821a3314d3b392ea)
 
 * 他言語比較
   * [Ruby脳のためのRustの配列的なやつの主なメソッド](https://qiita.com/akicho8/items/f68495f5270ba29d45d4)
