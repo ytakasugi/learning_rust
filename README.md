@@ -416,6 +416,7 @@ proconio = "0.4.1"
   * [Rust axum Websocketを使用したChatの実装](https://zenn.dev/asamin/articles/399d43237044c1)
   * [RustでArgon2 Hashing & Verifying!](https://qiita.com/ryuma017/items/a3773d46b5e3b32908d1)
   * [そもそも、時間の取り扱いってどうすれば良いんだっけ？](https://qiita.com/segfo/items/8d27821a3314d3b392ea)
+  * [[Rust] actixを使ってアクターモデルを実装してみた](https://zenn.dev/kin_kin/articles/c6192a8b12f837)
 
 * 他言語比較
   * [Ruby脳のためのRustの配列的なやつの主なメソッド](https://qiita.com/akicho8/items/f68495f5270ba29d45d4)
