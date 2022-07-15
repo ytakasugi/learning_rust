@@ -282,6 +282,7 @@ proconio = "0.4.1"
       * [Introduction to Rust generics [2/2]: Trait Objects (Static vs Dynamic dispatch)](https://kerkour.com/rust-generics-trait-objects)
 * 関数ポインタ、クロージャ
     * [Rustにおける関数ポインタやクロージャ](https://zenn.dev/garasubo/articles/97f794cfd469b9d51c7b)
+    * [Rustのクロージャtraitについて調べた(FnOnce, FnMut, Fn)](https://qiita.com/shortheron/items/c1735dc4c7c78b0b55e9)
 * `Option`型、`Result`型
   * [Rust のエラーハンドリングはシンタックスシュガーが豊富で完全に初見殺しなので自信を持って使えるように整理してみたら完全に理解した](https://qiita.com/nirasan/items/321e7cc42e0e0f238254?utm_content=buffera6970&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer)
   * [thiserrorでカスタムエラーを実装する](https://zenn.dev/hideoka/articles/e2408b1eb8ee3f)
@@ -292,7 +293,6 @@ proconio = "0.4.1"
   * [Rust/AnyhowのTips](https://zenn.dev/yukinarit/articles/b39cd42820f29e)
   * [RustのResultとOptionの変換関数](https://qiita.com/mikiymk001/items/5df69c072472f198c173)
   * [Beginner-Intermediate Rust Error Handling](https://blog.vashishtha.in/rust-error-handling/)
-  * [Rustのクロージャtraitについて調べた(FnOnce, FnMut, Fn)](https://qiita.com/shortheron/items/c1735dc4c7c78b0b55e9)
 
 * WEB
   * [Rustとactix_webでWebアプリケーションを作ってみる](https://qiita.com/c3drive/items/71dda219f0193ae72069)
