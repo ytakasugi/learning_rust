@@ -224,6 +224,7 @@ proconio = "0.4.1"
   * [【Rust】複数要素を持つデータの比較について【then_with()メソッド】](https://qiita.com/AkihiroSasabe/items/8affd44489a2a946e805)
   * [Rustの&strや&[T]はどこを参照しているのか](https://qiita.com/Kogia_sima/items/88920a2a14448ef4dbe3)
   * [メモリをダンプしてRustのsliceとVecを理解する](https://cipepser.hatenablog.com/entry/rust-memory)
+  * [Rustの配列やベクタ、スライスについて](https://qiita.com/k-yanai60/items/26bf1d2e372042eff022)
 * スライス
   * [Rustで独自のスライス型を定義する本](https://lo48576.gitlab.io/rust-custom-slice-book/introduction.html)  
 * 型
@@ -313,6 +314,7 @@ proconio = "0.4.1"
   * [Multithreading in Rust](https://nickymeuleman.netlify.app/blog/multithreading-rust)
   * [Rustで安全にスレッド間共有変数を利用できることのありがたみと実装例](https://qiita.com/muumu/items/f264ad781486d3dd037b)
   * [Rustのスレッドとチャネルと共有メモリの話](https://zenn.dev/tfutada/articles/16766e3b4560db)
+  * [Rustにおけるスレッド間でのデータ共有と`std::thread::scope`](https://zenn.dev/toru3/articles/ce9232f53c47c8)
 * 非同期
   * [Rustの非同期プログラミングをマスターする](https://tech-blog.optim.co.jp/entry/2019/11/08/163000)
   * [非同期 Rust パターン](https://qiita.com/legokichi/items/4f2c09330f90626600a6)
@@ -507,5 +509,6 @@ proconio = "0.4.1"
 ### 個人ブログ
 - [κeenのHappy Hacκing Blog](https://keens.github.io/categories/rust/)
 - [簡潔なQ](https://qnighy.hatenablog.com/archive/category/Rust)
+- [minerva](https://minerva.mamansoft.net/Notes/Rust)
 - [やってみる](https://ytyaru.hatenablog.com/archive/category/Rust)
 - [30歳からのプログラミング](https://numb86-tech.hatenablog.com/archive/category/Rust)
