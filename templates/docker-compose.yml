@@ -1,5 +1,14 @@
 version: '3'
 
+x-environment: &environment
+  POSTGRES_USER: postgres
+  POSTGRES_PASSWORD: postgres
+  POSTGRES_HOST: postgres
+  POSTGRES_PORT: 5432
+  POSTGRES_DB: postgres
+  PGSSLMODE: disable
+  TZ: "Asia/Tokyo"
+
 services:
   rust:
     build:
@@ -10,17 +19,17 @@ services:
     volumes:
       - .:/workspace
       - rust-target:/workspace/app/target
+    ports:
+      - 3000:3000
+    depends_on:
+      - postgres
+    environment: *environment
       
   postgres:
     image: postgres:latest
     platform: linux/x86_64
     restart: always
-    environment:
-      POSTGRES_USER: app
-      POSTGRES_PASSWORD: app
-      PGPASSWORD: app
-      POSTGRES_DB: app
-      TZ: "Asia/Tokyo"
+    environment: *environment
     ports:
       - 5432:5432
     volumes:
