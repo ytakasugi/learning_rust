@@ -355,6 +355,7 @@ proconio = "0.4.1"
   * [Rustのメモリ管理って面白い](https://qiita.com/ksato9700/items/312be99d8264b553b193)
   * [Rust のメモリーコンテナー的な何かをわかりやすく整理したチートシートのメモ; T, Cell, RefCell, AtomicT, Mutex, RwLock, Rc, Arc](https://usagi.hatenablog.jp/entry/2020/08/22/040059)
       * [解説](https://qiita.com/usagi/items/fc329895cebd3466910e)
+  * [Rust の Cell, RefCell を整理する](https://zenn.dev/tan_y/articles/307533011ac2c0) 
   * [所有権と借用について](https://qiita.com/yz2cm/items/9a8337c368cf055b4255)
   * [Rustの落とし穴の話](https://zenn.dev/mith_mmk/articles/e6483b2b372784)
   * [Cloneは用法容量を守って使いましょう。](https://qiita.com/aobat/items/5b1a16cbbcb9641f84e9)
