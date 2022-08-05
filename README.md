@@ -211,6 +211,7 @@ proconio = "0.4.1"
   * [Rustの文字列結合はどうしてString+&strなのか](https://qiita.com/fujiharuka/items/6ef45a3c58ab8153c712)
   * [Rustで文字列の先頭文字や部分文字列を取得する](https://qiita.com/HelloRusk/items/7fb68395984958987a54)
   * [Rustの文字列処理](https://qiita.com/saltheads/items/317ae1db27ead093002d)
+  * [Rustの文字列を理解する](https://qiita.com/k-yanai60/items/4c8e3562fe6d22f845a9)
 * イテレータ
   * [Rustのイテレータの網羅的かつ大雑把な紹介](https://qiita.com/lo48576/items/34887794c146042aebf1)
   * [Rust のイテレータを使いこなしたい](https://blog-dry.com/entry/2020/06/23/002318)
@@ -362,6 +363,7 @@ proconio = "0.4.1"
   * [ライフタイム回りに関する一考察](https://zenn.dev/tokeiya3/articles/8f9a9b9069c0db)
   * [What is `Box<str>` and how is it different from String in Rust?](https://mahdi.blog/rust-box-str-vs-string/)
   * [【Rust】変数のスコープまとめ](https://zenn.dev/heppoko_quasar/articles/806fd48308e6c4)
+  * [【Rust】static でも Drop したい](https://zenn.dev/emakryo/articles/4f9522bc0ff30f)
 
 * コンパイラ
   * [本家Rustコンパイラのソースを読もうとしてみる（1）](https://qiita.com/0yoyoyo/items/eba97a019d0e60324263)
