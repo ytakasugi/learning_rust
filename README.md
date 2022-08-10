@@ -448,6 +448,9 @@ proconio = "0.4.1"
 - [Rustの新しいWEBフレームワークaxumを触ってみた](https://zenn.dev/techno_tanoc/articles/99e54c82cb049f)
 - [RustのTokio製WEBフレームワークaxum version 0.5.6 を使ってみた](https://zenn.dev/asamin/articles/7891f65a719ad3)
 - [Rustの非同期ランタイム `#[tokio::main]`を深堀り](https://qiita.com/ryuma017/items/1f31f5441ed5df80f1cc)
+- Rustで作るWebアプリケーション
+    - [データベース利用と自動テストの基本事項を押さえる](https://atmarkit.itmedia.co.jp/ait/articles/2205/26/news001.html)
+    - [Web開発での記述性、要素技術を解説](https://atmarkit.itmedia.co.jp/ait/articles/2208/08/news008.html)
 
 ---
 
