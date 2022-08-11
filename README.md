@@ -286,6 +286,7 @@ proconio = "0.4.1"
       * [Introduction to Rust generics [2/2]: Trait Objects (Static vs Dynamic dispatch)](https://kerkour.com/rust-generics-trait-objects)
   * [Rustで使いそうなトレイトの調査](https://zenn.dev/wim/articles/rust_trait_memo_memo)
   * [Rust RangeBoundsの紹介](https://qiita.com/hystcs/items/8e064f8b9a79adb9cca7)
+  * [Understanding Rust generics and how to use them](https://blog.logrocket.com/understanding-rust-generics-how-use/)
 * 関数ポインタ、クロージャ
     * [Rustにおける関数ポインタやクロージャ](https://zenn.dev/garasubo/articles/97f794cfd469b9d51c7b)
     * [Rustのクロージャtraitについて調べた(FnOnce, FnMut, Fn)](https://qiita.com/shortheron/items/c1735dc4c7c78b0b55e9)
