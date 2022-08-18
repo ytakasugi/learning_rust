@@ -248,6 +248,7 @@ proconio = "0.4.1"
   * [Rustのパブリックなコンストラクタメソッドを持つ構造体とは](https://qiita.com/c3drive/items/0a10cdb82ff3b2eae0e5)
   * [【Rust】可変な構造体に対してgetterを作るべきではない](https://qiita.com/quasardtm/items/d5eae9294fb0e8374aff)
   * [Rustで継承する裏技(トレイトを使わずに)](https://qiita.com/nagisakuya/items/f9a352f279b9ec276819)
+  * [Get Started with Rust: Structs](https://serokell.io/blog/structs-in-rust)
 * 列挙型
   * [Rust: Enums to wrap multiple errors](https://fettblog.eu/rust-enums-wrapping-errors/)
   * [Rustの列挙型enumの使い方まとめ](https://qiita.com/kujirahand/items/dd655a813a7c2b902f0b)
@@ -256,6 +257,8 @@ proconio = "0.4.1"
 * メソッド
     * [Rust の Default::default(), T::new(), T::from() の使い分け](https://qiita.com/syuuu/items/0e4ad366d60d6eb0c7ed)
     * [メソッドにおける `(&mut self)` と `(self) -> self` の使い分け](https://qiita.com/peperontium1517/items/b5b3e46a7a6b36c7bad8)
+    * [Rust Iterator pattern with `iter()`, `into_iter()` and `iter_mut()` methods]()
+    * [IntoIterator and the for ... in Syntax in Rust](https://www.geekabyte.io/2022/08/intoiterator-and-for-in-syntax-in-rust.html)
 * トレイト
   * [Rust のポリモルフィズムとトレイトオブジェクト](http://sharply.hatenablog.com/entry/2020/04/19/001236)
   * [Rustの型変換](https://zenn.dev/take4s5i/articles/rust-type-convertion)
