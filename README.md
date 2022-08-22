@@ -290,6 +290,7 @@ proconio = "0.4.1"
   * [Rustで使いそうなトレイトの調査](https://zenn.dev/wim/articles/rust_trait_memo_memo)
   * [Rust RangeBoundsの紹介](https://qiita.com/hystcs/items/8e064f8b9a79adb9cca7)
   * [Understanding Rust generics and how to use them](https://blog.logrocket.com/understanding-rust-generics-how-use/)
+  * [C++の完全転送とRustのimpl Trait](https://zenn.dev/msakuta/articles/701531539147ea)
 * 関数ポインタ、クロージャ
     * [Rustにおける関数ポインタやクロージャ](https://zenn.dev/garasubo/articles/97f794cfd469b9d51c7b)
     * [Rustのクロージャtraitについて調べた(FnOnce, FnMut, Fn)](https://qiita.com/shortheron/items/c1735dc4c7c78b0b55e9)
