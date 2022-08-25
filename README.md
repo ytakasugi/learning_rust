@@ -212,6 +212,7 @@ proconio = "0.4.1"
   * [Rustで文字列の先頭文字や部分文字列を取得する](https://qiita.com/HelloRusk/items/7fb68395984958987a54)
   * [Rustの文字列処理](https://qiita.com/saltheads/items/317ae1db27ead093002d)
   * [Rustの文字列を理解する](https://qiita.com/k-yanai60/items/4c8e3562fe6d22f845a9)
+  * [Rustで`String`型から`&'static str`型に変更することはできない]()
 * イテレータ
   * [Rustのイテレータの網羅的かつ大雑把な紹介](https://qiita.com/lo48576/items/34887794c146042aebf1)
   * [Rust のイテレータを使いこなしたい](https://blog-dry.com/entry/2020/06/23/002318)
@@ -500,6 +501,7 @@ proconio = "0.4.1"
 - [CADDi ENGINEER TECH BLOG](https://caddi.tech/archives/category/technology/backend)
 - [zenn(rustlang)](https://zenn.dev/topics/rust?order=latest)
 - [teratail](https://teratail.com/tags/Rust/active/1)
+- [プログラミング言語におけるエラー処理の変容：値から多相まで](https://qiita.com/yan7010/items/caa36e1fe129764c0cbf)
 - [言語処理100本ノック 2015](http://www.cl.ecei.tohoku.ac.jp/nlp100/)
 - [Rust で Web バックエンド開発をはじめる](https://developers.cyberagent.co.jp/blog/archives/31110/)
 - [Rustハンズオン@エウレカ社](https://speakerdeck.com/helloyuk13/rusthanzuon-at-eurekashe)
