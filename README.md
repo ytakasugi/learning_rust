@@ -370,6 +370,7 @@ proconio = "0.4.1"
   * [What is `Box<str>` and how is it different from String in Rust?](https://mahdi.blog/rust-box-str-vs-string/)
   * [【Rust】変数のスコープまとめ](https://zenn.dev/heppoko_quasar/articles/806fd48308e6c4)
   * [【Rust】static でも Drop したい](https://zenn.dev/emakryo/articles/4f9522bc0ff30f)
+  * [所有権を要求されても渡せないときの安全な対処法](https://qiita.com/aobat/items/a1e0ec0275302ca5d764)
 
 * コンパイラ
   * [本家Rustコンパイラのソースを読もうとしてみる（1）](https://qiita.com/0yoyoyo/items/eba97a019d0e60324263)
@@ -386,6 +387,7 @@ proconio = "0.4.1"
 * ジェネリクス
   * [jeffa.io](https://jeffa.io/)
   * [【Rust】ジェネリクスの取説](https://qiita.com/quasardtm/items/09952838a6ee9582db1d)
+  *  [Rustの「ジェネリックなデータ型」を再履修（ブログ邦訳）](https://qiita.com/plotter/items/43ec5bced0585055e709)
 * ゼロコスト抽象化
   * [Rustのゼロコスト抽象化の効果をアセンブラで確認](https://blog.rust-jp.rs/tatsuya6502/posts/2019-12-zero-cost-abstraction/)
 * マクロ
@@ -418,6 +420,9 @@ proconio = "0.4.1"
 
 * 原文翻訳
   * [【翻訳】Rustにおけるパフォーマンスの落とし穴](https://codom.hatenablog.com/entry/2017/06/03/221318)
+
+* 用語
+  * [[Rust] 射影 (projection) について](https://qiita.com/kerupani129/items/890baf2dc125ad82dc3e)
 
 * 未分類
   * [Rustのファイルパスの扱いが複雑すぎる件](https://qiita.com/kujirahand/items/b5ab1429b51ab674f5cf)
