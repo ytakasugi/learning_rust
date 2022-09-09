@@ -238,6 +238,7 @@ proconio = "0.4.1"
   * [Rust の型でスタック操作の正しさを保証する](https://qiita.com/magicant/items/281067cdc6d3eced482f)
   * [Typesafe State in Rust](https://zenn.dev/kinzal/books/aa109c0c428089)
   * [【Rust】SystemTimeをString型の年月日に変換したい](https://zenn.dev/alfina2538/articles/9aa0fe81e424f6)
+  * [Rustで型レベルプログラミング](https://zenn.dev/yyu/articles/1eefb8f547dc1b)
 * パターン
     * [[Rust] 「パターン」を用いた非構造化変数束縛](https://qiita.com/kerupani129/items/f30596eed4e5b2ca7cd1)
     * [Rustでの 抽象化 3パターンについて](https://zenn.dev/j5ik2o/articles/045737392958a3)
@@ -371,6 +372,7 @@ proconio = "0.4.1"
   * [【Rust】変数のスコープまとめ](https://zenn.dev/heppoko_quasar/articles/806fd48308e6c4)
   * [【Rust】static でも Drop したい](https://zenn.dev/emakryo/articles/4f9522bc0ff30f)
   * [所有権を要求されても渡せないときの安全な対処法](https://qiita.com/aobat/items/a1e0ec0275302ca5d764)
+  * [組込みエンジニアのためのRustのポインタ・参照・キャストまとめ](https://qiita.com/yagisawa/items/482a640aae8f8463dea4)
 
 * コンパイラ
   * [本家Rustコンパイラのソースを読もうとしてみる（1）](https://qiita.com/0yoyoyo/items/eba97a019d0e60324263)
@@ -523,6 +525,7 @@ proconio = "0.4.1"
 - [計算量オーダーについて](https://qiita.com/asksaito/items/59e0d48408f1eab081b5)
 - [初学者に教えたい、MicrosoftがGitHubで公開している教材が最高だった！](https://qiita.com/ozora/items/9c801d3b0137eccc32fa)
 - [RDBのデータモデリング・テーブル設計の際に参考にしている考え方と資料](https://zenn.dev/rebi/articles/28c7f1fee5730a)
+- [ReactのSuspenseを使った非同期処理のエラーハンドリング](https://speakerdeck.com/taro28/reactnosuspensewoshi-tutafei-tong-qi-chu-li-noerahandoringu)
 
 ### 個人ブログ
 - [κeenのHappy Hacκing Blog](https://keens.github.io/categories/rust/)
