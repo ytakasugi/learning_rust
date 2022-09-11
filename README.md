@@ -420,6 +420,9 @@ proconio = "0.4.1"
     * [パン屋のアルゴリズム](https://zenn.dev/ekusiadadus/articles/qiita_export_bread)
     * [Rustで線形探索と2分探索を書いてみる](https://zenn.dev/utamono832/articles/54a6937966399a)
 
+* アーキテクチャー
+    * [RustでClean Architectureを実装してみる](https://zenn.dev/htlsne/articles/rust-clean-architecture)
+
 * 原文翻訳
   * [【翻訳】Rustにおけるパフォーマンスの落とし穴](https://codom.hatenablog.com/entry/2017/06/03/221318)
 
@@ -477,6 +480,7 @@ proconio = "0.4.1"
 - [Rust のフロントエンドフレームワーク Yew の始め方](https://blog1.mammb.com/entry/2022/02/24/232622)
 - [Rust GUI / iced 入門](https://zenn.dev/hideakitai/articles/rust_gui_iced_introduction_ht)
 - [Rustで良さげなエラーメッセージを出力 w/ anyhow, thiserror](https://zenn.dev/tos_kamiya/articles/71171d0423b1d6)
+- [SeaORM + PostgreSQL で public 以外のスキーマをターゲットにマイグレーションする](https://zenn.dev/23prime/articles/6a97b8894a764a)
 
 ---
 
