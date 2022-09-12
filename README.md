@@ -510,6 +510,7 @@ proconio = "0.4.1"
 - [cargo-clean-recursive](https://crates.io/crates/cargo-clean-recursive)
 - [OPTiM TECH BLOG(Rust)](https://tech-blog.optim.co.jp/archive/category/Rust)
 - [CADDi ENGINEER TECH BLOG](https://caddi.tech/archives/category/technology/backend)
+    - [RustでWebアプリケーションのバックエンドを開発するには ─ 型システムの堅牢性と柔軟性を業務システムにも！](https://eh-career.com/engineerhub/entry/2022/09/12/093000)
 - [zenn(rustlang)](https://zenn.dev/topics/rust?order=latest)
 - [teratail](https://teratail.com/tags/Rust/active/1)
 - [プログラミング言語におけるエラー処理の変容：値から多相まで](https://qiita.com/yan7010/items/caa36e1fe129764c0cbf)
