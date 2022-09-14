@@ -92,6 +92,7 @@ proconio = "0.4.1"
     * [その2](https://qiita.com/mochafe/items/daf30e19f85d3a42651e)
     * [Rustで蟻本　〜データ構造〜](https://qiita.com/mochafe/items/0bc5e26ab75fef875fe6)
 * [Rustでも格子探索を楽したい！](https://qiita.com/jjitch/items/1e6f9861e506acf4abae) 
+* [Rustで競技プログラミングよくばりセット](https://qiita.com/SakiKuroe/items/152a3c117a68d95faa0b)
 
 ---
 
