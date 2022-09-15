@@ -195,6 +195,7 @@ proconio = "0.4.1"
       * [第6章](https://zenn.dev/kouschatten/articles/tour-of-rust6)
   * [Rustの「if let」とは何なのか？](https://qiita.com/plotter/items/0d8dc2782f21178d64f1) 
   * [プログラミング既修者向けRust音速入門書](https://qiita.com/nagisakuya/items/a2c78bad9a6b98973106)
+  * [`joaocarvalhoopen/How_to_learn_modern_Rust`](https://github.com/joaocarvalhoopen/How_to_learn_modern_Rust)
 
 * 定数
     * [[Rust] once_cell にできて lazy-static にできないこと](https://zenn.dev/sai_ys/articles/f66f1143fb45d1)
