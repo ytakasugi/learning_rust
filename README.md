@@ -483,6 +483,7 @@ proconio = "0.4.1"
 - [Rust GUI / iced 入門](https://zenn.dev/hideakitai/articles/rust_gui_iced_introduction_ht)
 - [Rustで良さげなエラーメッセージを出力 w/ anyhow, thiserror](https://zenn.dev/tos_kamiya/articles/71171d0423b1d6)
 - [SeaORM + PostgreSQL で public 以外のスキーマをターゲットにマイグレーションする](https://zenn.dev/23prime/articles/6a97b8894a764a)
+- [部分文字列にマッチできるマクロを作った](https://zenn.dev/kazatsuyu/articles/514a68858b81a9)
 
 ---
 
