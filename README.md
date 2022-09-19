@@ -241,6 +241,7 @@ proconio = "0.4.1"
   * [Typesafe State in Rust](https://zenn.dev/kinzal/books/aa109c0c428089)
   * [【Rust】SystemTimeをString型の年月日に変換したい](https://zenn.dev/alfina2538/articles/9aa0fe81e424f6)
   * [Rustで型レベルプログラミング](https://zenn.dev/yyu/articles/1eefb8f547dc1b)
+  * [enumはクローズド直和、traitはオープン直和](https://zenn.dev/qnighy/articles/5b1ad05d72c19d)
 * パターン
     * [[Rust] 「パターン」を用いた非構造化変数束縛](https://qiita.com/kerupani129/items/f30596eed4e5b2ca7cd1)
     * [Rustでの 抽象化 3パターンについて](https://zenn.dev/j5ik2o/articles/045737392958a3)
@@ -354,7 +355,6 @@ proconio = "0.4.1"
   * [RustのOwnershipってなんなん](https://zenn.dev/ucwork/articles/cfe579cbf5647e)
   * [rustの所有権と参照](https://qiita.com/winzu44/items/d40292557ed7e12de77b)
   * [わかる！？Rustの所有権システム](https://zenn.dev/j5ik2o/articles/918c54411d5a61)
-  * [Borrow, rules?](https://zenn.dev/toyboot4e/articles/aliasing-rules)
   * [Non-Lexical Lifetimes](https://qiita.com/_EnumHack/items/8b6ecdeb52e69a4ff384)
   * [Rustの所有権(Ownership)について](https://qiita.com/tajihiro/items/e4ef749812acf29620ad)
   * [[Rust] ゲームでありがちなミュータブル参照の問題](https://qiita.com/msakuta/items/450a0d23505126f644af)
@@ -375,6 +375,7 @@ proconio = "0.4.1"
   * [【Rust】static でも Drop したい](https://zenn.dev/emakryo/articles/4f9522bc0ff30f)
   * [所有権を要求されても渡せないときの安全な対処法](https://qiita.com/aobat/items/a1e0ec0275302ca5d764)
   * [組込みエンジニアのためのRustのポインタ・参照・キャストまとめ](https://qiita.com/yagisawa/items/482a640aae8f8463dea4)
+  * [Rust: Copyトレイトが実装された型を持つ値を無理やりムーブする方法となぜ必要か](https://zenn.dev/luma/articles/rust-why-and-how-force-move-copy-trait)
 
 * コンパイラ
   * [本家Rustコンパイラのソースを読もうとしてみる（1）](https://qiita.com/0yoyoyo/items/eba97a019d0e60324263)
