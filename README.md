@@ -47,6 +47,7 @@ proconio = "0.4.1"
 * [github.com/ytakasugi/](https://github.com/ytakasugi)
 * [rustviz](https://github.com/rustviz/rustviz)
 * [rust blog](https://github.com/pretzelhammer/rust-blog)
+* [learn-rust-with-web-application](https://github.com/AkifumiSato/learn-rust-with-web-application)
 
 ---
 
@@ -310,6 +311,7 @@ proconio = "0.4.1"
   * [Rust/AnyhowのTips](https://zenn.dev/yukinarit/articles/b39cd42820f29e)
   * [RustのResultとOptionの変換関数](https://qiita.com/mikiymk001/items/5df69c072472f198c173)
   * [Beginner-Intermediate Rust Error Handling](https://blog.vashishtha.in/rust-error-handling/)
+  * [Rustエラーハンドリング・チートシート](https://qiita.com/toast-uz/items/7bcf45037b98d83132b1)
 
 * WEB
   * [Rustとactix_webでWebアプリケーションを作ってみる](https://qiita.com/c3drive/items/71dda219f0193ae72069)
