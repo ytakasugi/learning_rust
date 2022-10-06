@@ -92,9 +92,10 @@
 * [Blocking Sockets and Async](https://www.thecodedmessage.com/posts/blocking-sockets/)
 * [How does Rust async work?](https://aidancully.blogspot.com/2022/08/how-does-rust-async-work.html)
 * [Basic Operator Overloading with Traits](https://rsdlt.onrender.com/posts/welcome-blog-rust-technology-development-programming-language/)
-* [The Magic of zerocopy](https://swatinem.de/blog/magic-zerocopy/)
-* [Not a Yoking Matter (Zero-Copy #1)](https://manishearth.github.io/blog/2022/08/03/zero-copy-1-not-a-yoking-matter/)
-* [Zero-Copy All the Things! (Zero-Copy #2)](https://manishearth.github.io/blog/2022/08/03/zero-copy-2-zero-copy-all-the-things/)
+* Zero-Copy
+    * [The Magic of zerocopy](https://swatinem.de/blog/magic-zerocopy/)
+    * [Not a Yoking Matter (Zero-Copy #1)](https://manishearth.github.io/blog/2022/08/03/zero-copy-1-not-a-yoking-matter/)
+    * [Zero-Copy All the Things! (Zero-Copy #2)](https://manishearth.github.io/blog/2022/08/03/zero-copy-2-zero-copy-all-the-things/)
 * [So Zero It's ... Negative? (Zero-Copy #3)](https://manishearth.github.io/blog/2022/08/03/zero-copy-3-so-zero-its-dot-dot-dot-negative/)
 * [Writing a container in Rust](https://litchipi.github.io/series/container_in_rust)
 * [Building an authentication system in Rust using session tokens](https://www.shuttle.rs/blog/2022/08/11/authentication-tutorial)
@@ -111,6 +112,23 @@
 * [&stress about &Strings](https://cooscoos.github.io/blog/stress-about-strings/)
 * [Use Rust To Reduce The Size Of Your SQLite Database](https://www.i-programmer.info/programming/database/15686-use-rust-to-reduce-the-size-of-your-sqlite-database-.html)
 * [Chat Blast! A TCP chat server in Rust](https://www.superperfundo.tech/articles/chat-blast)
+* [Rewriting the Modern Web in Rust](https://implfuture.dev/blog/rewriting-the-modern-web-in-rust)
+* [Implementing truly safe semaphores in rust](https://neosmart.net/blog/2022/implementing-truly-safe-semaphores-in-rust/)
+* [6 things you can do with the Cow in Rust](https://dev.to/kgrech/6-things-you-can-do-with-the-cow-in-rust-4l55)
 * []()
 * []()
 * []()
+* []()
+* []()
+* []()
+* []()
+* []()
+* []()
+* []()
+* []()
+
+---
+
+#### GitHub
+
+* [rust-ffi-to-c](https://github.com/vanjacosic/rust-ffi-to-c)
