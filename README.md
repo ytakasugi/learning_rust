@@ -130,6 +130,7 @@ proconio = "0.4.1"
 * [Learn Rust With Entirely Too Many Linked Lists](https://rust-unofficial.github.io/too-many-lists/index.html)
 * [Asynchronous Programming in Rust](https://rust-lang.github.io/async-book/01_getting_started/01_chapter.html)
 * [The Embedded Rust Book](https://docs.rust-embedded.org/book/)
+* [Lib.rs](https://lib.rs/)
 * [Plotters Developer Guide](https://plotters-rs.github.io/book/intro/introduction.html)
 * [Crate csv](https://docs.rs/csv/1.1.6/csv/)
 * [Overview Serde](https://serde.rs/)
@@ -299,6 +300,8 @@ proconio = "0.4.1"
   * [Rust RangeBoundsの紹介](https://qiita.com/hystcs/items/8e064f8b9a79adb9cca7)
   * [Understanding Rust generics and how to use them](https://blog.logrocket.com/understanding-rust-generics-how-use/)
   * [C++の完全転送とRustのimpl Trait](https://zenn.dev/msakuta/articles/701531539147ea)
+  * [Rust の 動的ディスパッチとか静的ディスパッチとか](https://blog.ojisan.io/rust-dispatch)
+  * [Polymorphism in Rust](https://oswalt.dev/2021/06/polymorphism-in-rust/)
 * 関数ポインタ、クロージャ
     * [Rustにおける関数ポインタやクロージャ](https://zenn.dev/garasubo/articles/97f794cfd469b9d51c7b)
     * [Rustのクロージャtraitについて調べた(FnOnce, FnMut, Fn)](https://qiita.com/shortheron/items/c1735dc4c7c78b0b55e9)
