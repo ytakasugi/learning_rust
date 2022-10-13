@@ -8,6 +8,8 @@
 
 * A Data Pipeline for Go Trains Delay Analysis
   * [A Data Pipeline for Go Trains Delay Analysis - Part 1](https://towardsdatascience.com/a-data-pipeline-for-go-trains-delay-analysis-part-1-21b2c2496aca)
+  * [A Data Pipeline for Go Trains Delay Analysis - Part 2](https://medium.com/geekculture/a-data-pipeline-for-go-trains-delay-analysis-part-2-e5b9ef0ea315)
+  * [A Data Pipeline for Go Trains Delay Analysis - ML in Action with Rust](https://towardsdatascience.com/a-data-pipeline-for-go-trains-delay-analysis-ml-in-action-with-rust-b294e80eede9)
 * Implementing ICMP in Rust
   * [I. Implementing ICMP in Rust](https://dev.to/xphoniex/i-implementing-icmp-in-rust-296o)
   * [II. Implementing ICMP in Rust](https://dev.to/xphoniex/ii-implementing-icmp-in-rust-3bk5)
