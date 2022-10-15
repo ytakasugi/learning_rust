@@ -51,6 +51,12 @@ proconio = "0.4.1"
 
 ---
 
+* [【必ず確認するべし】開発・学習で役立つGitHubリポジトリ 10選](https://zenn.dev/nameless_sn/articles/important_10_github_repositories)
+    * [EbookFoundation/free-programming-books](https://github.com/EbookFoundation/free-programming-books)
+        * [Japanese](https://github.com/EbookFoundation/free-programming-books/blob/main/books/free-programming-books-ja.md)
+
+---
+
 ### プログラムがメモリをどう使うかを理解する
       
 * [その1](https://zenn.dev/rita0222/articles/e6ff75245d79b5)
