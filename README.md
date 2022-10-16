@@ -549,6 +549,7 @@ proconio = "0.4.1"
 - [初学者に教えたい、MicrosoftがGitHubで公開している教材が最高だった！](https://qiita.com/ozora/items/9c801d3b0137eccc32fa)
 - [RDBのデータモデリング・テーブル設計の際に参考にしている考え方と資料](https://zenn.dev/rebi/articles/28c7f1fee5730a)
 - [ReactのSuspenseを使った非同期処理のエラーハンドリング](https://speakerdeck.com/taro28/reactnosuspensewoshi-tutafei-tong-qi-chu-li-noerahandoringu)
+- [WebエンジニアからみたRust](https://atmarkit.itmedia.co.jp/ait/series/25883/)
 
 ### 個人ブログ
 - [κeenのHappy Hacκing Blog](https://keens.github.io/categories/rust/)
