@@ -196,13 +196,6 @@ proconio = "0.4.1"
   * [趣味でプログラミングする人がRustを勉強する](https://qiita.com/tonesuke/items/52e469f18e747c794376)
   * [Rust初心者殺しの文法10選](https://qiita.com/muumu/items/8cdcc79fa881912adf51)
   * [Rust のデバッグチートシート](https://qiita.com/legokichi/items/e2f807f70316a916f4be)
-  * Tour of Rust まとめ
-      * [第1章](https://zenn.dev/kouschatten/articles/tour-of-rust)
-      * [第2章](https://zenn.dev/kouschatten/articles/tour-of-rust2)
-      * [第3章](https://zenn.dev/kouschatten/articles/tour-of-rust3)
-      * [第4章](https://zenn.dev/kouschatten/articles/tour-of-rust4)
-      * [第5章](https://zenn.dev/kouschatten/articles/tour-of-rust5)
-      * [第6章](https://zenn.dev/kouschatten/articles/tour-of-rust6)
   * [Rustの「if let」とは何なのか？](https://qiita.com/plotter/items/0d8dc2782f21178d64f1) 
   * [プログラミング既修者向けRust音速入門書](https://qiita.com/nagisakuya/items/a2c78bad9a6b98973106)
   * [`joaocarvalhoopen/How_to_learn_modern_Rust`](https://github.com/joaocarvalhoopen/How_to_learn_modern_Rust)
@@ -389,6 +382,9 @@ proconio = "0.4.1"
   * [所有権を要求されても渡せないときの安全な対処法](https://qiita.com/aobat/items/a1e0ec0275302ca5d764)
   * [組込みエンジニアのためのRustのポインタ・参照・キャストまとめ](https://qiita.com/yagisawa/items/482a640aae8f8463dea4)
   * [Rust: Copyトレイトが実装された型を持つ値を無理やりムーブする方法となぜ必要か](https://zenn.dev/luma/articles/rust-why-and-how-force-move-copy-trait)
+  * [Rustの`&str`や`&[T]`はどこを参照しているのか]()
+  * [C++の参照とRustの参照](https://qiita.com/termoshtt/items/3e3175a66c96219dcf17)
+  * [旧石器時代のポインタをご利用の皆様へ ～provenance入門～](https://qiita.com/__pandaman64__/items/1788a90ae5be79cc908b)
 
 * コンパイラ
   * [本家Rustコンパイラのソースを読もうとしてみる（1）](https://qiita.com/0yoyoyo/items/eba97a019d0e60324263)
