@@ -87,7 +87,7 @@
 * [Runtime errors: Come again? Rust macros to the rescue.](https://tech.nextroll.com/blog/dev/2022/06/21/rust-lua.html)
 * [Getting Started with SeaORM](https://anshulchauhan.com/getting-started-seaorm)
  * rust_schemes
-     * [Elegant and performant recursion in Rust](https://recursion.wtf/posts/rust_schemes/)
+    * [Elegant and performant recursion in Rust](https://recursion.wtf/posts/rust_schemes/)
     * [Fully generic recursion in Rust](https://recursion.wtf/posts/rust_schemes_2/)
     * [Single Pass Recursion in Rust](https://recursion.wtf/posts/rust_schemes_3/)
 * [Safety](https://nested.substack.com/p/safety)
@@ -122,6 +122,10 @@
 * [RAII: Compile-Time Memory Management in C++ and Rust](https://www.thecodedmessage.com/posts/raii/)
 * [Different test scopes in Rust](https://blog.frankel.ch/different-test-scopes-rust/)
 * [Building a JobSystem](https://www.rismosch.com/article?id=building-a-job-system)
+* [Asynchronous programming in Rust](https://opensource.com/article/22/10/asynchronous-programming-rust)
+* [Magical handler functions in Rust](https://lunatic.solutions/blog/magic-handler-functions-in-rust/)
+* [Rust: Type Concealment With Any Trait and FnMut](https://valand.dev/blog/post/rust-type-concealment-with-any-trait-and-fnmut)
+* []()
 * []()
 * []()
 * []()
@@ -138,3 +142,10 @@
 #### GitHub
 
 * [rust-ffi-to-c](https://github.com/vanjacosic/rust-ffi-to-c)
+
+---
+
+### blog
+
+* [Why Rust?](https://www.rerun.io/blog/why-rust)
+* [The Little Joys of Code: Proc Macros](https://felix-knorr.net/posts/2022-10-14-proc-macros.html)
