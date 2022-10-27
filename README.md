@@ -136,6 +136,7 @@ proconio = "0.4.1"
 * [Learn Rust With Entirely Too Many Linked Lists](https://rust-unofficial.github.io/too-many-lists/index.html)
 * [Asynchronous Programming in Rust](https://rust-lang.github.io/async-book/01_getting_started/01_chapter.html)
 * [The Embedded Rust Book](https://docs.rust-embedded.org/book/)
+* [MacroKata](https://tfpk.github.io/macrokata/)
 * [Lib.rs](https://lib.rs/)
 * [Plotters Developer Guide](https://plotters-rs.github.io/book/intro/introduction.html)
 * [Crate csv](https://docs.rs/csv/1.1.6/csv/)
@@ -262,6 +263,7 @@ proconio = "0.4.1"
   * [Rustの列挙型enumの使い方まとめ](https://qiita.com/kujirahand/items/dd655a813a7c2b902f0b)
   * [Rustで`Int(1)`と`Add { id: 1 }`の使い分け](https://zenn.dev/ryo33/articles/a005b562854d46)
   * [Optimized enum sizes in Rust](https://adeschamps.github.io/enum-size)
+  * [Get Started with Rust: Enums](https://serokell.io/blog/enums-and-pattern-matching)
 * メソッド
     * [Rust の Default::default(), T::new(), T::from() の使い分け](https://qiita.com/syuuu/items/0e4ad366d60d6eb0c7ed)
     * [メソッドにおける `(&mut self)` と `(self) -> self` の使い分け](https://qiita.com/peperontium1517/items/b5b3e46a7a6b36c7bad8)
@@ -305,6 +307,7 @@ proconio = "0.4.1"
 * 関数ポインタ、クロージャ
     * [Rustにおける関数ポインタやクロージャ](https://zenn.dev/garasubo/articles/97f794cfd469b9d51c7b)
     * [Rustのクロージャtraitについて調べた(FnOnce, FnMut, Fn)](https://qiita.com/shortheron/items/c1735dc4c7c78b0b55e9)
+    * [クロージャ 再考](https://zenn.dev/0kate/articles/7133f720a31441)
 * `Option`型、`Result`型
   * [Rust のエラーハンドリングはシンタックスシュガーが豊富で完全に初見殺しなので自信を持って使えるように整理してみたら完全に理解した](https://qiita.com/nirasan/items/321e7cc42e0e0f238254?utm_content=buffera6970&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer)
   * [thiserrorでカスタムエラーを実装する](https://zenn.dev/hideoka/articles/e2408b1eb8ee3f)
