@@ -264,11 +264,12 @@ proconio = "0.4.1"
   * [Rustで`Int(1)`と`Add { id: 1 }`の使い分け](https://zenn.dev/ryo33/articles/a005b562854d46)
   * [Optimized enum sizes in Rust](https://adeschamps.github.io/enum-size)
   * [Get Started with Rust: Enums](https://serokell.io/blog/enums-and-pattern-matching)
+  * [[Rust] 複数のEnumを扱う条件分岐](https://zenn.dev/ragnar1904/articles/rust-handle-multiple-enums)
 * メソッド
-    * [Rust の Default::default(), T::new(), T::from() の使い分け](https://qiita.com/syuuu/items/0e4ad366d60d6eb0c7ed)
+    * [Rustの`Default::default()`, `T::new()`, `T::from()`の使い分け](https://qiita.com/syuuu/items/0e4ad366d60d6eb0c7ed)
     * [メソッドにおける `(&mut self)` と `(self) -> self` の使い分け](https://qiita.com/peperontium1517/items/b5b3e46a7a6b36c7bad8)
     * [Rust Iterator pattern with `iter()`, `into_iter()` and `iter_mut()` methods]()
-    * [IntoIterator and the for ... in Syntax in Rust](https://www.geekabyte.io/2022/08/intoiterator-and-for-in-syntax-in-rust.html)
+    * [IntoIterator and the for `...` in Syntax in Rust](https://www.geekabyte.io/2022/08/intoiterator-and-for-in-syntax-in-rust.html)
 * トレイト
   * [Rust のポリモルフィズムとトレイトオブジェクト](http://sharply.hatenablog.com/entry/2020/04/19/001236)
   * [Rustの型変換](https://zenn.dev/take4s5i/articles/rust-type-convertion)
