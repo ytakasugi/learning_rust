@@ -337,7 +337,6 @@ proconio = "0.4.1"
   * [Rustで安全にスレッド間共有変数を利用できることのありがたみと実装例](https://qiita.com/muumu/items/f264ad781486d3dd037b)
   * [Rustのスレッドとチャネルと共有メモリの話](https://zenn.dev/tfutada/articles/16766e3b4560db)
   * [Rustにおけるスレッド間でのデータ共有と`std::thread::scope`](https://zenn.dev/toru3/articles/ce9232f53c47c8)
-  * [Rustのスレッドとチャネルと共有メモリの話](https://zenn.dev/tfutada/articles/16766e3b4560db)
 * 非同期
   * [Rustの非同期プログラミングをマスターする](https://tech-blog.optim.co.jp/entry/2019/11/08/163000)
   * [非同期 Rust パターン](https://qiita.com/legokichi/items/4f2c09330f90626600a6)
