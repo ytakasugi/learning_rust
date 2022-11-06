@@ -337,6 +337,7 @@ proconio = "0.4.1"
   * [Rustで安全にスレッド間共有変数を利用できることのありがたみと実装例](https://qiita.com/muumu/items/f264ad781486d3dd037b)
   * [Rustのスレッドとチャネルと共有メモリの話](https://zenn.dev/tfutada/articles/16766e3b4560db)
   * [Rustにおけるスレッド間でのデータ共有と`std::thread::scope`](https://zenn.dev/toru3/articles/ce9232f53c47c8)
+  * [Rustのスレッドとチャネルと共有メモリの話](https://zenn.dev/tfutada/articles/16766e3b4560db)
 * 非同期
   * [Rustの非同期プログラミングをマスターする](https://tech-blog.optim.co.jp/entry/2019/11/08/163000)
   * [非同期 Rust パターン](https://qiita.com/legokichi/items/4f2c09330f90626600a6)
@@ -401,7 +402,12 @@ proconio = "0.4.1"
   * [RustのSizedとfatポインタ](https://qnighy.hatenablog.com/entry/2017/03/04/131311)
   * [Rustの参照、Box、Rcを関数の引数・返り値にした場合の挙動](https://zenn.dev/exyrias/articles/c1d1c6d825fbbb166d44)
   * [RustのSmart pointersってなんなん](https://zenn.dev/ucwork/articles/4fc4cfa47cda26)
-  * [Rustの `Arc` を読む(1): Arc/Rcの基本](https://qiita.com/qnighy/items/4bbbb20e71cf4ae527b9)
+  * [Rustの `Arc` を読む]
+      * [Arc/Rcの基本](https://qiita.com/qnighy/items/4bbbb20e71cf4ae527b9)
+      * [Rcを読む基本編](https://qiita.com/qnighy/items/5b2fbf27e3ee36e57b8d)
+      * [Rcを読む発展編](https://qiita.com/qnighy/items/5e673b2d74e5b01a6c8d)
+      * [アトミック変数とメモリ順序](https://qiita.com/qnighy/items/b3b728adf5e4a3f1a841)
+      * [Arcを読む](https://qiita.com/qnighy/items/35db580a139d21f38410)
   * [【Rust勉強】スマートポインタをざっくり](https://qiita.com/moyamoyac/items/5aea471d6676625dcd62)
 * ジェネリクス
   * [jeffa.io](https://jeffa.io/)
