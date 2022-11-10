@@ -130,7 +130,7 @@
 * [Fathomable Rust Macros](https://geeklaunch.net/blog/fathomable-rust-macros/)
 * [Implementing RayonÅfs Parallel Iterators - A Tutorial](https://geo-ant.github.io/blog/2022/implementing-parallel-iterators-rayon/)
 * [CONST SYNTAX](https://blog.yoshuawuyts.com/const-syntax/)
-* []()
+* [Writing an `eBPF/XDP` load-balancer in Rust](https://konghq.com/blog/writing-an-ebpf-xdp-load-balancer-in-rust)
 * []()
 * []()
 * []()

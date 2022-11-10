@@ -82,6 +82,17 @@ proconio = "0.4.1"
 
 * [Webデザイン初心者向け Webサイトの作り方と準備](https://web-design-textbook.com/)
 
+### Crate
+
+* [Blessed](https://blessed.rs/crates)
+* [`rust-unofficial/awesome-rust`](https://github.com/rust-unofficial/awesome-rust)
+
+---
+
+### システムデザイン
+
+* [`donnemartin/system-design-primer`](https://github.com/donnemartin/system-design-primer/blob/master/README-ja.md)
+
 ---
 
 ### 競技プログラミング
@@ -132,12 +143,14 @@ proconio = "0.4.1"
   * [『Rust Design Patterns』を翻訳してみました（Idiom 編）](https://qiita.com/Yappii_111/items/4ccc3a8461cdd4035651)
   * [『Rust Design Patterns』を翻訳してみました（デザインパターン・アンチパターン編）](https://qiita.com/Yappii_111/items/654717e6a6a980722189)
 * [Futures Explained in 200 Lines of Rust](https://cfsamson.github.io/books-futures-explained/introduction.html)
-* [Error Handling in Rust](https://blog.burntsushi.net/rust-error-handling/#working-with-multiple-error-types)
+* [Error Handling in Rust](https://blog.burntsushi.net/rust-error-handling/)
+* [Error Handling in Rust(github.io)](https://nrc.github.io/error-docs/intro.html)
 * [Learn Rust With Entirely Too Many Linked Lists](https://rust-unofficial.github.io/too-many-lists/index.html)
 * [Asynchronous Programming in Rust](https://rust-lang.github.io/async-book/01_getting_started/01_chapter.html)
 * [The Embedded Rust Book](https://docs.rust-embedded.org/book/)
 * [MacroKata](https://tfpk.github.io/macrokata/)
 * [Lib.rs](https://lib.rs/)
+* [Rust By Practice](https://practice.rs/why-exercise.html)
 * [Plotters Developer Guide](https://plotters-rs.github.io/book/intro/introduction.html)
 * [Crate csv](https://docs.rs/csv/1.1.6/csv/)
 * [Overview Serde](https://serde.rs/)
@@ -337,6 +350,8 @@ proconio = "0.4.1"
   * [Rustで安全にスレッド間共有変数を利用できることのありがたみと実装例](https://qiita.com/muumu/items/f264ad781486d3dd037b)
   * [Rustのスレッドとチャネルと共有メモリの話](https://zenn.dev/tfutada/articles/16766e3b4560db)
   * [Rustにおけるスレッド間でのデータ共有と`std::thread::scope`](https://zenn.dev/toru3/articles/ce9232f53c47c8)
+  * [Rustでfor in内処理を簡単に並列処理](https://zenn.dev/oreno_dinner/articles/f9c5ee5a25b4e3)
+  * [Rustで並列処理数(スレッド数)を一定にする方法](https://zenn.dev/oreno_dinner/articles/7cdf83b506ba9b)
 * 非同期
   * [Rustの非同期プログラミングをマスターする](https://tech-blog.optim.co.jp/entry/2019/11/08/163000)
   * [非同期 Rust パターン](https://qiita.com/legokichi/items/4f2c09330f90626600a6)
@@ -408,6 +423,7 @@ proconio = "0.4.1"
       * [アトミック変数とメモリ順序](https://qiita.com/qnighy/items/b3b728adf5e4a3f1a841)
       * [Arcを読む](https://qiita.com/qnighy/items/35db580a139d21f38410)
   * [【Rust勉強】スマートポインタをざっくり](https://qiita.com/moyamoyac/items/5aea471d6676625dcd62)
+  * [Rust スマートポインタ 整理](https://zenn.dev/0kate/articles/49444e1f7de00f)
 * ジェネリクス
   * [jeffa.io](https://jeffa.io/)
   * [【Rust】ジェネリクスの取説](https://qiita.com/quasardtm/items/09952838a6ee9582db1d)
@@ -423,6 +439,7 @@ proconio = "0.4.1"
 * テスト
     * [Rust sqlxでデータベースに依存した部分のテストを書く](https://zenn.dev/htlsne/articles/rust-sqlx-test)
     * [Rustのコネクションプールはテスト間で共有できないという話](https://qiita.com/autotaker1984/items/d0ae2d7feb148ffb8989)
+    * [[Rust] mockallで単体テスト](https://qiita.com/deepgreenAN/items/1b9887db759bbb96c9b6)
 * パフォーマンス
     * [Rust のパフォーマンスに何が影響を与えているのか](https://qiita.com/benki/items/ee14ee6cb9f209a080e1)
 
