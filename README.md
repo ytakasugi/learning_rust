@@ -271,6 +271,7 @@ proconio = "0.4.1"
   * [【Rust】可変な構造体に対してgetterを作るべきではない](https://qiita.com/quasardtm/items/d5eae9294fb0e8374aff)
   * [Rustで継承する裏技(トレイトを使わずに)](https://qiita.com/nagisakuya/items/f9a352f279b9ec276819)
   * [Get Started with Rust: Structs](https://serokell.io/blog/structs-in-rust)
+  * [Rustで子の構造体から親の構造体の値を安全に参照したい](https://qiita.com/emo/items/1f287ca98e73c9633993)
 * 列挙型
   * [Rust: Enums to wrap multiple errors](https://fettblog.eu/rust-enums-wrapping-errors/)
   * [Rustの列挙型enumの使い方まとめ](https://qiita.com/kujirahand/items/dd655a813a7c2b902f0b)
