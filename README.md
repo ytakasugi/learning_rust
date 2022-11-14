@@ -237,6 +237,7 @@ proconio = "0.4.1"
   * [Rust のイテレータを使いこなしたい](https://blog-dry.com/entry/2020/06/23/002318)
   * [[Rust] 個人的によく使うイテレーターのメソッドのメモ](https://www.amusement-creators.info/articles/rust/introduce_iterator_methods/)
   * [【Rust】ループとイテレータの使い方](https://tyfkda.github.io/blog/2020/06/13/rust-iter.html)
+  * [Rustのイテレータについて](https://qiita.com/k-yanai60/items/b522c57c518fbf69a38d)
 * コレクション型
   * [Rustで`Vec<T>`に`&`を付けると`&[T]`が得られる理由](https://qiita.com/mosh/items/51bd202c9f738956829e)
   * [[Rust] 配列やベクタが自動でスライスに変換される仕組み](https://qiita.com/kerupani129/items/17584274379f0c65fc34)
