@@ -345,6 +345,7 @@ proconio = "0.4.1"
   * [Rust初心者がRust + actix-web + diesel(MySQL) + serdeでREST APIを作ってみた](https://qiita.com/c0ridrew/items/42bcf381766ba224eed7)
   * [Rustのhttp/httpsクライアントcurl](https://qiita.com/showchan33/items/9f4648bc2a1dec34aa83)
   * [【サンプルコードあり】Rustで作るWebアプリケーション――データベース利用と自動テストの基本事項を押さえる](https://atmarkit.itmedia.co.jp/ait/articles/2205/26/news001.html)
+  * [How to Build a Powerful GraphQL API with Rust](https://oliverjumpertz.com/how-to-build-a-powerful-graphql-api-with-rust/)
 * マルチスレッド
   * [マルチスレッドプログラミングのメモ](https://totem3.hatenablog.jp/entry/2017/05/10/210000)
   * [Rustはどのようにして安全な並列処理を提供するのか](https://qiita.com/nirasan/items/97263103f076bd525a7b)
@@ -563,7 +564,6 @@ proconio = "0.4.1"
 - [Rustハンズオン @ Rust CA 1 Day Youth Boot Camp](https://speakerdeck.com/helloyuk13/rusthanzuon-at-rust-ca-1-day-youth-boot-camp)
     - [github](https://github.com/yuk1ty/rust-basic-handson/)
 - [Rust ハンズオン@chikoski](https://chikoski.info/rust-handson/)
-- [プログラムがメモリをどう使うかを理解する(1)](https://zenn.dev/rita0222/articles/e6ff75245d79b5)
 - [基本からしっかり学ぶRust入門(@IT)](https://atmarkit.itmedia.co.jp/ait/series/24844/)
 - [Rust勉強会](https://scrapbox.io/nomlab/Rust%E5%8B%89%E5%BC%B7%E4%BC%9A)
 - [Rust言語 2021年版の計画（抄訳）](https://zenn.dev/ice_creamer/articles/53c12111ab8d4b)
