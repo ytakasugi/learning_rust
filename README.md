@@ -408,6 +408,7 @@ proconio = "0.4.1"
   * [Rustの`&str`や`&[T]`はどこを参照しているのか]()
   * [C++の参照とRustの参照](https://qiita.com/termoshtt/items/3e3175a66c96219dcf17)
   * [旧石器時代のポインタをご利用の皆様へ ～provenance入門～](https://qiita.com/__pandaman64__/items/1788a90ae5be79cc908b)
+  * [A Better Way to Borrow in Rust: Stack Tokens](https://lucumr.pocoo.org/2022/11/23/stack-tokens/)
 
 * コンパイラ
   * [本家Rustコンパイラのソースを読もうとしてみる（1）](https://qiita.com/0yoyoyo/items/eba97a019d0e60324263)
