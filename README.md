@@ -584,3 +584,4 @@ proconio = "0.4.1"
 - [minerva](https://minerva.mamansoft.net/Notes/Rust)
 - [やってみる](https://ytyaru.hatenablog.com/archive/category/Rust)
 - [30歳からのプログラミング](https://numb86-tech.hatenablog.com/archive/category/Rust)
+- [Happy Developing](https://blog.ymgyt.io/archive/category/Rust)

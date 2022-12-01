@@ -133,6 +133,8 @@
 * [Writing an `eBPF/XDP` load-balancer in Rust](https://konghq.com/blog/writing-an-ebpf-xdp-load-balancer-in-rust)
 * [Rust enum-match code generation](https://www.eventhelix.com/rust/rust-to-assembly-enum-match/)
 * [Implementation Details of async Rust](https://swatinem.de/blog/async-codegen/)
+* [Avoiding Benchmarking Pitfalls with black_box in Rust](https://alic.dev/blog/blackbox.html)
+* [Measuring the overhead of HashMaps in Rust](https://ntietz.com/blog/rust-hashmap-overhead/)
 * []()
 * []()
 * []()
