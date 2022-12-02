@@ -576,7 +576,8 @@ proconio = "0.4.1"
 - [RDBのデータモデリング・テーブル設計の際に参考にしている考え方と資料](https://zenn.dev/rebi/articles/28c7f1fee5730a)
 - [ReactのSuspenseを使った非同期処理のエラーハンドリング](https://speakerdeck.com/taro28/reactnosuspensewoshi-tutafei-tong-qi-chu-li-noerahandoringu)
 - [WebエンジニアからみたRust](https://atmarkit.itmedia.co.jp/ait/series/25883/)
-- [Rust Monthly Topics](https://gihyo.jp/article/2022/10/rust-monthly-topics-02?summary)
+- [Rust Monthly Topics](https://gihyo.jp/list/group/Rust-Monthly-Topics#rt:/article/2022/10/rust-monthly-topics-02)
+- [How much does Rust's bounds checking actually cost?](https://blog.readyset.io/bounds-checks/)
 
 ### 個人ブログ
 - [κeenのHappy Hacκing Blog](https://keens.github.io/categories/rust/)
