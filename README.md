@@ -552,6 +552,7 @@ proconio = "0.4.1"
 
 - [Rust Advent Calendar2020](https://qiita.com/advent-calendar/2020/rust)
 - [Rust Advent Calendar2021](https://qiita.com/advent-calendar/2021/rust)
+- [Rust Advent Calendar2022](https://qiita.com/advent-calendar/2022/rust)
 - [cargo-clean-recursive](https://crates.io/crates/cargo-clean-recursive)
 - [OPTiM TECH BLOG(Rust)](https://tech-blog.optim.co.jp/archive/category/Rust)
 - [CADDi ENGINEER TECH BLOG](https://caddi.tech/archives/category/technology/backend)
