@@ -408,10 +408,11 @@ proconio = "0.4.1"
   * [所有権を要求されても渡せないときの安全な対処法](https://qiita.com/aobat/items/a1e0ec0275302ca5d764)
   * [組込みエンジニアのためのRustのポインタ・参照・キャストまとめ](https://qiita.com/yagisawa/items/482a640aae8f8463dea4)
   * [Rust: Copyトレイトが実装された型を持つ値を無理やりムーブする方法となぜ必要か](https://zenn.dev/luma/articles/rust-why-and-how-force-move-copy-trait)
-  * [Rustの`&str`や`&[T]`はどこを参照しているのか]()
+  * [Rustの`&str`や`&[T]`はどこを参照しているのか](https://qiita.com/Kogia_sima/items/88920a2a14448ef4dbe3)
   * [C++の参照とRustの参照](https://qiita.com/termoshtt/items/3e3175a66c96219dcf17)
   * [旧石器時代のポインタをご利用の皆様へ ～provenance入門～](https://qiita.com/__pandaman64__/items/1788a90ae5be79cc908b)
   * [A Better Way to Borrow in Rust: Stack Tokens](https://lucumr.pocoo.org/2022/11/23/stack-tokens/)
+  * [Self-referential types for fun and profit](https://morestina.net/blog/1868/self-referential-types-for-fun-and-profit)
 
 * コンパイラ
   * [本家Rustコンパイラのソースを読もうとしてみる（1）](https://qiita.com/0yoyoyo/items/eba97a019d0e60324263)
@@ -583,6 +584,9 @@ proconio = "0.4.1"
 - [WebエンジニアからみたRust](https://atmarkit.itmedia.co.jp/ait/series/25883/)
 - [Rust Monthly Topics](https://gihyo.jp/list/group/Rust-Monthly-Topics#rt:/article/2022/10/rust-monthly-topics-02)
 - [How much does Rust's bounds checking actually cost?](https://blog.readyset.io/bounds-checks/)
+
+### Zenn(scrap)
+* [「Futures Explained in 200 Lines of Rust」を読む](https://zenn.dev/skanehira/scraps/9d2f7e3c105014)
 
 ### 個人ブログ
 - [κeenのHappy Hacκing Blog](https://keens.github.io/categories/rust/)
