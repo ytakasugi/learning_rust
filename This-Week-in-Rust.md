@@ -128,7 +128,7 @@
 * [Nine Rules for Creating Procedural Macros in Rust](https://towardsdatascience.com/nine-rules-for-creating-procedural-macros-in-rust-595aa476a7ff)
 * [A Rust web app with HTML templates](https://woile.dev/posts/web-app-with-template-in-rust/)
 * [Fathomable Rust Macros](https://geeklaunch.net/blog/fathomable-rust-macros/)
-* [Implementing RayonÅfs Parallel Iterators - A Tutorial](https://geo-ant.github.io/blog/2022/implementing-parallel-iterators-rayon/)
+* [Implementing `RayonÅfs` Parallel Iterators - A Tutorial](https://geo-ant.github.io/blog/2022/implementing-parallel-iterators-rayon/)
 * [CONST SYNTAX](https://blog.yoshuawuyts.com/const-syntax/)
 * [Writing an `eBPF/XDP` load-balancer in Rust](https://konghq.com/blog/writing-an-ebpf-xdp-load-balancer-in-rust)
 * [Rust enum-match code generation](https://www.eventhelix.com/rust/rust-to-assembly-enum-match/)
