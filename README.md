@@ -123,6 +123,7 @@ proconio = "0.4.1"
 * [Rust by Example](https://doc.rust-jp.rs/rust-by-example-ja/)
 * [The Rust Programming Language](https://doc.rust-jp.rs/book-ja/)
   * [The Rust Programming Languageの問題を解いてみた　その１](https://qiita.com/kaclar_ef/items/7ccf3859f44554b5f0ac)
+* [Comprehensive Rust](https://google.github.io/comprehensive-rust/welcome.html)
 * [Guide to Rustc Development](https://rustc-dev-guide.rust-lang.org/)
 * [Easy Rust](https://dhghomon.github.io/easy_rust/Chapter_0.html)
 * [High Assurance Rust Developing Secure and Robust Software](https://highassurance.rs)
@@ -232,7 +233,8 @@ proconio = "0.4.1"
   * [Rustで文字列の先頭文字や部分文字列を取得する](https://qiita.com/HelloRusk/items/7fb68395984958987a54)
   * [Rustの文字列処理](https://qiita.com/saltheads/items/317ae1db27ead093002d)
   * [Rustの文字列を理解する](https://qiita.com/k-yanai60/items/4c8e3562fe6d22f845a9)
-  * [Rustで`String`型から`&'static str`型に変更することはできない]()
+  * [Rustで`String`型から`&'static str`型に変更することはできない](https://zenn.dev/ifhito/articles/bd9e8418baf1eb)
+  * [Rustの`to_string`実装パターン](https://zenn.dev/qnighy/articles/8ea875cae10d42)
 * イテレータ
   * [Rustのイテレータの網羅的かつ大雑把な紹介](https://qiita.com/lo48576/items/34887794c146042aebf1)
   * [Rust のイテレータを使いこなしたい](https://blog-dry.com/entry/2020/06/23/002318)
@@ -585,14 +587,16 @@ proconio = "0.4.1"
 - [WebエンジニアからみたRust](https://atmarkit.itmedia.co.jp/ait/series/25883/)
 - [Rust Monthly Topics](https://gihyo.jp/list/group/Rust-Monthly-Topics#rt:/article/2022/10/rust-monthly-topics-02)
 - [How much does Rust's bounds checking actually cost?](https://blog.readyset.io/bounds-checks/)
+- [How to build a Rust API with the builder pattern](https://blog.logrocket.com/build-rust-api-builder-pattern/)
 
 ### Zenn(scrap)
 * [「Futures Explained in 200 Lines of Rust」を読む](https://zenn.dev/skanehira/scraps/9d2f7e3c105014)
 
-### 個人ブログ
+### ブログ
 - [κeenのHappy Hacκing Blog](https://keens.github.io/categories/rust/)
 - [簡潔なQ](https://qnighy.hatenablog.com/archive/category/Rust)
 - [minerva](https://minerva.mamansoft.net/Notes/Rust)
 - [やってみる](https://ytyaru.hatenablog.com/archive/category/Rust)
 - [30歳からのプログラミング](https://numb86-tech.hatenablog.com/archive/category/Rust)
 - [Happy Developing](https://blog.ymgyt.io/archive/category/Rust)
+- [Writing an OS in Rust ](https://os.phil-opp.com/ja/)
