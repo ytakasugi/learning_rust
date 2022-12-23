@@ -124,6 +124,7 @@ proconio = "0.4.1"
 * [The Rust Programming Language](https://doc.rust-jp.rs/book-ja/)
   * [The Rust Programming Languageの問題を解いてみた　その１](https://qiita.com/kaclar_ef/items/7ccf3859f44554b5f0ac)
 * [Comprehensive Rust](https://google.github.io/comprehensive-rust/welcome.html)
+* [Rust for the Polyglot Programmer](https://www.chiark.greenend.org.uk/~ianmdlvl/rust-polyglot/)
 * [Guide to Rustc Development](https://rustc-dev-guide.rust-lang.org/)
 * [Easy Rust](https://dhghomon.github.io/easy_rust/Chapter_0.html)
 * [High Assurance Rust Developing Secure and Robust Software](https://highassurance.rs)
