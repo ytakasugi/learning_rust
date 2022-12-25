@@ -1,35 +1,39 @@
-pub mod fibonacci {
-    pub fn fibonacci(n: usize) -> usize {
-        log::debug!("fibonacci({})", n);
-        if n == 0 {
-            log::trace!("n==0 => 0");
-            0
-        } else if n == 1 {
-            log::trace!("n==1 => 1");
-            1
-        } else {
-            log::trace!("n>=2 => fibonacci(n - 2) + fibonacci(n - 1)");
-            fibonacci(n - 2) + fibonacci(n - 1)
-        }
-    }
-}
-pub mod tribonacci {
-    pub fn tribonacci(n: usize) -> usize {
-        log::debug!("tribonacci({})", n);
+use std::thread;
 
-        match n {
-            n if n < 2 => {
-                log::trace!("n<2 => 0");
-                0
-            },
-            n if n == 2 => {
-                log::trace!("n==2 => 1");
-                1
-            },
-            _ => {
-                log::trace!("n>=3 => tribonacci(n - 3) + tribonacci(n - 2) + tribonacci(n - 1)");
-                tribonacci(n - 3) + tribonacci(n - 2) + tribonacci(n - 1)
-            },
-        }
-    }
+pub fn init_logger(){
+    let base_config = fern::Dispatch::new();
+
+    let file_config = fern::Dispatch::new()
+        .level(log::LevelFilter::Error)
+        .format(|out, message, record| {
+            out.finish(format_args!(
+                "{}[{}][{}][{:?}] {}",
+                chrono::Local::now().format("[%Y-%m-%d %H:%M:%S.%H%M%S]"),
+                record.level(),
+                record.target(),
+                thread::current().id(),
+                message
+            ))
+        })
+        .chain(fern::log_file("error.log").unwrap());
+
+    let stdout_config = fern::Dispatch::new()
+        .level(log::LevelFilter::Debug)
+        .format(|out, message, record| {
+            out.finish(format_args!(
+                "{}[{}][{}][{:?}] {}",
+                chrono::Local::now().format("[%Y-%m-%d %H:%M:%S.%H%M%S]"),
+                record.level(),
+                record.target(),
+                thread::current().id(),
+                message
+            ))
+        })
+        .chain(fern::log_file("app.log").unwrap());
+
+    base_config
+        .chain(file_config)
+        .chain(stdout_config)
+        .apply()
+        .unwrap();
 }
