@@ -417,6 +417,7 @@ proconio = "0.4.1"
   * [旧石器時代のポインタをご利用の皆様へ ～provenance入門～](https://qiita.com/__pandaman64__/items/1788a90ae5be79cc908b)
   * [A Better Way to Borrow in Rust: Stack Tokens](https://lucumr.pocoo.org/2022/11/23/stack-tokens/)
   * [Self-referential types for fun and profit](https://morestina.net/blog/1868/self-referential-types-for-fun-and-profit)
+  * [Rustのライフタイムについて知りたい](https://qiita.com/toreis/items/970bcfed6a930e3c84dc)
 
 * コンパイラ
   * [本家Rustコンパイラのソースを読もうとしてみる（1）](https://qiita.com/0yoyoyo/items/eba97a019d0e60324263)
