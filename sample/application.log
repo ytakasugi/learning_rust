@@ -1,10 +1,11 @@
-2022-12-31T15:33:29.813080Z  INFO sample: 0
-2022-12-31T15:33:29.813158Z  INFO sample: 1
-2022-12-31T15:33:29.813218Z  INFO sample: 3
-2022-12-31T15:33:29.813209Z  INFO sample: 2
-2022-12-31T15:33:29.813221Z  INFO sample: 5
-2022-12-31T15:33:29.813248Z  INFO sample: 7
-2022-12-31T15:33:29.813269Z  INFO sample: 8
-2022-12-31T15:33:29.813279Z  INFO sample: 6
-2022-12-31T15:33:29.813315Z  INFO sample: 9
-2022-12-31T15:33:29.813348Z  INFO sample: 4
+[2m2023-01-01T10:32:11.451044Z[0m [32m INFO[0m main ThreadId(01) Logical cores: 8
+[2m2023-01-01T10:32:11.451260Z[0m [32m INFO[0m tokio-runtime-worker ThreadId(09) 0
+[2m2023-01-01T10:32:11.451354Z[0m [32m INFO[0m tokio-runtime-worker ThreadId(08) 1
+[2m2023-01-01T10:32:11.451404Z[0m [32m INFO[0m tokio-runtime-worker ThreadId(08) 2
+[2m2023-01-01T10:32:11.451407Z[0m [32m INFO[0m tokio-runtime-worker ThreadId(09) 3
+[2m2023-01-01T10:32:11.451480Z[0m [32m INFO[0m tokio-runtime-worker ThreadId(09) 5
+[2m2023-01-01T10:32:11.451512Z[0m [32m INFO[0m tokio-runtime-worker ThreadId(08) 7
+[2m2023-01-01T10:32:11.451522Z[0m [32m INFO[0m tokio-runtime-worker ThreadId(09) 8
+[2m2023-01-01T10:32:11.451535Z[0m [32m INFO[0m tokio-runtime-worker ThreadId(07) 6
+[2m2023-01-01T10:32:11.451567Z[0m [32m INFO[0m tokio-runtime-worker ThreadId(06) 9
+[2m2023-01-01T10:32:11.451639Z[0m [32m INFO[0m tokio-runtime-worker ThreadId(05) 4

@@ -4,7 +4,7 @@ use sample::init_logger;
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
     init_logger()?;
     // 論理コア数を表示
-    log::info!("Logical cores: {}", num_cpus::get());
+    tracing::info!("Logical cores: {}", num_cpus::get());
 
     let threads: Vec<_> = (0..10)
         .map(|i| {
