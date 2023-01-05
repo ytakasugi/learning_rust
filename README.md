@@ -453,6 +453,7 @@ proconio = "0.4.1"
     * [Rust sqlxでデータベースに依存した部分のテストを書く](https://zenn.dev/htlsne/articles/rust-sqlx-test)
     * [Rustのコネクションプールはテスト間で共有できないという話](https://qiita.com/autotaker1984/items/d0ae2d7feb148ffb8989)
     * [[Rust] mockallで単体テスト](https://qiita.com/deepgreenAN/items/1b9887db759bbb96c9b6)
+    * [How to Test](https://matklad.github.io/2021/05/31/how-to-test.html#How-to-Test)
 * パフォーマンス
     * [Rust のパフォーマンスに何が影響を与えているのか](https://qiita.com/benki/items/ee14ee6cb9f209a080e1)
 

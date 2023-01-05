@@ -138,7 +138,8 @@
 * [Clean Code with Rust & Axum](https://www.propelauth.com/post/clean-code-with-rust-and-axum)
 * [A Look at dyn* Code Generation](https://blog.theincredibleholk.org/blog/2022/12/12/dyn-star-codegen/)
 * [Data-driven performance optimization with Rust and Miri](https://medium.com/source-and-buggy/data-driven-performance-optimization-with-rust-and-miri-70cb6dde0d35)
-* []()
+* Building a Simple DB in Rust
+    * [Part 1 - Parsing](https://johns.codes/blog/build-a-db/part01)
 * []()
 * []()
 
