@@ -156,6 +156,7 @@ proconio = "0.4.1"
 * [Plotters Developer Guide](https://plotters-rs.github.io/book/intro/introduction.html)
 * [Crate csv](https://docs.rs/csv/1.1.6/csv/)
 * [Overview Serde](https://serde.rs/)
+* [Rust Atomics and Locks](https://marabos.nl/atomics/)
 
 ---
 
