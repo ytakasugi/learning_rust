@@ -328,6 +328,7 @@ proconio = "0.4.1"
     * [Rustにおける関数ポインタやクロージャ](https://zenn.dev/garasubo/articles/97f794cfd469b9d51c7b)
     * [Rustのクロージャtraitについて調べた(FnOnce, FnMut, Fn)](https://qiita.com/shortheron/items/c1735dc4c7c78b0b55e9)
     * [クロージャ 再考](https://zenn.dev/0kate/articles/7133f720a31441)
+    * [Rust でネストしたクロージャを関数の戻り値にする](https://qiita.com/fits/items/405a2147e6f20410b8c3)
 * `Option`型、`Result`型
   * [Rust のエラーハンドリングはシンタックスシュガーが豊富で完全に初見殺しなので自信を持って使えるように整理してみたら完全に理解した](https://qiita.com/nirasan/items/321e7cc42e0e0f238254?utm_content=buffera6970&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer)
   * [thiserrorでカスタムエラーを実装する](https://zenn.dev/hideoka/articles/e2408b1eb8ee3f)
