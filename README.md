@@ -372,6 +372,7 @@ proconio = "0.4.1"
   * [非同期処理の道具箱](https://hack.nikkei.com/blog/advent20221213/)
   * [RustのTokioで非同期とグリーンスレッドを理解する](https://zenn.dev/tfutada/articles/5e87d6e7131e8e)
   * [Rustの非同期プログラミングの個人的まとめ 2022年版](https://qiita.com/fujitayy/items/03848da48a31948ad5b6)
+  * [Rustの非同期デバッグツールを使いこなせ!](https://rust-lang-jp.zulipchat.com/#narrow/is/starred)
 
 * セマンティクス
   * [コピーセマンティクスとムーブセマンティクス](https://opaupafz2.hatenablog.com/entry/2021/07/17/202701)
