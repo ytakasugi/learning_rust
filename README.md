@@ -606,3 +606,4 @@ proconio = "0.4.1"
 - [30歳からのプログラミング](https://numb86-tech.hatenablog.com/archive/category/Rust)
 - [Happy Developing](https://blog.ymgyt.io/archive/category/Rust)
 - [Writing an OS in Rust ](https://os.phil-opp.com/ja/)
+- [Rust concepts I wish I learned earlier](https://rauljordan.com/rust-concepts-i-wish-i-learned-earlier/)
