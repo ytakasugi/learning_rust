@@ -140,8 +140,9 @@
 * [Data-driven performance optimization with Rust and Miri](https://medium.com/source-and-buggy/data-driven-performance-optimization-with-rust-and-miri-70cb6dde0d35)
 * Building a Simple DB in Rust
     * [Part 1 - Parsing](https://johns.codes/blog/build-a-db/part01)
+    * [Part 2 - Basic Execution](https://johns.codes/blog/build-a-db/part02)
 * [Rust and Default Parameters](https://www.thecodedmessage.com/posts/default-params/)
-* []()
+* [Temporary Values, Borrowing, and Lifetimes](https://blog.vashishtha.in/temporary-lifetimes/)
 * []()
 * []()
 * []()
