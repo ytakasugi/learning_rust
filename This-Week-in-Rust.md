@@ -143,7 +143,7 @@
     * [Part 2 - Basic Execution](https://johns.codes/blog/build-a-db/part02)
 * [Rust and Default Parameters](https://www.thecodedmessage.com/posts/default-params/)
 * [Temporary Values, Borrowing, and Lifetimes](https://blog.vashishtha.in/temporary-lifetimes/)
-* []()
+* [Rust error handling with anyhow](https://antoinerr.github.io/blog-website/2023/01/28/rust-anyhow.html)
 * []()
 * []()
 * []()
@@ -151,7 +151,7 @@
 
 ---
 
-#### GitHub
+### GitHub
 
 * [rust-ffi-to-c](https://github.com/vanjacosic/rust-ffi-to-c)
 
@@ -161,3 +161,10 @@
 
 * [Why Rust?](https://www.rerun.io/blog/why-rust)
 * [The Little Joys of Code: Proc Macros](https://felix-knorr.net/posts/2022-10-14-proc-macros.html)
+
+---
+
+### Seriese
+
+* Protohackers in Rust, Part 00
+    * [Dipping the toe in async and Tokio](https://d2718.net/blog/posts/protohax_00.html)
