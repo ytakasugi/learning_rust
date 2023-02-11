@@ -168,3 +168,6 @@
 
 * Protohackers in Rust, Part 00
     * [Dipping the toe in async and Tokio](https://d2718.net/blog/posts/protohax_00.html)
+* Rust Is Beyond Object-Oriented
+    * [Part 1: Intro and Encapsulation](https://www.thecodedmessage.com/posts/oop-1-encapsulation/)
+    * [Part 2: Polymorphism](https://www.thecodedmessage.com/posts/oop-2-polymorphism/)

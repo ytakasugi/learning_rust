@@ -285,6 +285,7 @@ proconio = "0.4.1"
   * [Optimized enum sizes in Rust](https://adeschamps.github.io/enum-size)
   * [Get Started with Rust: Enums](https://serokell.io/blog/enums-and-pattern-matching)
   * [[Rust] 複数のEnumを扱う条件分岐](https://zenn.dev/ragnar1904/articles/rust-handle-multiple-enums)
+  * [Enumを自動で網羅的にテストしてみた](https://speakerdeck.com/estie/rusthe-mowakaranai-dot-dot-dot-number-5)
 * メソッド
     * [Rustの`Default::default()`, `T::new()`, `T::from()`の使い分け](https://qiita.com/syuuu/items/0e4ad366d60d6eb0c7ed)
     * [メソッドにおける `(&mut self)` と `(self) -> self` の使い分け](https://qiita.com/peperontium1517/items/b5b3e46a7a6b36c7bad8)
@@ -330,6 +331,7 @@ proconio = "0.4.1"
     * [Rustのクロージャtraitについて調べた(FnOnce, FnMut, Fn)](https://qiita.com/shortheron/items/c1735dc4c7c78b0b55e9)
     * [クロージャ 再考](https://zenn.dev/0kate/articles/7133f720a31441)
     * [Rust でネストしたクロージャを関数の戻り値にする](https://qiita.com/fits/items/405a2147e6f20410b8c3)
+    * [Rustのクロージャの型について](https://zenn.dev/hanao/articles/2fe666cf4710c2)
 * `Option`型、`Result`型
   * [Rust のエラーハンドリングはシンタックスシュガーが豊富で完全に初見殺しなので自信を持って使えるように整理してみたら完全に理解した](https://qiita.com/nirasan/items/321e7cc42e0e0f238254?utm_content=buffera6970&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer)
   * [thiserrorでカスタムエラーを実装する](https://zenn.dev/hideoka/articles/e2408b1eb8ee3f)
@@ -422,6 +424,7 @@ proconio = "0.4.1"
   * [A Better Way to Borrow in Rust: Stack Tokens](https://lucumr.pocoo.org/2022/11/23/stack-tokens/)
   * [Self-referential types for fun and profit](https://morestina.net/blog/1868/self-referential-types-for-fun-and-profit)
   * [Rustのライフタイムについて知りたい](https://qiita.com/toreis/items/970bcfed6a930e3c84dc)
+  * [`&mut`をレシーバにしたメソッドでの所有権について](https://zenn.dev/hanao/articles/7d665b124416d9)
 
 * コンパイラ
   * [本家Rustコンパイラのソースを読もうとしてみる（1）](https://qiita.com/0yoyoyo/items/eba97a019d0e60324263)
