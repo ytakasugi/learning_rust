@@ -134,6 +134,7 @@ proconio = "0.4.1"
   * [The Rust Programming Language(旧和訳リポジトリ)](https://github.com/rust-lang-ja/the-rust-programming-language-ja/tree/master/1.9/ja/book)
 * [The Rustonomicon](https://doc.rust-lang.org/nomicon/intro.html)
 * [The Rust Reference](https://doc.rust-lang.org/reference/introduction.html)
+* [LifetimeKata](https://tfpk.github.io/lifetimekata/index.html)
 * [This Week in Rust](https://this-week-in-rust.org/)
 * [RustBelt](https://plv.mpi-sws.org/rustbelt/#publications)
 * [The Little Book of Rust Macros](https://danielkeep.github.io/tlborm/book/index.html)
@@ -462,6 +463,7 @@ proconio = "0.4.1"
     * [Rustのコネクションプールはテスト間で共有できないという話](https://qiita.com/autotaker1984/items/d0ae2d7feb148ffb8989)
     * [[Rust] mockallで単体テスト](https://qiita.com/deepgreenAN/items/1b9887db759bbb96c9b6)
     * [How to Test](https://matklad.github.io/2021/05/31/how-to-test.html#How-to-Test)
+    * [【Rust】fakeでテスト用のフェイクデータを作成する](https://qiita.com/deepgreenAN/items/b139cb0d359213a748f1)
 * パフォーマンス
     * [Rust のパフォーマンスに何が影響を与えているのか](https://qiita.com/benki/items/ee14ee6cb9f209a080e1)
 
