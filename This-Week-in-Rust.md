@@ -144,7 +144,7 @@
 * [Rust and Default Parameters](https://www.thecodedmessage.com/posts/default-params/)
 * [Temporary Values, Borrowing, and Lifetimes](https://blog.vashishtha.in/temporary-lifetimes/)
 * [Rust error handling with anyhow](https://antoinerr.github.io/blog-website/2023/01/28/rust-anyhow.html)
-* []()
+* [Refactoring in Rust: Abstraction with the Newtype Pattern](https://fettblog.eu/refactoring-rust-abstraction-newtype/)
 * []()
 * []()
 * []()
