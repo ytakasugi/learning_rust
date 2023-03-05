@@ -328,6 +328,7 @@ proconio = "0.4.1"
   * [Rust の 動的ディスパッチとか静的ディスパッチとか](https://blog.ojisan.io/rust-dispatch)
   * [Polymorphism in Rust](https://oswalt.dev/2021/06/polymorphism-in-rust/)
   * [トレイトオブジェクトとして有用なトレイトがオブジェクトセーフになっている](https://zenn.dev/gawetto/articles/4ccd67b3705c02)
+  * [Rust の文字列の種類と変換トレイトについて](https://zenn.dev/suzuki_hoge/books/2023-03-rust-strings-8868f207b3ed18)
 * 関数ポインタ、クロージャ
     * [Rustにおける関数ポインタやクロージャ](https://zenn.dev/garasubo/articles/97f794cfd469b9d51c7b)
     * [Rustのクロージャtraitについて調べた(FnOnce, FnMut, Fn)](https://qiita.com/shortheron/items/c1735dc4c7c78b0b55e9)
