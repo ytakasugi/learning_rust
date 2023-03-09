@@ -146,6 +146,8 @@
 * [Rust error handling with anyhow](https://antoinerr.github.io/blog-website/2023/01/28/rust-anyhow.html)
 * [Refactoring in Rust: Abstraction with the Newtype Pattern](https://fettblog.eu/refactoring-rust-abstraction-newtype/)
 * [Rust Trait Implementations and References](https://www.judy.co.uk/blog/rust-traits-and-references/)
+* [Safety and Soundness in Rust](https://jacko.io/safety_and_soundness.html)
+* [Rust's BufRead, And When To Use It](https://www.brandons.me/blog/bufread-and-when-to-use-it)
 * []()
 * []()
 
