@@ -148,6 +148,12 @@
 * [Rust Trait Implementations and References](https://www.judy.co.uk/blog/rust-traits-and-references/)
 * [Safety and Soundness in Rust](https://jacko.io/safety_and_soundness.html)
 * [Rust's BufRead, And When To Use It](https://www.brandons.me/blog/bufread-and-when-to-use-it)
+* [Tour of a HTTP request in Rust](https://rustwebdevelopment.com/blog/tour-http/)
+* [Beginning Rust: by exploring a very basic Axum web API in detail](https://medium.com/@lindblomdev/beginning-rust-by-exploring-a-very-basic-axum-web-api-in-detail-1f4c87e422e0)
+* []()
+* []()
+* []()
+* []()
 * []()
 * []()
 
