@@ -603,6 +603,7 @@ proconio = "0.4.1"
 - [How much does Rust's bounds checking actually cost?](https://blog.readyset.io/bounds-checks/)
 - [How to build a Rust API with the builder pattern](https://blog.logrocket.com/build-rust-api-builder-pattern/)
 - [RustでWebアプリケーションのバックエンドを開発するには](https://eh-career.com/engineerhub/entry/2022/09/12/093000/)
+- [Rust での開発を便利にする VSCode 拡張機能たち](https://zenn.dev/t4aru/articles/4a77ec07432e57)
 
 ### Zenn(scrap)
 * [「Futures Explained in 200 Lines of Rust」を読む](https://zenn.dev/skanehira/scraps/9d2f7e3c105014)
