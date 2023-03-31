@@ -169,6 +169,10 @@
 
 * [Why Rust?](https://www.rerun.io/blog/why-rust)
 * [The Little Joys of Code: Proc Macros](https://felix-knorr.net/posts/2022-10-14-proc-macros.html)
+* [Rust's Golden Rule](https://steveklabnik.com/writing/rusts-golden-rule)
+* [LINEARITY AND CONTROL](https://blog.yoshuawuyts.com/linearity-and-control/)
+* []()
+* []()
 
 ---
 

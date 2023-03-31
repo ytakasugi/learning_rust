@@ -613,6 +613,7 @@ proconio = "0.4.1"
 ### ブログ
 - [κeenのHappy Hacκing Blog](https://keens.github.io/categories/rust/)
 - [簡潔なQ](https://qnighy.hatenablog.com/archive/category/Rust)
+    - [Rustの日付時刻処理(`std::time`, time, chrono)](https://qnighy.hatenablog.com/entry/2019/04/21/190000)
 - [minerva](https://minerva.mamansoft.net/Notes/Rust)
 - [やってみる](https://ytyaru.hatenablog.com/archive/category/Rust)
 - [30歳からのプログラミング](https://numb86-tech.hatenablog.com/archive/category/Rust)
