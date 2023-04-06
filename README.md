@@ -204,6 +204,7 @@ proconio = "0.4.1"
   * [Rust を始めるための資料集](https://blog-dry.com/entry/2021/01/23/141936)
   * [Rustを始める時に役立つ資料](https://qiita.com/kxkx5150/items/ff70c564c5c136ba3d25)
   * [35 Rust Learning Resources Every Beginner Should Know in 2022](https://apollolabsblog.hashnode.dev/35-rust-learning-resources-every-beginner-should-know-in-2022)
+  * [58 Rust Resources Every Learner Should Know in 2023](https://apollolabsblog.hashnode.dev/58-rust-resources-every-learner-should-know-in-2023)
   * [Rustの良質な学習リソースをまとめる](https://www.bioerrorlog.work/entry/rust-good-learning-resources)
   * [Rust の最初のステップ](https://docs.microsoft.com/ja-jp/learn/paths/rust-first-steps/)
   * [Rust入門](https://zenn.dev/mebiusbox/books/22d4c1ed9b0003/viewer/6d5875)
@@ -329,6 +330,7 @@ proconio = "0.4.1"
   * [Polymorphism in Rust](https://oswalt.dev/2021/06/polymorphism-in-rust/)
   * [トレイトオブジェクトとして有用なトレイトがオブジェクトセーフになっている](https://zenn.dev/gawetto/articles/4ccd67b3705c02)
   * [Rust の文字列の種類と変換トレイトについて](https://zenn.dev/suzuki_hoge/books/2023-03-rust-strings-8868f207b3ed18)
+  * [A definitive guide to sealed traits in Rust](https://predr.ag/blog/definitive-guide-to-sealed-traits-in-rust/)
 * 関数ポインタ、クロージャ
     * [Rustにおける関数ポインタやクロージャ](https://zenn.dev/garasubo/articles/97f794cfd469b9d51c7b)
     * [Rustのクロージャtraitについて調べた(FnOnce, FnMut, Fn)](https://qiita.com/shortheron/items/c1735dc4c7c78b0b55e9)

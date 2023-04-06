@@ -152,7 +152,7 @@
 * [Beginning Rust: by exploring a very basic Axum web API in detail](https://medium.com/@lindblomdev/beginning-rust-by-exploring-a-very-basic-axum-web-api-in-detail-1f4c87e422e0)
 * [Using Cow in Rust for efficient memory utilization](https://blog.logrocket.com/using-cow-rust-efficient-memory-utilization/)
 * [AsRef vs Borrow trait (ft. ChatGPT)](https://rusty-ferris.pages.dev/blog/asref-vs-borrow-trait/)
-* []()
+* [Thoughts on async closures](https://smallcultfollowing.com/babysteps/blog/2023/03/29/thoughts-on-async-closures/)
 * []()
 * []()
 * []()
