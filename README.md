@@ -224,6 +224,9 @@ proconio = "0.4.1"
 * 定数
     * [[Rust] once_cell にできて lazy-static にできないこと](https://zenn.dev/sai_ys/articles/f66f1143fb45d1)
 
+* 制御フロー
+  * [Control flow patterns in Rust](https://symbolica.io/posts/control_flow_patterns/)
+
 * 文字列
   * [[Rust] 文字列 String から文字列スライス str へ変換される仕組み](https://qiita.com/kerupani129/items/1d170d59720328d7a7c1)
   * [[Rust] 文字列スライス str から文字列 String への変換とその仕組み](https://qiita.com/kerupani129/items/89f31bab79ebba43aeb4)

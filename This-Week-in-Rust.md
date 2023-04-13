@@ -183,3 +183,7 @@
 * Rust Is Beyond Object-Oriented
     * [Part 1: Intro and Encapsulation](https://www.thecodedmessage.com/posts/oop-1-encapsulation/)
     * [Part 2: Polymorphism](https://www.thecodedmessage.com/posts/oop-2-polymorphism/)
+
+### Video
+
+* [Rust Axum Full Course - Web Development](https://www.youtube.com/watch?v=XZtlD_m59sM)
