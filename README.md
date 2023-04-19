@@ -48,6 +48,8 @@ proconio = "0.4.1"
 * [rustviz](https://github.com/rustviz/rustviz)
 * [rust blog](https://github.com/pretzelhammer/rust-blog)
 * [learn-rust-with-web-application](https://github.com/AkifumiSato/learn-rust-with-web-application)
+* [willcrichton/flowistry](https://github.com/willcrichton/flowistry/)
+* [cognitive-engineering-lab/aquascope](https://github.com/cognitive-engineering-lab/aquascope)
 
 ---
 
@@ -136,7 +138,7 @@ proconio = "0.4.1"
 * [The Rust Reference](https://doc.rust-lang.org/reference/introduction.html)
 * [LifetimeKata](https://tfpk.github.io/lifetimekata/index.html)
 * [This Week in Rust](https://this-week-in-rust.org/)
-* [RustBelt](https://plv.mpi-sws.org/rustbelt/#publications)
+* [RustBelt](https://plv.mpi-sws.org/rustbelt/)
 * [The Little Book of Rust Macros](https://danielkeep.github.io/tlborm/book/index.html)
 * [Rust チートシート](https://cheats.rs/)
 * [Tour of Rust](https://tourofrust.com/00_ja.html)
