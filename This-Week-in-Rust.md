@@ -153,7 +153,7 @@
 * [Using Cow in Rust for efficient memory utilization](https://blog.logrocket.com/using-cow-rust-efficient-memory-utilization/)
 * [AsRef vs Borrow trait (ft. ChatGPT)](https://rusty-ferris.pages.dev/blog/asref-vs-borrow-trait/)
 * [Thoughts on async closures](https://smallcultfollowing.com/babysteps/blog/2023/03/29/thoughts-on-async-closures/)
-* []()
+* [Understanding Rust Thread Safety](https://onesignal.com/blog/thread-safety-rust/)
 * []()
 * []()
 
