@@ -437,6 +437,7 @@ proconio = "0.4.1"
   * [`&mut`をレシーバにしたメソッドでの所有権について](https://zenn.dev/hanao/articles/7d665b124416d9)
   * [メモリアライメントについて調べた](https://qiita.com/ohakutsu/items/c5ea014a1285f4b6f2a6)
       * [Rustの構造体メモリレイアウト](https://ryochack.hatenablog.com/entry/2018/03/23/184943)
+  * [Rcに内包されたデータを安全に返す方法](https://zenn.dev/j5ik2o/articles/dd346612a38749)
 
 * コンパイラ
   * [本家Rustコンパイラのソースを読もうとしてみる（1）](https://qiita.com/0yoyoyo/items/eba97a019d0e60324263)
@@ -613,6 +614,7 @@ proconio = "0.4.1"
 - [How to build a Rust API with the builder pattern](https://blog.logrocket.com/build-rust-api-builder-pattern/)
 - [RustでWebアプリケーションのバックエンドを開発するには](https://eh-career.com/engineerhub/entry/2022/09/12/093000/)
 - [Rust での開発を便利にする VSCode 拡張機能たち](https://zenn.dev/t4aru/articles/4a77ec07432e57)
+- [Rustにはシャローコピーがわからない](https://qiita.com/namn1125/items/2d84086394e97489776a)
 
 ### Zenn(scrap)
 * [「Futures Explained in 200 Lines of Rust」を読む](https://zenn.dev/skanehira/scraps/9d2f7e3c105014)
