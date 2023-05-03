@@ -50,6 +50,7 @@ proconio = "0.4.1"
 * [learn-rust-with-web-application](https://github.com/AkifumiSato/learn-rust-with-web-application)
 * [willcrichton/flowistry](https://github.com/willcrichton/flowistry/)
 * [cognitive-engineering-lab/aquascope](https://github.com/cognitive-engineering-lab/aquascope)
+* [dtolnay/cargo-llvm-lines](https://github.com/dtolnay/cargo-llvm-lines)
 
 ---
 
