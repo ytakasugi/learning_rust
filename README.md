@@ -387,6 +387,8 @@ proconio = "0.4.1"
   * [Rustの非同期プログラミングの個人的まとめ 2022年版](https://qiita.com/fujitayy/items/03848da48a31948ad5b6)
   * [Rustの非同期デバッグツールを使いこなせ!](https://rust-lang-jp.zulipchat.com/#narrow/is/starred)
   * [The size of Rust Futures](https://swatinem.de/blog/future-size/)
+  * [WRITE CODE USING ASYNC/AWAIT IN RUST](https://developerlife.com/2022/03/12/rust-tokio/)
+  * [How does async Rust work](https://bertptrs.nl/2023/04/27/how-does-async-rust-work.html)
 
 * セマンティクス
   * [コピーセマンティクスとムーブセマンティクス](https://opaupafz2.hatenablog.com/entry/2021/07/17/202701)
