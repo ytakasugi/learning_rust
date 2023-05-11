@@ -354,6 +354,7 @@ proconio = "0.4.1"
   * [RustのResultとOptionの変換関数](https://qiita.com/mikiymk001/items/5df69c072472f198c173)
   * [Beginner-Intermediate Rust Error Handling](https://blog.vashishtha.in/rust-error-handling/)
   * [Rustエラーハンドリング・チートシート](https://qiita.com/toast-uz/items/7bcf45037b98d83132b1)
+  * [Rustにおけるエラーハンドリング](https://zenn.dev/shimopino/articles/understand-rust-error-handling)
 
 * WEB
   * [Rustとactix_webでWebアプリケーションを作ってみる](https://qiita.com/c3drive/items/71dda219f0193ae72069)
