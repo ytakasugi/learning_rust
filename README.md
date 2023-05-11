@@ -441,6 +441,7 @@ proconio = "0.4.1"
   * [メモリアライメントについて調べた](https://qiita.com/ohakutsu/items/c5ea014a1285f4b6f2a6)
       * [Rustの構造体メモリレイアウト](https://ryochack.hatenablog.com/entry/2018/03/23/184943)
   * [Rcに内包されたデータを安全に返す方法](https://zenn.dev/j5ik2o/articles/dd346612a38749)
+  * [Rustの2種類の`'static`]()
 
 * コンパイラ
   * [本家Rustコンパイラのソースを読もうとしてみる（1）](https://qiita.com/0yoyoyo/items/eba97a019d0e60324263)
@@ -610,7 +611,6 @@ proconio = "0.4.1"
 - [計算量オーダーについて](https://qiita.com/asksaito/items/59e0d48408f1eab081b5)
 - [初学者に教えたい、MicrosoftがGitHubで公開している教材が最高だった！](https://qiita.com/ozora/items/9c801d3b0137eccc32fa)
 - [RDBのデータモデリング・テーブル設計の際に参考にしている考え方と資料](https://zenn.dev/rebi/articles/28c7f1fee5730a)
-- [ReactのSuspenseを使った非同期処理のエラーハンドリング](https://speakerdeck.com/taro28/reactnosuspensewoshi-tutafei-tong-qi-chu-li-noerahandoringu)
 - [WebエンジニアからみたRust](https://atmarkit.itmedia.co.jp/ait/series/25883/)
 - [Rust Monthly Topics](https://gihyo.jp/list/group/Rust-Monthly-Topics#rt:/article/2022/10/rust-monthly-topics-02)
 - [How much does Rust's bounds checking actually cost?](https://blog.readyset.io/bounds-checks/)
@@ -632,3 +632,5 @@ proconio = "0.4.1"
 - [Happy Developing](https://blog.ymgyt.io/archive/category/Rust)
 - [Writing an OS in Rust ](https://os.phil-opp.com/ja/)
 - [Rust concepts I wish I learned earlier](https://rauljordan.com/rust-concepts-i-wish-i-learned-earlier/)
+- [paild tech blog](https://techblog.paild.co.jp/)
+    - [Javaエンジニアだった私が当時困ったRustのコンセプト](https://techblog.paild.co.jp/entry/2023/04/24/172723)
