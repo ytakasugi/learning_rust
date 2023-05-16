@@ -253,7 +253,7 @@ proconio = "0.4.1"
   * [【Rust】ループとイテレータの使い方](https://tyfkda.github.io/blog/2020/06/13/rust-iter.html)
   * [Rustのイテレータについて](https://qiita.com/k-yanai60/items/b522c57c518fbf69a38d)
 * コレクション型
-  * [Rustで`Vec<T>`に`&`を付けると`&[T]`が得られる理由](https://qiita.com/mosh/items/51bd202c9f738956829e)
+  * [Rustで`Vec<T>`に`&`を付けると`&[T]`が得られる理由、及びDerefの解説](https://qiita.com/mosh/items/51bd202c9f738956829e)
   * [[Rust] 配列やベクタが自動でスライスに変換される仕組み](https://qiita.com/kerupani129/items/17584274379f0c65fc34)
   * [Rustでどんな値型も格納できるHashMapを実装する](https://zenn.dev/j5ik2o/articles/21d477b8dbbf70)
   * [Rust で String の Vec を作る](https://zenn.dev/takanori_is/articles/make-string-vec-in-rust)
@@ -337,6 +337,8 @@ proconio = "0.4.1"
   * [トレイトオブジェクトとして有用なトレイトがオブジェクトセーフになっている](https://zenn.dev/gawetto/articles/4ccd67b3705c02)
   * [Rust の文字列の種類と変換トレイトについて](https://zenn.dev/suzuki_hoge/books/2023-03-rust-strings-8868f207b3ed18)
   * [A definitive guide to sealed traits in Rust](https://predr.ag/blog/definitive-guide-to-sealed-traits-in-rust/)
+  * [Rust: 継承を空トレイトを用いて実現する方法](https://qiita.com/suin/items/4c06619f6f9e67b68a1c)
+
 * 関数ポインタ、クロージャ
     * [Rustにおける関数ポインタやクロージャ](https://zenn.dev/garasubo/articles/97f794cfd469b9d51c7b)
     * [Rustのクロージャtraitについて調べた(FnOnce, FnMut, Fn)](https://qiita.com/shortheron/items/c1735dc4c7c78b0b55e9)
@@ -442,7 +444,9 @@ proconio = "0.4.1"
   * [メモリアライメントについて調べた](https://qiita.com/ohakutsu/items/c5ea014a1285f4b6f2a6)
       * [Rustの構造体メモリレイアウト](https://ryochack.hatenablog.com/entry/2018/03/23/184943)
   * [Rcに内包されたデータを安全に返す方法](https://zenn.dev/j5ik2o/articles/dd346612a38749)
-  * [Rustの2種類の`'static`]()
+  * [構造体のネストに関する借用ルール忘備録](https://qiita.com/shigunodo/items/761f50cf269e0c75761a)
+  * [Cell, RefCell, UnsafeCellの違いとその使い分け](https://qiita.com/mosh/items/c7d20811df218bb3188e)
+  * [Rustの2種類の`'static`](https://laysakura.github.io/2020/05/21/rust-static-lifetime-and-static-bounds/)
 
 * コンパイラ
   * [本家Rustコンパイラのソースを読もうとしてみる（1）](https://qiita.com/0yoyoyo/items/eba97a019d0e60324263)
@@ -518,7 +522,7 @@ proconio = "0.4.1"
   * [日経平均のチャート画像を毎日Twitter投稿するLambda関数（Rust）を作る](https://qiita.com/c3drive/items/59fbdfade4aa2317db83)
   * [BFSをrustで実装](https://qiita.com/butzsuppin/items/4ec9bd61047aba286e95)
   * [RustでBinary treeの left, right のポインターに使うデータ型を考える](https://qiita.com/syuuu/items/11743f61852672c92268)
-  * [RustのOptionの as_ref() を堪能できる Hello wold](https://qiita.com/syuuu/items/ac3f72370ee07998be70)
+  * [RustのOptionの `as_ref()` を堪能できる Hello wold](https://qiita.com/syuuu/items/ac3f72370ee07998be70)
   * [順列の組み合わせ全列挙（再帰関数の理解含む）](https://qiita.com/butzsuppin/items/c32f3d30e3a4e9d4fc55)
   * [【Rust】モダンなKey-Value型データベースSledのテーブルをSerdeとTraitで管理してORMapperを実現する](https://zenn.dev/yosemat/articles/3c281c7d6e073d)
   * [RustでMacで動くCコンパイラを作成する](https://qiita.com/AtsukiTak/items/0819ee57af2639891ecf)
