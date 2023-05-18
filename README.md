@@ -639,3 +639,4 @@ proconio = "0.4.1"
 - [Rust concepts I wish I learned earlier](https://rauljordan.com/rust-concepts-i-wish-i-learned-earlier/)
 - [paild tech blog](https://techblog.paild.co.jp/)
     - [Javaエンジニアだった私が当時困ったRustのコンセプト](https://techblog.paild.co.jp/entry/2023/04/24/172723)
+- [Rust Magazine](https://rustmagazine.org/)
