@@ -640,3 +640,5 @@ proconio = "0.4.1"
 - [paild tech blog](https://techblog.paild.co.jp/)
     - [Javaエンジニアだった私が当時困ったRustのコンセプト](https://techblog.paild.co.jp/entry/2023/04/24/172723)
 - [Rust Magazine](https://rustmagazine.org/)
+- [blog.ojisan.io](https://blog.ojisan.io/tags/rust/)
+    - [Rust の 所有権、借用、ライフタイムについて初心者目線で説明と整理を試みる](https://blog.ojisan.io/rust-ownership-wakaran/)
