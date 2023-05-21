@@ -357,6 +357,8 @@ proconio = "0.4.1"
   * [Beginner-Intermediate Rust Error Handling](https://blog.vashishtha.in/rust-error-handling/)
   * [Rustエラーハンドリング・チートシート](https://qiita.com/toast-uz/items/7bcf45037b98d83132b1)
   * [Rustにおけるエラーハンドリング](https://zenn.dev/shimopino/articles/understand-rust-error-handling)
+  * [Rust: anyhowを使ってビルトインエラーにバックトレース情報を付加する方法](https://qiita.com/suin/items/b41f479472c872a47f02)
+  * [Rust: thiserrorで`anyhow::Error`を手軽に隠蔽する方法](https://qiita.com/suin/items/4d8b47f84fddfc3d168f)
 
 * WEB
   * [Rustとactix_webでWebアプリケーションを作ってみる](https://qiita.com/c3drive/items/71dda219f0193ae72069)
