@@ -345,6 +345,7 @@ proconio = "0.4.1"
     * [クロージャ 再考](https://zenn.dev/0kate/articles/7133f720a31441)
     * [Rust でネストしたクロージャを関数の戻り値にする](https://qiita.com/fits/items/405a2147e6f20410b8c3)
     * [Rustのクロージャの型について](https://zenn.dev/hanao/articles/2fe666cf4710c2)
+    * [A guide to closures in Rust](https://hashrust.com/blog/a-guide-to-closures-in-rust/)
 * `Option`型、`Result`型
   * [Rust のエラーハンドリングはシンタックスシュガーが豊富で完全に初見殺しなので自信を持って使えるように整理してみたら完全に理解した](https://qiita.com/nirasan/items/321e7cc42e0e0f238254?utm_content=buffera6970&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer)
   * [thiserrorでカスタムエラーを実装する](https://zenn.dev/hideoka/articles/e2408b1eb8ee3f)
@@ -486,6 +487,7 @@ proconio = "0.4.1"
     * [[Rust] mockallで単体テスト](https://qiita.com/deepgreenAN/items/1b9887db759bbb96c9b6)
     * [How to Test](https://matklad.github.io/2021/05/31/how-to-test.html#How-to-Test)
     * [【Rust】fakeでテスト用のフェイクデータを作成する](https://qiita.com/deepgreenAN/items/b139cb0d359213a748f1)
+    * [Mocking in Rust: Mockall and alternatives](https://blog.logrocket.com/mocking-rust-mockall-alternatives)
 * パフォーマンス
     * [Rust のパフォーマンスに何が影響を与えているのか](https://qiita.com/benki/items/ee14ee6cb9f209a080e1)
 
