@@ -162,6 +162,7 @@ proconio = "0.4.1"
 * [Crate csv](https://docs.rs/csv/1.1.6/csv/)
 * [Overview Serde](https://serde.rs/)
 * [Rust Atomics and Locks](https://marabos.nl/atomics/)
+* [Effective Rsut](https://www.lurklurk.org/effective-rust/)
 
 ---
 
