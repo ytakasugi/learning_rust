@@ -154,6 +154,12 @@
 * [AsRef vs Borrow trait (ft. ChatGPT)](https://rusty-ferris.pages.dev/blog/asref-vs-borrow-trait/)
 * [Thoughts on async closures](https://smallcultfollowing.com/babysteps/blog/2023/03/29/thoughts-on-async-closures/)
 * [Understanding Rust Thread Safety](https://onesignal.com/blog/thread-safety-rust/)
+* [Paired benchmarking. How to measure performance](https://www.bazhenov.me/posts/paired-benchmarking/)
+* [PATTERN EXTENSIONS](https://blog.yoshuawuyts.com/pattern-extensions/)
+* how I finally understood `async/await` in Rust
+    * [part1](https://hegdenu.net/posts/understanding-async-await-1/)
+* []()
+* []()
 * []()
 * []()
 
