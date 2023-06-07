@@ -381,6 +381,7 @@ proconio = "0.4.1"
   * [Rustにおけるスレッド間でのデータ共有と`std::thread::scope`](https://zenn.dev/toru3/articles/ce9232f53c47c8)
   * [Rustでfor in内処理を簡単に並列処理](https://zenn.dev/oreno_dinner/articles/f9c5ee5a25b4e3)
   * [Rustで並列処理数(スレッド数)を一定にする方法](https://zenn.dev/oreno_dinner/articles/7cdf83b506ba9b)
+  * [Rustの`once_cell::OnceCell`と`std::cell::OnceCell`の違い](https://zenn.dev/reoring/articles/470db2fa949b44)
 * 非同期
   * [Rustの非同期プログラミングをマスターする](https://tech-blog.optim.co.jp/entry/2019/11/08/163000)
   * [非同期 Rust パターン](https://qiita.com/legokichi/items/4f2c09330f90626600a6)
