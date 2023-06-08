@@ -158,7 +158,7 @@
 * [PATTERN EXTENSIONS](https://blog.yoshuawuyts.com/pattern-extensions/)
 * how I finally understood `async/await` in Rust
     * [part1](https://hegdenu.net/posts/understanding-async-await-1/)
-* []()
+* [Demystifying trait generics in Rust](https://gruebelinchen.wordpress.com/2023/06/06/demystifying-trait-generics-in-rust/)
 * []()
 * []()
 * []()
