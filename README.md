@@ -648,3 +648,6 @@ proconio = "0.4.1"
 - [Rust Magazine](https://rustmagazine.org/)
 - [blog.ojisan.io](https://blog.ojisan.io/tags/rust/)
     - [Rust の 所有権、借用、ライフタイムについて初心者目線で説明と整理を試みる](https://blog.ojisan.io/rust-ownership-wakaran/)
+- [まくまく Rust ノート](https://maku77.github.io/rust/)
+- [DevelopersIO](https://dev.classmethod.jp/tags/rust/)
+    - [Rustでコンテナを実装してみる(超シンプル編）](https://dev.classmethod.jp/articles/rust-container-simple/)
