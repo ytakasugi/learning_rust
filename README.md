@@ -645,6 +645,9 @@ proconio = "0.4.1"
 - [Rust concepts I wish I learned earlier](https://rauljordan.com/rust-concepts-i-wish-i-learned-earlier/)
 - [paild tech blog](https://techblog.paild.co.jp/)
     - [Javaエンジニアだった私が当時困ったRustのコンセプト](https://techblog.paild.co.jp/entry/2023/04/24/172723)
+    - Rust の DI を考える
+        - [Rust の DI を考える — Part 1: DI とは何だったか](https://techblog.paild.co.jp/entry/2023/03/28/160241)
+        - [Rust の DI を考える –– Part 2: Rust における DI の手法の整理](https://techblog.paild.co.jp/entry/2023/06/12/170637)
 - [Rust Magazine](https://rustmagazine.org/)
 - [blog.ojisan.io](https://blog.ojisan.io/tags/rust/)
     - [Rust の 所有権、借用、ライフタイムについて初心者目線で説明と整理を試みる](https://blog.ojisan.io/rust-ownership-wakaran/)
