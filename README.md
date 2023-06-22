@@ -196,9 +196,11 @@ proconio = "0.4.1"
     - [環境構築](https://qiita.com/_53a/items/de260505610256a00dbe)
     - [概要と方針](https://qiita.com/_53a/items/304f1562b3aa0cad616d)
     - [大枠づくり](https://qiita.com/_53a/items/d7d4e4fc250bfd945d9e)
+    - [電卓づくり](https://qiita.com/_53a/items/843b7fa8328523c115cf)
 - [LLVM入門 - javascript使いがLLVM(Rust:inkwell)でjavascriptをJITコンパイルするまで](https://zenn.dev/silverbirder/articles/d6ae6419ac167e) 
 - [Axum と SQLx で Todo アプリを作る（DB は PostgreSQL）](https://zenn.dev/codemountains/articles/159a8a0323a56f)
 - [Introduction to Rust: Writing an HTTP CLI client](https://www.bekk.christmas/post/2022/1/introduction-to-rust)
+- [スマートメーターＢルートで得たデーターをRust+Polars+Plottersでグラフでみえる化する。](https://zenn.dev/akihiro_ya/articles/62a29adad0bbd1)
 
 ---
 
