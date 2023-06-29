@@ -163,7 +163,7 @@
 * [Build a CLI Tool for Data Masking, Encryption, and Decryption With Rust](https://betterprogramming.pub/build-a-cli-tool-for-data-masking-encryption-and-decryption-with-rust-ad36bea27559)
     * [GitHub](https://github.com/jayhuang75/rust-cli-med/tree/main)
     * [`magic_crypt`](https://docs.rs/magic-crypt/latest/magic_crypt/)
-* []()
+* [Code coverage in Rust](https://rrmprogramming.com/article/code-coverage-in-rust/)
 * []()
 * []()
 * []()
