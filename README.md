@@ -399,6 +399,7 @@ proconio = "0.4.1"
   * [The size of Rust Futures](https://swatinem.de/blog/future-size/)
   * [WRITE CODE USING ASYNC/AWAIT IN RUST](https://developerlife.com/2022/03/12/rust-tokio/)
   * [How does async Rust work](https://bertptrs.nl/2023/04/27/how-does-async-rust-work.html)
+  * [How to think about `async`/`await` in Rust](http://cliffle.com/blog/async-inversion/)
 
 * セマンティクス
   * [コピーセマンティクスとムーブセマンティクス](https://opaupafz2.hatenablog.com/entry/2021/07/17/202701)
@@ -656,3 +657,4 @@ proconio = "0.4.1"
 - [まくまく Rust ノート](https://maku77.github.io/rust/)
 - [DevelopersIO](https://dev.classmethod.jp/tags/rust/)
     - [Rustでコンテナを実装してみる(超シンプル編）](https://dev.classmethod.jp/articles/rust-container-simple/)
+- [RUST FOR RUSTACEANSを読んだ感想](https://blog.ymgyt.io/entry/rust-for-rustacieans/)
