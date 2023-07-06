@@ -164,8 +164,8 @@
     * [GitHub](https://github.com/jayhuang75/rust-cli-med/tree/main)
     * [`magic_crypt`](https://docs.rs/magic-crypt/latest/magic_crypt/)
 * [Code coverage in Rust](https://rrmprogramming.com/article/code-coverage-in-rust/)
-* []()
-* []()
+* [A persistent task queue in Rust](https://jmmv.dev/2023/06/iii-iv-task-queue.html)
+* [Writing E2E Tests for Axum & GraphQL](https://estebanborai.com/en/notes/writing-e2e-tests-for-axum-and-graphql)
 * []()
 * []()
 * []()
@@ -197,6 +197,18 @@
 * Rust Is Beyond Object-Oriented
     * [Part 1: Intro and Encapsulation](https://www.thecodedmessage.com/posts/oop-1-encapsulation/)
     * [Part 2: Polymorphism](https://www.thecodedmessage.com/posts/oop-2-polymorphism/)
+* how I finally understood `async/await` in Rust
+    * [part1](https://hegdenu.net/posts/understanding-async-await-1/)
+    * [part2](https://hegdenu.net/posts/understanding-async-await-2/)
+* Rust Notes on Temporary values (usage of Mutex)
+    * [part1](https://dev.to/nsengupta/rust-notes-on-temporary-values-in-method-call-expressions-1-1g8)
+    * [part2](https://dev.to/nsengupta/rust-notes-on-temporary-values-usage-of-mutex-2-403p)
+    * [part3](https://dev.to/nsengupta/rust-notes-on-temporary-values-scope-of-mutexguard-and-match-expressions-3-4c85)
+    * [part4](https://dev.to/nsengupta/rust-notes-on-temporary-values-usage-of-mutex-4-498c)
+
+### Others
+
+* [Building a Movie Collection Manager - Full Stack Workshop with Rust, Actix, SQLx, Dioxus, and Shuttle](https://bcnrust.github.io/devbcn-workshop/index.html)
 
 ### Video
 
