@@ -202,6 +202,7 @@ proconio = "0.4.1"
 - [Axum と SQLx で Todo アプリを作る（DB は PostgreSQL）](https://zenn.dev/codemountains/articles/159a8a0323a56f)
 - [Introduction to Rust: Writing an HTTP CLI client](https://www.bekk.christmas/post/2022/1/introduction-to-rust)
 - [スマートメーターＢルートで得たデーターをRust+Polars+Plottersでグラフでみえる化する。](https://zenn.dev/akihiro_ya/articles/62a29adad0bbd1)
+- [ウェブサービス開発入門 in Rust](https://zenn.dev/tkzwhr/books/rust-webapp-tutorial)
 
 ---
 
@@ -401,6 +402,7 @@ proconio = "0.4.1"
   * [WRITE CODE USING ASYNC/AWAIT IN RUST](https://developerlife.com/2022/03/12/rust-tokio/)
   * [How does async Rust work](https://bertptrs.nl/2023/04/27/how-does-async-rust-work.html)
   * [How to think about `async`/`await` in Rust](http://cliffle.com/blog/async-inversion/)
+  * [TREE-STRUCTURED CONCURRENCY](https://blog.yoshuawuyts.com/tree-structured-concurrency/)
 
 * セマンティクス
   * [コピーセマンティクスとムーブセマンティクス](https://opaupafz2.hatenablog.com/entry/2021/07/17/202701)
