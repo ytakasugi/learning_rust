@@ -170,8 +170,8 @@
 * [Beyond Pointers: How Rust outshines C++ with its Borrow Checker](https://dev.to/vikram2784/beyond-pointers-how-rust-outshines-c-with-its-borrow-checker-1mad)
 * [Put a Pin on That](https://ohadravid.github.io/posts/2023-07-put-a-pin-on-that/)
 * [Unit-testing a web service in Rust](https://jmmv.dev/2023/07/unit-testing-a-web-service.html)
-* []()
-* []()
+* [I have written a JVM in Rust](https://andreabergia.com/blog/2023/07/i-have-written-a-jvm-in-rust/)
+* [Writing a toy DNS Resolver in Rust](https://stace.dev/writing-a-dns-resolver/)
 * []()
 * []()
 * []()
@@ -213,6 +213,8 @@
     * [part2](https://dev.to/nsengupta/rust-notes-on-temporary-values-usage-of-mutex-2-403p)
     * [part3](https://dev.to/nsengupta/rust-notes-on-temporary-values-scope-of-mutexguard-and-match-expressions-3-4c85)
     * [part4](https://dev.to/nsengupta/rust-notes-on-temporary-values-usage-of-mutex-4-498c)
+* Rust multi module microservices
+    * [Part 1 - Introduction](https://medium.com/@omprakashsridharan/rust-multi-module-microservices-part-1-introduction-fb0121f1d541)
 
 ### Others
 
