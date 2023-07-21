@@ -81,6 +81,18 @@ proconio = "0.4.1"
 
 ---
 
+### mallocの動作を追いかける
+
+* [mmap編](https://qiita.com/kaityo256/items/9e78b507940b2292bf79)
+    * [malloc(3)のメモリ管理構造](https://www.valinux.co.jp/technologylibrary/document/linux/malloc0001/)
+* [`prev_size`編](https://qiita.com/kaityo256/items/2e9a368a5b627daa2ff6)
+* [`main_arena`とsbrk編](https://qiita.com/kaityo256/items/94a84dbe922eb5996a27)
+* [fastbins編](https://qiita.com/kaityo256/items/ca54b1b921d8ab96cb82)
+* [マルチスレッド編](https://qiita.com/kaityo256/items/bf6563361c502bbf062e)
+* [環境変数編](https://qiita.com/kaityo256/items/fc9a27d0df1371246951)
+
+---
+
 ### WEB
 
 * [Webデザイン初心者向け Webサイトの作り方と準備](https://web-design-textbook.com/)
