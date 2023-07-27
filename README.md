@@ -176,6 +176,7 @@ proconio = "0.4.1"
 * [Overview Serde](https://serde.rs/)
 * [Rust Atomics and Locks](https://marabos.nl/atomics/)
 * [Effective Rsut](https://www.lurklurk.org/effective-rust/)
+* [The Rust Performance Book](https://nnethercote.github.io/perf-book/introduction.html)
 
 ---
 
@@ -647,6 +648,7 @@ proconio = "0.4.1"
 - [RustでWebアプリケーションのバックエンドを開発するには](https://eh-career.com/engineerhub/entry/2022/09/12/093000/)
 - [Rust での開発を便利にする VSCode 拡張機能たち](https://zenn.dev/t4aru/articles/4a77ec07432e57)
 - [Rustにはシャローコピーがわからない](https://qiita.com/namn1125/items/2d84086394e97489776a)
+- [On Maximizing Your Rust Code's Performance](https://jbecker.dev/research/on-writing-performant-rust)
 
 ### Zenn(scrap)
 * [「Futures Explained in 200 Lines of Rust」を読む](https://zenn.dev/skanehira/scraps/9d2f7e3c105014)

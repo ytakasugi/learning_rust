@@ -215,6 +215,7 @@
     * [part4](https://dev.to/nsengupta/rust-notes-on-temporary-values-usage-of-mutex-4-498c)
 * Rust multi module microservices
     * [Part 1 - Introduction](https://medium.com/@omprakashsridharan/rust-multi-module-microservices-part-1-introduction-fb0121f1d541)
+* [Embark on your Rust learning journey with Shuttle Launchpad](https://www.shuttle.rs/launchpad)
 
 ### Others
 
