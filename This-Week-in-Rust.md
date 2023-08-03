@@ -208,6 +208,7 @@
 * how I finally understood `async/await` in Rust
     * [part1](https://hegdenu.net/posts/understanding-async-await-1/)
     * [part2](https://hegdenu.net/posts/understanding-async-await-2/)
+    * [part3](https://hegdenu.net/posts/understanding-async-await-3/)
 * Rust Notes on Temporary values (usage of Mutex)
     * [part1](https://dev.to/nsengupta/rust-notes-on-temporary-values-in-method-call-expressions-1-1g8)
     * [part2](https://dev.to/nsengupta/rust-notes-on-temporary-values-usage-of-mutex-2-403p)
@@ -216,6 +217,10 @@
 * Rust multi module microservices
     * [Part 1 - Introduction](https://medium.com/@omprakashsridharan/rust-multi-module-microservices-part-1-introduction-fb0121f1d541)
 * [Embark on your Rust learning journey with Shuttle Launchpad](https://www.shuttle.rs/launchpad)
+* I have written a JVM in Rust
+    * [part1](https://andreabergia.com/blog/2023/07/i-have-written-a-jvm-in-rust/)
+    * [part2](https://andreabergia.com/blog/2023/07/a-jvm-in-rust-part-2-the-class-files-format/)
+    * [part3](https://andreabergia.com/blog/2023/07/a-jvm-in-rust-part-3-parsing-class-files/)
 
 ### Others
 
