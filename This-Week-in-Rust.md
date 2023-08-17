@@ -174,6 +174,11 @@
 * [Writing a toy DNS Resolver in Rust](https://stace.dev/writing-a-dns-resolver/)
 * [Intercepting Allocations with the Global Allocator](https://bd103.github.io/blog/2023-06-27-global-allocators)
 * [Rust Pointer Metadata](https://bd103.github.io/blog/2023-08-06-ptr-metadata)
+* [EXPLAINING RUSTÅfS DEREF TRAIT](https://timclicks.dev/explaining-rusts-deref-trait/)
+* [Learning Async Rust With Entirely Too Many Web Servers](https://ibraheem.ca/posts/too-many-web-servers/#a-multithreaded-server)
+* []()
+* []()
+* []()
 * []()
 * []()
 * []()
@@ -221,6 +226,10 @@
     * [part1](https://andreabergia.com/blog/2023/07/i-have-written-a-jvm-in-rust/)
     * [part2](https://andreabergia.com/blog/2023/07/a-jvm-in-rust-part-2-the-class-files-format/)
     * [part3](https://andreabergia.com/blog/2023/07/a-jvm-in-rust-part-3-parsing-class-files/)
+* Rust Type System
+    * [Part 1](https://sanjuvi.github.io/Blog/posts/Rust-type-system-part-1/)
+    * [Part 2](https://sanjuvi.github.io/Blog/posts/Rust-Type-System-Part-2/)
+
 
 ### Others
 
