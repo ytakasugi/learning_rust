@@ -69,6 +69,13 @@ proconio = "0.4.1"
 
 ---
 
+### C++
+
+- [江添亮のC++入門](https://ezoeryou.github.io/cpp-intro/)
+    - [GitHub](https://github.com/EzoeRyou/cpp-intro)
+
+---
+
 ### CPU
 
 * [CPU使用率とは何か](https://t-keita.hatenadiary.jp/entry/2021/11/18/014135)
