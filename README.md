@@ -683,3 +683,4 @@ proconio = "0.4.1"
 - [DevelopersIO](https://dev.classmethod.jp/tags/rust/)
     - [Rustでコンテナを実装してみる(超シンプル編）](https://dev.classmethod.jp/articles/rust-container-simple/)
 - [RUST FOR RUSTACEANSを読んだ感想](https://blog.ymgyt.io/entry/rust-for-rustacieans/)
+- [Rustソースコードのざっくりとした歩き方](https://speakerdeck.com/tako8ki/rustsosukotonosatukuritositabu-kifang-3f597e58-222e-4c70-9b1b-e644eaa34895)

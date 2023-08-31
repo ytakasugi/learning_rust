@@ -176,7 +176,7 @@
 * [Rust Pointer Metadata](https://bd103.github.io/blog/2023-08-06-ptr-metadata)
 * [EXPLAINING RUST'S DEREF TRAIT](https://timclicks.dev/explaining-rusts-deref-trait/)
 * [Learning Async Rust With Entirely Too Many Web Servers](https://ibraheem.ca/posts/too-many-web-servers/#a-multithreaded-server)
-* []()
+* [Dependency injection in Axum handlers. A quick tour](https://tulipemoutarde.be/posts/2023-08-20-depencency-injection-rust-axum/)
 * []()
 * []()
 * []()
