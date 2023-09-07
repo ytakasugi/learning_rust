@@ -223,6 +223,7 @@ proconio = "0.4.1"
 - [Introduction to Rust: Writing an HTTP CLI client](https://www.bekk.christmas/post/2022/1/introduction-to-rust)
 - [スマートメーターＢルートで得たデーターをRust+Polars+Plottersでグラフでみえる化する。](https://zenn.dev/akihiro_ya/articles/62a29adad0bbd1)
 - [ウェブサービス開発入門 in Rust](https://zenn.dev/tkzwhr/books/rust-webapp-tutorial)
+- [Telnetクライアント自作入門](https://zenn.dev/kumavale/articles/9ed167321294cd)
 
 ---
 
@@ -684,3 +685,4 @@ proconio = "0.4.1"
     - [Rustでコンテナを実装してみる(超シンプル編）](https://dev.classmethod.jp/articles/rust-container-simple/)
 - [RUST FOR RUSTACEANSを読んだ感想](https://blog.ymgyt.io/entry/rust-for-rustacieans/)
 - [Rustソースコードのざっくりとした歩き方](https://speakerdeck.com/tako8ki/rustsosukotonosatukuritositabu-kifang-3f597e58-222e-4c70-9b1b-e644eaa34895)
+- [なるぽのブログ](https://yu-nix.com/blog/articles/list/1/?category=Rust)
