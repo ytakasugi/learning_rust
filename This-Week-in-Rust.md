@@ -178,7 +178,7 @@
 * [Learning Async Rust With Entirely Too Many Web Servers](https://ibraheem.ca/posts/too-many-web-servers/#a-multithreaded-server)
 * [Dependency injection in Axum handlers. A quick tour](https://tulipemoutarde.be/posts/2023-08-20-depencency-injection-rust-axum/)
 * [Implementing a Naive Buffered Queue in Rust](https://dhruv-ahuja.github.io/posts/implementing-buffered-queue-in-rust/)
-* []()
+* [Owned values and Futures in Rust](https://www.snoyman.com/blog/owned-values-and-futures/)
 * []()
 * []()
 * []()
