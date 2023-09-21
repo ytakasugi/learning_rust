@@ -224,6 +224,8 @@ proconio = "0.4.1"
 - [スマートメーターＢルートで得たデーターをRust+Polars+Plottersでグラフでみえる化する。](https://zenn.dev/akihiro_ya/articles/62a29adad0bbd1)
 - [ウェブサービス開発入門 in Rust](https://zenn.dev/tkzwhr/books/rust-webapp-tutorial)
 - [Telnetクライアント自作入門](https://zenn.dev/kumavale/articles/9ed167321294cd)
+- SerdeのDeserializerを実装する
+    - [Part1](https://zenn.dev/nazo6/articles/serde-deserializer-1)
 
 ---
 
