@@ -485,6 +485,7 @@ proconio = "0.4.1"
   * [Cell, RefCell, UnsafeCellの違いとその使い分け](https://qiita.com/mosh/items/c7d20811df218bb3188e)
   * [Rustの2種類の`'static`](https://laysakura.github.io/2020/05/21/rust-static-lifetime-and-static-bounds/)
   * [Rustの借用の話をする](https://techracho.bpsinc.jp/yoshi/2023_08_30/134157)
+  * [Rustのクロージャーにおけるライフタイム推論について](https://zenn.dev/skanehira/articles/2023-09-23-rust-closure-lifetime-binder)
 
 * コンパイラ
   * [本家Rustコンパイラのソースを読もうとしてみる（1）](https://qiita.com/0yoyoyo/items/eba97a019d0e60324263)
