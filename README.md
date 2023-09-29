@@ -486,6 +486,8 @@ proconio = "0.4.1"
   * [Rustの2種類の`'static`](https://laysakura.github.io/2020/05/21/rust-static-lifetime-and-static-bounds/)
   * [Rustの借用の話をする](https://techracho.bpsinc.jp/yoshi/2023_08_30/134157)
   * [Rustのクロージャーにおけるライフタイム推論について](https://zenn.dev/skanehira/articles/2023-09-23-rust-closure-lifetime-binder)
+  * [Rust ではどんな値が `&'static` になれるのか](https://blog.mudatobunka.org/entry/2023/09/05/120000)
+  * [Rust で借用 (参照) を取り扱うときの大事な心構え](https://blog.mudatobunka.org/entry/2023/09/29/120000)
 
 * コンパイラ
   * [本家Rustコンパイラのソースを読もうとしてみる（1）](https://qiita.com/0yoyoyo/items/eba97a019d0e60324263)
