@@ -185,6 +185,7 @@ proconio = "0.4.1"
 * [Effective Rsut](https://www.lurklurk.org/effective-rust/)
 * [The Rust Performance Book](https://nnethercote.github.io/perf-book/introduction.html)
 * [Welcome to Comprehensive Rust](https://google.github.io/comprehensive-rust/index.html)
+* [Rust 101](https://rust-lang.guide/)
 
 ---
 
