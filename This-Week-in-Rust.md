@@ -182,7 +182,7 @@
 * [A Grounded Conceptual Model for Ownership Types in Rust](https://blog.brownplt.org/2023/09/17/rust-ownership.html)
 * [The State of Async Rust](https://corrode.dev/blog/async/)
 * [Choosing a more optimal `String` type](https://swatinem.de/blog/optimized-strings/)
-* []()
+* [tracing tokio tasks](https://hegdenu.net/posts/tracing-tokio-tasks/)
 * []()
 * []()
 * []()
