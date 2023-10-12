@@ -183,7 +183,7 @@
 * [The State of Async Rust](https://corrode.dev/blog/async/)
 * [Choosing a more optimal `String` type](https://swatinem.de/blog/optimized-strings/)
 * [tracing tokio tasks](https://hegdenu.net/posts/tracing-tokio-tasks/)
-* []()
+* [5 ways to instantiate Rust structs in tests](https://jmmv.dev/2023/10/rust-test-structs.html)
 * []()
 * []()
 * []()
