@@ -431,6 +431,9 @@ proconio = "0.4.1"
   * [How does async Rust work](https://bertptrs.nl/2023/04/27/how-does-async-rust-work.html)
   * [How to think about `async`/`await` in Rust](http://cliffle.com/blog/async-inversion/)
   * [TREE-STRUCTURED CONCURRENCY](https://blog.yoshuawuyts.com/tree-structured-concurrency/)
+  * ASYNC CANCELLATION
+    * [part1](https://blog.yoshuawuyts.com/async-cancellation-1/)
+    * [part2](https://blog.yoshuawuyts.com/async-cancellation-2/)
 
 * セマンティクス
   * [コピーセマンティクスとムーブセマンティクス](https://opaupafz2.hatenablog.com/entry/2021/07/17/202701)
