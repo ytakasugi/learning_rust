@@ -671,6 +671,7 @@ proconio = "0.4.1"
 - [Rust での開発を便利にする VSCode 拡張機能たち](https://zenn.dev/t4aru/articles/4a77ec07432e57)
 - [Rustにはシャローコピーがわからない](https://qiita.com/namn1125/items/2d84086394e97489776a)
 - [On Maximizing Your Rust Code's Performance](https://jbecker.dev/research/on-writing-performant-rust)
+- [serdeのDeserializeを実装してみる](https://zenn.dev/fraim/articles/2023-10-30-rust-impl-serde-deserialize)
 
 ### Zenn(scrap)
 * [「Futures Explained in 200 Lines of Rust」を読む](https://zenn.dev/skanehira/scraps/9d2f7e3c105014)
