@@ -185,7 +185,7 @@
 * [tracing tokio tasks](https://hegdenu.net/posts/tracing-tokio-tasks/)
 * [5 ways to instantiate Rust structs in tests](https://jmmv.dev/2023/10/rust-test-structs.html)
 * [Dump Rust Struct or Enum Memory Representation as Bytes](https://bennett.dev/rust/dump-struct-bytes/)
-* []()
+* [Building a Central Authentication Server with Rust, PostgreSQL, Kafka and gRPC](https://medium.com/@adefemiadeoye/building-a-central-authentication-server-with-rust-postgresql-kafka-and-grpc-f1b44de099ea)
 * []()
 * []()
 * []()
@@ -246,6 +246,7 @@
 ### Others
 
 * [Building a Movie Collection Manager - Full Stack Workshop with Rust, Actix, SQLx, Dioxus, and Shuttle](https://bcnrust.github.io/devbcn-workshop/index.html)
+* [Why Rust in Production?](https://corrode.dev/why-rust/)
 
 ### Video
 
