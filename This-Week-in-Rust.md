@@ -186,7 +186,7 @@
 * [5 ways to instantiate Rust structs in tests](https://jmmv.dev/2023/10/rust-test-structs.html)
 * [Dump Rust Struct or Enum Memory Representation as Bytes](https://bennett.dev/rust/dump-struct-bytes/)
 * [Building a Central Authentication Server with Rust, PostgreSQL, Kafka and gRPC](https://medium.com/@adefemiadeoye/building-a-central-authentication-server-with-rust-postgresql-kafka-and-grpc-f1b44de099ea)
-* []()
+* [Building Segmented Logs in Rust: From Theory to Production!](https://arindas.github.io/blog/segmented-log-rust/)
 * []()
 * []()
 * []()
