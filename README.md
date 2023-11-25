@@ -435,6 +435,9 @@ proconio = "0.4.1"
     * [part1](https://blog.yoshuawuyts.com/async-cancellation-1/)
     * [part2](https://blog.yoshuawuyts.com/async-cancellation-2/)
   * [サーバー入門、非同期処理入門、epoll 入門](https://blog.ojisan.io/how-to-epoll/)
+  * ライブラリを使わない非同期処理
+    * [前編](https://blog.ojisan.io/think-rust-async-part1/)
+    * [後編](https://blog.ojisan.io/think-rust-async-part2/)
 
 * セマンティクス
   * [コピーセマンティクスとムーブセマンティクス](https://opaupafz2.hatenablog.com/entry/2021/07/17/202701)
