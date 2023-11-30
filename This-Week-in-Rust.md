@@ -187,7 +187,7 @@
 * [Dump Rust Struct or Enum Memory Representation as Bytes](https://bennett.dev/rust/dump-struct-bytes/)
 * [Building a Central Authentication Server with Rust, PostgreSQL, Kafka and gRPC](https://medium.com/@adefemiadeoye/building-a-central-authentication-server-with-rust-postgresql-kafka-and-grpc-f1b44de099ea)
 * [Building Segmented Logs in Rust: From Theory to Production!](https://arindas.github.io/blog/segmented-log-rust/)
-* []()
+* [Designing a SIMD Algorithm from Scratch](https://mcyoung.xyz/2023/11/27/simd-base64/)
 * []()
 * []()
 * []()

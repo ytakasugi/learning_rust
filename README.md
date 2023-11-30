@@ -276,6 +276,7 @@ proconio = "0.4.1"
   * [Rustの文字列を理解する](https://qiita.com/k-yanai60/items/4c8e3562fe6d22f845a9)
   * [Rustで`String`型から`&'static str`型に変更することはできない](https://zenn.dev/ifhito/articles/bd9e8418baf1eb)
   * [Rustの`to_string`実装パターン](https://zenn.dev/qnighy/articles/8ea875cae10d42)
+  * [Small String Optimization で Rust ライブラリ ratatui を最適化した話](https://rhysd.hatenablog.com/entry/2023/11/30/200857)
 * イテレータ
   * [Rustのイテレータの網羅的かつ大雑把な紹介](https://qiita.com/lo48576/items/34887794c146042aebf1)
   * [Rust のイテレータを使いこなしたい](https://blog-dry.com/entry/2020/06/23/002318)
@@ -325,6 +326,7 @@ proconio = "0.4.1"
   * [Get Started with Rust: Enums](https://serokell.io/blog/enums-and-pattern-matching)
   * [[Rust] 複数のEnumを扱う条件分岐](https://zenn.dev/ragnar1904/articles/rust-handle-multiple-enums)
   * [Enumを自動で網羅的にテストしてみた](https://speakerdeck.com/estie/rusthe-mowakaranai-dot-dot-dot-number-5)
+  * [Why Enums in Rust feel so much better](https://www.shuttle.rs/blog/2023/11/23/enums-in-rust)
 * メソッド
     * [Rustの`Default::default()`, `T::new()`, `T::from()`の使い分け](https://qiita.com/syuuu/items/0e4ad366d60d6eb0c7ed)
     * [メソッドにおける `(&mut self)` と `(self) -> self` の使い分け](https://qiita.com/peperontium1517/items/b5b3e46a7a6b36c7bad8)
@@ -528,6 +530,7 @@ proconio = "0.4.1"
     * [Rustの全マクロ種別が分かったつもりになれる話](https://speakerdeck.com/optim/rust-all-kinds-of-macro)
     * [[Rust] Procedural Macroの仕組みと実装方法](https://zenn.dev/tak_iwamoto/articles/890771ea5b8ad3)
     * [セバスチャンマクロを作って学ぶRustの手続きマクロ](https://zenn.dev/kazatsuyu/articles/33e130563b87b1)
+    * [How I Use Declarative Macros in Rust](https://flinect.com/blog/quick-tips-rust-declarative-macros)
 * テスト
     * [Rust sqlxでデータベースに依存した部分のテストを書く](https://zenn.dev/htlsne/articles/rust-sqlx-test)
     * [Rustのコネクションプールはテスト間で共有できないという話](https://qiita.com/autotaker1984/items/d0ae2d7feb148ffb8989)
