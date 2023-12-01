@@ -85,6 +85,7 @@ proconio = "0.4.1"
 ### メモリ
 
 * [Memory Management Reference](https://www.memorymanagement.org/#)
+* [Understanding the Heap - a beautiful mess](https://jackfromeast.site/2023-01/understand-the-heap-a-beautiful-mess.html)
 
 ---
 
@@ -644,10 +645,11 @@ proconio = "0.4.1"
 
 ### other
 
-- [Rust Advent Calendar2020](https://qiita.com/advent-calendar/2020/rust)
-- [Rust Advent Calendar2021](https://qiita.com/advent-calendar/2021/rust)
-- [Rust Advent Calendar2022](https://qiita.com/advent-calendar/2022/rust)
-- [Advent of Code 2022 ](https://fasterthanli.me/series/advent-of-code-2022)
+- [Rust Advent Calendar 2020](https://qiita.com/advent-calendar/2020/rust)
+- [Rust Advent Calendar 2021](https://qiita.com/advent-calendar/2021/rust)
+- [Rust Advent Calendar 2022](https://qiita.com/advent-calendar/2022/rust)
+- [Rust Advent Calendar 2023](https://qiita.com/advent-calendar/2023/rust)
+- [Advent of Code 2022](https://fasterthanli.me/series/advent-of-code-2022)
 - [cargo-clean-recursive](https://crates.io/crates/cargo-clean-recursive)
 - [OPTiM TECH BLOG(Rust)](https://tech-blog.optim.co.jp/archive/category/Rust)
 - [CADDi ENGINEER TECH BLOG](https://caddi.tech/archives/category/technology/backend)
