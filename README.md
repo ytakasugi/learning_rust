@@ -126,6 +126,7 @@ proconio = "0.4.1"
 * [競プロ 典型90問](https://github.com/E869120/kyopro_educational_90)
 * [競プロ典型90問をRustで解く](https://dev.thanaism.com/tags/rust/)
 * [競技プログラミングでの典型アルゴリズムとデータ構造](https://algo-logic.info/competitive-programming-must/)
+* [スタックとキューを極める！ 〜 考え方と使い所を特集 〜](https://qiita.com/drken/items/6a95b57d2e374a3d3292)
 * [AtCoder Beginner Contestで最低限理解する必要がある（と感じた）数学的知識](https://qiita.com/Ll_e_ki/items/fe70b9e3408c5b14ae2e?utm_campaign=post_article&utm_medium=twitter&utm_source=twitter_share)
 * [Rustで競技プログラミングを始めた人のためのデータ構造紹介](https://zenn.dev/tai_calg/articles/ecbd269503dd61)
 * Rustで蟻本
