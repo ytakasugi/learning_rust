@@ -60,6 +60,12 @@ proconio = "0.4.1"
 
 ---
 
+* 富士通コンピュータ講座
+    * [基礎編](https://jp.fujitsu.com/family/familyroom/syuppan/family/webs/serial-comp/)
+    * [応用編](https://jp.fujitsu.com/family/familyroom/syuppan/family/webs/serial-comp2/index.html)
+
+---
+
 ### プログラムがメモリをどう使うかを理解する
       
 * [その1](https://zenn.dev/rita0222/articles/e6ff75245d79b5)
