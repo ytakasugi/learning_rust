@@ -107,6 +107,12 @@ proconio = "0.4.1"
 
 ---
 
+### Bash
+
+- [【永久保存版】シェルスクリプト完全攻略ガイド](https://qiita.com/osw_nuco/items/a5d7173c1e443030875f)
+
+---
+
 ### WEB
 
 * [Webデザイン初心者向け Webサイトの作り方と準備](https://web-design-textbook.com/)
@@ -300,6 +306,7 @@ proconio = "0.4.1"
   * [Rustの&strや&[T]はどこを参照しているのか](https://qiita.com/Kogia_sima/items/88920a2a14448ef4dbe3)
   * [メモリをダンプしてRustのsliceとVecを理解する](https://cipepser.hatenablog.com/entry/rust-memory)
   * [Rustの配列やベクタ、スライスについて](https://qiita.com/k-yanai60/items/26bf1d2e372042eff022)
+  * [【Rust】`&str`とString両方とも渡す方法 (とCowの話し)]()
 * スライス
   * [Rustで独自のスライス型を定義する本](https://lo48576.gitlab.io/rust-custom-slice-book/introduction.html)  
 * 型
@@ -411,6 +418,7 @@ proconio = "0.4.1"
   * [Rustのhttp/httpsクライアントcurl](https://qiita.com/showchan33/items/9f4648bc2a1dec34aa83)
   * [【サンプルコードあり】Rustで作るWebアプリケーション――データベース利用と自動テストの基本事項を押さえる](https://atmarkit.itmedia.co.jp/ait/articles/2205/26/news001.html)
   * [How to Build a Powerful GraphQL API with Rust](https://oliverjumpertz.com/how-to-build-a-powerful-graphql-api-with-rust/)
+  * [Getting Started with Axum - Rust's Most Popular Web Framework](https://www.shuttle.rs/blog/2023/12/06/using-axum-rust)
 * マルチスレッド
   * [マルチスレッドプログラミングのメモ](https://totem3.hatenablog.jp/entry/2017/05/10/210000)
   * [Rustはどのようにして安全な並列処理を提供するのか](https://qiita.com/nirasan/items/97263103f076bd525a7b)
@@ -507,6 +515,7 @@ proconio = "0.4.1"
   * [Rustのクロージャーにおけるライフタイム推論について](https://zenn.dev/skanehira/articles/2023-09-23-rust-closure-lifetime-binder)
   * [Rust ではどんな値が `&'static` になれるのか](https://blog.mudatobunka.org/entry/2023/09/05/120000)
   * [Rust で借用 (参照) を取り扱うときの大事な心構え](https://blog.mudatobunka.org/entry/2023/09/29/120000)
+  * [Rust のエイリアシングモデル Stacked Borrows (MIRI の元) を噛み砕いて和訳したもの](https://qiita.com/MikuroXina/items/70f574a3049f4a402f36)
 
 * コンパイラ
   * [本家Rustコンパイラのソースを読もうとしてみる（1）](https://qiita.com/0yoyoyo/items/eba97a019d0e60324263)
@@ -597,6 +606,7 @@ proconio = "0.4.1"
   * [RustでArgon2 Hashing & Verifying!](https://qiita.com/ryuma017/items/a3773d46b5e3b32908d1)
   * [そもそも、時間の取り扱いってどうすれば良いんだっけ？](https://qiita.com/segfo/items/8d27821a3314d3b392ea)
   * [[Rust] actixを使ってアクターモデルを実装してみた](https://zenn.dev/kin_kin/articles/c6192a8b12f837)
+  * [writing a file system from scratch in rust](https://blog.carlosgaldino.com/writing-a-file-system-from-scratch-in-rust.html)
 
 * 他言語比較
   * [Ruby脳のためのRustの配列的なやつの主なメソッド](https://qiita.com/akicho8/items/f68495f5270ba29d45d4)
@@ -688,6 +698,8 @@ proconio = "0.4.1"
 - [Rustにはシャローコピーがわからない](https://qiita.com/namn1125/items/2d84086394e97489776a)
 - [On Maximizing Your Rust Code's Performance](https://jbecker.dev/research/on-writing-performant-rust)
 - [serdeのDeserializeを実装してみる](https://zenn.dev/fraim/articles/2023-10-30-rust-impl-serde-deserialize)
+- [Kubernetes と cgroup v2](https://qiita.com/superbrothers/items/16b66bae0582f5ed479b)
+- [APIテスト アーキテクチャ](https://zenn.dev/sumiren/articles/aa0ba5ae12ad2e)
 
 ### Zenn(scrap)
 * [「Futures Explained in 200 Lines of Rust」を読む](https://zenn.dev/skanehira/scraps/9d2f7e3c105014)
