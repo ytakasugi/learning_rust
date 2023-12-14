@@ -291,6 +291,7 @@ proconio = "0.4.1"
   * [Rustで`String`型から`&'static str`型に変更することはできない](https://zenn.dev/ifhito/articles/bd9e8418baf1eb)
   * [Rustの`to_string`実装パターン](https://zenn.dev/qnighy/articles/8ea875cae10d42)
   * [Small String Optimization で Rust ライブラリ ratatui を最適化した話](https://rhysd.hatenablog.com/entry/2023/11/30/200857)
+  * [【Rust】`&str`とString両方とも渡す方法 (とCowの話し)](https://qiita.com/k-yaina60/items/52bd155d51400481e01e)
 * イテレータ
   * [Rustのイテレータの網羅的かつ大雑把な紹介](https://qiita.com/lo48576/items/34887794c146042aebf1)
   * [Rust のイテレータを使いこなしたい](https://blog-dry.com/entry/2020/06/23/002318)
@@ -306,7 +307,7 @@ proconio = "0.4.1"
   * [Rustの&strや&[T]はどこを参照しているのか](https://qiita.com/Kogia_sima/items/88920a2a14448ef4dbe3)
   * [メモリをダンプしてRustのsliceとVecを理解する](https://cipepser.hatenablog.com/entry/rust-memory)
   * [Rustの配列やベクタ、スライスについて](https://qiita.com/k-yanai60/items/26bf1d2e372042eff022)
-  * [【Rust】`&str`とString両方とも渡す方法 (とCowの話し)]()
+
 * スライス
   * [Rustで独自のスライス型を定義する本](https://lo48576.gitlab.io/rust-custom-slice-book/introduction.html)  
 * 型
