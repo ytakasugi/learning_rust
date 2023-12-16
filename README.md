@@ -386,6 +386,7 @@ proconio = "0.4.1"
   * [Rust の文字列の種類と変換トレイトについて](https://zenn.dev/suzuki_hoge/books/2023-03-rust-strings-8868f207b3ed18)
   * [A definitive guide to sealed traits in Rust](https://predr.ag/blog/definitive-guide-to-sealed-traits-in-rust/)
   * [Rust: 継承を空トレイトを用いて実現する方法](https://qiita.com/suin/items/4c06619f6f9e67b68a1c)
+  * [Rust トレイト境界 (where句) の考え方と使い方](https://zenn.dev/kkb0318/articles/article-rust-trait-bound)
 
 * 関数ポインタ、クロージャ
     * [Rustにおける関数ポインタやクロージャ](https://zenn.dev/garasubo/articles/97f794cfd469b9d51c7b)
