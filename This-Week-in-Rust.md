@@ -192,7 +192,7 @@
 * [Profiling Rust programs the easy way](https://ntietz.com/blog/profiling-rust-programs-the-easy-way/)
 * [Common Mistakes with Rust Async](https://www.qovery.com/blog/common-mistakes-with-rust-async)
 * [01: Memory and Iteration](https://yetanotherrustblog.net/memory-and-iteration/)
-* []()
+* [Write a Toy VPN in Rust](https://write.yiransheng.com/vpn)
 * []()
 * []()
 * []()
@@ -247,7 +247,9 @@
 * Rust Type System
     * [Part 1](https://sanjuvi.github.io/Blog/posts/Rust-type-system-part-1/)
     * [Part 2](https://sanjuvi.github.io/Blog/posts/Rust-Type-System-Part-2/)
-
+* Multithreading and Memory-Mapping
+    * [part1](https://blog.kerollmops.com/spotify-inspired-elevating-meilisearch-with-hybrid-search-and-rust)
+    * [part2](https://blog.kerollmops.com/multithreading-and-memory-mapping-refining-ann-performance-with-arroy)
 
 ### Others
 

@@ -242,6 +242,8 @@ proconio = "0.4.1"
 - [Telnetクライアント自作入門](https://zenn.dev/kumavale/articles/9ed167321294cd)
 - SerdeのDeserializerを実装する
     - [Part1](https://zenn.dev/nazo6/articles/serde-deserializer-1)
+    - [Part2](https://zenn.dev/nazo6/articles/serde-deserializer-2)
+- [Rustでブロッキングキューを実装する](https://blog.j5ik2o.me/entry/2023/12/22/000000)
 
 ---
 
@@ -387,6 +389,7 @@ proconio = "0.4.1"
   * [A definitive guide to sealed traits in Rust](https://predr.ag/blog/definitive-guide-to-sealed-traits-in-rust/)
   * [Rust: 継承を空トレイトを用いて実現する方法](https://qiita.com/suin/items/4c06619f6f9e67b68a1c)
   * [Rust トレイト境界 (where句) の考え方と使い方](https://zenn.dev/kkb0318/articles/article-rust-trait-bound)
+  * [Rust: Traits](https://priver.dev/blog/rust/traits/)
 
 * 関数ポインタ、クロージャ
     * [Rustにおける関数ポインタやクロージャ](https://zenn.dev/garasubo/articles/97f794cfd469b9d51c7b)
@@ -434,6 +437,7 @@ proconio = "0.4.1"
   * [[Rust]Mutexを使った並行処理](https://zenn.dev/akira19/articles/30bd76f78f13d9)
   * [[Rust]バリア同期を理解する](https://zenn.dev/akira19/articles/170525841035f7)
   * [[Rust]RwLockの概要](https://zenn.dev/akira19/articles/c333b13239a641)
+  * [並行処理で値を共有する際のMutexとRwLockの違い](https://zenn.dev/torohash/articles/0f3f79ce07592e)
 * 非同期
   * [Rustの非同期プログラミングをマスターする](https://tech-blog.optim.co.jp/entry/2019/11/08/163000)
   * [非同期 Rust パターン](https://qiita.com/legokichi/items/4f2c09330f90626600a6)
@@ -458,11 +462,13 @@ proconio = "0.4.1"
   * ライブラリを使わない非同期処理
     * [前編](https://blog.ojisan.io/think-rust-async-part1/)
     * [後編](https://blog.ojisan.io/think-rust-async-part2/)
+  * [KafkaストリームとRust Tokioの非同期処理](https://zenn.dev/tfutada/articles/cc921b03013100)
 
 * セマンティクス
   * [コピーセマンティクスとムーブセマンティクス](https://opaupafz2.hatenablog.com/entry/2021/07/17/202701)
   * [多コピーの原罪](https://blog.ojisan.io/many-copies-original-sin/)
   * [Rustのcloneはディープコピーなのか](https://zenn.dev/garasubo/articles/aa9a1b5b96e8e9)
+
 * ライフタイム、メモリ関連
   * [Rustのライフタイムについてのよくある誤解](https://github.com/pretzelhammer/rust-blog/blob/master/posts/translations/jp/common-rust-lifetime-misconceptions.md)
   * [Rust のメモリ管理](https://www.zakioka.net/blog/memory-management-for-rust/)
@@ -518,6 +524,7 @@ proconio = "0.4.1"
   * [Rust ではどんな値が `&'static` になれるのか](https://blog.mudatobunka.org/entry/2023/09/05/120000)
   * [Rust で借用 (参照) を取り扱うときの大事な心構え](https://blog.mudatobunka.org/entry/2023/09/29/120000)
   * [Rust のエイリアシングモデル Stacked Borrows (MIRI の元) を噛み砕いて和訳したもの](https://qiita.com/MikuroXina/items/70f574a3049f4a402f36)
+  * [Rust の `&T` は不変参照ではない](https://qiita.com/MikuroXina/items/6a99beb754e4a92bd1e1)
 
 * コンパイラ
   * [本家Rustコンパイラのソースを読もうとしてみる（1）](https://qiita.com/0yoyoyo/items/eba97a019d0e60324263)
@@ -702,6 +709,8 @@ proconio = "0.4.1"
 - [serdeのDeserializeを実装してみる](https://zenn.dev/fraim/articles/2023-10-30-rust-impl-serde-deserialize)
 - [Kubernetes と cgroup v2](https://qiita.com/superbrothers/items/16b66bae0582f5ed479b)
 - [APIテスト アーキテクチャ](https://zenn.dev/sumiren/articles/aa0ba5ae12ad2e)
+- [リソース制限をかけたKubernetes Podの中でhtopをしてもホスト上のリソースが表示されるのはなぜか](https://blog.inductor.me/entry/why-htop-shows-host-metrics-in-containers)
+- [Linux カーネルをバイパスして TCP 通信を 10 倍速くする](https://eng-blog.iij.ad.jp/archives/21598)
 
 ### Zenn(scrap)
 * [「Futures Explained in 200 Lines of Rust」を読む](https://zenn.dev/skanehira/scraps/9d2f7e3c105014)
