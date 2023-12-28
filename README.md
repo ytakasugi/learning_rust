@@ -463,6 +463,7 @@ proconio = "0.4.1"
     * [前編](https://blog.ojisan.io/think-rust-async-part1/)
     * [後編](https://blog.ojisan.io/think-rust-async-part2/)
   * [KafkaストリームとRust Tokioの非同期処理](https://zenn.dev/tfutada/articles/cc921b03013100)
+  * [Rustにおける非同期ストリームの関数呼び出しコストを検証する](https://tech.aptpod.co.jp/entry/2021/03/19/100000)
 
 * セマンティクス
   * [コピーセマンティクスとムーブセマンティクス](https://opaupafz2.hatenablog.com/entry/2021/07/17/202701)
@@ -647,6 +648,7 @@ proconio = "0.4.1"
 - [Rustで良さげなエラーメッセージを出力 w/ anyhow, thiserror](https://zenn.dev/tos_kamiya/articles/71171d0423b1d6)
 - [SeaORM + PostgreSQL で public 以外のスキーマをターゲットにマイグレーションする](https://zenn.dev/23prime/articles/6a97b8894a764a)
 - [部分文字列にマッチできるマクロを作った](https://zenn.dev/kazatsuyu/articles/514a68858b81a9)
+- [RustのSQLライブラリSQLxの使い方〜他のSQLライブラリとの比較あり](https://zenn.dev/pharmax/articles/7f1cb24dbd5743)
 
 ---
 
