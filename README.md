@@ -526,6 +526,7 @@ proconio = "0.4.1"
   * [Rust で借用 (参照) を取り扱うときの大事な心構え](https://blog.mudatobunka.org/entry/2023/09/29/120000)
   * [Rust のエイリアシングモデル Stacked Borrows (MIRI の元) を噛み砕いて和訳したもの](https://qiita.com/MikuroXina/items/70f574a3049f4a402f36)
   * [Rust の `&T` は不変参照ではない](https://qiita.com/MikuroXina/items/6a99beb754e4a92bd1e1)
+  * [Rustにおける所有権、ポインタ、参照のまとめ](https://zenn.dev/chiku_dev/articles/e29330bbde1971)
 
 * コンパイラ
   * [本家Rustコンパイラのソースを読もうとしてみる（1）](https://qiita.com/0yoyoyo/items/eba97a019d0e60324263)
