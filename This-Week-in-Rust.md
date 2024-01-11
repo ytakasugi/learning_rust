@@ -193,7 +193,7 @@
 * [Common Mistakes with Rust Async](https://www.qovery.com/blog/common-mistakes-with-rust-async)
 * [01: Memory and Iteration](https://yetanotherrustblog.net/memory-and-iteration/)
 * [Write a Toy VPN in Rust](https://write.yiransheng.com/vpn)
-* []()
+* [Verifying Rust Zeroize with Assembly...including portable SIMD](https://cipherstash.com/blog/verifying-rust-zeroize-with-assembly-including-portable-simd)
 * []()
 * []()
 * []()

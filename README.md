@@ -527,6 +527,7 @@ proconio = "0.4.1"
   * [Rust のエイリアシングモデル Stacked Borrows (MIRI の元) を噛み砕いて和訳したもの](https://qiita.com/MikuroXina/items/70f574a3049f4a402f36)
   * [Rust の `&T` は不変参照ではない](https://qiita.com/MikuroXina/items/6a99beb754e4a92bd1e1)
   * [Rustにおける所有権、ポインタ、参照のまとめ](https://zenn.dev/chiku_dev/articles/e29330bbde1971)
+  * [【Rust】Borrow checkerとライフタイムを理解するための簡単な実験](https://zenn.dev/woden/articles/162af03fb87476)
 
 * コンパイラ
   * [本家Rustコンパイラのソースを読もうとしてみる（1）](https://qiita.com/0yoyoyo/items/eba97a019d0e60324263)
@@ -618,6 +619,9 @@ proconio = "0.4.1"
   * [そもそも、時間の取り扱いってどうすれば良いんだっけ？](https://qiita.com/segfo/items/8d27821a3314d3b392ea)
   * [[Rust] actixを使ってアクターモデルを実装してみた](https://zenn.dev/kin_kin/articles/c6192a8b12f837)
   * [writing a file system from scratch in rust](https://blog.carlosgaldino.com/writing-a-file-system-from-scratch-in-rust.html)
+  * [RustでCPUバウンド・IOバウンドの処理をマルチスレッド（rayon）や非同期（tokio）で処理して速度を比較してみる](https://qiita.com/nokonoko_1203/items/8792eee2268e01832718)
+  * [スレッドは join しなくてもよい](https://kenoss.github.io/blog/2023-12-22-join-handle-can-be-dropped/)
+
 
 * 他言語比較
   * [Ruby脳のためのRustの配列的なやつの主なメソッド](https://qiita.com/akicho8/items/f68495f5270ba29d45d4)
@@ -714,6 +718,7 @@ proconio = "0.4.1"
 - [APIテスト アーキテクチャ](https://zenn.dev/sumiren/articles/aa0ba5ae12ad2e)
 - [リソース制限をかけたKubernetes Podの中でhtopをしてもホスト上のリソースが表示されるのはなぜか](https://blog.inductor.me/entry/why-htop-shows-host-metrics-in-containers)
 - [Linux カーネルをバイパスして TCP 通信を 10 倍速くする](https://eng-blog.iij.ad.jp/archives/21598)
+- [図解 DB インデックス](https://zenn.dev/suzuki_hoge/books/2022-12-database-index-9520da88d02c4f/viewer/1-opening)
 
 ### Zenn(scrap)
 * [「Futures Explained in 200 Lines of Rust」を読む](https://zenn.dev/skanehira/scraps/9d2f7e3c105014)
@@ -742,3 +747,6 @@ proconio = "0.4.1"
 - [RUST FOR RUSTACEANSを読んだ感想](https://blog.ymgyt.io/entry/rust-for-rustacieans/)
 - [Rustソースコードのざっくりとした歩き方](https://speakerdeck.com/tako8ki/rustsosukotonosatukuritositabu-kifang-3f597e58-222e-4c70-9b1b-e644eaa34895)
 - [なるぽのブログ](https://yu-nix.com/blog/articles/list/1/?category=Rust)
+
+### 動画
+- [【Rust入門】宮乃やみさんにRustの所有権とライフタイムを絶対理解させる](https://www.youtube.com/watch?v=lG7YbM2AfU8)
