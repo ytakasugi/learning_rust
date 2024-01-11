@@ -194,8 +194,7 @@
 * [01: Memory and Iteration](https://yetanotherrustblog.net/memory-and-iteration/)
 * [Write a Toy VPN in Rust](https://write.yiransheng.com/vpn)
 * [Verifying Rust Zeroize with Assembly...including portable SIMD](https://cipherstash.com/blog/verifying-rust-zeroize-with-assembly-including-portable-simd)
-* []()
-* []()
+* [unwrap, one way to handle errors in Rust](https://rust.code-maven.com/unwrap)
 * []()
 * []()
 * []()
@@ -255,6 +254,8 @@
 
 * [Building a Movie Collection Manager - Full Stack Workshop with Rust, Actix, SQLx, Dioxus, and Shuttle](https://bcnrust.github.io/devbcn-workshop/index.html)
 * [Why Rust in Production?](https://corrode.dev/why-rust/)
+* [Open Source Applications written in Rust](https://rust.code-maven.com/applications)
+
 
 ### Video
 
