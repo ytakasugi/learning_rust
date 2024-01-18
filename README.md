@@ -244,6 +244,7 @@ proconio = "0.4.1"
     - [Part1](https://zenn.dev/nazo6/articles/serde-deserializer-1)
     - [Part2](https://zenn.dev/nazo6/articles/serde-deserializer-2)
 - [Rustでブロッキングキューを実装する](https://blog.j5ik2o.me/entry/2023/12/22/000000)
+- [Building 2 ‘Simple’ Allocators](https://blog.maguire.tech/posts/explorations/allocators/)
 
 ---
 
