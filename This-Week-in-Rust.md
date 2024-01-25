@@ -195,10 +195,23 @@
 * [Write a Toy VPN in Rust](https://write.yiransheng.com/vpn)
 * [Verifying Rust Zeroize with Assembly...including portable SIMD](https://cipherstash.com/blog/verifying-rust-zeroize-with-assembly-including-portable-simd)
 * [unwrap, one way to handle errors in Rust](https://rust.code-maven.com/unwrap)
+* [Identifying Rust's `collect::<Vec<_>>()` memory leak footgun](https://blog.polybdenum.com/2024/01/17/identifying-the-collect-vec-memory-leak-footgun.html)
+* [Billion-row challenge: Rust walkthrough](https://aminediro.com/posts/billion_row/)
+* [How to work with !Sized types in Rust](https://sgued.fr/blog/heapless-howto/)
 * []()
 * []()
 * []()
 * []()
+* []()
+* []()
+* []()
+* []()
+* []()
+* []()
+* []()
+* []()
+* []()
+
 
 ---
 
