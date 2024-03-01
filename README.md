@@ -107,6 +107,19 @@ proconio = "0.4.1"
 
 ---
 
+### epoll
+
+* [`EPOLL_CTL_DISABLE` and multithreaded applications](https://lwn.net/Articles/520012/)
+* [epoll におけるレベルトリガーとエッジトリガー](https://mackey-lab.hatenablog.com/entry/2015/04/22/005214)
+
+---
+
+### `I/O`
+
+* [ノンブロッキングI/Oと非同期I/Oの違いを理解する](https://blog.takanabe.tokyo/2015/03/%E3%83%8E%E3%83%B3%E3%83%96%E3%83%AD%E3%83%83%E3%82%AD%E3%83%B3%E3%82%B0i/o%E3%81%A8%E9%9D%9E%E5%90%8C%E6%9C%9Fi/o%E3%81%AE%E9%81%95%E3%81%84%E3%82%92%E7%90%86%E8%A7%A3%E3%81%99%E3%82%8B/)
+
+---
+
 ### Bash
 
 - [【永久保存版】シェルスクリプト完全攻略ガイド](https://qiita.com/osw_nuco/items/a5d7173c1e443030875f)
@@ -391,6 +404,7 @@ proconio = "0.4.1"
   * [Rust: 継承を空トレイトを用いて実現する方法](https://qiita.com/suin/items/4c06619f6f9e67b68a1c)
   * [Rust トレイト境界 (where句) の考え方と使い方](https://zenn.dev/kkb0318/articles/article-rust-trait-bound)
   * [Rust: Traits](https://priver.dev/blog/rust/traits/)
+  * [【Rust】`?Sized`?](https://zenn.dev/woden/articles/36b367559161b9)
 
 * 関数ポインタ、クロージャ
     * [Rustにおける関数ポインタやクロージャ](https://zenn.dev/garasubo/articles/97f794cfd469b9d51c7b)
@@ -413,6 +427,7 @@ proconio = "0.4.1"
   * [Rustにおけるエラーハンドリング](https://zenn.dev/shimopino/articles/understand-rust-error-handling)
   * [Rust: anyhowを使ってビルトインエラーにバックトレース情報を付加する方法](https://qiita.com/suin/items/b41f479472c872a47f02)
   * [Rust: thiserrorで`anyhow::Error`を手軽に隠蔽する方法](https://qiita.com/suin/items/4d8b47f84fddfc3d168f)
+  * [Practical guide to Error Handling in Rust](https://dev-state.com/posts/error_handling/)
 
 * WEB
   * [Rustとactix_webでWebアプリケーションを作ってみる](https://qiita.com/c3drive/items/71dda219f0193ae72069)
