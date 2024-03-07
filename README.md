@@ -584,6 +584,7 @@ proconio = "0.4.1"
     * [How to Test](https://matklad.github.io/2021/05/31/how-to-test.html#How-to-Test)
     * [【Rust】fakeでテスト用のフェイクデータを作成する](https://qiita.com/deepgreenAN/items/b139cb0d359213a748f1)
     * [Mocking in Rust: Mockall and alternatives](https://blog.logrocket.com/mocking-rust-mockall-alternatives)
+    * [rstestを使いこなす](https://techblog.paild.co.jp/entry/2024/03/04/142534)
 * パフォーマンス
     * [Rust のパフォーマンスに何が影響を与えているのか](https://qiita.com/benki/items/ee14ee6cb9f209a080e1)
 
