@@ -308,6 +308,7 @@ proconio = "0.4.1"
   * [Rustの`to_string`実装パターン](https://zenn.dev/qnighy/articles/8ea875cae10d42)
   * [Small String Optimization で Rust ライブラリ ratatui を最適化した話](https://rhysd.hatenablog.com/entry/2023/11/30/200857)
   * [【Rust】`&str`とString両方とも渡す方法 (とCowの話し)](https://qiita.com/k-yaina60/items/52bd155d51400481e01e)
+  * [RustのString,`&str`などの大体の図解と使用例](https://zenn.dev/scirexs/articles/3b3ca8ac956604)
 * イテレータ
   * [Rustのイテレータの網羅的かつ大雑把な紹介](https://qiita.com/lo48576/items/34887794c146042aebf1)
   * [Rust のイテレータを使いこなしたい](https://blog-dry.com/entry/2020/06/23/002318)
@@ -585,6 +586,7 @@ proconio = "0.4.1"
     * [【Rust】fakeでテスト用のフェイクデータを作成する](https://qiita.com/deepgreenAN/items/b139cb0d359213a748f1)
     * [Mocking in Rust: Mockall and alternatives](https://blog.logrocket.com/mocking-rust-mockall-alternatives)
     * [rstestを使いこなす](https://techblog.paild.co.jp/entry/2024/03/04/142534)
+    * [Everything you need to know about testing in Rust](https://www.shuttle.rs/blog/2024/03/21/testing-in-rust)
 * パフォーマンス
     * [Rust のパフォーマンスに何が影響を与えているのか](https://qiita.com/benki/items/ee14ee6cb9f209a080e1)
 
@@ -593,6 +595,7 @@ proconio = "0.4.1"
 * ビルド、CI/CD
     * [[CI/CDでRustビルド高速化](https://qiita.com/pham_thanh_thuong/items/e2c5c1b94a87e941dfff)]
     * [How I speeded up my Rust builds on GitHub ~30 times](https://ectobit.com/blog/speed-up-github-actions-rust-pipelines/)
+    * [Tips For Faster Rust Compile Times](https://corrode.dev/blog/tips-for-faster-rust-compile-times/)
 * モジュール
     * [Rustのモジュールの使い方 2018 Edition版](https://keens.github.io/blog/2018/12/08/rustnomoju_runotsukaikata_2018_editionhan/)
     * [Rustのmodule完全に理解した。](https://zenn.dev/newgyu/articles/3b4677b4086768)
