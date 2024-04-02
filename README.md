@@ -414,6 +414,7 @@ proconio = "0.4.1"
     * [Rust でネストしたクロージャを関数の戻り値にする](https://qiita.com/fits/items/405a2147e6f20410b8c3)
     * [Rustのクロージャの型について](https://zenn.dev/hanao/articles/2fe666cf4710c2)
     * [A guide to closures in Rust](https://hashrust.com/blog/a-guide-to-closures-in-rust/)
+    * [Rust のイテレータとクロージャを理解して rayon で並列処理する(zenn-book)](https://zenn.dev/suzuki_hoge/books/2024-04-rust-for-rayon-a450094c0faf3c)
 * `Option`型、`Result`型
   * [Rust のエラーハンドリングはシンタックスシュガーが豊富で完全に初見殺しなので自信を持って使えるように整理してみたら完全に理解した](https://qiita.com/nirasan/items/321e7cc42e0e0f238254?utm_content=buffera6970&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer)
   * [thiserrorでカスタムエラーを実装する](https://zenn.dev/hideoka/articles/e2408b1eb8ee3f)
@@ -429,7 +430,6 @@ proconio = "0.4.1"
   * [Rust: anyhowを使ってビルトインエラーにバックトレース情報を付加する方法](https://qiita.com/suin/items/b41f479472c872a47f02)
   * [Rust: thiserrorで`anyhow::Error`を手軽に隠蔽する方法](https://qiita.com/suin/items/4d8b47f84fddfc3d168f)
   * [Practical guide to Error Handling in Rust](https://dev-state.com/posts/error_handling/)
-  * [Rust のイテレータとクロージャを理解して rayon で並列処理する(zenn-book)](https://zenn.dev/suzuki_hoge/books/2024-04-rust-for-rayon-a450094c0faf3c)
 
 * WEB
   * [Rustとactix_webでWebアプリケーションを作ってみる](https://qiita.com/c3drive/items/71dda219f0193ae72069)
