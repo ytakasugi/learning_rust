@@ -643,6 +643,7 @@ proconio = "0.4.1"
   * [writing a file system from scratch in rust](https://blog.carlosgaldino.com/writing-a-file-system-from-scratch-in-rust.html)
   * [RustでCPUバウンド・IOバウンドの処理をマルチスレッド（rayon）や非同期（tokio）で処理して速度を比較してみる](https://qiita.com/nokonoko_1203/items/8792eee2268e01832718)
   * [スレッドは join しなくてもよい](https://kenoss.github.io/blog/2023-12-22-join-handle-can-be-dropped/)
+  * [Rustでオブザーバビリティを実現するには](https://techblog.paild.co.jp/entry/2024/04/02/144212)
 
 
 * 他言語比較
