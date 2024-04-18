@@ -554,6 +554,7 @@ proconio = "0.4.1"
   * [Rust の Future に入門した](https://zenn.dev/nojima/articles/30bef27473a6fd)
   * [Understanding Rust futures by going way too deep](https://fasterthanli.me/articles/understanding-rust-futures-by-going-way-too-deep)
 * ポインタ
+  * [Rust Memory Container Cheat-sheet](https://qiita.com/usagi/items/fc329895cebd3466910e)
   * [Smart Pointers in Rust: What, why and how?](https://dev.to/rogertorres/smart-pointers-in-rust-what-why-and-how-oma)
   * [RustのSizedとfatポインタ](https://qnighy.hatenablog.com/entry/2017/03/04/131311)
   * [Rustの参照、Box、Rcを関数の引数・返り値にした場合の挙動](https://zenn.dev/exyrias/articles/c1d1c6d825fbbb166d44)
@@ -566,6 +567,7 @@ proconio = "0.4.1"
       * [Arcを読む](https://qiita.com/qnighy/items/35db580a139d21f38410)
   * [【Rust勉強】スマートポインタをざっくり](https://qiita.com/moyamoyac/items/5aea471d6676625dcd62)
   * [Rust スマートポインタ 整理](https://zenn.dev/0kate/articles/49444e1f7de00f)
+  * [Rust のスマートポインタまとめ](https://zenn.dev/suzuki_hoge/articles/2024-04-rust-smart-pointer-94e5c1ce3c93f4)
 * ジェネリクス
   * [jeffa.io](https://jeffa.io/)
   * [【Rust】ジェネリクスの取説](https://qiita.com/quasardtm/items/09952838a6ee9582db1d)
@@ -684,6 +686,7 @@ proconio = "0.4.1"
 
 * [Rustのロギングについて解説とデモ](https://www.forcia.com/blog/001605.html)
 * [tracing crateを利用したRustのlogging方法について](https://caddi.tech/archives/2144)
+* [Tracingを用いたRustのロギング理解の図とメモ](https://zenn.dev/scirexs/articles/c467a911218593)
 
 ---
 
@@ -699,7 +702,7 @@ proconio = "0.4.1"
 
 ---
 
-### other
+### others
 
 - [Rust Advent Calendar 2020](https://qiita.com/advent-calendar/2020/rust)
 - [Rust Advent Calendar 2021](https://qiita.com/advent-calendar/2021/rust)

@@ -203,7 +203,7 @@
 * [Storing borrowed data in trait objects](https://ferrous-systems.com/blog/rustls-borrow-checker-p3/)
 * [Borrow checking without lifetimes](https://smallcultfollowing.com/babysteps/blog/2024/03/04/borrow-checking-without-lifetimes/)
 * [Async Rust in a Nutshell](https://www.shuttle.rs/blog/2024/02/29/async-rust)
-* []()
+* [My logging recipe for server side Rust](https://www.matildasmeds.com/posts/rust-logging-recipe/)
 * []()
 * []()
 * []()
