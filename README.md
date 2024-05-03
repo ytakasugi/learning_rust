@@ -590,6 +590,7 @@ proconio = "0.4.1"
     * [Mocking in Rust: Mockall and alternatives](https://blog.logrocket.com/mocking-rust-mockall-alternatives)
     * [rstestを使いこなす](https://techblog.paild.co.jp/entry/2024/03/04/142534)
     * [Everything you need to know about testing in Rust](https://www.shuttle.rs/blog/2024/03/21/testing-in-rust)
+    * [【Rust】モックライブラリMockitoで非同期のテストコードを書く](https://zenn.dev/collabostyle/articles/c44cc1d20ad4fb)
 * パフォーマンス
     * [Rust のパフォーマンスに何が影響を与えているのか](https://qiita.com/benki/items/ee14ee6cb9f209a080e1)
 
