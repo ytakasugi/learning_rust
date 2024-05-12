@@ -406,6 +406,7 @@ proconio = "0.4.1"
   * [Rust トレイト境界 (where句) の考え方と使い方](https://zenn.dev/kkb0318/articles/article-rust-trait-bound)
   * [Rust: Traits](https://priver.dev/blog/rust/traits/)
   * [【Rust】`?Sized`?](https://zenn.dev/woden/articles/36b367559161b9)
+  * [impl TraitとTrait boundの違い](https://zenn.dev/torohash/articles/4a62e04187f38b)
 
 * 関数ポインタ、クロージャ
     * [Rustにおける関数ポインタやクロージャ](https://zenn.dev/garasubo/articles/97f794cfd469b9d51c7b)
@@ -591,6 +592,7 @@ proconio = "0.4.1"
     * [rstestを使いこなす](https://techblog.paild.co.jp/entry/2024/03/04/142534)
     * [Everything you need to know about testing in Rust](https://www.shuttle.rs/blog/2024/03/21/testing-in-rust)
     * [【Rust】モックライブラリMockitoで非同期のテストコードを書く](https://zenn.dev/collabostyle/articles/c44cc1d20ad4fb)
+    * [【Rust】cargo-llvm-covでコードカバレッジを取得する](https://zenn.dev/collabostyle/articles/f0654aa0feaba8)
 * パフォーマンス
     * [Rust のパフォーマンスに何が影響を与えているのか](https://qiita.com/benki/items/ee14ee6cb9f209a080e1)
 
