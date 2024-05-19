@@ -204,8 +204,9 @@
 * [Borrow checking without lifetimes](https://smallcultfollowing.com/babysteps/blog/2024/03/04/borrow-checking-without-lifetimes/)
 * [Async Rust in a Nutshell](https://www.shuttle.rs/blog/2024/02/29/async-rust)
 * [My logging recipe for server side Rust](https://www.matildasmeds.com/posts/rust-logging-recipe/)
-* []()
-* []()
+* Let's build a Load Balancer in Rust
+    * [part1](https://marcobacis.com/blog/load-balancer-rust-1/)
+* [Error Handling for Large Rust Projects - A Deep Dive into GreptimeDB's Practices](https://greptime.com/blogs/2024-05-07-error-rust)
 * []()
 * []()
 * []()
