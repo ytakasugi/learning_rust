@@ -206,6 +206,7 @@
 * [My logging recipe for server side Rust](https://www.matildasmeds.com/posts/rust-logging-recipe/)
 * Let's build a Load Balancer in Rust
     * [part1](https://marcobacis.com/blog/load-balancer-rust-1/)
+    * [part2](https://marcobacis.com/blog/load-balancer-rust-2/)
 * [Error Handling for Large Rust Projects - A Deep Dive into GreptimeDB's Practices](https://greptime.com/blogs/2024-05-07-error-rust)
 * []()
 * []()
