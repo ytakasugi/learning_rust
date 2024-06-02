@@ -124,6 +124,10 @@ proconio = "0.4.1"
 
 - [【永久保存版】シェルスクリプト完全攻略ガイド](https://qiita.com/osw_nuco/items/a5d7173c1e443030875f)
 
+### Database
+
+- [SQLのインデックスとそのチューニングについてのオンラインブック](https://use-the-index-luke.com/ja)
+
 ---
 
 ### WEB
@@ -494,6 +498,7 @@ proconio = "0.4.1"
 * ライフタイム、メモリ関連
   * [Rustのライフタイムについてのよくある誤解](https://github.com/pretzelhammer/rust-blog/blob/master/posts/translations/jp/common-rust-lifetime-misconceptions.md)
   * [Rust のメモリ管理](https://www.zakioka.net/blog/memory-management-for-rust/)
+  * [Rustのライフタイム注釈は「いつ」「なぜ」必要なのか](https://qiita.com/plotter/items/693b7a9d3a756f82441d)
   * [Rustのライフタイム注釈について調べてみた](https://blog-mk2.d-yama7.com/2020/12/20201230_rust_lifetime/)
   * [あの日見た匿名ライフタイム](https://zenn.dev/takanori_is/articles/anonymous-lifetime-the-lifetime-we-saw-that-day)
   * [Rustの変数がメモリ上でどのように配置され、moveしたときにどのような挙動をするか](https://qiita.com/iwatake2222/items/79fe0f33fa33d7e2f5c5)
