@@ -436,6 +436,7 @@ proconio = "0.4.1"
   * [Rust: anyhowを使ってビルトインエラーにバックトレース情報を付加する方法](https://qiita.com/suin/items/b41f479472c872a47f02)
   * [Rust: thiserrorで`anyhow::Error`を手軽に隠蔽する方法](https://qiita.com/suin/items/4d8b47f84fddfc3d168f)
   * [Practical guide to Error Handling in Rust](https://dev-state.com/posts/error_handling/)
+  * [Rust error handling: Option & Result](https://bitfieldconsulting.com/posts/rust-errors-option-result)
 
 * WEB
   * [Rustとactix_webでWebアプリケーションを作ってみる](https://qiita.com/c3drive/items/71dda219f0193ae72069)

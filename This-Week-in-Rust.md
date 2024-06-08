@@ -207,6 +207,7 @@
 * Let's build a Load Balancer in Rust
     * [part1](https://marcobacis.com/blog/load-balancer-rust-1/)
     * [part2](https://marcobacis.com/blog/load-balancer-rust-2/)
+    * [part3](https://marcobacis.com/blog/load-balancer-rust-3/)
 * [Error Handling for Large Rust Projects - A Deep Dive into GreptimeDB's Practices](https://greptime.com/blogs/2024-05-07-error-rust)
 * []()
 * []()
