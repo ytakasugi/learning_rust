@@ -463,6 +463,7 @@ proconio = "0.4.1"
   * [[Rust]バリア同期を理解する](https://zenn.dev/akira19/articles/170525841035f7)
   * [[Rust]RwLockの概要](https://zenn.dev/akira19/articles/c333b13239a641)
   * [並行処理で値を共有する際のMutexとRwLockの違い](https://zenn.dev/torohash/articles/0f3f79ce07592e)
+  * [Send & Mutex](https://cryptical.xyz/rust/send-mutex)
 * 非同期
   * [Rustの非同期プログラミングをマスターする](https://tech-blog.optim.co.jp/entry/2019/11/08/163000)
   * [非同期 Rust パターン](https://qiita.com/legokichi/items/4f2c09330f90626600a6)
