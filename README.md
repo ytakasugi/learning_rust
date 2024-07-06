@@ -75,6 +75,10 @@ proconio = "0.4.1"
 
 ---
 
+* [Rust でのビット演算 ~ 基礎から実践まで](https://qiita.com/shikuno_dev/items/6ff5b55b1a8d048bf20e)
+
+---
+
 ### C++
 
 - [江添亮のC++入門](https://ezoeryou.github.io/cpp-intro/)
@@ -556,6 +560,7 @@ proconio = "0.4.1"
   * [Rust の `&T` は不変参照ではない](https://qiita.com/MikuroXina/items/6a99beb754e4a92bd1e1)
   * [Rustにおける所有権、ポインタ、参照のまとめ](https://zenn.dev/chiku_dev/articles/e29330bbde1971)
   * [【Rust】Borrow checkerとライフタイムを理解するための簡単な実験](https://zenn.dev/woden/articles/162af03fb87476)
+  * [【Rust】RC、Arc、RefCell等の用途が分からなくなるからまとめた](https://qiita.com/JanMaki/items/fe5e415760ba2b7af484)
 
 * コンパイラ
   * [本家Rustコンパイラのソースを読もうとしてみる（1）](https://qiita.com/0yoyoyo/items/eba97a019d0e60324263)
