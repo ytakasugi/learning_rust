@@ -111,6 +111,14 @@ proconio = "0.4.1"
 
 ---
 
+### malloc.c を読む
+
+* [malloc / free](https://zenn.dev/anko/articles/malloc-malloc-free)
+* [bins](https://zenn.dev/anko/articles/malloc-each-bins)
+* [arena](https://zenn.dev/anko/articles/malloc-arena)
+
+---
+
 ### epoll
 
 * [`EPOLL_CTL_DISABLE` and multithreaded applications](https://lwn.net/Articles/520012/)
@@ -121,6 +129,12 @@ proconio = "0.4.1"
 ### `I/O`
 
 * [ノンブロッキングI/Oと非同期I/Oの違いを理解する](https://blog.takanabe.tokyo/2015/03/%E3%83%8E%E3%83%B3%E3%83%96%E3%83%AD%E3%83%83%E3%82%AD%E3%83%B3%E3%82%B0i/o%E3%81%A8%E9%9D%9E%E5%90%8C%E6%9C%9Fi/o%E3%81%AE%E9%81%95%E3%81%84%E3%82%92%E7%90%86%E8%A7%A3%E3%81%99%E3%82%8B/)
+
+---
+
+### ロードバランサー
+
+* [ロードバランサーってなんやねん](https://zenn.dev/mi_01_24fu/articles/load-balancer_2024_07_13)
 
 ---
 
@@ -495,6 +509,7 @@ proconio = "0.4.1"
   * [KafkaストリームとRust Tokioの非同期処理](https://zenn.dev/tfutada/articles/cc921b03013100)
   * [Rustにおける非同期ストリームの関数呼び出しコストを検証する](https://tech.aptpod.co.jp/entry/2021/03/19/100000)
   * [【Rust】`thread::spawn`とFutures(async/await)の使い分け](https://zenn.dev/woden/articles/56a452bebb166a)
+  * [非同期処理の裏側を覗き見 ~Rustのasync/awaitの場合~]()
 
 * セマンティクス
   * [コピーセマンティクスとムーブセマンティクス](https://opaupafz2.hatenablog.com/entry/2021/07/17/202701)
@@ -561,6 +576,7 @@ proconio = "0.4.1"
   * [Rustにおける所有権、ポインタ、参照のまとめ](https://zenn.dev/chiku_dev/articles/e29330bbde1971)
   * [【Rust】Borrow checkerとライフタイムを理解するための簡単な実験](https://zenn.dev/woden/articles/162af03fb87476)
   * [【Rust】RC、Arc、RefCell等の用途が分からなくなるからまとめた](https://qiita.com/JanMaki/items/fe5e415760ba2b7af484)
+  * [【図解】Rust の所有権と借用、ライフタイム - メモリの基礎から](https://qiita.com/shikuno_dev/items/139ea89a3af5d925ebf9)
 
 * コンパイラ
   * [本家Rustコンパイラのソースを読もうとしてみる（1）](https://qiita.com/0yoyoyo/items/eba97a019d0e60324263)
