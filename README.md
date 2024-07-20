@@ -509,7 +509,7 @@ proconio = "0.4.1"
   * [KafkaストリームとRust Tokioの非同期処理](https://zenn.dev/tfutada/articles/cc921b03013100)
   * [Rustにおける非同期ストリームの関数呼び出しコストを検証する](https://tech.aptpod.co.jp/entry/2021/03/19/100000)
   * [【Rust】`thread::spawn`とFutures(async/await)の使い分け](https://zenn.dev/woden/articles/56a452bebb166a)
-  * [非同期処理の裏側を覗き見 ~Rustのasync/awaitの場合~]()
+  * [非同期処理の裏側を覗き見 - Rustのasync/awaitの場合 -]()
 
 * セマンティクス
   * [コピーセマンティクスとムーブセマンティクス](https://opaupafz2.hatenablog.com/entry/2021/07/17/202701)
