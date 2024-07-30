@@ -132,6 +132,18 @@ proconio = "0.4.1"
 
 ---
 
+### ネットワーク
+
+* [Linux Network Performance Ultimate Guide](https://ntk148v.github.io/posts/linux-network-performance-ultimate-guide/)
+
+---
+
+### マルチスレッド
+
+* [マルチスレッドのコンテキスト切り替えに伴うコスト](https://naoya-2.hatenadiary.org/entry/20071010/1192040413)
+
+---
+
 ### ロードバランサー
 
 * [ロードバランサーってなんやねん](https://zenn.dev/mi_01_24fu/articles/load-balancer_2024_07_13)
@@ -306,6 +318,7 @@ proconio = "0.4.1"
   * [Rustの「if let」とは何なのか？](https://qiita.com/plotter/items/0d8dc2782f21178d64f1) 
   * [プログラミング既修者向けRust音速入門書](https://qiita.com/nagisakuya/items/a2c78bad9a6b98973106)
   * [`joaocarvalhoopen/How_to_learn_modern_Rust`](https://github.com/joaocarvalhoopen/How_to_learn_modern_Rust)
+  * [Rust でのビット演算 ~ 基礎から実践まで](https://qiita.com/shikuno_dev/items/6ff5b55b1a8d048bf20e)
 
 * 定数
     * [[Rust] once_cell にできて lazy-static にできないこと](https://zenn.dev/sai_ys/articles/f66f1143fb45d1)
