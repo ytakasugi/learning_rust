@@ -590,6 +590,7 @@ proconio = "0.4.1"
   * [【Rust】Borrow checkerとライフタイムを理解するための簡単な実験](https://zenn.dev/woden/articles/162af03fb87476)
   * [【Rust】RC、Arc、RefCell等の用途が分からなくなるからまとめた](https://qiita.com/JanMaki/items/fe5e415760ba2b7af484)
   * [【図解】Rust の所有権と借用、ライフタイム - メモリの基礎から](https://qiita.com/shikuno_dev/items/139ea89a3af5d925ebf9)
+  * [rustのライフタイムをちゃんと理解する](https://zenn.dev/sho2/articles/rust-lifetime-understand)
 
 * コンパイラ
   * [本家Rustコンパイラのソースを読もうとしてみる（1）](https://qiita.com/0yoyoyo/items/eba97a019d0e60324263)
