@@ -452,6 +452,7 @@ proconio = "0.4.1"
     * [Rustのクロージャの型について](https://zenn.dev/hanao/articles/2fe666cf4710c2)
     * [A guide to closures in Rust](https://hashrust.com/blog/a-guide-to-closures-in-rust/)
     * [Rust のイテレータとクロージャを理解して rayon で並列処理する(zenn-book)](https://zenn.dev/suzuki_hoge/books/2024-04-rust-for-rayon-a450094c0faf3c)
+
 * `Option`型、`Result`型
   * [Rust のエラーハンドリングはシンタックスシュガーが豊富で完全に初見殺しなので自信を持って使えるように整理してみたら完全に理解した](https://qiita.com/nirasan/items/321e7cc42e0e0f238254?utm_content=buffera6970&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer)
   * [thiserrorでカスタムエラーを実装する](https://zenn.dev/hideoka/articles/e2408b1eb8ee3f)
@@ -468,6 +469,7 @@ proconio = "0.4.1"
   * [Rust: thiserrorで`anyhow::Error`を手軽に隠蔽する方法](https://qiita.com/suin/items/4d8b47f84fddfc3d168f)
   * [Practical guide to Error Handling in Rust](https://dev-state.com/posts/error_handling/)
   * [Rust error handling: Option & Result](https://bitfieldconsulting.com/posts/rust-errors-option-result)
+  * [Three Kinds Of Unwrap](https://zkrising.com/writing/three-unwraps/)
 
 * WEB
   * [Rustとactix_webでWebアプリケーションを作ってみる](https://qiita.com/c3drive/items/71dda219f0193ae72069)
@@ -495,6 +497,7 @@ proconio = "0.4.1"
   * [[Rust]RwLockの概要](https://zenn.dev/akira19/articles/c333b13239a641)
   * [並行処理で値を共有する際のMutexとRwLockの違い](https://zenn.dev/torohash/articles/0f3f79ce07592e)
   * [Send & Mutex](https://cryptical.xyz/rust/send-mutex)
+  * [Rust | Arc<RwLock<T>> と Arc<Mutex<T>> で並行処理の読み取りと書き込みを実装する](https://zenn.dev/codemountains/articles/75948b2ede1ba6)
 * メモリ順序
   * [Understanding Memory Ordering in Rust](https://emschwartz.me/understanding-memory-ordering-in-rust/)
 * 非同期
@@ -525,6 +528,7 @@ proconio = "0.4.1"
   * [Rustにおける非同期ストリームの関数呼び出しコストを検証する](https://tech.aptpod.co.jp/entry/2021/03/19/100000)
   * [【Rust】`thread::spawn`とFutures(async/await)の使い分け](https://zenn.dev/woden/articles/56a452bebb166a)
   * [非同期処理の裏側を覗き見 - Rustのasync/awaitの場合 -](https://zenn.dev/currypun/articles/4cc1f096cac91b)
+  * [Building Async I/O in Rust: How Futures, Wakers, and Thread Pools Work Together](https://www.spaghetti-coder.com/building-async-io-in-rust-how-futures-wakers-and-thread-pools-work-together)
 
 * セマンティクス
   * [コピーセマンティクスとムーブセマンティクス](https://opaupafz2.hatenablog.com/entry/2021/07/17/202701)
