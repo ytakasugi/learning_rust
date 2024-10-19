@@ -211,8 +211,8 @@
 * [Error Handling for Large Rust Projects - A Deep Dive into GreptimeDB's Practices](https://greptime.com/blogs/2024-05-07-error-rust)
 * [Fear Not the Association of Types](https://gavinleroy.com/writings/i-heart-assoc-types.html)
 * [Rust's Mutex, Atomics and UnsafeCell – Spooky Action at a Distance?](https://leon.schuermann.io/blog/2024-08-07_rust-mutex-atomics-unsafecell_spooky-action-at-a-distance.html)
-* []()
-* []()
+* [An experiment in async Rust](https://ochagavia.nl/blog/an-experiment-in-async-rust/)
+* [Upgrade the Logging in your Rust Tests](https://tylerjw.dev/posts/20241012-rust-logging-in-tests/)
 * []()
 * []()
 
