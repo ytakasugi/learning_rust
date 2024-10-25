@@ -345,6 +345,7 @@ proconio = "0.4.1"
   * [Small String Optimization で Rust ライブラリ ratatui を最適化した話](https://rhysd.hatenablog.com/entry/2023/11/30/200857)
   * [【Rust】`&str`とString両方とも渡す方法 (とCowの話し)](https://qiita.com/k-yaina60/items/52bd155d51400481e01e)
   * [RustのString,`&str`などの大体の図解と使用例](https://zenn.dev/scirexs/articles/3b3ca8ac956604)
+  * [When should I use String vs `&str`?](https://steveklabnik.com/writing/when-should-i-use-string-vs-str/)
 * イテレータ
   * [Rustのイテレータの網羅的かつ大雑把な紹介](https://qiita.com/lo48576/items/34887794c146042aebf1)
   * [Rust のイテレータを使いこなしたい](https://blog-dry.com/entry/2020/06/23/002318)
@@ -529,6 +530,7 @@ proconio = "0.4.1"
   * [【Rust】`thread::spawn`とFutures(async/await)の使い分け](https://zenn.dev/woden/articles/56a452bebb166a)
   * [非同期処理の裏側を覗き見 - Rustのasync/awaitの場合 -](https://zenn.dev/currypun/articles/4cc1f096cac91b)
   * [Building Async I/O in Rust: How Futures, Wakers, and Thread Pools Work Together](https://www.spaghetti-coder.com/building-async-io-in-rust-how-futures-wakers-and-thread-pools-work-together)
+  * [Async Rust in Three Parts](https://jacko.io/async_intro.html)
 
 * セマンティクス
   * [コピーセマンティクスとムーブセマンティクス](https://opaupafz2.hatenablog.com/entry/2021/07/17/202701)
@@ -597,6 +599,7 @@ proconio = "0.4.1"
   * [【Rust】RC、Arc、RefCell等の用途が分からなくなるからまとめた](https://qiita.com/JanMaki/items/fe5e415760ba2b7af484)
   * [【図解】Rust の所有権と借用、ライフタイム - メモリの基礎から](https://qiita.com/shikuno_dev/items/139ea89a3af5d925ebf9)
   * [rustのライフタイムをちゃんと理解する](https://zenn.dev/sho2/articles/rust-lifetime-understand)
+  * [Demystifying Alignment and Memory Layout in Rust](https://garden.christophertee.dev/blogs/Memory-Alignment-and-Layout/Part-1)
 
 * コンパイラ
   * [本家Rustコンパイラのソースを読もうとしてみる（1）](https://qiita.com/0yoyoyo/items/eba97a019d0e60324263)
