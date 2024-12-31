@@ -763,6 +763,8 @@ proconio = "0.4.1"
 - [Rust Advent Calendar 2021](https://qiita.com/advent-calendar/2021/rust)
 - [Rust Advent Calendar 2022](https://qiita.com/advent-calendar/2022/rust)
 - [Rust Advent Calendar 2023](https://qiita.com/advent-calendar/2023/rust)
+- [Rust Advent Calendar 2024](https://qiita.com/advent-calendar/2024/rust)
+    - [Rustマクロ冬期講習 Advent Calendar 2024](https://qiita.com/advent-calendar/2024/rust-macro)
 - [Advent of Code 2022](https://fasterthanli.me/series/advent-of-code-2022)
 - [cargo-clean-recursive](https://crates.io/crates/cargo-clean-recursive)
 - [OPTiM TECH BLOG(Rust)](https://tech-blog.optim.co.jp/archive/category/Rust)
